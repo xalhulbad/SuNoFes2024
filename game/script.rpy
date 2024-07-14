@@ -1,14 +1,10 @@
-﻿# The script of the game goes in this file.
+﻿# Contains the main script used to run the game.
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+# Default variables
+default routes_completed = 2
 
-define e = Character("Eileen", who_colour="#000000")
-define s = Character("Sutemo", what_colour="#00FFFF")
-default isKnown = False
 
 # The game starts here.
-
 label start:
 
     # Show a background. This uses a placeholder by default, but you can
@@ -17,39 +13,7 @@ label start:
 
     scene bg room
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    e "I like pizza!"
-
-    "What happens if i don't use e?" # No character shows up
-
-    e "You can use double quotes in dialogue with \"backslash\" before them!"
-
-    if isKnown:
-        e "isKnown is true"
-    else:
-        e "isKnown is false"
-
-    scene bg room
-
-    show sutemo happy at left
-
-    s "SUP SUP"
-
-    show lucy happy at right with fade
-
-    "Narrator text"
+    call tower_choices1_start
 
     # This ends the game.
-
     return
