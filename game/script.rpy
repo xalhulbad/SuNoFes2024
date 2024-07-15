@@ -1,7 +1,7 @@
 ﻿# Contains the main script used to run the game.
 
 # Default variables
-default routes_completed = 2
+default routes_completed = 0
 
 
 # The game starts here.
