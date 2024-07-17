@@ -208,9 +208,16 @@ style input:
 screen choice(items):
     style_prefix "choice"
 
-    vbox:
-        for i in items:
-            textbutton i.caption action i.action
+    viewport:
+        scrollbars "vertical"
+        xmaximum 1225
+        ymaximum 900
+        xalign .5
+        yalign .5
+        mousewheel True
+        vbox:
+            for i in items:
+                textbutton i.caption action i.action
 
 
 style choice_vbox is vbox
