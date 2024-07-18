@@ -208,16 +208,22 @@ style input:
 screen choice(items):
     style_prefix "choice"
 
-    viewport:
-        scrollbars "vertical"
-        xmaximum 1225
-        ymaximum 900
-        xalign .5
-        yalign .5
-        mousewheel True
+    if len(items) <= 10:
         vbox:
             for i in items:
                 textbutton i.caption action i.action
+    
+    else:
+        viewport:
+            scrollbars "vertical"
+            mousewheel True
+            xsize 1225
+            ysize 900
+            xalign .5
+            yalign .5
+            vbox:
+                for i in items:
+                    textbutton i.caption action i.action
 
 
 style choice_vbox is vbox
@@ -226,8 +232,7 @@ style choice_button_text is button_text
 
 style choice_vbox:
     xalign 0.5
-    ypos 405
-    yanchor 0.5
+    yalign 0.45
 
     spacing gui.choice_spacing
 
