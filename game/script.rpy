@@ -2,6 +2,8 @@
 
 # Default variables
 default routes_completed = 0
+default encountered_aware_hero = False
+default romance = 50
 
 
 # The game starts here.

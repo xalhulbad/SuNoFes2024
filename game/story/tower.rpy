@@ -52,10 +52,9 @@ label tower_choices1_start:
                     $ tower_choices1_seen.add("(Thought) What lies beyond these walls?")
                     jump tower_choices1
 
-                "(Act) Sleep.":
-                    call tower_go_to_sleep
-                    $ tower_choices1_seen.add("(Act) Sleep.")
-                    jump tower_choices1
+                "(Act) Sleep.": # Progresses the game
+                    $ tower_choices1_seen.clear() # Reset seen choices for later
+                    jump tower_go_to_sleep # No call because we don't want to return
 
 
                 # Choices available after first route completed:
@@ -109,8 +108,15 @@ label tower_choices1_start:
                 # TODO: add choices available after aware hero encounter
                 # Choices available after an encounter with the aware hero:
 
+        # If we get here then the player did not choose "(Act) Sleep" within 4 choices
+
         $ tower_choices1_seen.clear() # Reset seen choices for later
-        return
+        n "The moon rose higher, bathing the tower in a soft, ghostly light as the stars twinkled above."
+
+        # Force player to choose "(Act) Sleep"
+        menu:
+            "(Act) Sleep.": # Progresses the game
+                    jump tower_go_to_sleep # No call because we don't want to return
 
 
     # First tower choices that are available from the start:
@@ -171,8 +177,18 @@ label tower_choices1_start:
     label tower_go_to_sleep:
         n "As she lay down, the soft glow of the candle flickered and dimmed, casting long shadows on the cold stone walls. The princess's thoughts, whether filled with hope or the weight of repeated days, slowly quieted."
         n "As exhaustion overtook her, the princess's eyelids grew heavy, and she slowly drifted off to sleep."
-        # TODO: add logic for princess' dream
-        return
+        
+        if encountered_aware_hero and romance >= 70:
+            pt "A warmth in the cold of night."
+            pt "I'll see you soon..."
+            pt "my hero."
+        elif encountered_aware_hero:
+            pt "Hero…"
+            pt "I will find out soon enough..."
+        elif routes_completed >= 1:
+            pt "Here we go again."
+ 
+        return # End of tower scene
 
 
     # First tower choices that are available only after first route completed:
