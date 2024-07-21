@@ -1,4 +1,4 @@
-# Contains the main script used to run the game.
+﻿# Contains the main script used to run the game.
 
 # Default variables
 default routes_completed = 0
@@ -15,7 +15,7 @@ label start:
 
     scene bg room
 
-    call tower_choices1_start
+    call tower_start
 
     # This ends the game.
     return
