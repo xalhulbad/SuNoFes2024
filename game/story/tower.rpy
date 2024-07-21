@@ -197,11 +197,11 @@ label tower_choices1_start:
         n "As she lay down, the soft glow of the candle flickered and dimmed, casting long shadows on the cold stone walls. The princess's thoughts, whether filled with hope or the weight of repeated days, slowly quieted."
         n "As exhaustion overtook her, the princess's eyelids grew heavy, and she slowly drifted off to sleep."
         
-        if encountered_aware_hero and romance >= 70:
+        if aware_hero_met and romance >= 70:
             pt "A warmth in the cold of night."
             pt "I'll see you soon..."
             pt "my hero."
-        elif encountered_aware_hero:
+        elif aware_hero_met:
             pt "Hero…"
             pt "I will find out soon enough..."
         elif routes_completed >= 1:
