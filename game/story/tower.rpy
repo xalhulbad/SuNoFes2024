@@ -105,7 +105,7 @@ label tower_choices1_start:
                     $ tower_choices1_seen.add("(Thought) Blending realities…")
                     jump tower_choices1
 
-                # TODO: add choices available after aware hero encounter
+
                 # Choices available after an encounter with the aware hero:
                 "(Thought) Does he... know?" if aware_hero_met:
                     call tower_does_he_know
@@ -127,6 +127,7 @@ label tower_choices1_start:
                     $ tower_choices1_seen.add("(Thought) Why is this happening to us?")
                     jump tower_choices1
 
+
         # If we get here then the player did not choose "(Act) Sleep" within 4 choices
 
         $ tower_choices1_seen.clear() # Reset seen choices for later
@@ -138,7 +139,7 @@ label tower_choices1_start:
                     jump tower_go_to_sleep # No call because we don't want to return
 
 
-    # First tower choices that are available from the start:
+    # Tower choices that are available from the start:
     label tower_so_long:
         pt "Another night in this forsaken place. How long has it really been, waiting for a rescue that seems to never come? Waiting for a way out of this…"
         n "As the moon climbed higher in the sky, its silvery light bathed the tower in an ethereal glow. The princess took a deep breath. She knew that her hero would arrive soon, bringing with him what hoped to be a final escape."
@@ -210,7 +211,7 @@ label tower_choices1_start:
         return # End of tower scene
 
 
-    # First tower choices that are available only after first route completed:
+    # Tower choices that are available only after first route completed:
     label tower_im_back:
         pt "I’m back. Everything is gone... my wounds, my possessions, even the signs of my struggle."
         pt "It’s like it never happened." 
@@ -235,7 +236,7 @@ label tower_choices1_start:
         return
 
     
-    # First tower choices that are available only after second route completed:
+    # Tower choices that are available only after second route completed:
     label tower_cant_believe_back_again:
         pt "I can’t believe I’m back here again. How many times must I go through this?"
         n "The princess’s frustration boiled over, the same surroundings greeting her once more."
@@ -271,8 +272,7 @@ label tower_choices1_start:
         return
 
 
-    # First tower choices that are available only after an encounter with the aware hero:
-    # TODO: Add these
+    # Tower choices that are available only after an encounter with the aware hero:
     label tower_does_he_know: 
         pt "Does he know about this… replaying of events? The retelling of stories past? He acts like he’s hiding something, but how much does he really know?"
         n "The princess's thoughts lingered on the hero who might come to save her, a mixture of suspicion and curiosity in her eyes."
@@ -293,4 +293,3 @@ label tower_choices1_start:
         pt "Why is this happening? Is there a reason we’re stuck in this endless cycle? Who designed this?"
         n "A sense of urgency filled the princess as she pondered the purpose behind her situation."
         return
-
