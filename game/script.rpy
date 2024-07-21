@@ -17,5 +17,7 @@ label start:
 
     call tower_start
 
+    call forest_start
+
     # This ends the game.
     return
