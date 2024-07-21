@@ -2,6 +2,7 @@
 
 # Default variables
 default routes_completed = 0
+default aware_hero_met = False
 
 
 # The game starts here.

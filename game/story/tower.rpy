@@ -108,6 +108,25 @@ label tower_choices1_start:
 
                 # TODO: add choices available after aware hero encounter
                 # Choices available after an encounter with the aware hero:
+                "(Thought) Does he... know?" if aware_hero_met:
+                    call tower_does_he_know
+                    $ tower_choices1_seen.add("(Thought) Does he... know?")
+                    jump tower_choices1
+
+                "(Thought) Him? A way out?" if aware_hero_met:
+                    call tower_way_out
+                    $ tower_choices1_seen.add("(Thought) Him? A way out?")
+                    jump tower_choices1
+
+                "(Thought) Who is he really?" if aware_hero_met:
+                    call tower_who_is_he
+                    $ tower_choices1_seen.add("(Thought) Who is he really?")
+                    jump tower_choices1
+
+                "(Thought) Why is this happening to us?" if aware_hero_met:
+                    call tower_why_is_this_happening
+                    $ tower_choices1_seen.add("(Thought) Why is this happening to us?")
+                    jump tower_choices1
 
         $ tower_choices1_seen.clear() # Reset seen choices for later
         return
@@ -238,3 +257,24 @@ label tower_choices1_start:
 
     # First tower choices that are available only after an encounter with the aware hero:
     # TODO: Add these
+    label tower_does_he_know: 
+        pt "Does he know about this… replaying of events? The retelling of stories past? He acts like he’s hiding something, but how much does he really know?"
+        n "The princess's thoughts lingered on the hero who might come to save her, a mixture of suspicion and curiosity in her eyes."
+        return
+    
+    label tower_way_out: 
+        pt "What if he knows the way out? Why is he still here?"
+        pt "There is something he knows. He must tell me."
+        n "The princess’s resolve hardened."
+        return
+
+    label tower_who_is_he: 
+        pt "Who is he really? Could he be more than just my savior in this story?"
+        n "Her mind was filled with questions, her curiosity about the hero who may finally save her overwhelming."
+        return
+
+    label tower_why_is_this_happening: 
+        pt "Why is this happening? Is there a reason we’re stuck in this endless cycle? Who designed this?"
+        n "A sense of urgency filled the princess as she pondered the purpose behind her situation."
+        return
+
