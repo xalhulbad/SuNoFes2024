@@ -7,6 +7,8 @@ default forest_choices1_seen = set()
 label forest_start:
     scene bg blackscreen
 
+    "{i}{color=#808080}Rap rap rap.{/i}{/color}"
+
     n "The sound echoed through the stone walls of the tower. The door creaked open, revealing the hero's warm smile."
     h "Princess, it's time to leave. Come with me."
     n "The princess, heart pounding, stepped forward. She took the hero's hand, feeling a comforting warmth."
