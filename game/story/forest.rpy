@@ -168,7 +168,7 @@ label forest_start:
         n "The figure stepped closer, their movements almost ethereal. The hero instinctively placed himself between the princess and the stranger."
         h "Stay back! We mean no harm, but we will defend ourselves if necessary."
         v "How amusing. Be careful now."
-        v "Your choices matter." #TODO: discuss if we should give this a special font/colour to have more significance
+        v "{b}Your choices matter.{/b}" #TODO: discuss if we should give this a special font/colour to have more significance
 
         $ forest_choices1_seen.clear() # Reset seen choices for next route
 
