@@ -66,7 +66,6 @@ label forest_start:
                     jump forest_choices1
 
                 "(Act) Proceed into the forest": # Progresses the game
-                    $ forest_choices1_seen.clear() # Reset seen choices for later
                     jump forest_proceed_into_forest
 
                 
@@ -100,8 +99,6 @@ label forest_start:
 
 
         # If we get here then the player did not choose "(Act) Proceed into the forest" within 2 choices
-
-        $ tower_choices1_seen.clear() # Reset seen choices for later
 
         # Force player to choose "(Act) Proceed into the forest"
         menu:
@@ -172,6 +169,8 @@ label forest_start:
         h "Stay back! We mean no harm, but we will defend ourselves if necessary."
         v "How amusing. Be careful now."
         v "Your choices matter." #TODO: discuss if we should give this a special font/colour to have more significance
+
+        $ forest_choices1_seen.clear() # Reset seen choices for next route
 
         return # End of forest scene
 

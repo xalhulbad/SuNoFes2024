@@ -53,7 +53,6 @@ label tower_start:
                     jump tower_choices1
 
                 "(Act) Sleep.": # Progresses the game
-                    $ tower_choices1_seen.clear() # Reset seen choices for later
                     jump tower_go_to_sleep # No call because we don't want to return
 
 
@@ -130,7 +129,6 @@ label tower_start:
 
         # If we get here then the player did not choose "(Act) Sleep" within 4 choices
 
-        $ tower_choices1_seen.clear() # Reset seen choices for later
         n "The moon rose higher, bathing the tower in a soft, ghostly light as the stars twinkled above."
 
         # Force player to choose "(Act) Sleep"
@@ -207,6 +205,8 @@ label tower_start:
             pt "I will find out soon enough..."
         elif routes_completed >= 1:
             pt "Here we go again."
+
+        $ tower_choices1_seen.clear() # Reset seen choices for next route
  
         return # End of tower scene
 
