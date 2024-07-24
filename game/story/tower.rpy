@@ -134,7 +134,7 @@ label tower_start:
         # Force player to choose "(Act) Sleep"
         menu:
             "(Act) Sleep.": # Progresses the game
-                    jump tower_go_to_sleep # No call because we don't want to return
+                    jump tower_go_to_sleep # Jump instead of call because we don't want to return
 
 
     # Tower choices that are available from the start:
