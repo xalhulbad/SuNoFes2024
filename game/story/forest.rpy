@@ -172,8 +172,6 @@ label forest_start:
         v "How amusing. Be careful now."
         v "{b}Your choices matter.{/b}" #TODO: discuss if we should give this a special font/colour to have more significance
 
-        $ forest_choices1_seen.clear() # Reset seen choices for next route
-
         return # End of forest scene
 
 

@@ -205,8 +205,6 @@ label tower_start:
             pt "I will find out soon enough..."
         elif routes_completed >= 1:
             pt "Here we go again."
-
-        $ tower_choices1_seen.clear() # Reset seen choices for next route
  
         return # End of tower scene
 
