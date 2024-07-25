@@ -4,6 +4,13 @@
 # Default variables
 default forest_choices1_seen = set()
 
+# Flags for unlockable options
+default forest_asked_who_are_you = False
+default forest_asked_why_did_you_come = False
+default forest_asked_is_it_safe = False
+default forest_asked_have_we_done_this = False
+default forest_asked_why_familiar = False
+
 label forest_start:
     scene bg blackscreen
 
@@ -40,31 +47,34 @@ label forest_start:
                 "(Act) Who are you?":
                     call forest_who_are_you
                     $ forest_choices1_seen.add("(Act) Who are you?")
+                    $ forest_asked_who_are_you = True
                     jump forest_choices1
 
-                "(Act) How long have I been trapped?":
-                    call forest_how_long_trapped
-                    $ forest_choices1_seen.add("(Act) How long have I been trapped?")
+                "(Act) What is your quest?" if forest_asked_who_are_you:
+                    call forest_what_is_your_quest
+                    $ forest_choices1_seen.add("(Act) What is your quest?")
                     jump forest_choices1
-
-                "(Act) Where are we headed now?":
-                    call forest_where_are_we_headed
-                    $ forest_choices1_seen.add("(Act) Where are we headed now?")
-                    jump forest_choices1
-
+                
                 "(Act) Why did you come to rescue me?":
                     call forest_why_did_you_come
                     $ forest_choices1_seen.add("(Act) Why did you come to rescue me?")
+                    $ forest_asked_why_did_you_come = True
+                    jump forest_choices1
+
+                "(Act) How long have I been trapped?" if forest_asked_why_did_you_come:
+                    call forest_how_long_trapped
+                    $ forest_choices1_seen.add("(Act) How long have I been trapped?")
                     jump forest_choices1
 
                 "(Act) Is it safe outside the tower?":
                     call forest_is_it_safe
                     $ forest_choices1_seen.add("(Act) Is it safe outside the tower?")
+                    $ forest_asked_is_it_safe = True
                     jump forest_choices1
 
-                "(Act) What is your quest?":
-                    call forest_what_is_your_quest
-                    $ forest_choices1_seen.add("(Act) What is your quest?")
+                "(Act) Where are we headed now?" if forest_asked_is_it_safe:
+                    call forest_where_are_we_headed
+                    $ forest_choices1_seen.add("(Act) Where are we headed now?")
                     jump forest_choices1
 
                 "(Act) Proceed into the forest": # Progresses the game
@@ -75,14 +85,16 @@ label forest_start:
                 "​​(Act) Have we done this before?" if routes_completed > 0:
                     call forest_have_we_done_this
                     $ forest_choices1_seen.add("​​(Act) Have we done this before?")
+                    $ forest_asked_have_we_done_this = True
                     jump forest_choices1
 
-                "(Act) Why does this feel familiar?" if routes_completed > 0:
+                "(Act) Why does this feel familiar?" if routes_completed > 0 and forest_asked_have_we_done_this:
                     call forest_why_familiar
                     $ forest_choices1_seen.add("(Act) Why does this feel familiar?")
+                    $ forest_asked_why_familiar = True
                     jump forest_choices1
 
-                "(Act) Can we change what happens next?" if routes_completed > 0:
+                "(Act) Can we change what happens next?" if routes_completed > 0 and forest_asked_why_familiar:
                     call forest_can_we_change
                     $ forest_choices1_seen.add("(Act) Can we change what happens next?")
                     jump forest_choices1
