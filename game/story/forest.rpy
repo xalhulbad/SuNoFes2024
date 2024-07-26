@@ -114,6 +114,8 @@ label forest_start:
 
         # If we get here then the player did not choose "(Act) Proceed into the forest" within 2 choices
 
+        h "We should probably get going now. If we linger here for too long, we might run into whatever had you trapped in the tower."
+
         # Force player to choose "(Act) Proceed into the forest"
         menu:
             "(Act) Proceed into the forest": # Progresses the game
