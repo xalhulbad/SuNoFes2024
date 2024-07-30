@@ -40,13 +40,13 @@ label forest_start:
     n "Hand in hand, they stepped into the clearing, ready to face the forest and their journey ahead."
 
     $ forest_choices1_chosen = 0
-    
+
     label forest_choices1:
         while forest_choices1_chosen < 2:
             $ forest_choices1_chosen += 1
 
             menu:
-                set tower_choices1_seen
+                set forest_choices1_seen
                 # Tells renpy to hide choices in this set (prevents same option showing up twice)
 
                 # Choices available from the start:
