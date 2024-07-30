@@ -84,6 +84,9 @@ label forest_start:
                     jump forest_choices1
 
                 "(Act) Proceed into the forest": # Progresses the game
+                    $ forest_choices1_seen.remove("(Act) Proceed into the forest") 
+                    # For some reason renpy adds this automatically which we don't want here
+
                     jump forest_proceed_into_forest
 
                 
