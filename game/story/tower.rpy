@@ -2,6 +2,7 @@
 
 # Default variables
 default tower_choices1_seen = set()
+default tower_choices1_chosen = 0
 
 # Flags for unlockable options
 default tower_room_inspected = False
@@ -13,7 +14,6 @@ default tower_chose_cant_believe = False
 default tower_chose_who_is_he = False
 default tower_chose_way_out = False
 
-default tower_choices1_chosen = 0
 
 # TODO: discuss if old options should be hidden after routes are completed, with too many options they go off the screen
 

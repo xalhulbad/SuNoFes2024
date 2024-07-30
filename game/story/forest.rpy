@@ -3,6 +3,7 @@
 
 # Default variables
 default forest_choices1_seen = set()
+default forest_choices1_chosen = 0
 
 # Flags for unlockable options
 default forest_asked_who_are_you = False
@@ -11,7 +12,6 @@ default forest_asked_is_it_safe = False
 default forest_asked_have_we_done_this = False
 default forest_asked_why_familiar = False
 
-default forest_choices1_chosen = 0
 
 label forest_start:
     scene bg blackscreen
