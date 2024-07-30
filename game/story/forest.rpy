@@ -11,6 +11,8 @@ default forest_asked_is_it_safe = False
 default forest_asked_have_we_done_this = False
 default forest_asked_why_familiar = False
 
+default forest_choices1_chosen = 0
+
 label forest_start:
     scene bg blackscreen
 
@@ -37,8 +39,12 @@ label forest_start:
     h "Let's go. The world is waiting for your return!"
     n "Hand in hand, they stepped into the clearing, ready to face the forest and their journey ahead."
 
+    $ forest_choices1_chosen = 0
+    
     label forest_choices1:
-        while len(forest_choices1_seen) < 2:
+        while forest_choices1_chosen < 2:
+            $ forest_choices1_chosen += 1
+
             menu:
                 set tower_choices1_seen
                 # Tells renpy to hide choices in this set (prevents same option showing up twice)

@@ -13,6 +13,8 @@ default tower_chose_cant_believe = False
 default tower_chose_who_is_he = False
 default tower_chose_way_out = False
 
+default tower_choices1_chosen = 0
+
 # TODO: discuss if old options should be hidden after routes are completed, with too many options they go off the screen
 
 label tower_start:
@@ -20,8 +22,12 @@ label tower_start:
     n "Once upon a time, in a forgotten corner of the kingdom, there stood a tower. It loomed high, shrouded in mystery. The moonlight filtered through its narrow, arched window, casting a pale glow on the cold, damp walls."
     n "There sat the princess, her delicate fingers tracing the rough stone sill. Her eyes, though tired, held a spark of hope. She knew that someone would come for her, as the stories always promised."
 
+    $ tower_choices1_chosen = 0
+
     label tower_choices1: # First tower choice
-        while len(tower_choices1_seen) < 4: # Stop after 4 choices have been chosen
+        while tower_choices1_chosen < 4: # Stop after 4 choices have been chosen
+            $ tower_choices1_chosen += 1
+
             menu: 
                 set tower_choices1_seen
                 # Tells renpy to hide choices in this set (prevents same option showing up twice)
