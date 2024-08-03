@@ -3,6 +3,7 @@
 
 # Default variables
 default forest_choices1_seen = set()
+default forest_choices1_chosen = 0
 
 # Flags for unlockable options
 default forest_asked_who_are_you = False
@@ -10,6 +11,7 @@ default forest_asked_why_did_you_come = False
 default forest_asked_is_it_safe = False
 default forest_asked_have_we_done_this = False
 default forest_asked_why_familiar = False
+
 
 label forest_start:
     scene bg blackscreen
@@ -37,10 +39,14 @@ label forest_start:
     h "Let's go. The world is waiting for your return!"
     n "Hand in hand, they stepped into the clearing, ready to face the forest and their journey ahead."
 
+    $ forest_choices1_chosen = 0
+
     label forest_choices1:
-        while len(forest_choices1_seen) < 2:
+        while forest_choices1_chosen < 2:
+            $ forest_choices1_chosen += 1
+
             menu:
-                set tower_choices1_seen
+                set forest_choices1_seen
                 # Tells renpy to hide choices in this set (prevents same option showing up twice)
 
                 # Choices available from the start:
@@ -78,6 +84,9 @@ label forest_start:
                     jump forest_choices1
 
                 "(Act) Proceed into the forest": # Progresses the game
+                    $ forest_choices1_seen.remove("(Act) Proceed into the forest") 
+                    # For some reason renpy adds this automatically which we don't want here
+
                     jump forest_proceed_into_forest
 
                 
