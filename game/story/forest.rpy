@@ -195,7 +195,7 @@ label forest_start:
         v "How amusing. Be careful now."
         v "{b}Your choices matter.{/b}" #TODO: discuss if we should give this a special font/colour to have more significance
 
-        return # End of forest scene
+        jump villain_encounter # End of forest scene
 
 
     # Forest choices that are available only after first route completed:
