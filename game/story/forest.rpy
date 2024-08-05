@@ -344,7 +344,7 @@ label villain_encounter:
                 n "The figure turned abruptly, eyes narrowing as they sized up the princess and hero. The tension in the air grew palpable."
                 jump villain1_1_1
 
-            "(Act) Make a surprise attack - Femme Fatale":
+            "(Act) Make a surprise attack":
                 n "The princess and hero exchanged a determined glance, their minds made up. With a nod, the hero drew his sword, and princess readied herself."
                 p "Now! Let's catch them off guard."
                 n "They leaped from their hiding spot, charging towards the figure with the elements of surprise on their side. But as they closed in, the figure's demeanor changed, a sly smile spreading across their face."
