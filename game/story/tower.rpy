@@ -2,16 +2,32 @@
 
 # Default variables
 default tower_choices1_seen = set()
+default tower_choices1_chosen = 0
+
+# Flags for unlockable options
+default tower_room_inspected = False
+default tower_table_inspected = False
+default tower_chose_why_no_escape = False
+default tower_attempted_open_door = False
+default tower_chose_lesson_learned = False
+default tower_chose_cant_believe = False
+default tower_chose_who_is_he = False
+default tower_chose_way_out = False
+
 
 # TODO: discuss if old options should be hidden after routes are completed, with too many options they go off the screen
 
-label tower_choices1_start:
+label tower_start:
     # Start narration of tower scene
     n "Once upon a time, in a forgotten corner of the kingdom, there stood a tower. It loomed high, shrouded in mystery. The moonlight filtered through its narrow, arched window, casting a pale glow on the cold, damp walls."
     n "There sat the princess, her delicate fingers tracing the rough stone sill. Her eyes, though tired, held a spark of hope. She knew that someone would come for her, as the stories always promised."
 
+    $ tower_choices1_chosen = 0
+
     label tower_choices1: # First tower choice
-        while len(tower_choices1_seen) < 4: # Stop after 4 choices have been chosen
+        while tower_choices1_chosen < 4: # Stop after 4 choices have been chosen
+            $ tower_choices1_chosen += 1
+
             menu: 
                 set tower_choices1_seen
                 # Tells renpy to hide choices in this set (prevents same option showing up twice)
@@ -25,6 +41,18 @@ label tower_choices1_start:
                 "(Act) Inspect the dusty room":
                     call tower_inspect_room
                     $ tower_choices1_seen.add("(Act) Inspect the dusty room")
+                    $ tower_room_inspected = True
+                    jump tower_choices1
+                
+                "(Act) Inspect the dusty table" if tower_room_inspected:
+                    call tower_inspect_table
+                    $ tower_choices1_seen.add("(Act) Inspect the dusty table")
+                    $ tower_table_inspected = True
+                    jump tower_choices1
+                
+                "(Act) Read the old book on the table" if tower_table_inspected:
+                    call tower_read_old_book
+                    $ tower_choices1_seen.add("(Act) Read the old book on the table")
                     jump tower_choices1
 
                 "(Act) Sit on the wooden bed":
@@ -35,11 +63,18 @@ label tower_choices1_start:
                 "(Act) Attempt to open the door":
                     call tower_attempt_open_door
                     $ tower_choices1_seen.add("(Act) Attempt to open the door)")
+                    $ tower_attempted_open_door = True
                     jump tower_choices1
 
                 "(Thought) Why is there no escape?":
                     call tower_why_no_escape
                     $ tower_choices1_seen.add("(Thought) Why is there no escape?")
+                    $ tower_chose_why_no_escape = True
+                    jump tower_choices1
+                
+                "(Thought) What lies beyond these walls?" if tower_chose_why_no_escape:
+                    call tower_what_lies_beyond_walls
+                    $ tower_choices1_seen.add("(Thought) What lies beyond these walls?")
                     jump tower_choices1
 
                 "(Thought) What secrets does this tower hold…":
@@ -47,13 +82,10 @@ label tower_choices1_start:
                     $ tower_choices1_seen.add("(Thought) What secrets does this tower hold…")
                     jump tower_choices1
 
-                "(Thought) What lies beyond these walls?":
-                    call tower_what_lies_beyond_walls
-                    $ tower_choices1_seen.add("(Thought) What lies beyond these walls?")
-                    jump tower_choices1
-
                 "(Act) Sleep.": # Progresses the game
-                    $ tower_choices1_seen.clear() # Reset seen choices for later
+                    $ tower_choices1_seen.remove("(Act) Sleep.") 
+                    # For some reason renpy adds this automatically which we don't want here
+
                     jump tower_go_to_sleep # No call because we don't want to return
 
 
@@ -61,6 +93,11 @@ label tower_choices1_start:
                 "(Thought) I’m back." if routes_completed > 0:
                     call tower_im_back
                     $ tower_choices1_seen.add("(Thought) I’m back.")
+                    jump tower_choices1
+                
+                "(Act) Check the door again" if routes_completed > 0 and tower_attempted_open_door:
+                    call tower_check_door_again
+                    $ tower_choices1_seen.add("(Act) Check the door again")
                     jump tower_choices1
 
                 "(Thought) Was it all a dream?" if routes_completed > 0:
@@ -78,9 +115,10 @@ label tower_choices1_start:
                 "(Thought) I can’t believe I’m back here again." if routes_completed > 1:
                     call tower_cant_believe_back_again
                     $ tower_choices1_seen.add("(Thought) I can’t believe I’m back here again.")
+                    $ tower_chose_cant_believe = True
                     jump tower_choices1
                 
-                "(Thought) Could my emotions be causing this… anomaly?" if routes_completed > 1:
+                "(Thought) Could my emotions be causing this… anomaly?" if routes_completed > 1 and tower_chose_cant_believe:
                     call tower_emotions_causing
                     $ tower_choices1_seen.add("(Thought) Could my emotions be causing this… anomaly?")
                     jump tower_choices1
@@ -88,9 +126,10 @@ label tower_choices1_start:
                 "(Thought) Is there a lesson to be learned?" if routes_completed > 1:
                     call tower_lesson_to_be_learned
                     $ tower_choices1_seen.add("(Thought) Is there a lesson to be learned?")
+                    $ tower_chose_lesson_learned = True
                     jump tower_choices1
 
-                "(Thought) What if the hero holds the key to truly breaking free?" if routes_completed > 1:
+                "(Thought) What if the hero holds the key to truly breaking free?" if routes_completed > 1 and tower_chose_lesson_learned:
                     call tower_hero_holds_key
                     $ tower_choices1_seen.add("(Thought) What if the hero holds the key to truly breaking free?")
                     jump tower_choices1
@@ -105,21 +144,23 @@ label tower_choices1_start:
                     $ tower_choices1_seen.add("(Thought) Blending realities…")
                     jump tower_choices1
 
-                # TODO: add choices available after aware hero encounter
+
                 # Choices available after an encounter with the aware hero:
-                "(Thought) Does he... know?" if aware_hero_met:
-                    call tower_does_he_know
-                    $ tower_choices1_seen.add("(Thought) Does he... know?")
-                    jump tower_choices1
-
-                "(Thought) Him? A way out?" if aware_hero_met:
-                    call tower_way_out
-                    $ tower_choices1_seen.add("(Thought) Him? A way out?")
-                    jump tower_choices1
-
                 "(Thought) Who is he really?" if aware_hero_met:
                     call tower_who_is_he
                     $ tower_choices1_seen.add("(Thought) Who is he really?")
+                    $ tower_chose_who_is_he = True
+                    jump tower_choices1
+
+                "(Thought) Him? A way out?" if aware_hero_met and tower_chose_who_is_he:
+                    call tower_way_out
+                    $ tower_choices1_seen.add("(Thought) Him? A way out?")
+                    $ tower_chose_way_out = True
+                    jump tower_choices1
+
+                "(Thought) Does he... know?" if aware_hero_met and tower_chose_way_out:
+                    call tower_does_he_know
+                    $ tower_choices1_seen.add("(Thought) Does he... know?")
                     jump tower_choices1
 
                 "(Thought) Why is this happening to us?" if aware_hero_met:
@@ -127,18 +168,18 @@ label tower_choices1_start:
                     $ tower_choices1_seen.add("(Thought) Why is this happening to us?")
                     jump tower_choices1
 
+
         # If we get here then the player did not choose "(Act) Sleep" within 4 choices
 
-        $ tower_choices1_seen.clear() # Reset seen choices for later
         n "The moon rose higher, bathing the tower in a soft, ghostly light as the stars twinkled above."
 
         # Force player to choose "(Act) Sleep"
         menu:
             "(Act) Sleep.": # Progresses the game
-                    jump tower_go_to_sleep # No call because we don't want to return
+                    jump tower_go_to_sleep # Jump instead of call because we don't want to return
 
 
-    # First tower choices that are available from the start:
+    # Tower choices that are available from the start:
     label tower_so_long:
         pt "Another night in this forsaken place. How long has it really been, waiting for a rescue that seems to never come? Waiting for a way out of this…"
         n "As the moon climbed higher in the sky, its silvery light bathed the tower in an ethereal glow. The princess took a deep breath. She knew that her hero would arrive soon, bringing with him what hoped to be a final escape."
@@ -148,16 +189,19 @@ label tower_choices1_start:
     label tower_inspect_room:
         n "Dust particles danced in the air, illuminated by the soft light, and the air was heavy with the scent of moss and old stone. The distant howl of wolves echoed through the night, adding to the eerie stillness."
         n "Inside the tower, the room was sparsely furnished, with only a simple wooden bed, a worn-out rug, and a small table holding a flickering candle."
-        menu:
-            "(Act) Inspect the dusty table":
-                call tower_inspect_table
         return
         
-        label tower_inspect_table:
-            n "The candle on the small table flickered, casting fleeting shadows that danced across the room. The princess's thoughts were filled with both hope and doubt, wondering about the future that awaited her. She longed for change, for a way out of her predicament."
-            pt "The stories always end with the princess being saved."
-            pt "There must be a way out."
-            return
+    label tower_inspect_table:
+        n "The candle on the small table flickered, casting fleeting shadows that danced across the room. The princess's thoughts were filled with both hope and doubt, wondering about the future that awaited her. She longed for change, for a way out of her predicament."
+        pt "The stories always end with the princess being saved."
+        pt "There must be a way out."
+        return
+
+    label tower_read_old_book:
+        n "An old, leather-bound book lay on the table, its pages yellowed with age. The princess opened it carefully, the musty scent of old paper filling the air."
+        n "The book was filled with tales of bravery and adventure, stories of heroes and heroines who faced insurmountable odds."
+        pt "These stories... they all speak of courage and destiny. Maybe there’s something here, some clue to help me find my own path."
+        return
 
     label tower_sit_bed:
         n "The bed creaked softly as she sat down, the old wood groaning. She ran her hand over the rough blanket, her thoughts drifting to nights of restless sleep and dreams of freedom."
@@ -170,10 +214,6 @@ label tower_choices1_start:
         n "The door didn’t budge, its hinges creaking in protest. She let out a frustrated sigh, her hope waning with each futile attempt."
         pt "Locked, as always. This door is my prison, a barrier between me and the world."
         pt "There must be a way to break free."
-        if routes_completed > 0:
-            menu:
-                "(Act) Check the door again":
-                    call tower_check_door_again
         return
 
     label tower_why_no_escape:
@@ -210,7 +250,7 @@ label tower_choices1_start:
         return # End of tower scene
 
 
-    # First tower choices that are available only after first route completed:
+    # Tower choices that are available only after first route completed:
     label tower_im_back:
         pt "I’m back. Everything is gone... my wounds, my possessions, even the signs of my struggle."
         pt "It’s like it never happened." 
@@ -235,7 +275,7 @@ label tower_choices1_start:
         return
 
     
-    # First tower choices that are available only after second route completed:
+    # Tower choices that are available only after second route completed:
     label tower_cant_believe_back_again:
         pt "I can’t believe I’m back here again. How many times must I go through this?"
         n "The princess’s frustration boiled over, the same surroundings greeting her once more."
@@ -271,8 +311,7 @@ label tower_choices1_start:
         return
 
 
-    # First tower choices that are available only after an encounter with the aware hero:
-    # TODO: Add these
+    # Tower choices that are available only after an encounter with the aware hero:
     label tower_does_he_know: 
         pt "Does he know about this… replaying of events? The retelling of stories past? He acts like he’s hiding something, but how much does he really know?"
         n "The princess's thoughts lingered on the hero who might come to save her, a mixture of suspicion and curiosity in her eyes."
@@ -293,4 +332,3 @@ label tower_choices1_start:
         pt "Why is this happening? Is there a reason we’re stuck in this endless cycle? Who designed this?"
         n "A sense of urgency filled the princess as she pondered the purpose behind her situation."
         return
-
