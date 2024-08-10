@@ -19,5 +19,7 @@ label start:
 
     call forest_start
 
+    call cryptic_start
+
     # This ends the game.
     return
