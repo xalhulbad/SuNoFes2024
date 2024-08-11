@@ -144,7 +144,8 @@ label cryptic_start:
         return
 
     label cryptic_what_secrets:
-        n "The stones towered silently, guardians of untold secrets, their surfaces etched with cryptic symbols that seemed to shift and shimmer with every glance. The princess felt an irresistible pull toward them, as if they beckoned her to uncover the mysteries they guarded."
+        n "The stones towered silently, guardians of untold secrets, their surfaces etched with cryptic symbols that seemed to shift and shimmer with every glance."
+        n "The princess felt an irresistible pull toward them, as if they beckoned her to uncover the mysteries they guarded."
         pt "These stones must hold secrets beyond my imagination. But what price will they demand for their revelation?"
         n "She took a tentative step closer, the ground beneath her feet firm yet yielding, as though guiding her to the heart of the circle where knowledge awaited."
         return
@@ -165,7 +166,8 @@ label cryptic_start:
         if v_type == "dml":
             n "The air around the stone circle seemed to grow still, as if the very forest held its breath. A faint, ethereal whisper reached the princess, carrying with it a tale from long ago."
             voice "Once, a man of great intellect delved into the forbidden arts, seeking to harness powers beyond mortal ken. His ambition knew no bounds, for he believed himself destined to reshape the world."
-            voice "Yet, in his quest for greatness, he ignored the signs—the withering leaves, the dying streams—as his unchecked magic drained the forest’s life. Blinded by his own perceived heroism, he cast aside all warnings, seeing only his reflection in the mirror of power."
+            voice "Yet, in his quest for greatness, he ignored the signs—the withering leaves, the dying streams—as his unchecked magic drained the forest’s life."
+            voice "Blinded by his own perceived heroism, he cast aside all warnings, seeing only his reflection in the mirror of power."
             voice "Every day, the forest grew weaker, a silent testament to the cost of his blind ambition. Despite his hubris leaving behind a barren land and a legacy of ruin, he continues to believe in his grand destiny."
             n "The whisper faded, leaving a sense of desolation in its wake. The stones seemed to mourn the loss of vitality, a silent testimony to the cost of hubris and unchecked ambition."
             $ dml_lore_shown = True
@@ -205,10 +207,12 @@ label cryptic_start:
         return
 
     label cryptic_circle_around_stones:
-        n "The princess felt an inexplicable pull as she began to circle the ancient stones, her curiosity urging her to explore every corner of this mysterious place. As she moved around the perimeter, the soft crunch of leaves underfoot seemed to echo in harmony with the subtle hum of magic in the air."
+        n "The princess felt an inexplicable pull as she began to circle the ancient stones, her curiosity urging her to explore every corner of this mysterious place."
+        n "As she moved around the perimeter, the soft crunch of leaves underfoot seemed to echo in harmony with the subtle hum of magic in the air."
         h "These stones seem to be guiding us, leading us somewhere. Do you sense it too?"
         p "Yes, there's a path here, like the stones are pointing us toward something... something important."
-        n "As they continued their path around the circle, the gentle glow of a light caught the princess’s eye. Emerging from behind one of the larger stones stood a small pile of rubble, the remnants of a once majestic stone pillar. Atop the debris sat a glowing gem that seemed to pulse with an inner fire, the final remnant of an area that, for the longest time, bloomed with magic."
+        n "As they continued their path around the circle, the gentle glow of a light caught the princess’s eye. Emerging from behind one of the larger stones stood a small pile of rubble, the remnants of a once majestic stone pillar."
+        n "Atop the debris sat a glowing gem that seemed to pulse with an inner fire, the final remnant of an area that, for the longest time, bloomed with magic."
         p "Look over there, do you see it? That glowing gem on the rubble —it’s unlike anything I’ve ever seen."
         if routes_completed > 0:
             pt "Except not really. This gem again…"
@@ -216,7 +220,8 @@ label cryptic_start:
         p "Perhaps. It feels like it’s alive, humming with power. We need to take a closer look."
         menu:
             "(Act) Examine the glowing gem":
-                n "As the princess examined the glowing gem, its radiant light seemed to draw her in, pulsing with a mysterious energy that hinted at the power it contained. The gem lay cradled atop the pillar, its glow casting intricate patterns on the stone circle around them."
+                n "As the princess examined the glowing gem, its radiant light seemed to draw her in, pulsing with a mysterious energy that hinted at the power it contained."
+                n "The gem lay cradled atop the pillar, its glow casting intricate patterns on the stone circle around them."
                 p "This gem is filled with destructive magic, the kind that we could use in case of any danger. But if we take it, we risk banishment from the kingdom forever."
                 h "It’s true. The kingdom has outlawed magic for generations, fearing its power. Taking it could mean leaving behind everything we've ever known."
                 p "Yet, this power could be exactly what we need to defend ourselves, especially if we encounter the shadowy figure again."
@@ -243,7 +248,8 @@ label cryptic_start:
         return
 
     label cryptic_what_truths_did:
-        n "The princess paused, her gaze sweeping across the circle of stones as if seeing them anew. Each monolith stood as a sentinel, guarding the secrets of ages past, the stories they had shared, and those yet to be revealed. Her heart beat with a rhythm that matched the pulse of magic in the air, a reminder of the wisdom she had glimpsed but not yet grasped."
+        n "The princess paused, her gaze sweeping across the circle of stones as if seeing them anew. Each monolith stood as a sentinel, guarding the secrets of ages past, the stories they had shared, and those yet to be revealed." 
+        n "Her heart beat with a rhythm that matched the pulse of magic in the air, a reminder of the wisdom she had glimpsed but not yet grasped."
         pt "I've been here before, but there’s so much I didn’t see. What truths lie hidden, waiting for me to uncover them?"
         n "The whispers of the forest seemed more urgent now, as if imploring her to delve deeper, to seek out the truths she had missed. Her mind raced with possibilities, the tantalizing promise of answers shimmering just beyond her reach."
         pt "These stones are more than just markers of time; they might hold the key to understanding this place. I must look closer, listen harder."
@@ -260,7 +266,8 @@ label cryptic_start:
         p "These markings... they're like nothing I've ever seen before. They're calling out to be understood, to share their secrets."
         n "The hero stepped closer, peering at the runes with a mix of skepticism and intrigue. He could feel the weight of history in the air, the silent voices of those who had come before echoing around them."
         h "It's like they're telling a story, isn’t it? Maybe a legend or a warning."
-        n "The forest seemed to hold its breath, the rustle of leaves and the song of the wind fading into a stillness that focused all attention on the stones. The engravings shimmered subtly, drawing the princess further into their spell, urging her to delve deeper."
+        n "The forest seemed to hold its breath, the rustle of leaves and the song of the wind fading into a stillness that focused all attention on the stones." 
+        n "The engravings shimmered subtly, drawing the princess further into their spell, urging her to delve deeper."
         
         $ stone_gravings_examined = True
         
@@ -268,7 +275,8 @@ label cryptic_start:
 
     label cryptic_try_to_decipher:
         if can_decipher_runes:
-            n "As the princess focused on the runes, a warm glow enveloped the engravings. The symbols, once mysterious and cryptic, now seemed to unravel their secrets before her eyes, forming words and phrases in her mind. It was as though the stones themselves had awakened, eager to share their long-forgotten tale."
+            n "As the princess focused on the runes, a warm glow enveloped the engravings. The symbols, once mysterious and cryptic, now seemed to unravel their secrets before her eyes, forming words and phrases in her mind."
+            n "It was as though the stones themselves had awakened, eager to share their long-forgotten tale."
             p "Look at this, these runes... I can understand them. They’re telling a story of what this place once was."
             h "Really? What does it say? What happened here?"
             p "It speaks of a time when this area was vibrant, alive with magic that flowed freely to the people of the kingdom. The stones offered their power to those who lived in the kingdom, fostering growth and prosperity."
@@ -276,12 +284,14 @@ label cryptic_start:
             h "It must have been incredible, a true wonder of the kingdom. But what happened to it?"
             n "The symbols shifted, revealing a darker chapter in the story. The air around the princess grew heavy with the weight of past misdeeds, the vibrant colors fading to dull greys as the tale unfolded."
             p "Over time, the kingdom grew greedy. They began to take more than what was offered, exploiting the magic for their own gain. The balance was disrupted, and the stones began to weaken."
-            n "As the princess continued to read, the vision darkened further, showing the stones gradually wearing down, their surfaces eroding under the strain of their abuse. The once-thriving circle became a shadow of its former self, a monument to the consequences of unchecked ambition."
+            n "As the princess continued to read, the vision darkened further, showing the stones gradually wearing down, their surfaces eroding under the strain of their abuse."
+            n "The once-thriving circle became a shadow of its former self, a monument to the consequences of unchecked ambition."
             p "The stones started to crumble, their magic fading as the kingdom's greed consumed them. What was once a place of wonder became a reminder of what was lost."
             h "So that's why it's like this now. The abuse of magic took its toll, leaving behind only these remnants."
             p "Yes. The only magic remaining was that which could only be used for destruction. That must be why the kingdom chose to ban the use of magic."
             h "Agreed. Many outcasts of the kingdom continue to exploit this destructive magic for their own selfish gains. That must be why the stones remain in the state they’re in today."
-            n "The final runes glowed softly, a gentle reminder of the circle's former glory. As the glow of the runes faded, the princess felt a newfound resolve settle within her. The stones had shared their story, and now it was up to her and the hero to ensure that the lessons of the past were not forgotten."
+            n "The final runes glowed softly, a gentle reminder of the circle's former glory. As the glow of the runes faded, the princess felt a newfound resolve settle within her."
+            n "The stones had shared their story, and now it was up to her and the hero to ensure that the lessons of the past were not forgotten."
         else:
             n "The princess approached the stone, running her fingers over the intricate engravings. The runes seemed to shimmer and shift beneath her touch, whispering secrets in a language just beyond her comprehension."
             p "I can't read these runes, but I sense there's a way to understand them. It feels like the answer is close."
@@ -298,7 +308,8 @@ label cryptic_start:
         p "This one seems to be the centerpiece, the source of whatever magic lies within this place. It feels almost... alive."
         h "Do you sense anything from it? Maybe it holds a connection to the other stones."
         p "Yes, it’s like it’s trying to share something with me. I can feel its energy resonating inside."
-        n "She placed her hand gently on the stone's cool surface, feeling a faint vibration that thrummed through her fingertips and into her core. The engravings glowed with an ethereal light, casting soft reflections on her face. For a moment, the world around her faded, and she felt as though she were standing at the edge of a vast ocean of knowledge, its waves lapping at the shore of her understanding."
+        n "She placed her hand gently on the stone's cool surface, feeling a faint vibration that thrummed through her fingertips and into her core. The engravings glowed with an ethereal light, casting soft reflections on her face."
+        n "For a moment, the world around her faded, and she felt as though she were standing at the edge of a vast ocean of knowledge, its waves lapping at the shore of her understanding."
         pt "There's a power here, an ancient wisdom reaching out. I feel like I'm standing at the threshold of something profound."
         p "I can almost sense the stories this stone could tell, the wisdom it has gathered over the centuries."
         h "Do you think it can help us find what we're looking for?"
@@ -310,7 +321,8 @@ label cryptic_start:
         return
 
     label cryptic_i_remember_path:
-        n "The familiar stones loomed before her, each step around the circle echoing with the weight of past decisions. The princess recalled the choices she had made, the path she had walked that had led her back here. A sense of déjà vu clung to her, and yet, the air was thick with possibility, whispering of paths not yet taken."
+        n "The familiar stones loomed before her, each step around the circle echoing with the weight of past decisions. The princess recalled the choices she had made, the path she had walked that had led her back here." 
+        n "A sense of déjà vu clung to her, and yet, the air was thick with possibility, whispering of paths not yet taken."
         pt "I've walked this path before, felt the pull of these stones and their silent guidance. But is there another way, a path I’ve yet to discover?"
         n "She paused, the cool breeze ruffling her hair, carrying with it the faintest hint of the choices she had left unmade. The forest seemed to hold its breath, awaiting her decision with bated anticipation."
         pt "The same choices will lead to the same end, but what if I dare to choose differently? What if the path less taken is the one that leads to freedom?"
@@ -318,7 +330,8 @@ label cryptic_start:
         return
 
     label cryptic_am_i_destined:
-        n "The stones stood tall and silent, sentinels of time watching her with ancient eyes. Each visit to this sacred circle felt both new and hauntingly familiar, a testament to the endless cycle she found herself trapped within. The air hummed with a quiet energy, a reminder of the choices she had made and the consequences they had wrought."
+        n "The stones stood tall and silent, sentinels of time watching her with ancient eyes. Each visit to this sacred circle felt both new and hauntingly familiar, a testament to the endless cycle she found herself trapped within."
+        n "The air hummed with a quiet energy, a reminder of the choices she had made and the consequences they had wrought."
         pt "I keep getting pulled back, over and over, a constant in the ever-repeating story of my life. Am I fated to wander this loop until I finally choose correctly?"
         n "A breeze rustled through the trees, carrying with it whispers of times gone by, echoes of her previous decisions. She felt the weight of her past choices pressing down on her, each one a reminder of paths taken and the results they yielded."
         pt "Is this a test, a puzzle to be solved? Must I navigate these choices until I finally unlock the secret of escaping this endless cycle?"
@@ -326,7 +339,8 @@ label cryptic_start:
         return
 
     label cryptic_will_i_find:
-        n "The circle of stones surrounded her, a timeless audience to her journey. Each visit brought with it a new sense of determination, a fresh resolve to seek the answers that had so far eluded her. The air crackled with potential, as if the very atmosphere was holding its breath, waiting for her to uncover the truth."
+        n "The circle of stones surrounded her, a timeless audience to her journey. Each visit brought with it a new sense of determination, a fresh resolve to seek the answers that had so far eluded her."
+        n "The air crackled with potential, as if the very atmosphere was holding its breath, waiting for her to uncover the truth."
         pt "Every time I stand here, I feel the weight of unanswered questions pressing down on me. Will this be the time I finally discover the truth?"
         n "The forest seemed to lean closer, the rustling leaves a gentle encouragement to press forward, to dig deeper. The runes on the stones glimmered faintly, teasing her with glimpses of the knowledge they held."
         pt "I’ve walked this path before, seen these stones, heard their whispers. But every visit just creates more and more questions."
