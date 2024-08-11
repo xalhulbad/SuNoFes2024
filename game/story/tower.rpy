@@ -75,7 +75,7 @@ label tower_start:
 
                 "(Act) Sleep.": # Progresses the game
                     $ tower_choices1_seen.remove("(Act) Sleep.") 
-                    # For some reason renpy adds this automatically which we don't want here
+                    # renpy automatically adds this to seen set which we don't want here
 
                     jump tower_go_to_sleep # No call because we don't want to return
 
