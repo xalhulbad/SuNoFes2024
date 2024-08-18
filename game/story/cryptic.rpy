@@ -3,7 +3,6 @@
 # Default variables
 default cryptic_choices1_seen = set()
 default cryptic_choices1_chosen = 0
-default gem_taken = None
 
 # Flags for unlockable options
 default dml_lore_shown = False
@@ -372,7 +371,7 @@ label cryptic_start:
         n "The stones vibrated subtly, their runes glowing with a renewed brilliance, as if expressing silent approval. The forest seemed to come alive, the leaves rustling in a harmonious melody, welcoming the princess’s choice."
         n "The princess continued on her journey with the hero, content with her decision to take the magical gem with her."
 
-        $ gem_taken = True
+        $ chose_magic = True
         return
 
     label cryptic_leave_gem:
@@ -385,5 +384,5 @@ label cryptic_start:
         n "As they turned away from the gem, a cold, still silence settled over the clearing. The air grew heavy, the forest’s quiet discontent noticeable, as though it mourned the loss of a connection that could have been."
         n "The journey ahead loomed, full of uncertainty, but as the princess continued on her way home with the hero, she felt a quiet assurance in her decision to uphold the laws she’d grown to respect."
 
-        $ gem_taken = False
+        $ chose_magic = False
         return

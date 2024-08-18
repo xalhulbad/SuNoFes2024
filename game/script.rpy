@@ -4,6 +4,7 @@
 default routes_completed = 0
 default aware_hero_met = False
 default romance = 50
+default chose_magic = None
 
 
 # The game starts here.
