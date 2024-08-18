@@ -365,7 +365,10 @@ label cryptic_start:
         n "With determination in her eyes, the princess reached out and grasped the gem, feeling its warmth spread through her fingers and into her core. The stone pulsed with life, an ancient energy intertwining with her very being."
         p "I’ll take the risk. This power might be the only way to get home safely, especially if the shadowy figure we encountered earlier returns."
         h "Then we must use it wisely. The kingdom might see our need and forgive us if it means defeating a greater evil."
-        n "As the gem settled into her grasp, its glow softened to a gentle hum, a steady promise of protection and strength. The princess felt a sense of resolve, ready to face whatever lay ahead with this newfound power."
+        n "As the gem settled into her grasp, its glow softened to a gentle hum, a steady promise of protection and strength."
+        n "A vision entered the minds of her and the hero, showing them all sorts of dark magic that could be used with the power of the gem."
+        n "As the vision faded, the princess felt a sense of resolve, ready to face whatever lay ahead with this newfound power."
+        n "With the power of the gem, she believed they could overcome any threat they would face in the forest."
         n "The stones vibrated subtly, their runes glowing with a renewed brilliance, as if expressing silent approval. The forest seemed to come alive, the leaves rustling in a harmonious melody, welcoming the princess’s choice."
         n "The princess continued on her journey with the hero, content with her decision to take the magical gem with her."
 
