@@ -52,40 +52,34 @@ label forest_start:
                 # Choices available from the start:
                 "(Act) Who are you?":
                     call forest_who_are_you
-                    $ forest_choices1_seen.add("(Act) Who are you?")
                     $ forest_asked_who_are_you = True
                     jump forest_choices1
 
                 "(Act) What is your quest?" if forest_asked_who_are_you:
                     call forest_what_is_your_quest
-                    $ forest_choices1_seen.add("(Act) What is your quest?")
                     jump forest_choices1
                 
                 "(Act) Why did you come to rescue me?":
                     call forest_why_did_you_come
-                    $ forest_choices1_seen.add("(Act) Why did you come to rescue me?")
                     $ forest_asked_why_did_you_come = True
                     jump forest_choices1
 
                 "(Act) How long have I been trapped?" if forest_asked_why_did_you_come:
                     call forest_how_long_trapped
-                    $ forest_choices1_seen.add("(Act) How long have I been trapped?")
                     jump forest_choices1
 
                 "(Act) Is it safe outside the tower?":
                     call forest_is_it_safe
-                    $ forest_choices1_seen.add("(Act) Is it safe outside the tower?")
                     $ forest_asked_is_it_safe = True
                     jump forest_choices1
 
                 "(Act) Where are we headed now?" if forest_asked_is_it_safe:
                     call forest_where_are_we_headed
-                    $ forest_choices1_seen.add("(Act) Where are we headed now?")
                     jump forest_choices1
 
                 "(Act) Proceed into the forest": # Progresses the game
                     $ forest_choices1_seen.remove("(Act) Proceed into the forest") 
-                    # For some reason renpy adds this automatically which we don't want here
+                    # renpy automatically adds this to seen set which we don't want here
 
                     jump forest_proceed_into_forest
 
@@ -93,31 +87,26 @@ label forest_start:
                 # Choices available after first route completed:
                 "​​(Act) Have we done this before?" if routes_completed > 0:
                     call forest_have_we_done_this
-                    $ forest_choices1_seen.add("​​(Act) Have we done this before?")
                     $ forest_asked_have_we_done_this = True
                     jump forest_choices1
 
                 "(Act) Why does this feel familiar?" if routes_completed > 0 and forest_asked_have_we_done_this:
                     call forest_why_familiar
-                    $ forest_choices1_seen.add("(Act) Why does this feel familiar?")
                     $ forest_asked_why_familiar = True
                     jump forest_choices1
 
                 "(Act) Can we change what happens next?" if routes_completed > 0 and forest_asked_why_familiar:
                     call forest_can_we_change
-                    $ forest_choices1_seen.add("(Act) Can we change what happens next?")
                     jump forest_choices1
 
                 "(Act) Do you remember anything unusual?" if routes_completed > 0:
                     call forest_remember_unusual
-                    $ forest_choices1_seen.add("(Act) Do you remember anything unusual?")
                     jump forest_choices1
 
 
                 # Choices available after second route completed:
                 "(Act) How many times has this story replayed?" if routes_completed > 1:
                     call forest_how_many_times
-                    $ forest_choices1_seen.add("(Act) How many times has this story replayed?")
                     jump forest_choices1
 
 
