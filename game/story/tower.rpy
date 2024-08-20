@@ -33,9 +33,9 @@ label tower_start:
                 # Tells renpy to hide choices in this set (prevents same option showing up twice)
 
                 # Choices available from the start:
-                "(Thought) It’s been so long…":
+                "(Thought) It's been so long...":
                     call tower_so_long
-                    $ tower_choices1_seen.add("(Thought) It’s been so long…")
+                    $ tower_choices1_seen.add("(Thought) It's been so long...")
                     jump tower_choices1
                     
                 "(Act) Inspect the dusty room":
@@ -77,9 +77,9 @@ label tower_start:
                     $ tower_choices1_seen.add("(Thought) What lies beyond these walls?")
                     jump tower_choices1
 
-                "(Thought) What secrets does this tower hold…":
+                "(Thought) What secrets does this tower hold...":
                     call tower_what_secrets
-                    $ tower_choices1_seen.add("(Thought) What secrets does this tower hold…")
+                    $ tower_choices1_seen.add("(Thought) What secrets does this tower hold...")
                     jump tower_choices1
 
                 "(Act) Sleep.": # Progresses the game
@@ -90,9 +90,9 @@ label tower_start:
 
 
                 # Choices available after first route completed:
-                "(Thought) I’m back." if routes_completed > 0:
+                "(Thought) I'm back." if routes_completed > 0:
                     call tower_im_back
-                    $ tower_choices1_seen.add("(Thought) I’m back.")
+                    $ tower_choices1_seen.add("(Thought) I'm back.")
                     jump tower_choices1
                 
                 "(Act) Check the door again" if routes_completed > 0 and tower_attempted_open_door:
@@ -105,22 +105,22 @@ label tower_start:
                     $ tower_choices1_seen.add("(Thought) Was it all a dream?")
                     jump tower_choices1
 
-                "(Thought) I remember being rescued…" if routes_completed > 0:
+                "(Thought) I remember being rescued..." if routes_completed > 0:
                     call tower_remember_rescued
-                    $ tower_choices1_seen.add("(Thought) I remember being rescued…")
+                    $ tower_choices1_seen.add("(Thought) I remember being rescued...")
                     jump tower_choices1
 
                 
                 # Choices available after second route completed:
-                "(Thought) I can’t believe I’m back here again." if routes_completed > 1:
+                "(Thought) I can't believe I'm back here again." if routes_completed > 1:
                     call tower_cant_believe_back_again
-                    $ tower_choices1_seen.add("(Thought) I can’t believe I’m back here again.")
+                    $ tower_choices1_seen.add("(Thought) I can't believe I'm back here again.")
                     $ tower_chose_cant_believe = True
                     jump tower_choices1
                 
-                "(Thought) Could my emotions be causing this… anomaly?" if routes_completed > 1 and tower_chose_cant_believe:
+                "(Thought) Could my emotions be causing this... anomaly?" if routes_completed > 1 and tower_chose_cant_believe:
                     call tower_emotions_causing
-                    $ tower_choices1_seen.add("(Thought) Could my emotions be causing this… anomaly?")
+                    $ tower_choices1_seen.add("(Thought) Could my emotions be causing this... anomaly?")
                     jump tower_choices1
 
                 "(Thought) Is there a lesson to be learned?" if routes_completed > 1:
@@ -139,9 +139,9 @@ label tower_start:
                     $ tower_choices1_seen.add("(Thought) Maybe the tower itself is enchanted.")
                     jump tower_choices1
 
-                "(Thought) Blending realities…" if routes_completed > 1:
+                "(Thought) Blending realities..." if routes_completed > 1:
                     call tower_blending_realities
-                    $ tower_choices1_seen.add("(Thought) Blending realities…")
+                    $ tower_choices1_seen.add("(Thought) Blending realities...")
                     jump tower_choices1
 
 
@@ -181,7 +181,7 @@ label tower_start:
 
     # Tower choices that are available from the start:
     label tower_so_long:
-        pt "Another night in this forsaken place. How long has it really been, waiting for a rescue that seems to never come? Waiting for a way out of this…"
+        pt "Another night in this forsaken place. How long has it really been, waiting for a rescue that seems to never come? Waiting for a way out of this..."
         n "As the moon climbed higher in the sky, its silvery light bathed the tower in an ethereal glow. The princess took a deep breath. She knew that her hero would arrive soon, bringing with him what hoped to be a final escape."
         pt "I will be ready."
         return
@@ -200,26 +200,26 @@ label tower_start:
     label tower_read_old_book:
         n "An old, leather-bound book lay on the table, its pages yellowed with age. The princess opened it carefully, the musty scent of old paper filling the air."
         n "The book was filled with tales of bravery and adventure, stories of heroes and heroines who faced insurmountable odds."
-        pt "These stories... they all speak of courage and destiny. Maybe there’s something here, some clue to help me find my own path."
+        pt "These stories... they all speak of courage and destiny. Maybe there's something here, some clue to help me find my own path."
         return
 
     label tower_sit_bed:
         n "The bed creaked softly as she sat down, the old wood groaning. She ran her hand over the rough blanket, her thoughts drifting to nights of restless sleep and dreams of freedom."
-        pt "This bed has held me through countless nights. It’s a reminder of my captivity but also a testament to my endurance."
+        pt "This bed has held me through countless nights. It's a reminder of my captivity but also a testament to my endurance."
         pt "I won't let this tower be my end."
         return
 
     label tower_attempt_open_door:
         n "The princess approached the heavy wooden door, its surface worn and scratched from countless attempts to open it. She grasped the iron handle, pulling with all her might."
-        n "The door didn’t budge, its hinges creaking in protest. She let out a frustrated sigh, her hope waning with each futile attempt."
+        n "The door didn't budge, its hinges creaking in protest. She let out a frustrated sigh, her hope waning with each futile attempt."
         pt "Locked, as always. This door is my prison, a barrier between me and the world."
         pt "There must be a way to break free."
         return
 
     label tower_why_no_escape:
         n "The oppressive silence of the tower echoed her thoughts, each one a plea for freedom that went unanswered. The weight of her captivity felt suffocating."
-        pt "No matter where I turn, there’s no escape. These walls, this door, this bed... they all serve to remind me that I’m trapped."
-        pt "Why can’t I find a way out?" 
+        pt "No matter where I turn, there's no escape. These walls, this door, this bed... they all serve to remind me that I'm trapped."
+        pt "Why can't I find a way out?" 
         return
 
     label tower_what_secrets:
@@ -230,7 +230,7 @@ label tower_start:
 
     label tower_what_lies_beyond_walls:
         n "The princess's gaze drifted towards the narrow window, her mind wandering to the world outside. She imagined the vast forests, the bustling villages, and the open skies."
-        pt "What is out there, beyond these confining walls? A life I’ve never known, a journey of discovery..."
+        pt "What is out there, beyond these confining walls? A life I've never known, a journey of discovery..."
         return
 
     label tower_go_to_sleep:
@@ -242,7 +242,7 @@ label tower_start:
             pt "I'll see you soon..."
             pt "my hero."
         elif aware_hero_met:
-            pt "Hero…"
+            pt "Hero..."
             pt "I will find out soon enough..."
         elif routes_completed >= 1:
             pt "Here we go again."
@@ -252,9 +252,9 @@ label tower_start:
 
     # Tower choices that are available only after first route completed:
     label tower_im_back:
-        pt "I’m back. Everything is gone... my wounds, my possessions, even the signs of my struggle."
-        pt "It’s like it never happened." 
-        n "The princess’s eyes widened as she took in her surroundings, the cold and unyielding walls of the tower greeting her once more."
+        pt "I'm back. Everything is gone... my wounds, my possessions, even the signs of my struggle."
+        pt "It's like it never happened." 
+        n "The princess's eyes widened as she took in her surroundings, the cold and unyielding walls of the tower greeting her once more."
         return
 
     label tower_check_door_again:
@@ -277,18 +277,18 @@ label tower_start:
     
     # Tower choices that are available only after second route completed:
     label tower_cant_believe_back_again:
-        pt "I can’t believe I’m back here again. How many times must I go through this?"
-        n "The princess’s frustration boiled over, the same surroundings greeting her once more."
+        pt "I can't believe I'm back here again. How many times must I go through this?"
+        n "The princess's frustration boiled over, the same surroundings greeting her once more."
         return
 
     label tower_emotions_causing:
-        pt "Could my emotions be influencing the loop? Do I need to feel… a certain way to break free?"
+        pt "Could my emotions be influencing the loop? Do I need to feel... a certain way to break free?"
         n "She pondered whether her own feelings might hold the key to her predicament."
         return
 
     label tower_lesson_to_be_learned:
         pt "Is this all merely a lesson? Is escape simply a reward?"
-        pt "Maybe I’m missing something crucial."
+        pt "Maybe I'm missing something crucial."
         n "The princess considered that her imprisonment might be a test, teaching her something important about herself and her fate."
         return
     
@@ -299,28 +299,28 @@ label tower_start:
         return
 
     label tower_enchanted:
-        pt "Could it be that there is a spell binding me here…"
+        pt "Could it be that there is a spell binding me here..."
         n "The princess glanced around at the ancient stones, considering the possibility of hidden magic within the walls."
         return
 
     label tower_blending_realities:
         pt "No scratches, no bruises... nothing to show for my struggles."
         pt "How many times have I been through this?"
-        pt "How long has it… truly been?"
+        pt "How long has it... truly been?"
         n "The tower stood silent and unchanged, oblivious to the princess's inner turmoils."
         return
 
 
     # Tower choices that are available only after an encounter with the aware hero:
     label tower_does_he_know: 
-        pt "Does he know about this… replaying of events? The retelling of stories past? He acts like he’s hiding something, but how much does he really know?"
+        pt "Does he know about this... replaying of events? The retelling of stories past? He acts like he's hiding something, but how much does he really know?"
         n "The princess's thoughts lingered on the hero who might come to save her, a mixture of suspicion and curiosity in her eyes."
         return
     
     label tower_way_out: 
         pt "What if he knows the way out? Why is he still here?"
         pt "There is something he knows. He must tell me."
-        n "The princess’s resolve hardened."
+        n "The princess's resolve hardened."
         return
 
     label tower_who_is_he: 
@@ -329,6 +329,6 @@ label tower_start:
         return
 
     label tower_why_is_this_happening: 
-        pt "Why is this happening? Is there a reason we’re stuck in this endless cycle? Who designed this?"
+        pt "Why is this happening? Is there a reason we're stuck in this endless cycle? Who designed this?"
         n "A sense of urgency filled the princess as she pondered the purpose behind her situation."
         return
