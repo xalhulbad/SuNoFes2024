@@ -30,7 +30,7 @@ label forest_start:
         p "It's so beautiful... I almost forgot what the world looks like."
     elif routes_completed == 1: # Second route
         pt "The same morning, the same hero, the same scene."
-        pt "What’s going on? It’s like the story has just replayed itself."
+        pt "What's going on? It's like the story has just replayed itself."
     else: # Any route after the second
         p "Ah, the forest. It really is beautiful."
         pt "But with beauty comes pains. The pain of being trapped."
@@ -131,13 +131,13 @@ label forest_start:
 
     label forest_how_long_trapped:
         h "I... don't really know, but it must have felt like forever."
-        p "It sure has. It couldn’t have been that long, but my memory is failing me. Doesn’t matter, I’m so glad you’re here."
+        p "It sure has. It couldn't have been that long, but my memory is failing me. Doesn't matter, I'm so glad you're here."
         return
 
     label forest_where_are_we_headed:
         h "I thought we could go back to the kingdom through the forest. It's beautiful and safe, I think."
-        p "It’s probably the better path back to the kingdom. Do you know your way?"
-        h "Not really. Ha... I really should though, shouldn’t I?"
+        p "It's probably the better path back to the kingdom. Do you know your way?"
+        h "Not really. Ha... I really should though, shouldn't I?"
         h "We can discover it together."
         return
 
@@ -149,8 +149,8 @@ label forest_start:
 
     label forest_is_it_safe:
         h "I believe it is, especially if we're together. I'll do my best to keep us safe."
-        p "That’s comforting. Is there anything we should watch out for?"
-        h "I've heard there are wild animals, but we can be careful. Let’s just try not to run into whatever locked you up."
+        p "That's comforting. Is there anything we should watch out for?"
+        h "I've heard there are wild animals, but we can be careful. Let's just try not to run into whatever locked you up."
         h "One step at a time."
         return
 
@@ -164,16 +164,16 @@ label forest_start:
         n "The princess and the hero stepped forward in the forest, but something was off. A bad omen. An eerie silence enveloped them."
         n "A tree branch cracked under the foot of the Princess. A flock of birds scattered from the canopy above at the sudden noise."
         n "The hero narrowed his eyes and scanned his surroundings. His hand drifted towards the numerous weapons he had equipped."
-        n "Suddenly, a shadowy figure emerged from the darkness, cloaked in a tattered robe. Their face was hidden, and their voice was a muffled hiss that sent shivers down the princess’s spine."
+        n "Suddenly, a shadowy figure emerged from the darkness, cloaked in a tattered robe. Their face was hidden, and their voice was a muffled hiss that sent shivers down the princess's spine."
         v "So, the princess dares to leave her tower. How brave... or foolish."
-        n "The pair’s eyes locked on to the figure."
+        n "The pair's eyes locked on to the figure."
 
         if routes_completed == 0:
             pt "Who is this? Their presence feels... menacing."
             pt "Is this the one responsible for my captivity? Maybe I can get some answers."
             p "Who are you? Why are you hiding in the shadows?"
         elif routes_completed == 1:
-            pt "This figure once again. Looks like this hasn’t changed either."
+            pt "This figure once again. Looks like this hasn't changed either."
             p "You. We meet again."
             n "The hero glanced at the princess with a concerned look."
         else:
@@ -197,13 +197,13 @@ label forest_start:
 
     label forest_why_familiar:
         h "I'm not sure, but maybe it's a good thing. We can trust each other, right?"
-        pt "Is this fate’s cruel trick?"
+        pt "Is this fate's cruel trick?"
         p "Yes, trust. It's something I haven't felt in a long time."
         h "Then let's build on that. We'll figure things out together."
         return
 
     label forest_can_we_change:
-        h "I’m not too sure what you mean, but we will carve our own future. I'm here with you, whatever comes."
+        h "I'm not too sure what you mean, but we will carve our own future. I'm here with you, whatever comes."
         pt "The story has been replayed. What is happening?"
         p "We'll face whatever comes. We must."
         return
@@ -220,7 +220,7 @@ label forest_start:
     label forest_how_many_times:
         h "I don't understand. This is the first time I've come for you."
         pt "If only you knew the truth."
-        p "No, I’m pretty sure we've met before, over and over."
+        p "No, I'm pretty sure we've met before, over and over."
         h "Maybe that's a sign. Maybe we're destined to help each other."
         return
 
@@ -608,9 +608,9 @@ label villain_encounter:
             "(Act) Strike first":
                 n "The hero made the first move, charging forward with his sword raised high. The princess followed closely behind, determination etched on her face." 
                 h "Now! We strike first!" 
-                n "The figure’s eyes gleamed with malevolent delight as the hero closed the distance. With a flick of his wrist, a dark, crackling energy began to form around his hands." 
+                n "The figure's eyes gleamed with malevolent delight as the hero closed the distance. With a flick of his wrist, a dark, crackling energy began to form around his hands." 
                 dml "Fools. You dare to challenge me?" 
-                n "The hero swung his sword, aiming for the figure’s midsection, but the Dark Magic Lord moved with unnatural speed, deflecting the blow with a shield of dark magic." 
+                n "The hero swung his sword, aiming for the figure's midsection, but the Dark Magic Lord moved with unnatural speed, deflecting the blow with a shield of dark magic." 
                 n "The princess aimed her bow and fired an arrow, but it disintegrated mid-air as it approached the Dark Magic Lord, his laugh echoing through the forest." 
                 dml "You are nothing against my power. Witness the true ruler of this forest!" 
                 n "The Dark Magic Lord raised his hands, and tendrils of dark magic shot out, wrapping around the hero and lifting him off the ground. The hero struggled, but the dark energy was too strong." 
@@ -1142,7 +1142,7 @@ label villain_encounter:
                 dml "You are formidable, but you will not defeat me. This forest bends to my will, and you are merely insects in my grand design."
                 n "The hero and princess regrouped, panting and worn, but their resolve unbroken."
                 h "We need a new plan. He's too powerful to face directly."
-                p "Agreed. We need to find a way to disrupt his control over the forest, but for now, we aren’t prepared to take him on."
+                p "Agreed. We need to find a way to disrupt his control over the forest, but for now, we aren't prepared to take him on."
                 n "As they ran, they heard a final, mocking laugh. The Dark Magic Lord disappeared into the shadows, his presence lingering like a dark cloud over their path."
                 dml "Run, little mice. The forest is mine, and you will never escape my grasp."
                 n "As they fled deeper into the forest, the encounter with the Dark Magic Lord haunted them, a chilling reminder of the power they faced and the dangers that lay ahead. They knew they had to find a way to break his hold over the forest, or their journey would end in disaster."
