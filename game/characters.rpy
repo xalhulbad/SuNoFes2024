@@ -22,3 +22,6 @@ define fh = Character("Fallen Hero", what_color="#646464")
 define hu = Character("The Hunter", what_color="#646464")
 define dml = Character("Dark Magic Lord", what_color="#646464")
 define vs = Character("Vengeful Spirit", what_color="#646464")
+
+# Voice (for cryptic stonehenge)
+define voice = Character("Voice", what_color="#FFFFFF")
