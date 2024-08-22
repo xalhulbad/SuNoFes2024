@@ -39,10 +39,10 @@ label hu_start:
     hu "You've ventured deep into the forest again. It seems you haven't learned your lesson."
 
     if hu_times_gotten == 1:
-        pt "The Hunter again… I was hoping we wouldn't have to run into him a second time."
+        pt "The Hunter again... I was hoping we wouldn't have to run into him a second time."
     
     elif hu_times_gotten == 2:
-        pt "Another encounter with the hunter… Will things go differently this time?"
+        pt "Another encounter with the hunter... Will things go differently this time?"
 
     else:
         pt "Let's just get this over with."
@@ -98,7 +98,7 @@ label hu_start:
                 jump hu_choices_1
 
 
-            "(Speak) Why can’t you just let us pass?" if not hu_chose_why_cant_let_us_pass:
+            "(Speak) Why can't you just let us pass?" if not hu_chose_why_cant_let_us_pass:
                 $ hu_chose_why_cant_let_us_pass = True
                 call hu_why_cant_let_us_pass
                 jump hu_choices_1
@@ -170,7 +170,7 @@ label hu_start:
                 jump hu_choices_2_1
 
 
-            "(Speak) Why can’t you just let us pass?" if not hu_chose_why_cant_let_us_pass:
+            "(Speak) Why can't you just let us pass?" if not hu_chose_why_cant_let_us_pass:
                 $ hu_chose_why_cant_let_us_pass = True
                 call hu_why_cant_let_us_pass
                 jump hu_choices_2_1
@@ -239,7 +239,7 @@ label hu_start:
                 jump hu_choices_2_2
 
 
-            "(Speak) Why can’t you just let us pass?" if not hu_chose_why_cant_let_us_pass:
+            "(Speak) Why can't you just let us pass?" if not hu_chose_why_cant_let_us_pass:
                 $ hu_chose_why_cant_let_us_pass = True
                 call hu_why_cant_let_us_pass
                 jump hu_choices_2_2
@@ -575,8 +575,8 @@ label hu_start:
         return
 
     label hu_why_cant_let_us_pass:
-        p "Why can’t you just let us pass? We’re not here to harm the forest."
-        n "The Hunter’s expression darkened, his grip tightening on his weapon."
+        p "Why can't you just let us pass? We're not here to harm the forest."
+        n "The Hunter's expression darkened, his grip tightening on his weapon."
         hu "Let you pass? So you can return to your kingdom and bring others here, to exploit what remains pure?"
         n "No. The forest has suffered enough at the hands of your kind. I will not allow you to defile it further. Your journey ends here."
 
@@ -584,7 +584,7 @@ label hu_start:
 
     label hu_have_you_always_been_alone:
         p "Have you always been alone out here?"
-        n "The Hunter’s expression briefly softened, a hint of something unspoken in his gaze."
+        n "The Hunter's expression briefly softened, a hint of something unspoken in his gaze."
         hu "Alone? Perhaps. But solitude is a small price to pay for the peace this forest offers."
         hu "I walked away from the kingdom long ago, abandoning the lies they told. Here, I found purpose, even if it meant leaving everything behind."
 
@@ -593,26 +593,26 @@ label hu_start:
     label hu_how_long_been_here:
         p "How long have you been in this forest?"
         n "The Hunter seemed to ponder the question for a moment before answering."
-        hu "Time... it’s lost its meaning here. I have been here long enough to see the forest grow and change, long enough to witness the kingdom’s rise and fall. The forest has become my life, and I will remain here until my last breath."
+        hu "Time... it's lost its meaning here. I have been here long enough to see the forest grow and change, long enough to witness the kingdom's rise and fall. The forest has become my life, and I will remain here until my last breath."
 
         return
 
     label hu_why_didnt_chase_us_before:
         p "Why didn't you chase us before? You could have stopped us then."
-        n "The Hunter’s gaze darkened, his expression unreadable as he responded."
+        n "The Hunter's gaze darkened, his expression unreadable as he responded."
         hu "I thought you were different, that perhaps you were not like the others. I saw something in you—a potential to walk away, to leave this forest unscathed and in peace. So I let you go, hoping you would not return."
-        n "The Hunter’s voice grew colder, his anger barely restrained."
-        hu "But you proved me wrong. You ventured to the sacred place—a place where no outsider should tread. By doing so, you’ve shown your true nature, that you cannot be trusted."
-        hu "I will not make the same mistake twice. You’ve crossed a line, and I will not allow you to leave this forest alive."
+        n "The Hunter's voice grew colder, his anger barely restrained."
+        hu "But you proved me wrong. You ventured to the sacred place—a place where no outsider should tread. By doing so, you've shown your true nature, that you cannot be trusted."
+        hu "I will not make the same mistake twice. You've crossed a line, and I will not allow you to leave this forest alive."
 
         return
 
     label hu_we_went_by_mistake:
-        p "We didn’t mean to go there! It was a mistake. We meant no harm!"
-        n "The Hunter’s eyes narrowed, his expression unyielding as he responded."
-        hu "A mistake? Perhaps. But intent matters little now. The fact remains that you’ve seen the sacred place. Its power is beyond your understanding, and even a fleeting glimpse could tempt you to exploit it."
-        n "The Hunter’s voice hardened, filled with a deep-seated resolve."
-        hu "Whether you meant harm or not, you’ve been exposed to something that should remain untouched by human hands. I cannot risk letting you leave, knowing what you’ve seen."
+        p "We didn't mean to go there! It was a mistake. We meant no harm!"
+        n "The Hunter's eyes narrowed, his expression unyielding as he responded."
+        hu "A mistake? Perhaps. But intent matters little now. The fact remains that you've seen the sacred place. Its power is beyond your understanding, and even a fleeting glimpse could tempt you to exploit it."
+        n "The Hunter's voice hardened, filled with a deep-seated resolve."
+        hu "Whether you meant harm or not, you've been exposed to something that should remain untouched by human hands. I cannot risk letting you leave, knowing what you've seen."
         hu "The magic of the forest is not yours to wield, and I cannot afford to let you live with that knowledge. I must protect the forest, even if it means ending your lives."
 
         return
