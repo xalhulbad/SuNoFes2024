@@ -1,3 +1,5 @@
+# Contains the code associated with portion of the game related to the "dark magic lord" second villain encounter.
+
     # Level 1 of choice tree
     label dml_choices_1:
         # Initial branch

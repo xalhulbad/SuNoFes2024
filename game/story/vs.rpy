@@ -1,3 +1,5 @@
+# Contains the code associated with portion of the game related to the "vengeful spirit" second villain encounter.
+
     # Level 1 of choice tree
     label vs_choices_1:
         # Initial branch
