@@ -14,7 +14,7 @@ default forest_asked_why_familiar = False
 
 
 label forest_start:
-    scene bg blackscreen
+    scene bg blackscreen with dissolve
 
     "{i}{color=#808080}Rap rap rap.{/i}{/color}"
 
@@ -22,7 +22,7 @@ label forest_start:
     h "Princess, it's time to leave. Come with me."
     n "The princess, heart pounding, stepped forward. She took the hero's hand, feeling a comforting warmth."
 
-    scene bg forest with fade
+    scene bg Forest1 with fade
 
     n "As they emerged out of the tower, sunlight bathed them. The sky was a brilliant blue, and the forest ahead was lush and green. Birds sang from the treetops, and a gentle breeze rustled the leaves."
 
@@ -161,6 +161,7 @@ label forest_start:
         return
 
     label forest_proceed_into_forest:
+        scene bg Forest2
         n "The princess and the hero stepped forward in the forest, but something was off. A bad omen. An eerie silence enveloped them."
         n "A tree branch cracked under the foot of the Princess. A flock of birds scattered from the canopy above at the sudden noise."
         n "The hero narrowed his eyes and scanned his surroundings. His hand drifted towards the numerous weapons he had equipped."
