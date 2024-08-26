@@ -1,13 +1,59 @@
 # Contains the code associated with portion of the game related to the "vengeful spirit" second villain encounter.
 
+# Default Variables
+
+
+# Flags for unlockable options
+
+default vs_chose_who_are_you = False
+default vs_chose_why_do_you_seek = False
+default vs_chose_can_you_ever = False
+default vs_chose_what_do_you = False
+default vs_chose_why_do_you_blame = False
+default vs_chose_isnt_there_a = False
+default vs_chose_why_cant_you = False
+default vs_chose_do_you_not = False
+default vs_chose_cant_you_find = False
+default vs_chose_what_will_you = False
+default vs_chose_will_your_vengeance = False
+default vs_chose_what_then = False
+
+label vs_who_are_you:
+    return
+label vs_why_do_you_seek:
+    return
+label vs_can_you_ever:
+    return
+label vs_what_do_you:
+    return
+label vs_why_do_you_blame:
+    return
+label vs_isnt_there_a:
+    return
+label vs_why_cant_you:
+    return
+label vs_do_you_not:
+    return
+label vs_cant_you_find:
+    return
+label vs_what_will_you:
+    return
+label vs_will_your_vengeance:
+    return
+label vs_what_then:
+    return
+
+
+label vs_start:
+
     # Level 1 of choice tree
     label vs_choices_1:
         # Initial branch
         menu:
-            "(Act) Prepare for combat":
+            "":
                 jump vs_choices_2_1
 
-            "(Act) Try to reason with him":
+            "":
                 jump vs_choices_2_2
 
 

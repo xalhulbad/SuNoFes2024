@@ -1,13 +1,58 @@
 # Contains the code associated with portion of the game related to the "femme fatale" second villain encounter.
 
+# Default Variables
+
+
+# Flags for unlockable options
+default ff_chose_who_are_you = False
+default ff_chose_why_doing_this = False
+default ff_chose_what_you_gain = False
+default ff_chose_why_enjoy_manipulating = False
+default ff_chose_isnt_there_more = False
+default ff_chose_do_you_not = False
+default ff_chose_how_did_you = False
+default ff_chose_was_there_ever = False
+default ff_chose_do_you_think = False
+default ff_chose_what_do_you = False
+default ff_chose_is_this_just = False
+default ff_chose_when_will_it = False
+
+label ff_who_are_you:
+    return
+label ff_why_doing_this:
+    return
+label ff_what_you_gain:
+    return
+label ff_why_enjoy_manipulating:
+    return
+label ff_isnt_there_more:
+    return
+label ff_do_you_not:
+    return
+label ff_how_did_you:
+    return
+label ff_was_there_ever:
+    return
+label ff_do_you_think:
+    return
+label ff_what_do_you:
+    return
+label ff_is_this_just:
+    return
+label ff_when_will_it:
+    return
+
+
+label ff_start:
+
     # Level 1 of choice tree
     label ff_choices_1:
         # Initial branch
         menu:
-            "(Act) Prepare for combat":
+            "":
                 jump ff_choices_2_1
 
-            "(Act) Try to reason with him":
+            "":
                 jump ff_choices_2_2
 
 

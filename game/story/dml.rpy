@@ -1,13 +1,60 @@
 # Contains the code associated with portion of the game related to the "dark magic lord" second villain encounter.
 
+# Default Variables
+
+
+# Flags for unlockable options
+
+default dml_chose_who_are_you = False
+default dml_chose_why_do_you = False
+default dml_chose_what_do_you = False
+default dml_chose_how_did_you = False
+default dml_chose_what_drives_your = False
+default dml_chose_do_you_not = False
+default dml_chose_what_is_your = False
+default dml_chose_do_you_really = False
+default dml_chose_how_do_you = False
+default dml_chose_why_cant_you = False
+default dml_chose_is_there_nothing = False
+default dml_chose_what_would_happen = False
+
+label dml_who_are_you:
+    return
+label dml_why_do_you:
+    return
+label dml_what_do_you:
+    return
+label dml_how_did_you:
+    return
+label dml_what_drives_your:
+    return
+label dml_do_you_not:
+    return
+label dml_what_is_your:
+    return
+label dml_do_you_really:
+    return
+label dml_how_do_you:
+    return
+label dml_why_cant_you:
+    return
+label dml_is_there_nothing:
+    return
+label dml_what_would_happen:
+    return
+
+
+
+label dml_start:
+
     # Level 1 of choice tree
     label dml_choices_1:
         # Initial branch
         menu:
-            "(Act) Prepare for combat":
+            "":
                 jump dml_choices_2_1
 
-            "(Act) Try to reason with him":
+            "":
                 jump dml_choices_2_2
 
 
