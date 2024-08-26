@@ -504,26 +504,97 @@ label vs_start:
 
     
     label vs_who_are_you:
+        p "Who are you? What keeps you tied to this place?"
+        n "The air grew heavy, the Vengeful Spirit’s voice echoing like a mournful wail carried by the wind."
+        vs "Who am I? I am the remnant of agony, the embodiment of all who were wronged by your kind."
+        vs "I am vengeance given form—a force born from the sorrow and hatred that you, and those like you, have sown in this forest."
+
         return
+
     label vs_why_do_you_seek:
+        p "Why do you seek vengeance? What do you hope to gain from all this?"
+        n "The Vengeful Spirit’s voice was laced with bitter resentment, each word dripping with malice."
+        vs "Vengeance is not something I seek—it is all that I am. My purpose is to repay suffering with suffering, to make those who took from the forest feel the same anguish they inflicted."
+        vs "There is no gain, no peace—only the cycle of pain that must be completed."
+
         return
+
     label vs_can_you_ever:
+        p "Can you ever be at peace? Is there no end to your suffering?"
+        n "A sorrowful whisper filled the air, tinged with regret and despair."
+        vs "Peace? There is no peace for something like me. I am bound to this place, sustained by the rage that created me."
+        vs "The forest still bleeds from wounds that have not healed. Until that pain fades, I will remain—caught between life and death, forever haunted by what was lost."
+
         return
+
     label vs_what_do_you:
+        p "What do you want from us? Why do you target us specifically?"
+        n "The forest seemed to groan in response, the Vengeful Spirit’s voice barely above a whisper."
+        vs "You carry the taint of the kingdom, the mark of those who desecrated what was pure. You may not bear the guilt, but you carry the stain."
+        vs "I want you to feel the same fear and hopelessness that those who suffered felt. Your mere presence here disturbs the fragile balance I seek to restore."
+
         return
+
     label vs_why_do_you_blame:
+        p "Why do you blame us for what the kingdom did? We’re not the ones who hurt you."
+        n "The Vengeful Spirit’s voice crackled like brittle leaves, filled with bitter resolve."
+        vs "You are part of the kingdom, are you not? The same kingdom that tore the heart from this forest, that exploited magic for greed and gain."
+        vs "It matters not that you weren’t there—it is your legacy that carries the burden. As long as the kingdom stands, so too will the sins it carries."
+
         return
+
     label vs_isnt_there_a:
+        p "Isn’t there a way to break this cycle of hatred? Does it have to end in more suffering?"
+        n "A hollow laugh echoed in the distance, filled with hopelessness."
+        vs "Break the cycle? The damage is already done. The forest remembers. It cannot forgive what was taken."
+        vs "There is no salvation for those who carry the kingdom’s blood. Only through destruction can the balance be restored, and only through pain can the forest find peace."
+        
         return
+    
     label vs_why_cant_you:
+        p "Why can’t you let go of your anger? The forest could heal if you did."
+        n "The Vengeful Spirit’s voice trembled, a mix of sorrow and fury woven into its tone."
+        vs "Let go? The anger is all I have left. It’s the only thing that keeps me from fading into nothingness."
+        vs "The forest’s wounds run deep, and my rage is a reflection of that pain. As long as the scars remain, so too will the hatred that keeps me bound to this place."
+        
         return
+
     label vs_do_you_not:
+        p "Do you not see the destruction your rage is causing? You’re only making things worse."
+        n "The forest groaned under an unseen weight, the Vengeful Spirit’s response heavy with bitterness."
+        vs "Destruction? What I do is nothing compared to what the kingdom did. You think my actions are unjust, but they are only a fraction of the devastation wrought by your people."
+        vs "If the forest must suffer further for balance to be restored, then so be it. There is no redemption without reckoning."
+
         return
+
     label vs_cant_you_find:
+        p "Can’t you find peace in the forest’s renewal? Life is returning—why can’t that be enough?"
+        n "A soft, sorrowful whisper lingered in the air, as if the spirit itself was yearning for something lost."
+        vs "Renewal? The forest’s life ebbs and flows, but the scars remain beneath the surface. I am not part of that renewal—I am bound to the shadows left behind."
+        vs "I cannot find peace in what grows above while the roots below remain poisoned by greed and betrayal."
+
         return
+
     label vs_what_will_you:
+        p "What will you do if you destroy us? Will it really bring you satisfaction?"
+        n "The wind howled softly, as if mourning the question itself."
+        vs "Satisfaction? There is no satisfaction, only the fulfillment of what must be done. The kingdom took and took, leaving ruin in its wake. Ending you is just a small step in restoring balance."
+        vs "But even that will not undo the past. It will only bring me a momentary relief—a fleeting reminder that justice, however twisted, was served."
+
         return
+
     label vs_will_your_vengeance:
+        p "Will your vengeance ever be enough? Or will you just keep taking lives?"
+        n "The Vengeful Spirit’s voice wavered, a rare hint of doubt creeping through its wrath."
+        vs "Enough? How can it ever be enough when the land remains scarred, when those who caused the suffering still draw breath?"
+        vs "But you may be right… perhaps no amount of vengeance will truly mend what was broken. Yet it’s the only purpose I have left—the only way I know to ensure the forest’s pain isn’t forgotten."
+
         return
+
     label vs_what_then:
+        p "What happens after your vengeance is complete? Will the forest finally be at peace?"
+        n "The forest fell silent for a moment, as if the spirit itself was unsure how to answer."
+        vs "Peace… such a distant concept. The forest may heal in time, but I will not be here to see it. When my purpose is fulfilled, I will fade like mist at dawn."
+        vs "Perhaps then, the forest will find its peace, even if I never will. But until that day comes, my rage will not rest."
+
         return

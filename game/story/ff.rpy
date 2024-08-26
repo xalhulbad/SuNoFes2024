@@ -17,32 +17,6 @@ default ff_chose_what_do_you = False
 default ff_chose_is_this_just = False
 default ff_chose_when_will_it = False
 
-label ff_who_are_you:
-    return
-label ff_why_doing_this:
-    return
-label ff_what_you_gain:
-    return
-label ff_why_enjoy_manipulating:
-    return
-label ff_isnt_there_more:
-    return
-label ff_do_you_not:
-    return
-label ff_how_did_you:
-    return
-label ff_was_there_ever:
-    return
-label ff_do_you_think:
-    return
-label ff_what_do_you:
-    return
-label ff_is_this_just:
-    return
-label ff_when_will_it:
-    return
-
-
 label ff_start:
     # Reset dialogue pool flags
     $ ff_chose_who_are_you = False
@@ -72,7 +46,7 @@ label ff_start:
   
     else: 
         pt "Her games won’t work this time. I’m ready for whatever she tries."
-        
+
     n "The Femme Fatale stepped closer, her movements fluid and deliberate. Every word she spoke dripped with honeyed malice, designed to unsettle and disarm."
     h "Stay back, princess. Don’t listen to her lies. We have to stay focused."
     ff "Lies? Oh, darling, I don’t need to lie. I already know everything there is to know about you. But don’t worry, I’m not here to hurt you... not yet, anyway."
@@ -527,3 +501,101 @@ label ff_start:
                 jump saved_hero
             "(Act) Escape while she’s distracted":
                 jump sacrificed_princess
+
+
+    label ff_who_are_you:
+        p "Who are you? Why do you play these games with us?"
+        n "The Femme Fatale’s smile was sly, her voice dripping with honeyed malice."
+        ff "Who am I? Let’s just say I’m someone who thrives on the thrill of pulling strings and watching others dance."
+        ff "You could call me a connoisseur of broken dreams and shattered resolves."
+
+        return
+
+    label ff_why_doing_this:
+        p "Why are you doing this? What’s the point of all this manipulation?"
+        n "The Femme Fatale’s eyes sparkled with amusement, her tone like velvet laced with venom."
+        ff "Why? Because it’s entertaining, darling. There’s nothing quite like watching someone who thinks they’re in control unravel bit by bit."
+        ff "You’re all just pieces on the board, and I… well, I do love winning."
+
+        return
+
+    label ff_what_you_gain:
+        p "What do you even gain from tormenting others? Does it really satisfy you?"
+        n "The Femme Fatale’s expression turned calculating, as if weighing her words carefully."
+        ff "Satisfaction? My dear, it’s not just about satisfaction. It’s about power. The power to twist minds, to reveal the ugliness beneath the surface."
+        ff "You’d be surprised how much you can learn when people are at their most desperate. And that knowledge… is priceless."
+        
+        return
+
+    label ff_why_enjoy_manipulating:
+        p "Why do you take such pleasure in manipulating people? What do you get out of it?"
+        n "The Femme Fatale’s laugh was low and smooth, like silk gliding over a razor’s edge."
+        ff "Pleasure? Oh, absolutely. There’s something exquisite about seeing people unravel under the weight of their own choices."
+        ff "It’s a dance, really—one where I lead, and they stumble. The thrill is in knowing I’m always two steps ahead."
+
+        return
+
+    label ff_isnt_there_more:
+        p "Isn’t there more to life than this? Games and deceit can’t be all you care about."
+        n "The Femme Fatale’s smile softened into something almost wistful, though her eyes remained sharp."
+        ff "More to life? Perhaps. But where’s the fun in sincerity when lies are so much more… intriguing? Life is a game, my dear."
+        ff "The difference is, I’ve chosen to play it well. Others merely lose without even realizing it."
+
+        return
+
+    label ff_do_you_not:
+        p "Don’t you care about the harm you cause? You ruin lives with your schemes."
+        n "The Femme Fatale’s gaze grew cold, her smile fading into a hard edge."
+        ff "Care? You mistake me for someone who feels guilt. People are fragile, easily led astray by their own weaknesses. All I do is expose what’s already there."
+        ff "If they crumble, it’s because they were weak to begin with. I simply give them a nudge."
+
+        return
+
+    label ff_how_did_you:
+        p "How did you become like this? Were you always this cruel?"
+        n "The Femme Fatale’s eyes darkened, her voice laced with an undercurrent of bitterness."
+        ff "How did I become like this? Let’s just say that trust is a currency I no longer trade in. I learned that the only way to survive is to be the one holding all the cards."
+        ff "Once you’ve been betrayed enough times, it’s easy to see the world for what it really is—a game of deceit where the sharpest mind wins."
+
+        return
+
+    label ff_was_there_ever:
+        p "Was there ever a time when you cared about anyone? When you weren’t like this?"
+        n "The Femme Fatale’s smile turned icy, her voice carrying a note of distant sorrow."
+        ff "Once, perhaps. But caring is a liability, a weakness that others will use against you. I learned that the hard way."
+        ff "Love, loyalty—those are illusions people cling to before they’re inevitably betrayed. I chose to shed those illusions and embrace what truly matters: control."
+                
+        return
+    
+    label ff_do_you_think:
+        p "Do you think you can ever change? Or is this who you are now, forever?"
+        n "The Femme Fatale’s expression shifted, her eyes narrowing as if she found the question distasteful."
+        ff "Change? Why would I want to? To become soft, vulnerable? No, darling. People don’t change—they just become better at hiding what they truly are."
+        ff "I’ve found my path, and I’ll walk it until the very end, unburdened by sentiment or regret."
+
+        return
+
+    label ff_what_do_you:
+        p "What do you really want from us? What’s the point of all this?"
+        n "The Femme Fatale’s gaze was sharp, a smirk playing at the corner of her lips."
+        ff "What do I want? Oh, nothing much. Just to see how far I can push you before you break."
+        ff "There’s a certain artistry in that—finding the cracks, applying just the right pressure, and watching the pieces fall apart."
+        ff "It’s fascinating, really."
+
+        return
+
+    label ff_is_this_just:
+        p "Is this all just a game to you? Do our lives mean nothing?"
+        n "The Femme Fatale’s laughter was soft, mocking, with an edge that cut deep."
+        ff "A game? Yes, but a game with very real stakes. Your lives, your choices—they’re merely the pieces I move around the board."
+        ff "The difference is, I know how this ends… and I’m always the one who comes out on top. You, on the other hand? You’re just trying to keep up."
+
+        return
+
+    label ff_when_will_it:
+        p "When will this end? What are you really trying to achieve?"
+        n "The Femme Fatale’s smile turned almost pitying, as if she found the question naïve."
+        ff "When will it end? When I’ve taken everything I can from you—your hope, your resolve, your trust. I’m not after riches or power; I’m after the satisfaction of knowing I’ve stripped away every illusion you cling to."
+        ff "When there’s nothing left but the truth—when you see the world as I do—then, perhaps, I’ll be satisfied. But until then? The game continues."
+
+        return

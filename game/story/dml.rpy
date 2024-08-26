@@ -504,26 +504,97 @@ label dml_start:
 
 
     label dml_who_are_you:
+        p "Who are you? Why do you insist on calling yourself a hero?"
+        n "The Dark Magic Lord’s grin widened, a mix of arrogance and self-delusion in his eyes."
+        dml "Who am I? I am the one who holds the reins of true power. While others cower in fear, I’ve dared to reach for the heights that no one else can grasp."
+        dml "You may see ruin, but I see progress—a path to a new world shaped by my vision alone."
+
         return
+
     label dml_why_do_you:
+        p "Why do you claim to be a hero? How can you call yourself that after everything you’ve done?"
+        n "The Dark Magic Lord’s laughter echoed through the air, filled with a twisted sense of righteousness."
+        dml "A hero? Of course, I am! I am the only one willing to do what must be done, to take the risks others fear. My methods may be harsh, but greatness demands sacrifice."
+        dml "The forest, the land—they’re just means to an end. Only a fool would let sentiment stand in the way of progress."
+
         return
+
     label dml_what_do_you:
+        p "What is it you truly seek? What’s the point of all this destruction?"
+        n "The Dark Magic Lord’s eyes gleamed with an almost fanatical fervor, his voice rich with self-conviction."
+        dml "I seek perfection—a world free from weakness, shaped by pure strength and unyielding will."
+        dml "Others fear what they don’t understand, but I have embraced it. Through my magic, I will forge a realm where the strong prevail and the ignorant are cast aside."
+                
         return
+
     label dml_how_did_you:
+        p "How did you come to wield such power? What drives this obsession?"
+        n "The Dark Magic Lord’s expression shifted, pride dripping from every word."
+        dml "My power was not simply given—it was earned through relentless pursuit and unshakable resolve. I sought knowledge where others dared not tread, unlocked secrets long buried."
+        dml "My obsession? It is the same as any true visionary: to transcend the limitations imposed by lesser minds and carve my own destiny."
+
         return
+
     label dml_what_drives_your:
+        p "What drives your obsession with magic? Why go to such lengths?"
+        n "The Dark Magic Lord’s voice was rich with disdain, as if the answer should be obvious."
+        dml "Magic is the ultimate expression of will. With it, I can bend the world to my desires, reshape it into something worthy of my brilliance."
+        dml "Those who fail to see its potential are blind fools, content to live in ignorance while I grasp at the very threads of reality."
+
         return
+
     label dml_do_you_not:
+        p "Do you not understand the consequences of what you’re doing? The forest is dying because of you!"
+        n "The Dark Magic Lord waved his hand dismissively, his tone full of contempt."
+        dml "Consequences? Small sacrifices for the greater good. The forest’s suffering is but a temporary inconvenience compared to what I’ll achieve."
+        dml "People cling to the past, but I look to the future—a future where such trivialities will no longer matter. They’ll thank me in the end, even if they’re too blind to see it now."
+
         return
+
     label dml_what_is_your:
+        p "What is your end goal? Where does all this lead?"
+        n "The Dark Magic Lord’s expression turned almost reverent, his eyes shining with grandiosity."
+        dml "My goal is nothing short of ascension—a world where I reign supreme, where my vision is the only truth that remains."
+        dml "This forest, this land—it’s all just a stepping stone toward a greater reality, one where weakness and doubt have no place. I will become the legend that reshapes history itself."
+
         return
+
     label dml_do_you_really:
+        p "Do you really believe this will save the world? You’re destroying it in the process!"
+        n "The Dark Magic Lord’s voice was laced with condescension, as if speaking to a child."
+        dml "Save the world? You think so small. I’m not interested in saving the world as it is—I’m forging a new one, a stronger one. Weakness must be purged for something greater to rise."
+        dml "Destruction is merely the precursor to rebirth. Only through fire can the impurities be burned away, leaving behind a world worth ruling."
+
         return
+
     label dml_how_do_you:
+        p "How do you justify the suffering you’ve caused? The lives you’ve ruined?"
+        n "The Dark Magic Lord’s eyes narrowed, irritation flickering beneath his arrogance."
+        dml "Justify? I have no need to justify greatness. Those who suffer do so because they lack the strength to endure what is necessary."
+        dml "I offer them a chance to be part of something monumental. If they can’t see that, their suffering is merely the cost of progress."
+
         return
+
     label dml_why_cant_you:
+        p "Why can’t you stop overusing magic? You’re killing everything around you!"
+        n "The Dark Magic Lord’s expression darkened, a flash of anger crossing his features."
+        dml "Stop? You would have me give up the very source of my power? You know nothing! Magic is not something to be rationed or feared—it is to be seized and wielded without restraint."
+        dml "To limit myself would be to deny my purpose. I won’t be shackled by the fears of those too weak to grasp the potential I’ve unlocked."
+
         return
+
     label dml_is_there_nothing:
+        p "Is there nothing that would make you change your mind? Isn’t there another way?"
+        n "The Dark Magic Lord’s laughter was sharp and dismissive, filled with scorn."
+        dml "Change my mind? I am beyond such weakness. I’ve long since cast aside doubt and hesitation. You ask me to turn back when I stand on the brink of greatness?"
+        dml "There is no other way—only forward, toward the destiny that awaits me, a destiny free from the limits others impose on themselves."
+        
         return
+
     label dml_what_would_happen:
+        p "What would happen if you did stop? If you let go of this obsession?"
+        n "The Dark Magic Lord’s eyes blazed with a mixture of anger and fear, as if the very idea was an affront to his existence."
+        dml "Stop? If I stopped, everything I’ve built would crumble! The power I’ve amassed would be for nothing, my legacy erased, leaving nothing but emptiness."
+        dml "No—I will not let that happen. To stop is to fade into obscurity, to be forgotten like those who lacked the courage to seize their own destiny. I will not be one of them."
+
         return
