@@ -29,7 +29,8 @@ label hu_start:
     $ hu_chose_how_long_been_here = False
     $ hu_chose_why_didnt_chase_us_before = False
     $ hu_chose_we_went_by_mistake = False
-
+    
+    # Leading text
     n "The forest's dense canopy loomed overhead as the princess and the hero cautiously moved forward, the familiar tension thickening the air. It felt as if the forest itself was holding its breath."
     n "The princess and hero could see the kingdom now, a sign that they were getting close."
     n "A twig snapped beneath the hero's foot, sending a flock of birds scattering into the sky. The sudden noise only served to heighten the tension between them."
