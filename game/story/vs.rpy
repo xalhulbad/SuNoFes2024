@@ -18,32 +18,6 @@ default vs_chose_what_will_you = False
 default vs_chose_will_your_vengeance = False
 default vs_chose_what_then = False
 
-label vs_who_are_you:
-    return
-label vs_why_do_you_seek:
-    return
-label vs_can_you_ever:
-    return
-label vs_what_do_you:
-    return
-label vs_why_do_you_blame:
-    return
-label vs_isnt_there_a:
-    return
-label vs_why_cant_you:
-    return
-label vs_do_you_not:
-    return
-label vs_cant_you_find:
-    return
-label vs_what_will_you:
-    return
-label vs_will_your_vengeance:
-    return
-label vs_what_then:
-    return
-
-
 label vs_start:
     $ vs_chose_who_are_you = False
     $ vs_chose_why_do_you_seek = False
@@ -79,16 +53,16 @@ label vs_start:
     n "The spirit’s voice was a chilling whisper, echoing through the trees and seeping into their very bones. The mist around them thickened, the air growing colder with every word it spoke."
     vs "The forest has taken from the wicked before, and now it shall take from you. There is no escape from its wrath."
 
-
+    jump vs_choices_1
 
     # Level 1 of choice tree
     label vs_choices_1:
         # Initial branch
         menu:
-            "":
+            "(Act) Stand your ground and challenge the spirit":
                 jump vs_choices_2_1
 
-            "":
+            "(Act) Show empathy and attempt to reason with it":
                 jump vs_choices_2_2
             
 
@@ -157,11 +131,11 @@ label vs_start:
 
     # Level 2 of choice tree
     label vs_choices_2_1:
-        # Branching from ""
+        # Branching from "(Act) Stand your ground and challenge the spirit"
         menu:
-            "":
+            "(Act) Have the hero strike first":
                 jump vs_choices_3_1
-            "":
+            "(Act) Confront it with the truth of the kingdom’s wrongdoings":
                 jump vs_choices_3_2
 
 
@@ -228,11 +202,11 @@ label vs_start:
                 jump vs_choices_2_1
 
     label vs_choices_2_2:
-        # Branching from ""
+        # Branching from "(Act) Show empathy and attempt to reason with it"
         menu:
-            "":
+            "(Act) Appeal to its desire for justice":
                 jump vs_choices_3_3
-            "":
+            "(Act) Offer a way to ease its suffering":
                 jump vs_choices_3_4
 
 
@@ -301,229 +275,255 @@ label vs_start:
 
     # Level 3 of choice tree
     label vs_choices_3_1:
-        # Branching from ""
+        # Branching from "(Act) Have the hero strike first"
         menu:
-            "":
+            "(Act) Try to overpower it with sheer force":
                 jump vs_choices_4_1
-            "":
+            "(Act) Use the hero as a decoy and plan a counterattack" if not chose_magic:
                 jump vs_choices_4_2
 
     label vs_choices_3_2:
-        # Branching from ""
+        # Branching from "(Act) Confront it with the truth of the kingdom’s wrongdoings"
         menu:
-            "":
+            "(Act) Acknowledge the kingdom’s crimes and ask for mercy" if not chose_magic:
                 jump vs_choices_4_3
-            "":
+            "(Act) Offer a solution through magic to mend the past" if chose_magic:
                 jump vs_choices_4_4
 
     label vs_choices_3_3:
-        # Branching from ""
+        # Branching from "(Act) Appeal to its desire for justice"
         menu:
-            "":
+            "(Act) Convince it that the forest can still be healed":
                 jump vs_choices_4_5
-            "":
+            "(Act) Offer to protect the forest as its guardian" if chose_magic:
                 jump vs_choices_4_6
 
     label vs_choices_3_4:
-        # Branching from ""
+        # Branching from "(Act) Offer a way to ease its suffering"
         menu:
-            "":
+            "(Act) Share its burden by taking on some of its pain" if chose_magic:
                 jump vs_choices_4_7
-            "":
+            "(Act) Propose a ritual to put its spirit to rest":
                 jump vs_choices_4_8
 
     
     # Level 4 of choice tree
     label vs_choices_4_1:
-        # Branching from ""
+        # Branching from "(Act) Try to overpower it with sheer force"
         menu:
-            "":
+            "(Act) Exploit its moment of weakness" if not chose_magic:
                 jump vs_choices_5_1
-            "":
+            "(Act) Lead it into a trap using the environment":
                 jump vs_choices_5_2
 
     label vs_choices_4_2:
-        # Branching from ""
+        # Branching from "(Act) Use the hero as a decoy and plan a counterattack"
         menu:
-            "":
+            "(Act) Prepare to strike while it’s focused on the hero":
                 jump vs_choices_5_3
-            "":
+            "(Act) Feint and deliver a decisive blow":
                 jump vs_choices_5_4
 
     label vs_choices_4_3:
-        # Branching from ""
+        # Branching from "(Act) Acknowledge the kingdom’s crimes and ask for mercy"
         menu:
-            "":
+            "(Act) Offer to atone for the kingdom’s sins":
                 jump vs_choices_5_5
-            "":
+            "(Act) Promise to help the forest heal":
                 jump vs_choices_5_6
 
     label vs_choices_4_4:
-        # Branching from ""
+        # Branching from "(Act) Offer a solution through magic to mend the past"
         menu:
-            "":
+            "(Act) Use a binding spell to contain its anger":
                 jump vs_choices_5_7
-            "":
+            "(Act) Reverse the flow of magic to restore balance":
                 jump vs_choices_5_8
 
     label vs_choices_4_5:
-        # Branching from ""
+        # Branching from "(Act) Convince it that the forest can still be healed"
         menu:
-            "":
+            "(Act) Persuade it to let go and find peace" if not chose_magic:
                 jump vs_choices_5_9
-            "":
+            "(Act) Promise to carry on its mission of protecting the forest" if chose_magic:
                 jump vs_choices_5_10
 
     label vs_choices_4_6:
-        # Branching from ""
+        # Branching from "(Act) Offer to protect the forest as its guardian"
         menu:
-            "":
+            "(Act) Bind its spirit to the forest":
                 jump vs_choices_5_11
-            "":
+            "(Act) Assume its role in guarding the forest":
                 jump vs_choices_5_12
 
     label vs_choices_4_7:
-        # Branching from ""
+        # Branching from "(Act) Share its burden by taking on some of its pain"
         menu:
-            "":
+            "(Act) Absorb its suffering to break the cycle":
                 jump vs_choices_5_13
-            "":
+            "(Act) Offer to merge your power with the spirit’s":
                 jump vs_choices_5_14
 
     label vs_choices_4_8:
-        # Branching from ""
+        # Branching from "(Act) Propose a ritual to put its spirit to rest"
         menu:
-            "":
+            "(Act) Offer a final act of sacrifice" if not chose_magic:
                 jump vs_choices_5_15
-            "":
+            "(Act) Channel the ritual’s energy to free it" if chose_magic:
                 jump vs_choices_5_16
 
 
     # Level 5 of choice tree
     label vs_choices_5_1:
-        # Branching from ""
+        # Branching from "(Act) Exploit its moment of weakness"
         menu:
-            "":
+            "(Act) Strike it down with determination":
                 jump sacrificed_princess
-            "":
+            "(Act) Use the hero’s courage to finish it off":
                 jump saved_hero
 
     label vs_choices_5_2:
-        # Branching from ""
+        # Branching from "(Act) Lead it into a trap using the environment"
         menu:
-            "":
+            "(Act) Distract and outrun it" if not chose_magic:
                 jump inherited_throne
-            "":
+            "(Act) Teleport away while it's distracted" if chose_magic:
                 jump happily_ever_after
 
     label vs_choices_5_3:
-        # Branching from ""
+        # Branching from "(Act) Prepare to strike while it’s focused on the hero"
         menu:
-            "":
+            "(Act) Land a decisive blow":
                 jump saved_hero
-            "":
+            "(Act) Strike it down while it’s distracted":
                 jump inherited_throne
 
     label vs_choices_5_4:
-        # Branching from ""
+        # Branching from "(Act) Feint and deliver a decisive blow"
         menu:
-            "":
+            "(Act) Deliver a fatal strike":
                 jump love_beyond_death
-            "":
+            "(Act) Overwhelm it with precision":
                 jump saved_hero
 
     label vs_choices_5_5:
-        # Branching from ""
+        # Branching from "(Act) Offer to atone for the kingdom’s sins"
         menu:
-            "":
+            "(Act) Offer your life as penance":
                 jump sacrificed_princess
-            "":
+            "(Act) Convince it that the kingdom can change":
                 jump inherited_throne
 
     label vs_choices_5_6:
-        # Branching from ""
+        # Branching from "(Act) Promise to help the forest heal"
         menu:
-            "":
+            "(Act) Forge a pact to protect the forest":
                 jump inherited_throne
-            "":
+            "(Act) Use the hero’s loyalty as a guarantee":
                 jump saved_hero
 
     label vs_choices_5_7:
-        # Branching from ""
+        # Branching from "(Act) Use a binding spell to contain its anger"
         menu:
-            "":
+            "(Act) Contain its wrath within yourself":
                 jump corrupted_hero
-            "":
+            "(Act) Teleport away while it's distracted":
                 jump happily_ever_after
 
     label vs_choices_5_8:
-        # Branching from ""
+        # Branching from "(Act) Reverse the flow of magic to restore balance"
         menu:
-            "":
+            "(Act) Redirect its pain to heal the forest":
                 jump unfulfilled_love
-            "":
+            "(Act) Try to defeat it with magic":
                 jump love_beyond_death
 
     label vs_choices_5_9:
-        # Branching from ""
+        # Branching from "(Act) Persuade it to let go and find peace"
         menu:
-            "":
+            "(Act) Guide it to the afterlife":
                 jump sacrificed_princess
-            "":
+            "(Act) Let it fade away peacefully":
                 jump love_beyond_death
 
     label vs_choices_5_10:
-        # Branching from ""
+        # Branching from "(Act) Promise to carry on its mission of protecting the forest"
         menu:
-            "":
+            "(Act) Become its successor":
                 jump forest_protectors
-            "":
+            "(Act) Betray and teleport away":
                 jump happily_ever_after
 
     label vs_choices_5_11:
-        # Branching from ""
+        # Branching from "(Act) Bind its spirit to the forest"
         menu:
-            "":
+            "(Act) Ensure it remains as a guardian":
                 jump forest_protectors
-            "":
+            "(Act) Trap it forever within the forest’s bounds":
                 jump corrupted_hero
 
     label vs_choices_5_12:
-        # Branching from ""
+        # Branching from "(Act) Assume its role in guarding the forest"
         menu:
-            "":
+            "(Act) Take on its duties eternally":
                 jump forest_protectors
-            "":
+            "(Act) Bind yourself to the forest in a tragic pact":
                 jump unfulfilled_love
 
     label vs_choices_5_13:
-        # Branching from ""
+        # Branching from "(Act) Absorb its suffering to break the cycle"
         menu:
-            "":
+            "(Act) Let its power corrupt you":
                 jump corrupted_hero
-            "":
+            "(Act) Take on its rage and become twisted":
                 jump unfulfilled_love
 
     label vs_choices_5_14:
-        # Branching from ""
+        # Branching from "(Act) Offer to merge your power with the spirit’s"
         menu:
-            "":
+            "(Act) Form a dark bond with the spirit":
                 jump corrupted_hero
-            "":
+            "(Act) Fuse your essence with its wrath":
                 jump unfulfilled_love
 
     label vs_choices_5_15:
-        # Branching from ""
+        # Branching from "(Act) Offer a final act of sacrifice"
         menu:
-            "":
+            "(Act) Give your life to save the hero":
                 jump sacrificed_princess
-            "":
+            "(Act) Die together to free the spirit":
                 jump love_beyond_death
 
     label vs_choices_5_16:
-        # Branching from ""
+        # Branching from "(Act) Channel the ritual’s energy to free it"
         menu:
-            "":
+            "(Act) Purify the spirit and the forest":
                 jump forest_protectors
-            "":
+            "(Act) Teleport away while it's distracted":
                 jump happily_ever_after
+
+    
+    label vs_who_are_you:
+        return
+    label vs_why_do_you_seek:
+        return
+    label vs_can_you_ever:
+        return
+    label vs_what_do_you:
+        return
+    label vs_why_do_you_blame:
+        return
+    label vs_isnt_there_a:
+        return
+    label vs_why_cant_you:
+        return
+    label vs_do_you_not:
+        return
+    label vs_cant_you_find:
+        return
+    label vs_what_will_you:
+        return
+    label vs_will_your_vengeance:
+        return
+    label vs_what_then:
+        return

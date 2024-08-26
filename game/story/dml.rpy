@@ -18,33 +18,6 @@ default dml_chose_why_cant_you = False
 default dml_chose_is_there_nothing = False
 default dml_chose_what_would_happen = False
 
-label dml_who_are_you:
-    return
-label dml_why_do_you:
-    return
-label dml_what_do_you:
-    return
-label dml_how_did_you:
-    return
-label dml_what_drives_your:
-    return
-label dml_do_you_not:
-    return
-label dml_what_is_your:
-    return
-label dml_do_you_really:
-    return
-label dml_how_do_you:
-    return
-label dml_why_cant_you:
-    return
-label dml_is_there_nothing:
-    return
-label dml_what_would_happen:
-    return
-
-
-
 label dml_start:
     $ dml_chose_who_are_you = False
     $ dml_chose_why_do_you = False
@@ -80,15 +53,16 @@ label dml_start:
     n "The Dark Magic Lord raised his hand, dark tendrils of magic swirling around his fingers, ready to strike at a moment’s notice. The air buzzed with dangerous energy, and the forest seemed to tremble under his influence."
     dml "Enough talk. If you’re so determined to stand in my way, then witness the power of the one true savior of this world!"
 
+    jump dml_choices_1
 
     # Level 1 of choice tree
     label dml_choices_1:
         # Initial branch
         menu:
-            "":
+            "(Act) Challenge his authority":
                 jump dml_choices_2_1
 
-            "":
+            "(Act) Attempt to reason with him":
                 jump dml_choices_2_2
 
             
@@ -157,11 +131,11 @@ label dml_start:
 
     # Level 2 of choice tree
     label dml_choices_2_1:
-        # Branching from ""
+        # Branching from "(Act) Challenge his authority"
         menu:
-            "":
+            "(Act) Engage in direct combat":
                 jump dml_choices_3_1
-            "":
+            "(Act) Use magic to weaken his power" if chose_magic:
                 jump dml_choices_3_2
 
             
@@ -228,11 +202,11 @@ label dml_start:
                 jump dml_choices_2_1
 
     label dml_choices_2_2:
-        # Branching from ""
+        # Branching from "(Act) Attempt to reason with him"
         menu:
-            "":
+            "(Act) Appeal to his lost humanity":
                 jump dml_choices_3_3
-            "":
+            "(Act) Bargain for information":
                 jump dml_choices_3_4
 
             
@@ -301,229 +275,255 @@ label dml_start:
 
     # Level 3 of choice tree
     label dml_choices_3_1:
-        # Branching from ""
+        # Branching from "(Act) Engage in direct combat"
         menu:
-            "":
+            "(Act) Strike with the hero’s sword" if not chose_magic:
                 jump dml_choices_4_1
-            "":
+            "(Act) Create an opening with a magic blast" if chose_magic:
                 jump dml_choices_4_2
 
     label dml_choices_3_2:
-        # Branching from ""
+        # Branching from "(Act) Use magic to weaken his power"
         menu:
-            "":
+            "(Act) Seal his dark magic with a counterspell":
                 jump dml_choices_4_3
-            "":
+            "(Act) Overwhelm him with a burst of light":
                 jump dml_choices_4_4
 
     label dml_choices_3_3:
-        # Branching from ""
+        # Branching from "(Act) Appeal to his lost humanity"
         menu:
-            "":
+            "(Act) Remind him of his past":
                 jump dml_choices_4_5
-            "":
+            "(Act) Challenge him to confront his own corruption":
                 jump dml_choices_4_6
 
     label dml_choices_3_4:
-        # Branching from ""
+        # Branching from "(Act) Bargain for information"
         menu:
-            "":
+            "(Act) Offer him something of value" if chose_magic:
                 jump dml_choices_4_7
-            "":
+            "(Act) Feign submission and plan a counterattack":
                 jump dml_choices_4_8
 
     
     # Level 4 of choice tree
     label dml_choices_4_1:
-        # Branching from ""
+        # Branching from "(Act) Strike with the hero’s sword"
         menu:
-            "":
+            "(Act) Go for a decisive blow":
                 jump dml_choices_5_1
-            "":
+            "(Act) Use the environment to gain an advantage":
                 jump dml_choices_5_2
 
     label dml_choices_4_2:
-        # Branching from ""
+        # Branching from "(Act) Create an opening with a magic blast"
         menu:
-            "":
+            "(Act) Follow up with a powerful strike":
                 jump dml_choices_5_3
-            "":
+            "(Act) Distract him and go invisible":
                 jump dml_choices_5_4
 
     label dml_choices_4_3:
-        # Branching from ""
+        # Branching from "(Act) Seal his dark magic with a counterspell"
         menu:
-            "":
+            "(Act) Contain him in a magic circle":
                 jump dml_choices_5_5
-            "":
+            "(Act) Counter his curse":
                 jump dml_choices_5_6
 
     label dml_choices_4_4:
-        # Branching from ""
+        # Branching from "(Act) Overwhelm him with a burst of light"
         menu:
-            "":
+            "(Act) Channel all your magic into a final spell":
                 jump dml_choices_5_7
-            "":
+            "(Act) Bind his power and offer a truce":
                 jump dml_choices_5_8
 
     label dml_choices_4_5:
-        # Branching from ""
+        # Branching from "(Act) Remind him of his past"
         menu:
-            "":
+            "(Act) Appeal to his sense of honor":
                 jump dml_choices_5_9
-            "":
+            "(Act) Remind him of the loved ones he lost":
                 jump dml_choices_5_10
 
     label dml_choices_4_6:
-        # Branching from ""
+        # Branching from "(Act) Challenge him to confront his own corruption"
         menu:
-            "":
+            "(Act) Make him see the consequences of his actions" if chose_magic:
                 jump dml_choices_5_11
-            "":
+            "(Act) Push him to redeem himself" if not chose_magic:
                 jump dml_choices_5_12
 
     label dml_choices_4_7:
-        # Branching from ""
+        # Branching from "(Act) Offer him something of value"
         menu:
-            "":
+            "(Act) Offer to share forbidden knowledge":
                 jump dml_choices_5_13
-            "":
+            "(Act) Offer to combine your powers":
                 jump dml_choices_5_14
 
     label dml_choices_4_8:
-        # Branching from ""
+        # Branching from "(Act) Feign submission and plan a counterattack"
         menu:
-            "":
+            "(Act) Wait for the perfect moment to strike" if not chose_magic:
                 jump dml_choices_5_15
-            "":
+            "(Act) Manipulate him into lowering his guard":
                 jump dml_choices_5_16
 
 
     # Level 5 of choice tree
     label dml_choices_5_1:
-        # Branching from ""
+        # Branching from "(Act) Go for a decisive blow"
         menu:
-            "":
+            "(Act) Strike at his heart":
                 jump sacrificed_princess
-            "":
+            "(Act) Overpower him with raw strength":
                 jump inherited_throne
 
     label dml_choices_5_2:
-        # Branching from ""
+        # Branching from "(Act) Use the environment to gain an advantage"
         menu:
-            "":
+            "(Act) Lure him into a trap":
                 jump inherited_throne
-            "":
+            "(Act) Have the hero distract him":
                 jump sacrificed_princess
 
     label dml_choices_5_3:
-        # Branching from ""
+        # Branching from "(Act) Follow up with a powerful strike"
         menu:
-            "":
+            "(Act) Channel dark energy for a finishing blow":
                 jump corrupted_hero
-            "":
+            "(Act) Use his own magic against him":
                 jump love_beyond_death
 
     label dml_choices_5_4:
-        # Branching from ""
+        # Branching from "(Act) Distract him and go invisible"
         menu:
-            "":
+            "(Act) Strike from the shadows":
                 jump forest_curse
-            "":
+            "(Act) Bind his magic permanently":
                 jump forest_protectors
 
     label dml_choices_5_5:
-        # Branching from ""
+        # Branching from "(Act) Contain him in a magic circle"
         menu:
-            "":
+            "(Act) Trap him within the circle forever":
                 jump forest_curse
-            "":
+            "(Act) Purify the dark magic within him":
                 jump forest_protectors
 
     label dml_choices_5_6:
-        # Branching from ""
+        # Branching from "(Act) Counter his curse"
         menu:
-            "":
+            "(Act) Seal the curse within yourself":
                 jump corrupted_hero
-            "":
+            "(Act) Redirect the curse into the environment":
                 jump forest_curse
 
     label dml_choices_5_7:
-        # Branching from ""
+        # Branching from "(Act) Channel all your magic into a final spell"
         menu:
-            "":
+            "(Act) Release all your power at once":
                 jump unfulfilled_love
-            "":
+            "(Act) Sacrifice your life to end the darkness":
                 jump sacrificed_princess
 
     label dml_choices_5_8:
-        # Branching from ""
+        # Branching from "(Act) Bind his power and offer a truce"
         menu:
-            "":
+            "(Act) Accept a temporary alliance":
                 jump unfulfilled_love
-            "":
+            "(Act) Force him into a magical vow":
                 jump forest_protectors
 
     label dml_choices_5_9:
-        # Branching from ""
+        # Branching from "(Act) Appeal to his sense of honor"
         menu:
-            "":
+            "(Act) Challenge him to a duel of skill":
                 jump sacrificed_hero
-            "":
+            "(Act) Offer him a path to redemption":
                 jump inherited_throne
 
     label dml_choices_5_10:
-        # Branching from ""
+        # Branching from "(Act) Remind him of the loved ones he lost"
         menu:
-            "":
+            "(Act) Make him relive his past mistakes":
                 jump sacrificed_hero
-            "":
+            "(Act) Offer him peace and forgiveness":
                 jump love_beyond_death
 
     label dml_choices_5_11:
-        # Branching from ""
+        # Branching from "(Act) Make him see the consequences of his actions"
         menu:
-            "":
+            "(Act) Show him the destruction he caused":
                 jump love_beyond_death
-            "":
+            "(Act) Persuade him to change his ways":
                 jump forest_protectors
 
     label dml_choices_5_12:
-        # Branching from ""
+        # Branching from "(Act) Push him to redeem himself"
         menu:
-            "":
+            "(Act) Offer him a chance to make amends":
                 jump inherited_throne
-            "":
+            "(Act) Convince him to give up on his ideology":
                 jump sacrificed_hero
 
     label dml_choices_5_13:
-        # Branching from ""
+        # Branching from "(Act) Offer to share forbidden knowledge"
         menu:
-            "":
+            "(Act) Unlock hidden power together":
                 jump corrupted_hero
-            "":
+            "(Act) Betray him at the last moment":
                 jump unfulfilled_love
 
     label dml_choices_5_14:
-        # Branching from ""
+        # Branching from "(Act) Offer to combine your powers"
         menu:
-            "":
+            "(Act) Fuse your magic with his":
                 jump corrupted_hero
-            "":
+            "(Act) Create a powerful but unstable bond":
                 jump forest_curse
 
     label dml_choices_5_15:
-        # Branching from ""
+        # Branching from "(Act) Wait for the perfect moment to strike"
         menu:
-            "":
+            "(Act) Ambush him when he’s vulnerable ":
                 jump sacrificed_hero
-            "":
+            "(Act) Strike him down with no hesitation":
                 jump sacrificed_princess
 
     label dml_choices_5_16:
-        # Branching from ""
+        # Branching from "(Act) Manipulate him into lowering his guard"
         menu:
-            "":
+            "(Act) Turn his own power against him" if chose_magic:
                 jump unfulfilled_love
-            "":
+            "(Act) Catch him off guard with an attack" if not chose_magic:
                 jump love_beyond_death
+
+
+    label dml_who_are_you:
+        return
+    label dml_why_do_you:
+        return
+    label dml_what_do_you:
+        return
+    label dml_how_did_you:
+        return
+    label dml_what_drives_your:
+        return
+    label dml_do_you_not:
+        return
+    label dml_what_is_your:
+        return
+    label dml_do_you_really:
+        return
+    label dml_how_do_you:
+        return
+    label dml_why_cant_you:
+        return
+    label dml_is_there_nothing:
+        return
+    label dml_what_would_happen:
+        return
