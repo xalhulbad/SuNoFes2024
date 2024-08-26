@@ -46,6 +46,18 @@ label dml_what_would_happen:
 
 
 label dml_start:
+    $ dml_chose_who_are_you = False
+    $ dml_chose_why_do_you = False
+    $ dml_chose_what_do_you = False
+    $ dml_chose_how_did_you = False
+    $ dml_chose_what_drives_your = False
+    $ dml_chose_do_you_not = False
+    $ dml_chose_what_is_your = False
+    $ dml_chose_do_you_really = False
+    $ dml_chose_how_do_you = False
+    $ dml_chose_why_cant_you = False
+    $ dml_chose_is_there_nothing = False
+    $ dml_chose_what_would_happen = False
 
     # Level 1 of choice tree
     label dml_choices_1:
@@ -60,62 +72,64 @@ label dml_start:
             
             # Dialogue pool options
 
-            "":
-                $  = True
-                call
+            "(Speak) Who are you?" if not dml_chose_who_are_you:
+                $ dml_chose_who_are_you = True
+                call dml_who_are_you
                 jump dml_choices_1
 
-            "":
-                $  = True
-                call
+            "(Speak) Why do you claim to be a hero?" if not dml_chose_why_do_you and dml_chose_who_are_you:
+                $ dml_chose_why_do_you = True
+                call dml_why_do_you
                 jump dml_choices_1
 
-            "":
-                $  = True
-                call
+            "(Speak) What do you truly seek?" if not dml_chose_what_do_you and dml_chose_why_do_you:
+                $ dml_chose_what_do_you = True
+                call dml_what_do_you
                 jump dml_choices_1
 
-            "":
+            "(Speak) How did you come to wield such power?" if not dml_chose_how_did_you:
+                $ dml_chose_how_did_you = True
+                call dml_how_did_you
                 jump dml_choices_1
 
-            "":
-                $  = True
-                call
+            "(Speak) What drives your obsession with magic?" if not dml_chose_what_drives_your and dml_chose_how_did_you:
+                $ dml_chose_what_drives_your = True
+                call dml_what_drives_your
                 jump dml_choices_1
 
-            "":
-                $  = True
-                call
+            "(Speak) Do you not understand the consequences of your actions?" if not dml_chose_do_you_not and dml_chose_what_drives_your:
+                $ dml_chose_do_you_not = True
+                call dml_do_you_not
                 jump dml_choices_1
             
-            "":
-                $  = True
-                call
+            "(Speak) What is your end goal?" if not dml_chose_what_is_your:
+                $ dml_chose_what_is_your = True
+                call dml_what_is_your
                 jump dml_choices_1
 
-            "":
-                $  = True
-                call
+            "(Speak) Do you really believe this will save the world?" if not dml_chose_do_you_really and dml_chose_what_is_your:
+                $ dml_chose_do_you_really = True
+                call dml_do_you_really
                 jump dml_choices_1
 
-            "":
-                $  = True
-                call
+            "(Speak) How do you justify the suffering you’ve caused?" if not dml_chose_how_do_you and dml_chose_do_you_really:
+                $ dml_chose_how_do_you = True
+                call dml_how_do_you
                 jump dml_choices_1
 
-            "":
-                $  = True
-                call
+            "(Speak) Why can’t you stop overusing magic?" if not dml_chose_why_cant_you:
+                $ dml_chose_why_cant_you = True
+                call dml_why_cant_you
                 jump dml_choices_1
 
-            "":
-                $  = True
-                call
+            "(Speak) Is there nothing that would change your mind?" if not dml_chose_is_there_nothing and dml_chose_why_cant_you:
+                $ dml_chose_is_there_nothing = True
+                call dml_is_there_nothing
                 jump dml_choices_1
 
-            "":
-                $  = True
-                call
+            "(Speak) What would happen if you did stop?" if not dml_chose_what_would_happen and dml_chose_is_there_nothing:
+                $ dml_chose_what_would_happen = True
+                call dml_what_would_happen
                 jump dml_choices_1
 
 
@@ -128,6 +142,69 @@ label dml_start:
             "":
                 jump dml_choices_3_2
 
+            
+            # Dialogue pool options
+
+            "(Speak) Who are you?" if not dml_chose_who_are_you:
+                $ dml_chose_who_are_you = True
+                call dml_who_are_you
+                jump dml_choices_2_1
+
+            "(Speak) Why do you claim to be a hero?" if not dml_chose_why_do_you and dml_chose_who_are_you:
+                $ dml_chose_why_do_you = True
+                call dml_why_do_you
+                jump dml_choices_2_1
+
+            "(Speak) What do you truly seek?" if not dml_chose_what_do_you and dml_chose_why_do_you:
+                $ dml_chose_what_do_you = True
+                call dml_what_do_you
+                jump dml_choices_2_1
+
+            "(Speak) How did you come to wield such power?" if not dml_chose_how_did_you:
+                $ dml_chose_how_did_you = True
+                call dml_how_did_you
+                jump dml_choices_2_1
+
+            "(Speak) What drives your obsession with magic?" if not dml_chose_what_drives_your and dml_chose_how_did_you:
+                $ dml_chose_what_drives_your = True
+                call dml_what_drives_your
+                jump dml_choices_2_1
+
+            "(Speak) Do you not understand the consequences of your actions?" if not dml_chose_do_you_not and dml_chose_what_drives_your:
+                $ dml_chose_do_you_not = True
+                call dml_do_you_not
+                jump dml_choices_2_1
+            
+            "(Speak) What is your end goal?" if not dml_chose_what_is_your:
+                $ dml_chose_what_is_your = True
+                call dml_what_is_your
+                jump dml_choices_2_1
+
+            "(Speak) Do you really believe this will save the world?" if not dml_chose_do_you_really and dml_chose_what_is_your:
+                $ dml_chose_do_you_really = True
+                call dml_do_you_really
+                jump dml_choices_2_1
+
+            "(Speak) How do you justify the suffering you’ve caused?" if not dml_chose_how_do_you and dml_chose_do_you_really:
+                $ dml_chose_how_do_you = True
+                call dml_how_do_you
+                jump dml_choices_2_1
+
+            "(Speak) Why can’t you stop overusing magic?" if not dml_chose_why_cant_you:
+                $ dml_chose_why_cant_you = True
+                call dml_why_cant_you
+                jump dml_choices_2_1
+
+            "(Speak) Is there nothing that would change your mind?" if not dml_chose_is_there_nothing and dml_chose_why_cant_you:
+                $ dml_chose_is_there_nothing = True
+                call dml_is_there_nothing
+                jump dml_choices_2_1
+
+            "(Speak) What would happen if you did stop?" if not dml_chose_what_would_happen and dml_chose_is_there_nothing:
+                $ dml_chose_what_would_happen = True
+                call dml_what_would_happen
+                jump dml_choices_2_1
+
     label dml_choices_2_2:
         # Branching from ""
         menu:
@@ -135,6 +212,69 @@ label dml_start:
                 jump dml_choices_3_3
             "":
                 jump dml_choices_3_4
+
+            
+            # Dialogue pool options
+
+            "(Speak) Who are you?" if not dml_chose_who_are_you:
+                $ dml_chose_who_are_you = True
+                call dml_who_are_you
+                jump dml_choices_2_2
+
+            "(Speak) Why do you claim to be a hero?" if not dml_chose_why_do_you and dml_chose_who_are_you:
+                $ dml_chose_why_do_you = True
+                call dml_why_do_you
+                jump dml_choices_2_2
+
+            "(Speak) What do you truly seek?" if not dml_chose_what_do_you and dml_chose_why_do_you:
+                $ dml_chose_what_do_you = True
+                call dml_what_do_you
+                jump dml_choices_2_2
+
+            "(Speak) How did you come to wield such power?" if not dml_chose_how_did_you:
+                $ dml_chose_how_did_you = True
+                call dml_how_did_you
+                jump dml_choices_2_2
+
+            "(Speak) What drives your obsession with magic?" if not dml_chose_what_drives_your and dml_chose_how_did_you:
+                $ dml_chose_what_drives_your = True
+                call dml_what_drives_your
+                jump dml_choices_2_2
+
+            "(Speak) Do you not understand the consequences of your actions?" if not dml_chose_do_you_not and dml_chose_what_drives_your:
+                $ dml_chose_do_you_not = True
+                call dml_do_you_not
+                jump dml_choices_2_2
+            
+            "(Speak) What is your end goal?" if not dml_chose_what_is_your:
+                $ dml_chose_what_is_your = True
+                call dml_what_is_your
+                jump dml_choices_2_2
+
+            "(Speak) Do you really believe this will save the world?" if not dml_chose_do_you_really and dml_chose_what_is_your:
+                $ dml_chose_do_you_really = True
+                call dml_do_you_really
+                jump dml_choices_2_2
+
+            "(Speak) How do you justify the suffering you’ve caused?" if not dml_chose_how_do_you and dml_chose_do_you_really:
+                $ dml_chose_how_do_you = True
+                call dml_how_do_you
+                jump dml_choices_2_2
+
+            "(Speak) Why can’t you stop overusing magic?" if not dml_chose_why_cant_you:
+                $ dml_chose_why_cant_you = True
+                call dml_why_cant_you
+                jump dml_choices_2_2
+
+            "(Speak) Is there nothing that would change your mind?" if not dml_chose_is_there_nothing and dml_chose_why_cant_you:
+                $ dml_chose_is_there_nothing = True
+                call dml_is_there_nothing
+                jump dml_choices_2_2
+
+            "(Speak) What would happen if you did stop?" if not dml_chose_what_would_happen and dml_chose_is_there_nothing:
+                $ dml_chose_what_would_happen = True
+                call dml_what_would_happen
+                jump dml_choices_2_2
 
 
     # Level 3 of choice tree
