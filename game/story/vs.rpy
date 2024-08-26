@@ -381,126 +381,126 @@ label vs_start:
         # Branching from ""
         menu:
             "":
-                jump
+                jump sacrificed_princess
             "":
-                jump
+                jump saved_hero
 
     label vs_choices_5_2:
         # Branching from ""
         menu:
             "":
-                jump
+                jump inherited_throne
             "":
-                jump
+                jump happily_ever_after
 
     label vs_choices_5_3:
         # Branching from ""
         menu:
             "":
-                jump
+                jump saved_hero
             "":
-                jump
+                jump inherited_throne
 
     label vs_choices_5_4:
         # Branching from ""
         menu:
             "":
-                jump
+                jump love_beyond_death
             "":
-                jump
+                jump saved_hero
 
     label vs_choices_5_5:
         # Branching from ""
         menu:
             "":
-                jump
+                jump sacrificed_princess
             "":
-                jump
+                jump inherited_throne
 
     label vs_choices_5_6:
         # Branching from ""
         menu:
             "":
-                jump
+                jump inherited_throne
             "":
-                jump
+                jump saved_hero
 
     label vs_choices_5_7:
         # Branching from ""
         menu:
             "":
-                jump
+                jump corrupted_hero
             "":
-                jump
+                jump happily_ever_after
 
     label vs_choices_5_8:
         # Branching from ""
         menu:
             "":
-                jump
+                jump unfulfilled_love
             "":
-                jump
+                jump love_beyond_death
 
     label vs_choices_5_9:
         # Branching from ""
         menu:
             "":
-                jump
+                jump sacrificed_princess
             "":
-                jump
+                jump love_beyond_death
 
     label vs_choices_5_10:
         # Branching from ""
         menu:
             "":
-                jump
+                jump forest_protectors
             "":
-                jump
+                jump happily_ever_after
 
     label vs_choices_5_11:
         # Branching from ""
         menu:
             "":
-                jump
+                jump forest_protectors
             "":
-                jump
+                jump corrupted_hero
 
     label vs_choices_5_12:
         # Branching from ""
         menu:
             "":
-                jump
+                jump forest_protectors
             "":
-                jump
+                jump unfulfilled_love
 
     label vs_choices_5_13:
         # Branching from ""
         menu:
             "":
-                jump
+                jump corrupted_hero
             "":
-                jump
+                jump unfulfilled_love
 
     label vs_choices_5_14:
         # Branching from ""
         menu:
             "":
-                jump
+                jump corrupted_hero
             "":
-                jump
+                jump unfulfilled_love
 
     label vs_choices_5_15:
         # Branching from ""
         menu:
             "":
-                jump
+                jump sacrificed_princess
             "":
-                jump
+                jump love_beyond_death
 
     label vs_choices_5_16:
         # Branching from ""
         menu:
             "":
-                jump
+                jump forest_protectors
             "":
-                jump
+                jump happily_ever_after

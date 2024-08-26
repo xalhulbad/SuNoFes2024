@@ -382,126 +382,126 @@ label dml_start:
         # Branching from ""
         menu:
             "":
-                jump
+                jump sacrificed_princess
             "":
-                jump
+                jump inherited_throne
 
     label dml_choices_5_2:
         # Branching from ""
         menu:
             "":
-                jump
+                jump inherited_throne
             "":
-                jump
+                jump sacrificed_princess
 
     label dml_choices_5_3:
         # Branching from ""
         menu:
             "":
-                jump
+                jump corrupted_hero
             "":
-                jump
+                jump love_beyond_death
 
     label dml_choices_5_4:
         # Branching from ""
         menu:
             "":
-                jump
+                jump forest_curse
             "":
-                jump
+                jump forest_protectors
 
     label dml_choices_5_5:
         # Branching from ""
         menu:
             "":
-                jump
+                jump forest_curse
             "":
-                jump
+                jump forest_protectors
 
     label dml_choices_5_6:
         # Branching from ""
         menu:
             "":
-                jump
+                jump corrupted_hero
             "":
-                jump
+                jump forest_curse
 
     label dml_choices_5_7:
         # Branching from ""
         menu:
             "":
-                jump
+                jump unfulfilled_love
             "":
-                jump
+                jump sacrificed_princess
 
     label dml_choices_5_8:
         # Branching from ""
         menu:
             "":
-                jump
+                jump unfulfilled_love
             "":
-                jump
+                jump forest_protectors
 
     label dml_choices_5_9:
         # Branching from ""
         menu:
             "":
-                jump
+                jump sacrificed_hero
             "":
-                jump
+                jump inherited_throne
 
     label dml_choices_5_10:
         # Branching from ""
         menu:
             "":
-                jump
+                jump sacrificed_hero
             "":
-                jump
+                jump love_beyond_death
 
     label dml_choices_5_11:
         # Branching from ""
         menu:
             "":
-                jump
+                jump love_beyond_death
             "":
-                jump
+                jump forest_protectors
 
     label dml_choices_5_12:
         # Branching from ""
         menu:
             "":
-                jump
+                jump inherited_throne
             "":
-                jump
+                jump sacrificed_hero
 
     label dml_choices_5_13:
         # Branching from ""
         menu:
             "":
-                jump
+                jump corrupted_hero
             "":
-                jump
+                jump unfulfilled_love
 
     label dml_choices_5_14:
         # Branching from ""
         menu:
             "":
-                jump
+                jump corrupted_hero
             "":
-                jump
+                jump forest_curse
 
     label dml_choices_5_15:
         # Branching from ""
         menu:
             "":
-                jump
+                jump sacrificed_hero
             "":
-                jump
+                jump sacrificed_princess
 
     label dml_choices_5_16:
         # Branching from ""
         menu:
             "":
-                jump
+                jump unfulfilled_love
             "":
-                jump
+                jump love_beyond_death
