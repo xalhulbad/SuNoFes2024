@@ -59,6 +59,28 @@ label dml_start:
     $ dml_chose_is_there_nothing = False
     $ dml_chose_what_would_happen = False
 
+    # Leading text
+    n "The forest's atmosphere grew heavier as the princess and the hero ventured deeper, an unnatural darkness creeping in from all sides. The air was thick with the stench of decay, and the once vibrant trees were now withered and lifeless."
+    n "The hero’s hand hovered over his sword, eyes narrowing as the oppressive energy weighed down on them. He could sense it—an evil force lurking nearby, draining the life from everything it touched."
+    n "From the shadows, a figure materialized, cloaked in dark robes that seemed to absorb the light around them. His eyes glowed with a malevolent energy, and a twisted smile spread across his face as he observed the pair."
+    dml "Ah, the kingdom’s pawns have arrived. Come to witness the grandeur of true power? You’re just in time to see the culmination of my work!"
+    
+    if dml_times_gotten == 1: 
+        pt "The Dark Magic Lord again… He's the source of all this corruption. We have to stop him before it’s too late." 
+    
+    elif dml_times_gotten == 2: 
+        pt "We’ve faced him before. We know his tricks, but he’s more dangerous than ever. We can’t let our guard down." 
+    
+    else: 
+        pt "It’s him again… We know what to expect, but we can’t underestimate him. This has to end soon..."
+    
+    n "The Dark Magic Lord stepped forward, his presence exuding an overwhelming aura of arrogance and delusion. The hero instinctively moved in front of the princess, his stance protective but tense."
+    h "Stay back, princess. His power may be great, but it’s born of madness. We must be careful."
+    dml "Madness? You dare call my work madness? This forest was dying long before I arrived. I am its salvation, its rebirth! But of course, you’re too blind to see the truth."
+    n "The Dark Magic Lord raised his hand, dark tendrils of magic swirling around his fingers, ready to strike at a moment’s notice. The air buzzed with dangerous energy, and the forest seemed to tremble under his influence."
+    dml "Enough talk. If you’re so determined to stand in my way, then witness the power of the one true savior of this world!"
+
+
     # Level 1 of choice tree
     label dml_choices_1:
         # Initial branch

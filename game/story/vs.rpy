@@ -58,6 +58,29 @@ label vs_start:
     $ vs_chose_will_your_vengeance = False
     $ vs_chose_what_then = False
 
+    # Leading text
+    n "A cold wind swept through the forest as the princess and the hero moved forward, the trees seeming to close in around them. The once-familiar paths now felt foreign and threatening, shrouded in an eerie mist that clung to the ground like a living thing."
+    n "The hero’s grip tightened on his sword, his breath visible in the sudden chill. The forest was deathly silent, the usual sounds of life replaced by a foreboding stillness."
+    n "Out of the mist, a figure began to take shape, its form shifting and flickering as if it were made of shadows. The air grew colder with each passing second, and a sense of dread settled over the princess and the hero."
+    vs "You wander where you are not welcome... the kingdom’s taint has stained this place for far too long. I am here to collect what is owed."
+   
+    if vs_times_gotten == 1: 
+        pt "The Vengeful Spirit again… The forest’s anger made flesh. We have to be careful; it’s driven by pure rage." 
+   
+    elif vs_times_gotten == 2:
+        pt "We’ve encountered this spirit before. Its anger is overwhelming, but we’ve survived it once—we can do it again."
+   
+    else: 
+        pt "This spirit won’t stop until it destroys us. We have to end this, once and for all."
+   
+    n "The Vengeful Spirit’s presence was suffocating, its form constantly shifting as it glided closer. The hero instinctively stepped forward, placing himself between the princess and the malevolent entity."
+    h "Stay back, princess. This spirit is more dangerous than any foe we’ve faced. We have to be ready for anything."
+    vs "You think you can resist? The forest demands retribution, and you shall be the first to pay."
+    n "The spirit’s voice was a chilling whisper, echoing through the trees and seeping into their very bones. The mist around them thickened, the air growing colder with every word it spoke."
+    vs "The forest has taken from the wicked before, and now it shall take from you. There is no escape from its wrath."
+
+
+
     # Level 1 of choice tree
     label vs_choices_1:
         # Initial branch

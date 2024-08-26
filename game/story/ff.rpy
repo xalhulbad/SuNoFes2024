@@ -58,6 +58,29 @@ label ff_start:
     $ ff_chose_is_this_just = False
     $ ff_chose_when_will_it = False
 
+    # Leading text
+    n "The air was thick with tension as the princess and the hero moved cautiously through the forest, the trees closing in around them like silent sentinels. There was an unsettling calm, as if the forest itself was holding its breath."
+    n "The hero scanned the surroundings with narrowed eyes, every sense on high alert. He could feel it—a presence watching them, waiting for the right moment to strike."
+    n "From the shadows, a figure emerged with a graceful, almost seductive stride. Her eyes glinted with a dangerous intelligence, and a sly smile played on her lips as she sized up the pair."
+    ff "Well, well, what do we have here? The princess and her brave protector, still so far from the safety of the kingdom. How... intriguing."
+  
+    if ff_times_gotten == 1: 
+        pt "The Femme Fatale again... Her words are like poison. I need to stay focused." 
+ 
+    elif ff_times_gotten == 2:
+        pt "We’ve dealt with her before. I can’t let her get into my head again."
+  
+    else: 
+        pt "Her games won’t work this time. I’m ready for whatever she tries."
+        
+    n "The Femme Fatale stepped closer, her movements fluid and deliberate. Every word she spoke dripped with honeyed malice, designed to unsettle and disarm."
+    h "Stay back, princess. Don’t listen to her lies. We have to stay focused."
+    ff "Lies? Oh, darling, I don’t need to lie. I already know everything there is to know about you. But don’t worry, I’m not here to hurt you... not yet, anyway."
+    n "Her voice was smooth, almost hypnotic, as she circled them, her gaze flicking between the princess and the hero. The air around them seemed to grow colder, every word a calculated strike at their resolve."
+    ff "Let’s see how far you’re willing to go, princess. Will you sacrifice everything to protect your little hero? Or will you crumble under the weight of your own choices?"
+
+    jump ff_choices_1
+
     # Level 1 of choice tree
     label ff_choices_1:
         # Initial branch
