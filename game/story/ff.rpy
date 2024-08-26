@@ -56,6 +56,67 @@ label ff_start:
                 jump ff_choices_2_2
 
 
+            # Dialogue pool options
+
+            "":
+                $  = True
+                call
+                jump ff_choices_1
+
+            "":
+                $  = True
+                call
+                jump ff_choices_1
+
+            "":
+                $  = True
+                call
+                jump ff_choices_1
+
+            "":
+                jump ff_choices_1
+
+            "":
+                $  = True
+                call
+                jump ff_choices_1
+
+            "":
+                $  = True
+                call
+                jump ff_choices_1
+            
+            "":
+                $  = True
+                call
+                jump ff_choices_1
+
+            "":
+                $  = True
+                call
+                jump ff_choices_1
+
+            "":
+                $  = True
+                call
+                jump ff_choices_1
+
+            "":
+                $  = True
+                call
+                jump ff_choices_1
+
+            "":
+                $  = True
+                call
+                jump ff_choices_1
+
+            "":
+                $  = True
+                call
+                jump ff_choices_1
+
+
     # Level 2 of choice tree
     label ff_choices_2_1:
         # Branching from ""

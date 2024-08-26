@@ -57,6 +57,67 @@ label dml_start:
             "":
                 jump dml_choices_2_2
 
+            
+            # Dialogue pool options
+
+            "":
+                $  = True
+                call
+                jump dml_choices_1
+
+            "":
+                $  = True
+                call
+                jump dml_choices_1
+
+            "":
+                $  = True
+                call
+                jump dml_choices_1
+
+            "":
+                jump dml_choices_1
+
+            "":
+                $  = True
+                call
+                jump dml_choices_1
+
+            "":
+                $  = True
+                call
+                jump dml_choices_1
+            
+            "":
+                $  = True
+                call
+                jump dml_choices_1
+
+            "":
+                $  = True
+                call
+                jump dml_choices_1
+
+            "":
+                $  = True
+                call
+                jump dml_choices_1
+
+            "":
+                $  = True
+                call
+                jump dml_choices_1
+
+            "":
+                $  = True
+                call
+                jump dml_choices_1
+
+            "":
+                $  = True
+                call
+                jump dml_choices_1
+
 
     # Level 2 of choice tree
     label dml_choices_2_1:

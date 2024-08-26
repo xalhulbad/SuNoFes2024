@@ -55,6 +55,67 @@ label vs_start:
 
             "":
                 jump vs_choices_2_2
+            
+
+            # Dialogue pool options
+
+            "":
+                $  = True
+                call
+                jump vs_choices_1
+
+            "":
+                $  = True
+                call
+                jump vs_choices_1
+
+            "":
+                $  = True
+                call
+                jump vs_choices_1
+
+            "":
+                jump vs_choices_1
+
+            "":
+                $  = True
+                call
+                jump vs_choices_1
+
+            "":
+                $  = True
+                call
+                jump vs_choices_1
+            
+            "":
+                $  = True
+                call
+                jump vs_choices_1
+
+            "":
+                $  = True
+                call
+                jump vs_choices_1
+
+            "":
+                $  = True
+                call
+                jump vs_choices_1
+
+            "":
+                $  = True
+                call
+                jump vs_choices_1
+
+            "":
+                $  = True
+                call
+                jump vs_choices_1
+
+            "":
+                $  = True
+                call
+                jump vs_choices_1
 
 
     # Level 2 of choice tree
