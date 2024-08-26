@@ -75,250 +75,250 @@ label fh_start:
 
     # Level 2 of choice tree
     label fh_choices_2_1:
-        # Branching from ""
+        # Branching from "(Act) Prepare for combat"
         menu:
-            "":
+            "(Act) Attack first":
                 jump fh_choices_3_1
-            "":
+            "(Act) Defend and counter":
                 jump fh_choices_3_2
 
     label fh_choices_2_2:
-        # Branching from ""
+        # Branching from "(Act) Try to reason with him"
         menu:
-            "":
+            "(Act) Appeal to his sense of justice":
                 jump fh_choices_3_3
-            "":
+            "(Act) Offer a peaceful solution":
                 jump fh_choices_3_4
 
 
     # Level 3 of choice tree
     label fh_choices_3_1:
-        # Branching from ""
+        # Branching from "(Act) Attack first"
         menu:
-            "":
+            "(Act) Aim for his weak spot":
                 jump fh_choices_4_1
-            "":
+            "(Act) Charge with full force":
                 jump fh_choices_4_2
 
     label fh_choices_3_2:
-        # Branching from ""
+        # Branching from "(Act) Defend and counter"
         menu:
-            "":
+            "(Act) Use the hero’s shield to block and counter":
                 jump fh_choices_4_3
-            "":
+            "(Act) Lure him into a position where he is vulnerable":
                 jump fh_choices_4_4
 
     label fh_choices_3_3:
-        # Branching from ""
+        # Branching from "(Act) Appeal to his sense of justice"
         menu:
-            "":
+            "(Act) Remind him of his past as a protector":
                 jump fh_choices_4_5
-            "":
+            "(Act) Convince him that the kingdom has changed":
                 jump fh_choices_4_6
 
     label fh_choices_3_4:
-        # Branching from ""
+        # Branching from "(Act) Offer a peaceful solution"
         menu:
-            "":
+            "(Act) Swear on your honor to clear his name" if not chose_magic:
                 jump fh_choices_4_7
-            "":
+            "(Act) Offer to stay in the forest with him" if chose_magic:
                 jump fh_choices_4_8
 
     
     # Level 4 of choice tree
     label fh_choices_4_1:
-        # Branching from ""
+        # Branching from "(Act) Aim for his weak spot"
         menu:
-            "":
+            "(Act) Strike at his old injury" if not chose_magic:
                 jump fh_choices_5_1
-            "":
+            "(Act) Use magic to enhance the attack" if chose_magic:
                 jump fh_choices_5_2
 
     label fh_choices_4_2:
-        # Branching from ""
+        # Branching from "(Act) Charge with full force"
         menu:
-            "":
+            "(Act) Overwhelm him with sheer strength" if not chose_magic:
                 jump fh_choices_5_3
-            "":
+            "(Act) Use magic to disorient him during the charge" if chose_magic:
                 jump fh_choices_5_4
 
     label fh_choices_4_3:
-        # Branching from ""
+        # Branching from "(Act) Use the hero’s shield to block and counter"
         menu:
-            "":
+            "(Act) Push him back and strike" if not chose_magic:
                 jump fh_choices_5_5
-            "":
+            "(Act) Use magic to create an opening" if chose_magic:
                 jump fh_choices_5_6
 
     label fh_choices_4_4:
-        # Branching from ""
+        # Branching from "(Act) Lure him into a position where he is vulnerable"
         menu:
-            "":
+            "(Act) Distract him with a feint and attack":
                 jump fh_choices_5_7
-            "":
+            "(Act) Use the environment to trap him":
                 jump fh_choices_5_8
 
     label fh_choices_4_5:
-        # Branching from ""
+        # Branching from "(Act) Remind him of his past as a protector"
         menu:
-            "":
+            "(Act) Bring up his past victories":
                 jump fh_choices_5_9
-            "":
+            "(Act) Highlight the injustice he suffered" if not chose_magic:
                 jump fh_choices_5_10
 
     label fh_choices_4_6:
-        # Branching from ""
+        # Branching from "(Act) Convince him that the kingdom has changed"
         menu:
-            "":
+            "(Act) Explain how the kingdom has reformed":
                 jump fh_choices_5_11
-            "":
+            "(Act) Offer him a chance to return as a hero":
                 jump fh_choices_5_12
 
     label fh_choices_4_7:
-        # Branching from ""
+        # Branching from "(Act) Swear on your honor to clear his name"
         menu:
-            "":
+            "(Act) Offer to bring evidence of his innocence":
                 jump fh_choices_5_13
-            "":
+            "(Act) Offer to use your authority as princess":
                 jump fh_choices_5_14
 
     label fh_choices_4_8:
-        # Branching from ""
+        # Branching from "(Act) Offer to stay in the forest with him"
         menu:
-            "":
+            "(Act) Offer to perform a magical oath" if chose_magic:
                 jump fh_choices_5_15
-            "":
+            "(Act) Betray him and prepare to strike":
                 jump fh_choices_5_16
 
 
     # Level 5 of choice tree
     label fh_choices_5_1:
-        # Branching from ""
+        # Branching from "(Act) Strike at his old injury"
         menu:
-            "":
-                jump
-            "":
-                jump
+            "(Act) Exploit his pain to win the fight":
+                jump sacrificed_hero
+            "(Act) Hesitate, showing mercy":
+                jump love_beyond_death
 
     label fh_choices_5_2:
-        # Branching from ""
+        # Branching from "(Act) Use magic to enhance the attack"
         menu:
-            "":
-                jump
-            "":
-                jump
+            "(Act) Overwhelm him with dark magic":
+                jump forest_curse
+            "(Act) Bind his power with a magical seal":
+                jump happily_ever_after
 
     label fh_choices_5_3:
-        # Branching from ""
+        # Branching from "(Act) Overwhelm him with sheer strength"
         menu:
-            "":
-                jump
-            "":
-                jump
+            "(Act) Defeat him decisively":
+                jump inherited_throne
+            "(Act) Knock him unconscious":
+                jump saved_hero
 
     label fh_choices_5_4:
-        # Branching from ""
+        # Branching from "(Act) Use magic to disorient him during the charge"
         menu:
-            "":
-                jump
-            "":
-                jump
+            "(Act) Seal him away with forbidden magic":
+                jump corrupted_hero
+            "(Act) Break his weapon with magic":
+                jump forest_protectors
 
     label fh_choices_5_5:
-        # Branching from ""
+        # Branching from "(Act) Push him back and strike"
         menu:
-            "":
-                jump
-            "":
-                jump
+            "(Act) Go for a lethal blow":
+                jump sacrificed_hero
+            "(Act) Aim to disarm him":
+                jump saved_hero
 
     label fh_choices_5_6:
-        # Branching from ""
+        # Branching from "(Act) Use magic to create an opening"
         menu:
-            "":
-                jump
-            "":
-                jump
+            "(Act) Shatter his defenses with dark energy":
+                jump forest_curse
+            "(Act) Restrain him with enchanted chains":
+                jump happily_ever_after
 
     label fh_choices_5_7:
-        # Branching from ""
+        # Branching from "(Act) Distract him with a feint and attack"
         menu:
-            "":
-                jump
-            "":
-                jump
+            "(Act) Teleport away" if chose_magic:
+                jump happily_ever_after
+            "(Act) Let him surrender willingly":
+                jump love_beyond_death
 
     label fh_choices_5_8:
-        # Branching from ""
+        # Branching from "(Act) Use the environment to trap him"
         menu:
-            "":
-                jump
-            "":
-                jump
+            "(Act) Use a snare trap" if not chose_magic:
+                jump sacrificed_hero
+            "(Act) Trap him with magic" if chose_magic:
+                jump corrupted_hero
 
     label fh_choices_5_9:
-        # Branching from ""
+        # Branching from "(Act) Bring up his past victories"
         menu:
-            "":
-                jump
-            "":
-                jump
+            "(Act) Remind him of the lives he saved":
+                jump saved_hero
+            "(Act) Teleport away quickly" if chose_magic:
+                jump happily_ever_after
 
     label fh_choices_5_10:
-        # Branching from ""
+        # Branching from "(Act) Highlight the injustice he suffered"
         menu:
-            "":
-                jump
-            "":
-                jump
+            "(Act) Urge him to reclaim his honor":
+                jump saved_hero
+            "(Act) Push him to let go of his hatred":
+                jump sacrificed_hero
 
     label fh_choices_5_11:
-        # Branching from ""
+        # Branching from "(Act) Explain how the kingdom has reformed"
         menu:
-            "":
-                jump
-            "":
-                jump
+            "(Act) Betray and attack with magic" if chose_magic:
+                jump corrupted_hero
+            "(Act) Persuade him to embrace peace":
+                jump love_beyond_death
 
     label fh_choices_5_12:
-        # Branching from ""
+        # Branching from "(Act) Offer him a chance to return as a hero"
         menu:
-            "":
-                jump
-            "":
-                jump
+            "(Act) Promise him redemption":
+                jump inherited_throne
+            "(Act) Betray and strike with magic" if chose_magic:
+                jump corrupted_hero
 
     label fh_choices_5_13:
-        # Branching from ""
+        # Branching from "(Act) Offer to bring evidence of his innocence"
         menu:
-            "":
-                jump
-            "":
-                jump
+            "(Act) Offer to present proof to the kingdom":
+                jump love_beyond_death
+            "(Act) Betray and shoot a fireball" if chose_magic:
+                jump forest_curse
 
     label fh_choices_5_14:
-        # Branching from ""
+        # Branching from "(Act) Offer to use your authority as princess"
         menu:
-            "":
-                jump
-            "":
-                jump
+            "(Act) Offer to declare his innocence publicly":
+                jump inherited_throne
+            "(Act) Betray and strike with magic" if chose_magic:
+                jump forest_protectors
 
     label fh_choices_5_15:
-        # Branching from ""
+        # Branching from "(Act) Offer to perform a magical oath"
         menu:
-            "":
-                jump
-            "":
-                jump
+            "(Act) Follow through with your promise":
+                jump forest_protectors
+            "(Act) Betray and shoot a fireball":
+                jump forest_curse
 
     label fh_choices_5_16:
-        # Branching from ""
+        # Branching from "(Act) Betray him and prepare to strike"
         menu:
-            "":
-                jump
-            "":
-                jump
+            "(Act) Strike with sword" if not chose_magic:
+                jump inherited_throne
+            "Act) Strike with magic" if chose_magic:
+                jump forest_protectors
     
 
 
