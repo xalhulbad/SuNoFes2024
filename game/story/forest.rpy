@@ -161,7 +161,7 @@ label forest_start:
         return
 
     label forest_proceed_into_forest:
-        scene bg Forest2
+        scene bg Forest2 with fade
         n "The princess and the hero stepped forward in the forest, but something was off. A bad omen. An eerie silence enveloped them."
         n "A tree branch cracked under the foot of the Princess. A flock of birds scattered from the canopy above at the sudden noise."
         n "The hero narrowed his eyes and scanned his surroundings. His hand drifted towards the numerous weapons he had equipped."
