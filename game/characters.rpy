@@ -14,8 +14,8 @@ define ah = Character("Aware Hero", what_color="#DC143C")
 # Villains
 define v_type = None # Variable used for revealing villain type
 
-define v = Character("The Villain", what_color="#646464") # Unused for now
-define s = Character("Shadowy Figure", what_color="#646464") # Before villain type revealed
+define v = Character("Shadowy Figure", what_color="#646464") # Before villain type revealed
+define s = Character("Shadowy Figure", what_color="#646464") # Alias for previous
 
 define ff = Character("Femme Fatale", what_color="#646464")
 define fh = Character("Fallen Hero", what_color="#646464")
