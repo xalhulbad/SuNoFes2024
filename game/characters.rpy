@@ -1,7 +1,7 @@
 # Declares characters used in the game.
 
 # Narrator
-define n = Character("Narrator", what_color="#CCCCCC")
+define n = Character("Narrator", what_color="#CCCCCC", who_bold=True)
 
 # Princess
 define p = Character("The Princess", what_color="#CCCCCC")

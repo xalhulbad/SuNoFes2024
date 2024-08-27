@@ -57,19 +57,19 @@ define gui.interface_text_color = '#ffffff'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "fonts/Bookstory.ttf"
+define gui.text_font = "fonts/ComingSoon.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "fonts/RainShaman.ttf"
+define gui.name_text_font = "fonts/ComingSoon.ttf"
 
 ## The font used for out-of-game text.
 define gui.interface_text_font = "fonts/BolgenSketch.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 120
+define gui.text_size = 87
 
 ## The size of character names.
-define gui.name_text_size = 90
+define gui.name_text_size = 100
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 100
@@ -106,7 +106,7 @@ define gui.textbox_yalign = 1.0
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 800
+define gui.name_xpos = 840
 define gui.name_ypos = -30
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
@@ -204,7 +204,7 @@ define gui.quick_button_text_selected_color = gui.accent_color
 ##
 ## Choice buttons are used in the in-game menus.
 
-define gui.choice_button_width = 1000
+define gui.choice_button_width = 2000
 define gui.choice_button_height = None
 define gui.choice_button_tile = False
 define gui.choice_button_borders = Borders(150, 8, 150, 8)
