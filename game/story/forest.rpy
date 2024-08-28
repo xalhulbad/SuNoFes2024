@@ -396,7 +396,7 @@ label villain_encounter:
                 n "As they fled deeper into the forest, the Dark Magic Lord's laughter echoed behind them, a haunting reminder of the power they faced."
                 scene bg Forest1
                 dml "Run, little mice. You cannot escape my domain."
-                n "The princess and hero knew their journey had only just begun. They had seen the true face of their enemy, and the fight to save the forest would be more challenging than they had ever imagined."
+                n "The princess and hero knew their journey had only just begun. They had seen the true face of their enemy, and the trip home would be more challenging than they had ever imagined."
                 $ v_type = "dml"
                 return
 
@@ -534,8 +534,7 @@ label villain_encounter:
                 p "Please, I can see the pain in your eyes. We're not here to hurt you. We all have our struggles. Let's find a way to understand each other."
                 n "The figure's stance loosened slightly, the tension in their shoulders easing. They seemed torn, conflicted between aggression and the princess's calming presence."
                 p "We're listening. Just tell us what you need."
-                n "The figures hesitated, a flicker of vulnerability showing in their eyes as they considered the princess's sincere plea."
-                n "They lower their weapon, opening themselves to hear the princess' words."
+                n "The figure hesitated, a flicker of vulnerability showing in their eyes as they considered the princess's sincere plea."
                 jump villain4_1_1
 
             "(Act) Offer information":
@@ -596,7 +595,7 @@ label villain_encounter:
                 vs "I am the reckoning for those who disturb the balance. You, who come from the kingdom of corruption, shall face my wrath."
                 n "The spirit's voice echoed through the forest, each word dripping with ancient malice and vengeance. The hero stepped forward, trying to reason with the apparition."
                 h "We're not your enemies. We can make amends. We seek to restore balance, not destroy it."
-                n "The spirit's hollowlaugh resonated through the trees, a sound devoid of any warmth or forgiveness."
+                n "The spirit's hollow laugh resonated through the trees, a sound devoid of any warmth or forgiveness."
                 vs "There are no amends for the dead. Only revenge. The forest has taken its toll on the wicked, and you will pay for the sins of your kingdom."
                 n "The spirit's form flickered, the surrounding trees seeming to bend towards it, feeding off its dark energy. The princess's heart pounded, realizing the gravity of the situation."
                 p "We seek to heal the forest, to undo the wrongs of the past. Let us help."
@@ -623,7 +622,6 @@ label villain_encounter:
                 fh "Honor? From the likes of you? But very well, I accept your challenge."
                 n "The hero stepped forward, drawing his sword and matching the figure's determined stance."
                 h "We'll fight, but I won't let you harm her. I've heard the stories about you."
-                n "The Fallen Hero's grip tightened on his blade, his eye flashing with old grudges and new resolve."
                 fh "Then let the past be avenged with steel."
                 n "With a swift, practiced motion, the Fallen Hero lunged at the hero, their swords clashing with a resounding clang. The hero parried the blow, their faces mere inches apart, locked in a deadly dance of blades." 
                 scene bg Forest2_hero_sword_close_charging_fh
@@ -657,7 +655,6 @@ label villain_encounter:
                 dml "You are nothing against my power. Witness the true ruler of this forest!" 
                 n "The Dark Magic Lord turned his gaze to the princess, his eyes glowing with an eerie light." 
                 dml "You cannot stop me. I am the hero this world needs, even if it cannot see it yet." 
-                n "The forest around them seemed to wither, the life drained by the dark magic emanating from the figure. The princess's heart ached at the sight." 
                 p "You're killing everything with your delusions!" 
                 dml "Silence! I am the savior this world needs, even if it cannot see it yet." 
                 n "With a wave of his hand, he summoned a surge of dark energy. The hero and princess barely managed to dodge the attack, the ground where they stood moments ago now charred and lifeless." 
@@ -665,7 +662,7 @@ label villain_encounter:
                 scene bg Forest1
                 n "As they fled deeper into the forest, the Dark Magic Lord's laughter echoed behind them, a haunting reminder of the power they faced." 
                 dml "Run, little mice. You cannot escape my domain." 
-                n "The princess and hero knew their journey had only just begun. They had seen the true face of their enemy, and the fight to save the forest would be more challenging than they had ever imagined."
+                n "The princess and hero knew their journey had only just begun. They had seen the true face of their enemy, and the trip home would be more challenging than they had ever imagined."
                 $ v_type = "dml"
                 return
 
@@ -678,17 +675,7 @@ label villain_encounter:
                 hu "Interesting. You choose to defend rather than attack. A wise choice, but will it save you?" 
                 n "The Hunter notched an arrow with fluid grace, his eyes never leaving the hero. The forest seemed to hold its breath, the tension palpable." 
                 p "We don't want to fight you. Just let us pass." 
-                n "The Hunter's lips curled into a cold smile, but he did not lower his weapon." 
-                hu "It's not about what you want. It's about the hunt."
-                n "Without warning, the Hunter released the arrow. The hero's reflexes kicked in, and he raised his shield just in time, the arrow deflecting with a sharp clang." 
-                h "Stay close, princess. We need to counter his moves."
-                n "The princess, without a weapon of her own, borrowed the hero's dagger, holding it ready. The Hunter moved with inhuman speed, dodging her attempt to strike effortlessly. He returned fire, his arrows coming in quick succession." 
-                n "The hero's shield deflected most of the arrows, but one grazed his arm, drawing a thin line of blood. He gritted his teeth, maintaining his focus." 
-                hu "Impressive. But how long can you keep this up?" 
-                n "The hero and the Hunter circled each other, their eyes locked in a deadly dance. The princess moved to the side, trying to find a better angle to support the hero." 
-                p "We don't want this fight. Please, let us go." 
-                hu "You cannot escape the hunt. But... you have earned my respect." 
-                n "The Hunter lowered his bow slightly, his gaze calculating." 
+                n "The Hunter's lips curled into a cold smile as he lowered weapon." 
                 hu "I will let you go this time. But remember, the forest is my domain. Next time, you may not be so lucky." 
                 n "With a final, stern look, the Hunter disappeared into the shadows, his voice echoing through the forest." 
                 scene bg Forest2
@@ -716,15 +703,9 @@ label villain_encounter:
                 n "The princess felt a chill run down her spine as the Femme Fatale's eyes locked onto hers, filled with a predatory gleam." 
                 p "Who are you?" 
                 ff "I am the one who knows all your secrets, who reads your fears and desires like an open book. You thought you could distract me, but you're merely a pawn in my game." 
-                n "The hero tightened his grip on his sword, feeling the weight of the Femme Fatale's words." 
-                h "We're not here to play games. Let us pass." 
-                ff "Oh, but where would the fun be in that? I relish in this dance of shadows and deceit." 
                 n "The Femme Fatale's voice dripped with honeyed malice, each word a carefully crafted weapon aimed at their resolve. The air grew colder, the forest seeming to close in around them." 
-                p "We're not afraid of you." 
-                ff "Oh, but you should be. Your bravado is charming, but ultimately futile. I can see into your very souls, and I will break you from within." 
-                n "With a graceful yet menacing movement, the Femme Fatale circled them, her eyes never leaving theirs." 
-                ff "Run along now, little mice. But remember, the shadows are my domain, and I will always be watching." 
-                n "With their morale crushed and their resolve shaken, the princess and hero turned and fled into the depths of the forest, the Femme Fatale's laughter echoing behind them." 
+                p "She doesn't seem to be bluffing. We should run!" 
+                n "The princess and hero turned and fled into the depths of the forest, the Femme Fatale's laughter echoing behind them." 
                 scene bg Forest1
                 ff "Until we meet again, my dear pawns. The game has only just begun." 
                 n "As they ran, the weight of their failure bore down on them. The encounter with the Femme Fatale had left a deep mark, her words a haunting reminder of their vulnerability." 
@@ -761,7 +742,7 @@ label villain_encounter:
                 n "As they fled deeper into the forest, the Dark Magic Lord's laughter echoed behind them, a haunting reminder of the power they faced."
                 scene bg Forest1
                 dml "Run, little mice. You cannot escape my domain."
-                n "The princess and hero knew their journey had only just begun. They had seen the true face of their enemy, and the fight to save the forest would be more challenging than they had ever imagined."
+                n "The princess and hero knew their journey had only just begun. They had seen the true face of their enemy, and the trip home would be more challenging than they had ever imagined."
                 $ v_type = "dml"
                 return
 
@@ -777,13 +758,14 @@ label villain_encounter:
                 n "Their attack was swift and coordinated, but the Hunter moved faster. In a blur, he intercepted their strike, parrying with his bow and knocking them off balance."
                 hu "A worthy effort, but the forest is my domain."
                 n "The princess and hero scrambled to their feet, their eyes widening as the Hunter revealed himself, his presence commanding and lethal."
-                scene bg Forest2_hero_sword_facing_close_hu
+                scene bg Forest2_far_hu
                 p "Who are you?"
                 hu "I am the Hunter. You trespass in my forest, and now you will face the consequences."
                 n "The Hunter's voice was cold, devoid of any mercy. He notched an arrow with fluid precision, aiming at the hero."
                 h "We don't want to fight you. Let us go, and we'll leave your forest."
                 hu "It is not that simple. The hunt must be completed."
                 n "Without warning, the Hunter released the arrow. The hero raised his shield just in time, the impact driving him back a step. The Hunter notched another arrow, ready to continue the assault."
+                scene bg Forest2_hero_sword_facing_close_hu
                 p "We need to move. Now!"
                 n "The hero and princess took off, weaving through the trees as the Hunter's arrows flew with deadly accuracy. Their hearts pounded as they evaded his relentless pursuit."
                 scene bg Forest1
@@ -793,6 +775,7 @@ label villain_encounter:
                 n "With determination in their hearts, the princess and hero pressed on, knowing that the forest held many more dangers and the Hunter would always be a shadow in their path."
                 $ v_type = "hu"
                 return
+            
             "(Act) Use surroundings to escape":
                 n "The princess and hero moved stealthily through the underbrush, using the dense foliage to mask their escape."
                 p "We need to lose them in the forest. Keep moving."
@@ -801,24 +784,17 @@ label villain_encounter:
                 scene bg Forest2_far_vs
                 vs "You think you can escape me?"
                 n "The voice echoed through the trees, cold and haunting. The princess and hero looked around, their eyes wide with fear."
-                h "What is this?"
-                n "The ground beneath their feet began to shift, roots and vines writhing as if possessed. The Vengeful Spirit materialized before them, its form shimmering with dark energy."
-                vs "The forest will not let you go. You will pay for the sins of your kingdom."
                 p "We didn't mean to harm the forest. We're trying to help!"
                 n "The spirit's eyes burned with unearthly fire, its anger palpable."
                 vs "Help? Your kind only knows how to destroy. You cannot fool me."
-                n "The princess and hero tried to move, but the roots and vines tightened around their ankles, holding them in place."
-                h "We need to break free!"
-                n "The hero swung his sword at the vines, but they were resilient, resisting his efforts. The spirit's form flickered, the forest responding to its rage."
-                vs "You will not leave this place. The forest demands retribution."
+                h "We can't reach them with our words. We should run!"
                 n "The princess's heart raced as she desperately looked for a way out. Her eyes fell on a small opening between the trees."
                 p "There! We have to get through there!"
-                n "With a renewed sense of urgency, the hero hacked at the vines, finally breaking them free. They sprinted towards the opening, the spirit's wail of fury echoing behind them."
                 n "As they squeezed through the narrow gap, the forest seemed to close in around them, the spirit's presence looming like a dark cloud."
                 vs "Run, but know this: you cannot escape the forest's wrath."
                 scene bg Forest1
                 n "They emerged on the other side, panting and shaken. The oppressive atmosphere lifted slightly, but the fear of the Vengeful Spirit lingered."
-                h "We can't keep running. We need to find a way to stop that spirit."
+                h "We can't avoid them forever. We need to find a way to stop that spirit."
                 p "Agreed. But we need a plan. We need to understand what we're dealing with."
                 n "With a shared look of determination, the princess and hero pressed on, their minds racing with the encounter's implications. The forest held many secrets, and the Vengeful Spirit was a formidable foe they would have to confront sooner or later."
                 $ v_type = "vs"
@@ -829,24 +805,19 @@ label villain_encounter:
             "(Act) Run for the escape route":
                 n "The princess and hero nodded at each other, steeling their resolve for a desperate dash towards the escape route."
                 p "On three... one, two, three, go!"
-                n "They sprinted towards the narrow path, the forest around them seeming to shift and twist in response. Just as they thought they were free, the ground beneath them erupted, roots and vines shooting up to block their path."
+                n "They sprinted towards the narrow path, the forest around them seeming to shift and twist in response. Just as they thought they were free, a figure started to materialize in front of them."
                 vs "You cannot escape."
-                n "The voice was cold and filled with malice. The Vengeful Spirit materialized before them, its ghostly form shimmering with dark energy."
+                n "The voice was cold and filled with malice. The Vengeful Spirit appeared before them, its ghostly form shimmering with dark energy."
                 scene bg Forest2_far_vs
                 vs "The forest demands retribution for your kingdom's sins."
                 h "We didn't mean to harm the forest! We're trying to help!"
                 n "The spirit's eyes burned with an unearthly fire, its presence oppressive and suffocating."
                 vs "Your kind only knows destruction. You cannot fool me with your lies."
-                n "The princess and hero tried to push through the barrier of roots and vines, but they were ensnared, the forest itself turning against them."
-                p "We need to break free!"
-                n "The hero swung his sword desperately, hacking at the vines, but they seemed to regenerate faster than he could cut them."
-                vs "You will not leave this place. The forest will have its vengeance."
                 n "The spirit surged forward, its ghostly hands reaching out. The hero and princess struggled, their movements becoming more frantic."
                 scene bg Forest2_close_charging_vs
-                p "We have to find another way!"
-                n "With a final, desperate effort, the hero hacked at the vines once more, creating a small opening."
+                p "We can't overcome them like this. We need to run!"
                 h "Through here, quickly!"
-                n "They squeezed through the gap, their hearts pounding. The spirit's wail of fury echoed behind them as they tumbled into a clearing, breathless and shaken."
+                n "They managed to get around the spirit and squeeze through the gap, their hearts pounding. The spirit's wail of fury echoed behind them as they tumbled into a clearing, breathless and shaken."
                 vs "Run, but know this: you cannot escape the forest's wrath."
                 scene bg Forest1
                 n "The oppressive atmosphere lifted slightly, but the fear of the Vengeful Spirit lingered."
@@ -861,7 +832,7 @@ label villain_encounter:
                 p "Stay low and follow me. I think there's a way through here."
                 n "They moved stealthily, trying to make as little noise as possible. The forest seemed to watch them, every rustle of leaves amplifying their fear."
                 n "Suddenly, an arrow embedded itself in the tree beside them, and the Hunter emerged from the shadows, his eyes sharp and calculating."
-                scene bg Forest2_far_hu
+                scene bg Forest2_hero_sword_facing_far_hu
                 hu "You think you can hide from me in my own forest?"
                 h "We're not here to cause trouble. We just want to leave."
                 n "The Hunter's expression remained unreadable, his bow still drawn, an arrow aimed at the hero."
@@ -870,13 +841,14 @@ label villain_encounter:
                 p "Please, we mean no harm. Let us go, and we won't come back."
                 hu "Words are cheap. Prove your worth."
                 n "The hero lowered his sword slightly, trying to show they were not a threat."
+                scene bg Forest2_hero_facing_far_hu
                 h "We respect your territory. We just need safe passage."
                 n "The Hunter studied them for a moment, then slowly lowered his bow."
                 hu "Very well. But remember, the forest is my domain. Should you break your word, there will be no mercy next time."
                 n "With a swift, almost imperceptible movement, the Hunter disappeared back into the shadows, his presence lingering like a dark omen."
+                scene bg Forest2
                 p "Let's move, quickly."
                 n "The princess and hero continued their journey, the weight of the Hunter's gaze still heavy upon them. They knew they had been given a chance, but the forest held many more dangers, and the Hunter would always be watching."
-                scene bg Forest1
                 h "We need to be careful. The forest is full of unexpected allies and enemies."
                 p "Agreed. Let's keep moving and stay vigilant."
                 n "As they pressed on, the encounter with the Hunter stayed in their minds, a reminder that their path was fraught with peril and that they must tread carefully to survive."
@@ -916,14 +888,16 @@ label villain_encounter:
             "(Act) Shoot to kill":
                 n "The hero's eyes hardened with determination as he aimed for a lethal shot, hoping to end the threat once and for all."
                 p "Finish this. We can't let them keep attacking us."
-                n "The hero released the arrow, aiming for the figure's heart. The projectile flew true, but as it neared its target, the air around the figure shimmered with dark energy."
+                n "The hero released the arrow, aiming for the figure's heart."
                 scene bg Forest2_far_dml
                 dml "You dare attempt to kill me?"
-                n "The arrow stopped inches from the figure's chest, suspended in midair by an unseen force. The Dark Magic Lord raised a hand, and the arrow disintegrated into dust."
+                n "The arrow suddenly disintegrated into dust."
                 dml "Your pitiful attempts are futile."
                 n "The forest around them seemed to darken as the Dark Magic Lord's power surged. Shadows writhed and twisted, responding to his anger."
+                scene bg Forest2_close_charging_dml
                 h "We need to retreat. Now!"
                 n "The hero grabbed the princess's hand, pulling her away as the Dark Magic Lord advanced, his eyes glowing with malevolent energy."
+                scene bg Forest2_far_dml
                 dml "Run, little mice. Your struggle only makes your demise more entertaining."
                 n "They ran away, the Dark Magic Lord's voice following them."
                 dml "Remember, you cannot hide from me. My power is absolute."
@@ -931,7 +905,7 @@ label villain_encounter:
                 scene bg Forest1
                 h "We need to find a way to stop him. He's too powerful."
                 p "Agreed. But we need a plan. We can't face him head-on like that again."
-                n "With a shared look of determination, the princess and hero pressed on, knowing that their journey had become even more perilous. The Dark Magic Lord was a formidable enemy, and the fight to save the forest would be more challenging than they had ever imagined."
+                n "With a shared look of determination, the princess and hero pressed on, knowing that their journey had become even more perilous. The Dark Magic Lord was a formidable enemy, and the trip home would be more challenging than they had ever imagined."
                 $ v_type = "dml"
                 return
 
@@ -977,12 +951,10 @@ label villain_encounter:
                 p "What... what are you?"
                 n "The spirit's eyes burned with an unearthly fire, its presence suffocating and oppressive."
                 vs "I am the vengeance of the forest, the embodiment of its rage. Your kind will suffer for their greed."
-                n "The hero scrambled to his feet, but the ground beneath him shifted, roots and vines wrapping around his ankles, holding him in place."
-                h "We need to get out of here!"
-                n "The princess rushed to the hero's side, desperately trying to free him from the entangling roots. The spirit advanced, its form growing more solid and menacing with each step."
                 p "We didn't mean to harm the forest! We're trying to help!"
                 vs "Lies! Your kind only knows how to take and destroy. The forest demands retribution."
-                n "With a final, desperate effort, the hero broke free from the roots, pulling the princess along as they fled deeper into the forest. The spirit's wail of fury echoed behind them, a haunting reminder of its relentless pursuit."
+                h "We need to get out of here!"
+                n "The hero started to run, pulling the princess along as they fled deeper into the forest. The spirit's wail of fury echoed behind them, a haunting reminder of its relentless pursuit."
                 vs "Run, but know this: you cannot escape the forest's wrath. It will find you, and you will pay."
                 n "They stumbled into a clearing, gasping for breath, the oppressive atmosphere lifting slightly but the fear of the Vengeful Spirit lingering."
                 scene bg Forest1
@@ -999,27 +971,23 @@ label villain_encounter:
                 h "Drop your weapon and surrender now!"
                 n "The air grew thick with tension as the figure's expression darkened, a malevolent smile spreading across his face."
                 dml "You dare challenge me? The forest itself bends to my will."
-                n "The Dark Magic Lord raised his hand, dark energy swirling around him as he summoned his power."
-                scene bg Forest2_hero_charging_far_dml
+                n "Dark energy swirled around the Dark Magic Lord as he summoned his power."
+                scene bg Forest2_hero_bow_aiming_far_dml
                 dml "You are nothing but pawns in my grand design. I am the true ruler of this forest."
                 n "The hero kept his bow drawn, but the oppressive energy emanating from the Dark Magic Lord made it difficult to focus."
                 p "We won't let you continue your tyranny. Surrender now, or face our wrath!"
-                n "The Dark Magic Lord's laughter echoed through the forest, chilling them to the bone."
-                dml "Foolish mortals. You think you can stand against me? I will show you the true power of darkness."
-                n "With a wave of his hand, the Dark Magic Lord unleashed a surge of dark energy. The hero released his arrow, but it was deflected by the magical barrier surrounding the figure."
-                n "The ground trembled as the dark energy spread, roots and vines writhing and twisting as they reached out to ensnare the princess and hero."
+                n "The Dark Magic Lord's laughter echoed through the forest, chilling them to the bone. As he began to charge at them, princess and hero knew that this was no mere boast."
+                scene bg Forest2_close_charging_dml
                 h "We need to get out of here!"
                 n "The hero grabbed the princess's hand, pulling her away as the Dark Magic Lord advanced, his eyes glowing with malevolent energy."
-                dml "You cannot escape my wrath. The forest bends to my will."
-                n "The hero swung his sword desperately, trying to cut through the roots. The Dark Magic Lord watched, his expression one of twisted amusement."
                 dml "Run, little mice. Your struggle only makes your demise more entertaining."
-                n "With a final, desperate effort, the hero hacked through the roots, creating a narrow gap. They squeezed through, the Dark Magic Lord's voice following them."
+                n "As they ran, the Dark Magic Lord's voice followed them."
                 dml "Remember, you cannot hide from me. My power is absolute."
+                n "They eventually stumbled into a clearing, gasping for breath. The oppressive darkness lifted slightly, but the fear of the Dark Magic Lord lingered."
                 scene bg Forest1
-                n "As they stumbled into a clearing, gasping for breath, the oppressive darkness lifted slightly, but the fear of the Dark Magic Lord lingered."
                 h "We need to find a way to stop him. He's too powerful."
                 p "Agreed. But we need a plan. We can't face him head-on like that again."
-                n "With a shared look of determination, the princess and hero pressed on, knowing that their journey had become even more perilous. The Dark Magic Lord was a formidable enemy, and the fight to save the forest would be more challenging than they had ever imagined."
+                n "With a shared look of determination, the princess and hero pressed on, knowing that their journey had become even more perilous. The Dark Magic Lord was a formidable enemy, and the journey home would be more challenging than they had ever imagined."
                 $ v_type = "dml"
                 return
 
@@ -1035,11 +1003,8 @@ label villain_encounter:
                 n "The Hunter's gaze flicked to the figure and then back to the hero, a nod of approval barely perceptible."
                 hu "You have caught my interest. I respect those who value precision and control."
                 n "The tension in the air shifted as the Hunter lowered his bow, his expression still stern but less hostile."
-                h "We just want to pass through safely. Can you help us?"
                 hu "I will let you pass, but know this: the forest is my domain. Should you betray its balance, you will answer to me."
                 n "The princess and hero exchanged a glance, relief mingling with the weight of the Hunter's words."
-                p "Thank you. We will respect your territory."
-                hu "See that you do. And remember, I will be watching."
                 n "With a final, piercing look, the Hunter disappeared back into the shadows, his presence lingering like a silent sentinel."
                 scene bg Forest2
                 h "Let's move, quickly."
@@ -1133,7 +1098,8 @@ label villain_encounter:
                 p "Who are you?"
                 n "The Femme Fatale's smile widened, her eyes gleaming with malicious delight."
                 ff "I am the Femme Fatale, the mistress of shadows and whispers. And you, my dear, are nothing more than pawns in my little game."
-                n "The hero tightened his grip on his sword, but the princess laid a hand on his arm, sensing the danger of provoking her further."
+                n "The hero tightened his grip on his sword, ready to face the Femme Fatale head on."
+                scene bg Forest2_hero_sword_facing_far_ff
                 h "We won't fall for your tricks."
                 ff "Tricks? Oh, sweetheart, this is merely the beginning. Your bravado is charming, but ultimately futile."
                 n "The forest seemed to close in around them, the shadows growing longer and darker as the Femme Fatale's influence spread."
@@ -1168,7 +1134,6 @@ label villain_encounter:
                 n "The princess pulled the hero back, her heart racing as they faced the spirit's relentless anger."
                 p "We didn't mean to harm the forest! We're trying to make things right!"
                 vs "Words of repentance will not save you. The forest demands retribution."
-                n "The ground trembled as roots and vines erupted, reaching out to ensnare the princess and hero. The spirit's fury was palpable, its form growing more menacing with each step."
                 h "We can't fight this thing. We need to retreat!"
                 n "The hero and princess turned to flee, but the spirit's vengeful wail echoed through the forest, shaking the very air around them."
                 scene bg Forest1
@@ -1183,29 +1148,31 @@ label villain_encounter:
             "(Act) Use surroundings to gain advantage":
                 n "The hero and princess quickly scanned their surroundings, searching for anything that could give them an advantage."
                 p "Use the trees! We need to outmaneuver them!"
-                n "The hero nodded, ducking behind a large tree as the princess darted in the opposite direction, attempting to confuse the figure. The figure's eyes glinted with amusement at their efforts."
+                n "The hero nodded, ducking behind a large tree in an attempt to confuse the figure. The figure's eyes glinted with amusement at his efforts."
                 dml "Clever, but futile. You cannot hide from me."
                 scene bg Forest2_far_dml
-                n "The Dark Magic Lord raised his hands, dark energy crackling around him as he summoned his power. The forest seemed to shiver in response, the trees groaning as they were infused with dark magic."
+                n "Dark energy crackled around the Dark Magic Lord as he summoned his power. The forest seemed to shiver in response, the trees groaning as they were infused with dark magic."
                 dml "I control the very essence of this forest. Your tricks are meaningless."
-                n "The hero and princess continued to use the trees for cover, but the Dark Magic Lord's power was overwhelming. Shadows lengthened and twisted, reaching out like grasping hands."
+                n "The hero and continued to use the trees for cover, but the Dark Magic Lord's power was overwhelming."
                 h "We need to find a way to break his concentration!"
                 p "I'll distract him. You find an opening!"
-                n "The princess stepped out from behind a tree, her voice ringing out with defiance."
+                n "The princess's voice rang out with defiance."
                 p "Is this all you can do? Show us your true power!"
                 n "The Dark Magic Lord's eyes narrowed, his pride pricked by her challenge."
                 dml "Very well. Witness the full extent of my might."
                 n "As he focused his energy, the hero saw his chance. With a swift, silent movement, he closed the distance and struck at the Dark Magic Lord's exposed side."
+                scene bg Forest2_hero_charging_far_dml
                 dml "Argh!"
                 n "The attack disrupted the flow of dark energy, causing the shadows to waver. The hero and princess pressed their advantage, driving the Dark Magic Lord back."
+                scene bg Forest2_hero_charging_close_dml
                 p "Keep pushing! We can do this!"
-                n "But the Dark Magic Lord quickly recovered, his eyes burning with fury. He raised his hands once more, and a surge of dark energy erupted from the ground, forcing the hero and princess to retreat."
+                n "But the Dark Magic Lord quickly recovered, his eyes burning with fury. Dark energy erupted from the ground, forcing the hero and princess to retreat."
                 dml "You are formidable, but you will not defeat me. This forest bends to my will, and you are merely insects in my grand design."
-                scene bg Forest1
                 n "The hero and princess regrouped, panting and worn, but their resolve unbroken."
                 h "We need a new plan. He's too powerful to face directly."
                 p "Agreed. We need to find a way to disrupt his control over the forest, but for now, we aren't prepared to take him on."
                 n "As they ran, they heard a final, mocking laugh. The Dark Magic Lord disappeared into the shadows, his presence lingering like a dark cloud over their path."
+                scene bg Forest1
                 dml "Run, little mice. The forest is mine, and you will never escape my grasp."
                 n "As they fled deeper into the forest, the encounter with the Dark Magic Lord haunted them, a chilling reminder of the power they faced and the dangers that lay ahead. They knew they had to find a way to break his hold over the forest, or their journey would end in disaster."
                 $ v_type = "dml"
@@ -1226,7 +1193,7 @@ label villain_encounter:
                 p "Trust me. We have to keep up the act."
                 n "The princess concentrated, her eyes locked with the Dark Magic Lord's. She willed herself to appear confident, her hand glowing faintly as she mimicked the gestures of casting a spell."
                 dml "Interesting. But mere illusions will not suffice."
-                n "The Dark Magic Lord raised his hand, and a swirl of dark energy formed in his palm. The forest around them seemed to wither, the air growing colder."
+                n "A swirl of dark energy formed around the dark magic lord. The forest around them seemed to wither, the air growing colder."
                 dml "Allow me to demonstrate true power."
                 n "With a flick of his wrist, the Dark Magic Lord unleashed a wave of dark energy. The princess and hero barely managed to dodge, the ground where they stood moments ago now charred and lifeless."
                 p "Magic... it's real?"
@@ -1239,7 +1206,7 @@ label villain_encounter:
                 scene bg Forest1
                 n "As they fled deeper into the forest, the Dark Magic Lord's laughter echoed behind them, a haunting reminder of the power they faced."
                 dml "Run, little mice. You cannot escape my domain."
-                n "The princess and hero knew their journey had only just begun. They had seen the true face of their enemy, and the fight to save the forest would be more challenging than they had ever imagined."
+                n "The princess and hero knew their journey had only just begun. They had seen the true face of their enemy, and the trip home would be more challenging than they had ever imagined."
                 h "We need a plan. Something that can counter his magic."
                 p "We'll find a way. We have to."
                 n "With determination in their hearts and the Dark Magic Lord's presence looming over them, the princess and hero pressed on, knowing that the road ahead would be fraught with peril."
