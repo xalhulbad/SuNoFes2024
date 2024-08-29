@@ -36,6 +36,7 @@ label hu_start:
     n "A twig snapped beneath the hero's foot, sending a flock of birds scattering into the sky. The sudden noise only served to heighten the tension between them."
     n "The hero tightened his grip on his sword, scanning the surroundings with a wary gaze. His instincts told him that danger was near, and he wasn't wrong."
     n "From the shadows, a figure emerged, cloaked in the dark hues of the forest."
+    scene bg Villain_far_hu
     n "His presence was as ominous as ever, and the bow in his hand gleamed with a readiness that set both the princess and hero on edge."
     hu "You've ventured deep into the forest again. It seems you haven't learned your lesson."
 
@@ -49,6 +50,7 @@ label hu_start:
         pt "Let's just get this over with."
 
     n "The Hunter stepped closer, his movements deliberate and precise. The hero instinctively moved to place himself between the princess and The Hunter, ready to defend her with his life."
+    scene bg Villain_hero_facing_far_hu
     h "Stay back, princess. We won't back down, but we don't want to fight."
     hu "How predictable. But the forest demands respect, and you are trespassing. Prepare yourselves-your choices have consequences."
 
@@ -60,6 +62,7 @@ label hu_start:
         menu:
             "(Act) Tell hero to brandish sword":
                 n "The princess signaled the hero, who drew his sword with a swift motion. The blade caught the moonlight, its sharp edge glinting dangerously."
+                scene bg Villain_hero_sword_facing_far_hu
                 p "Stay sharp. He's not someone we can take lightly."
                 h "Understood. I'll follow your lead."
 
@@ -142,9 +145,12 @@ label hu_start:
             "(Act) Charge at The Hunter":
                 n "The hero tightened his grip on the sword, heart pounding as he prepared to rush forward."
                 p "Go for it! We'll create an opening!"
-                n "With a fierce cry, the hero charged at The Hunter. But as he closed in, The Hunter moved with inhuman speed, dodging the strike effortlessly. The hero's momentum carried him forward, causing him to stumble."
+                n "With a fierce cry, the hero charged at The Hunter."
+                scene bg Villain_hero_charging_far_hu
+                n "But as he closed in, The Hunter moved with inhuman speed, dodging the strike effortlessly. The hero's momentum carried him forward, causing him to stumble."
                 n "Before he could recover, The Hunter struck, sweeping the hero's legs out from under him and sending him crashing to the ground."
                 hu "Predictable."
+                scene bg Villain_hero_sword_facing_far_hu
                 n "The Hunter's voice was a cold whisper, almost mocking. However, the hero quickly rolled back to his feet, gritting his teeth as he prepared for another attempt."
                 n "The princess remained alert, scanning the surroundings for a way to turn the tide."
 
@@ -316,15 +322,19 @@ label hu_start:
                 n "The princess saw an opening and urged the hero forward."
                 p "Focus! One clean strike!"
                 n "The hero adjusted his grip, aiming for a precise blow to disarm The Hunter. But as the sword arced towards its mark, The Hunter's reflexes kicked in. He twisted away, the sword grazing his cloak but finding no flesh."
+                scene bg Villain_hero_charging_close_hu
                 hu "Precision means nothing without timing."
-                n "The hero cursed under his breath, realizing the gap in their skill. The Hunter's counterattack was swift and decisive, leaving them once again on the defensive."
-
+                n "The hero cursed under his breath, realizing the gap in their skill." 
+                scene bg Forest2_hero_sword_facing_far_hu
+                n "The Hunter's counterattack was swift and decisive, leaving them once again on the defensive."
+                
                 jump hu_choices_4_1
 
             "(Act) Use the environment":
                 n "The princess's eyes darted around the forest, searching for anything that could turn the tide."
                 p "Use the trees! We need to get creative here."
                 n "The hero took the hint, weaving between the thick trunks, trying to bait The Hunter into a disadvantage."
+                scene bg Forest2_far_hu
                 n "The Hunter's gaze followed every move, unblinking and relentless. A snapped branch underfoot caused The Hunter to tense, his bow drawn with alarming speed."
                 hu "The forest is mine, not yours."
                 n "The words were barely spoken before an arrow streaked toward the hero. He narrowly dodged it, but it was clear-The Hunter's awareness of the terrain was far superior."
@@ -336,8 +346,10 @@ label hu_start:
         menu:
             "(Act) Shoot an arrow":
                 n "The princess nodded at the hero, and he swiftly readied an arrow. He pulled the bowstring taut, eyes focused on The Hunter."
+                scene bg Forest2_hero_bow_aiming_far_hu
                 p "Aim true. We can't afford to miss."
                 n "The hero loosed the arrow, but The Hunter moved like a shadow, evading the shot with barely a shift in his posture. The arrow embedded itself uselessly into a tree."
+                scene bg Forest2_hero_facing_far_hu
                 hu "You'll have to do better than that."
                 n "The Hunter remained poised, eyes cold and unreadable. The princess's mind raced-she knew they couldn't afford many more misses. What would be their next move?"
 
@@ -406,16 +418,20 @@ label hu_start:
         # Branching from "(Act) Strike with precision"
         menu:
             "(Act) Disarm The Hunter":
-                n "The hero lunged forward with renewed determination, aiming to knock the bow from The Hunter's grasp. The clash of movements was swift-The Hunter's bow was knocked aside, but the hero lost his sword in the process. In a blink, The Hunter was on him, pinning the hero to the ground with ruthless efficiency."
+                n "The hero lunged forward with renewed determination, aiming to knock the bow from The Hunter's grasp."
+                scene bg Forest2_hero_charging_far_hu
+                n "The clash of movements was swift, but the hero ultimately lost his sword in the struggle."
                 p "No!"
-                n "The princess's heart raced as she watched The Hunter press the hero down, his eyes cold and focused."
-                n "Without his weapon, the hero struggled, trying to push back, but The Hunter's strength was undeniable. The situation was dire-the next decision would have to be quick and decisive."
+                scene bg Forest2_hero_facing_close_hu
+                n "The princess's heart raced as she watched The Hunter stare the hero down, his eyes cold and focused."
+                n "Without his weapon, the hero would not be able to stand up to The Hunter. The situation was dire-the next decision would have to be quick and decisive."
 
                 jump hu_choices_5_1
 
             "(Act) Strike and retreat":
                 n "The princess and hero exchanged a glance-the situation was too dangerous for a prolonged fight. The hero shifted his stance, preparing to make one decisive strike before they made their escape."
                 p "We can't keep this up. Strike now and pull back!"
+                scene bg Forest2_hero_charging_far_hu
                 n "With a swift motion, the hero aimed a powerful blow at The Hunter, intending to create just enough distance to flee." 
                 n "The Hunter's eyes flashed as he parried, but the hero's follow-up attack came swiftly. The princess prepared herself-the window to escape was small, and they had to act fast."
 
@@ -445,6 +461,7 @@ label hu_start:
         menu:
             "(Act) Nock another arrow":
                 n "The hero quickly reached for another arrow, his focus narrowing on The Hunter. He knew the next shot had to be perfect-any hesitation could cost them."
+                scene bg Forest2_hero_bow_aiming_far_hu
                 p "Be quick-he's already preparing!"
                 n "The Hunter's speed was unreal. Before the hero could even draw back his bowstring, The Hunter had already notched an arrow of his own." 
                 n "Both sides were poised to strike, eyes locked in a deadly standoff. The princess felt her pulse quicken-who would be first to release?"
@@ -452,10 +469,11 @@ label hu_start:
                 jump hu_choices_5_5
 
             "(Act) Switch to a different tactic":
-                n "The hero lowered his bow, realizing that ranged attacks wouldn't be enough against someone as swift as The Hunter. He tightened his grip on his sword and turned to the princess."
                 p "We need to change our approach! Go in close!"
+                scene bg Forest2_hero_sword_facing_far_hu
                 h "Got it-cover me!"
                 n "The hero charged in, sword drawn, attempting to engage The Hunter in melee combat. The princess stayed back, watching for an opening."
+                scene bg Forest2_hero_charging_far_hu
                 n "The Hunter's eyes gleamed-he recognized the shift in their tactics and adjusted his stance, ready for the close-quarters battle that was about to begin."
 
                 jump hu_choices_5_6
@@ -591,8 +609,8 @@ label hu_start:
                 n "The hero struggled beneath The Hunter's grip, the weight of defeat pressing down on him. The princess, seeing her chance, summoned the dark energy within her, channeling it into a powerful spell."
                 n "The Hunter, focused on the hero, didn't see the magic coming."
                 p "This ends now!"
-                n "The spell struck The Hunter with unrelenting force, the dark energy crackling through his body. But as the magic surged, tendrils of it lashed out unpredictably, striking the hero as well."
                 scene bg blackscreen
+                n "The spell struck The Hunter with unrelenting force, the dark energy crackling through his body. But as the magic surged, tendrils of it lashed out unpredictably, striking the hero as well."
                 n "The Hunter fell lifeless to the forest floor, his grip on the hero finally released. But the victory was short-lived."
                 n "The hero, now tainted by the dark magic, gasped in pain as the corruption took hold, twisting his body and mind in monstrous ways."
                 n "His eyes met the princess's, filled with both agony and determination."
@@ -626,8 +644,8 @@ label hu_start:
                 n "As they prepared to retreat, the princess called upon her magic, her hands glowing with dark energy. She knew this would be their last chance to escape, but the cost would be great."
                 p "This is our only shot-stay close!"
                 n "The hero nodded, understanding the risk as the princess unleashed the magic. The dark energy surged toward The Hunter, catching him off guard and sending him reeling."
-                n "But as the spell hit its mark, a portion of the dark magic arced back, striking the hero as they fled."
                 scene bg blackscreen
+                n "But as the spell hit its mark, a portion of the dark magic arced back, striking the hero as they fled."
                 n "The magic worked, paralyzing The Hunter so that he could no longer fight, but the unintended side effect was devastating."
                 n "The hero, corrupted by the dark magic, felt his body twisting, transforming into something monstrous."
                 n "His once-strong resolve crumbled under the weight of the corruption, his thoughts darkening as the magic consumed him."
@@ -646,8 +664,8 @@ label hu_start:
                 n "With careful, deliberate steps, the hero maneuvered The Hunter toward the trap."
                 p "Lead him this way-this is our chance!"
                 n "The hero feigned retreat, drawing The Hunter closer until the snare was in place."
-                n "The moment The Hunter stepped into the trap, the roots tightened around his legs, causing him to stumble."
                 scene bg blackscreen
+                n "The moment The Hunter stepped into the trap, the roots tightened around his legs, causing him to stumble."
                 n "The trap had caught The Hunter off guard, but his strength was greater than they anticipated. In his final moments of desperation, The Hunter broke free, delivering a fatal blow to the hero."
                 n "With The Hunter's final breath, he shot one last arrow straight at the princess's heart. However, the hero, knowing this was his end, jumped in front of the princess, sacrificing himself for good to block the arrow."
                 n "The princess, filled with grief, knelt beside the hero as his life slipped away. The forest grew eerily quiet, as if mourning the loss of the hero who had fought so valiantly."
@@ -660,8 +678,8 @@ label hu_start:
             "(Act) Trap him using magic" if chose_magic:
                 n "With a quick incantation, the princess summoned the power of the forest to her aid. The magic flowed through her, and she directed it toward The Hunter, crafting an arcane trap that would hold him fast."
                 p "The forest itself will be your prison!"
-                n "The magic weaved through the air, surrounding The Hunter in glowing, ethereal chains. He struggled, but the bindings were too strong, tightening around him with each attempt to break free."
                 scene bg blackscreen
+                n "The magic weaved through the air, surrounding The Hunter in glowing, ethereal chains. He struggled, but the bindings were too strong, tightening around him with each attempt to break free."
                 n "The enchanted bindings held The Hunter with unyielding strength, rendering him powerless as he slowly suffocated until he could no longer breathe."
                 n "With The Hunter dead, the tension seemed to lift as the threat was neutralized. The princess and hero, exhausted but victorious, left The Hunter's body behind them, the weight of their journey beginning to ease."
                 n "As they emerged from the trees, they knew their path forward was clear. The princess would explore the world together with the hero, no longer bound by rules and expectations."
@@ -677,8 +695,8 @@ label hu_start:
             "(Act) Use a flashy spell to blind him":
                 n "The princess whispered an incantation, focusing on a spell that would create a burst of light bright enough to blind The Hunter. As the energy gathered in her hands, she glanced at the hero, who was ready to strike."
                 p "This will give us the opening we need-be ready!"
-                n "With a swift motion, the princess released the spell. A brilliant flash of light exploded in front of The Hunter, blinding him for good."
                 scene bg blackscreen
+                n "With a swift motion, the princess released the spell. A brilliant flash of light exploded in front of The Hunter, blinding him for good."
                 n "The spell worked perfectly, leaving The Hunter unable to see. As he stumbled, the hero took the opportunity to strike, knowing that The Hunter would struggle to fight back without his incredible vision."
                 n "Disoriented and helpless, The Hunter collapsed as the hero struck him, his life slipping away as the magic faded."
                 n "With the threat finally eliminated, the princess and hero took a moment to catch their breath. The forest, once thick with tension, seemed to relax as the danger passed."
@@ -691,8 +709,8 @@ label hu_start:
             "(Act) Start a fire to get his attention":
                 n "The princess scanned the surroundings, her eyes landing on a patch of dry underbrush. Summoning a small flame, she carefully fed it until it grew, knowing the fire would spread quickly and draw The Hunter's attention."
                 p "This will create the distraction we need-be ready to move!"
-                n "The flames caught instantly, spreading with alarming speed through the dry forest. The Hunter turned, his focus shifting to the growing inferno, just as the princess had hoped."
                 scene bg blackscreen
+                n "The flames caught instantly, spreading with alarming speed through the dry forest. The Hunter turned, his focus shifting to the growing inferno, just as the princess had hoped."
                 n "The fire spread rapidly, consuming the forest in its wake. The Hunter, distracted by the flames, was caught in the blaze and perished as the fire raged on."
                 n "But the flames, fueled by careless magic, unleashed an ancient, dark force that had been long dormant beneath the forest floor."
                 n "The forest became twisted, corrupted by the destructive power they had unleashed."
@@ -710,8 +728,8 @@ label hu_start:
             "(Act) Jump in front of the hero":
                 n "The hero notched another arrow, his eyes locked on The Hunter as he prepared to release. But the princess noticed something-the glint of The Hunter's arrow already aimed directly at the hero."
                 p "No!"
-                n "Without hesitation, the princess threw herself in front of the hero, shielding him with her own body just as The Hunter's arrow was released."
                 scene bg blackscreen
+                n "Without hesitation, the princess threw herself in front of the hero, shielding him with her own body just as The Hunter's arrow was released."
                 n "The arrow struck true, embedding itself deep into the princess's chest as she fell to the ground."
                 n "The hero's arrow, fired in that same instant, struck The Hunter, who collapsed as well, finally defeated. The forest grew eerily silent, the echoes of battle fading into nothingness."
                 n "The hero knelt beside the princess, his heart breaking as her life slipped away. The princess, with her final breath, knew that her sacrifice had saved him, and that was all she had ever wanted."
@@ -725,8 +743,8 @@ label hu_start:
             "(Act) Light the area on fire with magic" if chose_magic:
                 n "As the hero prepared another arrow, the princess realized they needed a more drastic measure. Summoning her magic, she focused on the area around them, whispering an incantation that would ignite the forest floor."
                 p "This will buy us time-brace yourself!"
-                n "Flames erupted around them, spreading rapidly through the underbrush. The Hunter, caught off guard, faltered as the fire closed in, surrounding him in a ring of flames."
                 scene bg blackscreen
+                n "Flames erupted around them, spreading rapidly through the underbrush. The Hunter, caught off guard, faltered as the fire closed in, surrounding him in a ring of flames."   
                 n "The fire spread quickly, fueled by the dry wood and leaves. The Hunter, distracted by the flames, was consumed by the blaze, leaving only ashes behind."
                 n "But the fire's destruction didn't end there. The flames unleashed a dark, ancient magic buried deep within the forest, corrupting the land and binding the princess and hero to the twisted remnants of what once was."
                 n "Realizing their mistake, the princess and hero vowed to atone for their carelessness."
@@ -742,8 +760,8 @@ label hu_start:
             "(Act) Charge at him with sword":
                 n "The hero realized that their current approach wasn't enough. Lowering his bow, he drew his sword and looked to the princess."
                 p "We have to take him down directly. Stay close!"
-                n "With a nod, the hero charged at The Hunter, his sword aimed for a decisive strike. The Hunter, caught off guard by the sudden shift, barely had time to react."
                 scene bg blackscreen
+                n "With a nod, the hero charged at The Hunter, his sword aimed for a decisive strike. The Hunter, caught off guard by the sudden shift, barely had time to react."
                 n "The hero's strike was swift and true, cutting down The Hunter before he could launch another attack. With their enemy defeated, the forest fell silent, the tension evaporating as quickly as it had come."
                 n "The princess and hero, having survived yet another trial, knew their journey wasn't over."
                 n "Together, they emerged from the forest, their bond unbreakable. The princess, her courage and strength tested, would soon rise to her rightful place as queen."
@@ -758,9 +776,9 @@ label hu_start:
                 n "As the princess unleashed her magic, The Hunter moved with inhuman speed, his arrow already aimed and released before she could react."
                 n "The arrow struck the princess, piercing her heart as she fell to the ground, her magic dissipating."
                 h "No!"
+                scene bg blackscreen
                 n "In a moment of sheer desperation, the hero rushed to her side. With The Hunter still advancing, the hero grasped the dark magic that lingered in the air, defying everything he knew."
                 n "He channeled the forbidden power, using it to strike down The Hunter, who collapsed, lifeless, before he could claim another victim."
-                scene bg blackscreen
                 n "The hero, driven by love and despair, did the unthinkable-he used the dark magic to resurrect the princess. As her life was restored, the forbidden act was complete, an act that defied the very laws of the kingdom."
                 n "The princess awoke, her eyes meeting the hero's, filled with gratitude and love, but also with the weight of what had just transpired."
                 n "Word of the hero's actions spread quickly. The kingdom, bound by its rigid principles, could not tolerate such defiance of nature."
@@ -777,8 +795,8 @@ label hu_start:
             "(Act) Teleport away using magic":
                 n "The princess felt the magic surge through her as she focused on the spell that would teleport them both out of danger. The Hunter, relentless in his pursuit, was closing in quickly."
                 p "Hold on to me-this is our only way out!"
-                n "The hero grabbed her hand just as the magic activated, a bright light enveloping them both as the spell took effect. In an instant, they vanished from the forest, leaving The Hunter grasping at empty air."
                 scene bg blackscreen
+                n "The hero grabbed her hand just as the magic activated, a bright light enveloping them both as the spell took effect. In an instant, they vanished from the forest, leaving The Hunter grasping at empty air."
                 n "The teleportation spell had worked flawlessly, transporting the princess and hero far beyond The Hunter's reach. They reappeared in a tranquil meadow, the danger of the forest left far behind."
                 n "The princess and hero, now free from the kingdom's expectations and the forest's dangers, found themselves in a place where they could truly begin anew."
                 n "Together, they made the choice to forge a life beyond the borders of the kingdom, embracing the freedom that came with leaving the past behind."
@@ -790,8 +808,8 @@ label hu_start:
             "(Act) Light the trees on fire":
                 n "With The Hunter closing in, the princess knew they needed a drastic distraction. She summoned her magic, focusing on the trees surrounding them, and whispered an incantation that would ignite the forest itself."
                 p "We need to buy ourselves time-brace yourself!"
-                n "The flames leaped to life, rapidly spreading through the dense underbrush. The Hunter, startled by the sudden inferno, was forced to step back, momentarily distracted by the growing blaze."
                 scene bg blackscreen
+                n "The flames leaped to life, rapidly spreading through the dense underbrush. The Hunter, startled by the sudden inferno, was forced to step back, momentarily distracted by the growing blaze."
                 n "The fire spread uncontrollably, consuming the trees and everything in its path. The Hunter, unable to escape the flames, was engulfed and destroyed, leaving only ashes in his wake."
                 n "However, the fire's devastation did not stop there. The ancient forest, once a sanctuary, became corrupted by the dark magic that fueled the flames, binding the princess and hero to its charred remains."
                 n "The princess and hero, realizing the magnitude of their mistake, vowed to make amends for the destruction they had caused."
@@ -823,8 +841,8 @@ label hu_start:
             "(Act) Escape while you can":
                 n "The princess and hero exchanged a glance, realizing that their only chance of survival was to retreat. With The Hunter closing in, they made a split-second decision to escape into the thickest part of the forest."
                 p "We need to get out of here-now!"
-                n "The hero led the way, guiding the princess through the dense underbrush as The Hunter pursued them. They dodged arrows and leaped over obstacles, using every bit of their agility and cunning to stay ahead of their relentless foe."
                 scene bg blackscreen
+                n "The hero led the way, guiding the princess through the dense underbrush as The Hunter pursued them. They dodged arrows and leaped over obstacles, using every bit of their agility and cunning to stay ahead of their relentless foe."
                 n "The chase was grueling, but eventually, they managed to lose The Hunter in the labyrinth of trees. As the forest grew quieter, they realized they had escaped his reach."
                 n "The danger was behind them, but the lessons they had learned would stay with them forever. Emerging from the forest, the princess knew that she had been forever changed by the experience."
                 n "Returning to the kingdom, the princess's newfound strength and resolve would guide her as she ascended to the throne."
@@ -844,8 +862,8 @@ label hu_start:
                 hu "You're naive to think that magic can be anything but destructive. My mission is clear, and it won't be swayed by your words."
                 n "The princess, sensing the danger, tried to react, but The Hunter was too fast. He released his arrow, the deadly projectile striking the princess before she could even raise her defenses."
                 h "No!"
-                n "The hero rushed to her side, his heart shattering as the princess collapsed. In his desperation, he grabbed hold of the dark magic that lingered in the air, channeling it to defeat The Hunter in a final, devastating blow."
                 scene bg blackscreen
+                n "The hero rushed to her side, his heart shattering as the princess collapsed. In his desperation, he grabbed hold of the dark magic that lingered in the air, channeling it to defeat The Hunter in a final, devastating blow."
                 n "The hero's grief was all-consuming, and in his desperation, he did the unthinkable. Using the forbidden magic, he resurrected the princess, defying the natural order and the kingdom's most sacred laws."
                 n "Though her life was restored, the cost was immense. The kingdom, learning of the hero's transgression, decreed his banishment."
                 n "Despite the princess's pleas, she was confined to the kingdom's walls, forced to live under the oppressive gaze of those who sought to break her spirit."
@@ -862,8 +880,8 @@ label hu_start:
                 hu "Redemption? It's too late for that."
                 n "As The Hunter raised his bow, it was clear he had made his decision. He aimed directly at the hero, his intent lethal."
                 p "No!"
-                n "The princess, acting on pure instinct, threw herself in front of the hero just as The Hunter released his arrow. The arrow found its mark, piercing her heart."
                 scene bg blackscreen
+                n "The princess, acting on pure instinct, threw herself in front of the hero just as The Hunter released his arrow. The arrow found its mark, piercing her heart."
                 n "The princess's sacrifice was immediate and final. She crumpled to the ground, her life slipping away as the hero caught her in his arms."
                 n "The Hunter, momentarily stunned by her selflessness, hesitated just long enough for the hero to deliver a final, fatal blow. The Hunter's life ended in that instant, but the cost was too great."
                 n "The hero knelt beside the princess, his heart breaking as her final breath left her. Though The Hunter was defeated, the victory felt hollow."
@@ -883,8 +901,8 @@ label hu_start:
                 hu "Your words are meaningless. Magic is a curse, and you're foolish to think otherwise."
                 n "The princess tried to react, but The Hunter was too quick. With lethal precision, he released an arrow that struck the princess down, her body crumpling to the ground."
                 h "No!"
-                n "The hero, consumed by grief and rage, acted without thinking. He grasped the dark magic that lingered in the air, using it to strike down The Hunter with a devastating blow."
                 scene bg blackscreen
+                n "The hero, consumed by grief and rage, acted without thinking. He grasped the dark magic that lingered in the air, using it to strike down The Hunter with a devastating blow."     
                 n "In the aftermath, the hero did what the kingdom considered unforgivable-he used the dark magic to resurrect the princess, bringing her back from the brink of death."
                 n "Though the princess's life was restored, the hero's defiance of the kingdom's sacred laws sealed his fate. He was banished, marked as a danger to their way of life."
                 n "The princess, though alive, was confined to the kingdom, where she would live under constant scrutiny, her freedom taken from her as punishment for their defiance."
@@ -900,10 +918,9 @@ label hu_start:
                 hu "You think I can just walk away? You know nothing of what I've sacrificed!"
                 n "The hero stepped forward to intervene, but The Hunter, consumed by rage, turned his weapon on him, striking the hero down with a swift blow."
                 h "Ugh...!"
-                n "The princess's heart pounded as she saw the hero fall, wounded by The Hunter's attack. Without hesitation, she picked up a fallen branch, giving her the chance to act."
-                p "I won't let you harm him. This ends now."
-                n "The Hunter, focused on the hero, was oblivious to the princess's movement. She tightened her grip on the makeshift weapon and lunged forward, her determination unwavering."
                 scene bg blackscreen
+                n "The princess's heart pounded as she saw the hero fall, wounded by The Hunter's attack. Without hesitation, she picked up a fallen branch, giving her the chance to act."
+                n "The Hunter, focused on the hero, was oblivious to the princess's movement. She tightened her grip on the makeshift weapon and lunged forward, her determination unwavering."
                 n "The princess's strike was precise and powerful, catching The Hunter off guard. He collapsed, lifeless, his threat extinguished at last."
                 n "With the danger passed, the princess rushed to the hero's side, her hands trembling as she tended to his wounds with the care and urgency of someone who had nearly lost everything."
                 n "In the quiet aftermath, the forest seemed to release its oppressive grip, the tension easing as peace returned."
@@ -923,8 +940,8 @@ label hu_start:
                 n "The hero staggered back, clutching his wound as he fell to the ground. The princess's heart raced, fear and anger warring within her as she stood between The Hunter and the hero."
                 p "Is this what you wanted? To hurt innocent people who were only trying to return home? You're no warrior-you're just a coward running from your own doubts!"
                 n "The Hunter's expression faltered, her words piercing through his cold exterior. Doubt flickered in his eyes as he hesitated, the weight of her accusations sinking in."
-                n "Seizing the moment, the princess reached for the hero's sword, her resolve hardening. The Hunter, lost in his own doubts, didn't react in time. With one swift motion, the princess struck, the blade finding its mark."
                 scene bg blackscreen
+                n "Seizing the moment, the princess reached for the hero's sword, her resolve hardening. The Hunter, lost in his own doubts, didn't react in time. With one swift motion, the princess struck, the blade finding its mark."
                 n "The princess's strike was decisive, ending The Hunter's life before he could cause any more harm. The forest grew still as his body fell to the ground, the oppressive tension finally lifting."
                 n "With The Hunter defeated, the princess immediately turned her attention to the hero, tending to his wounds with the care and urgency of someone who had nearly lost everything."
                 n "As the danger faded, the princess and hero knew they had survived yet another trial together. Their bond, forged in the fires of battle, had only grown stronger."
@@ -940,8 +957,8 @@ label hu_start:
                 hu "Enough! You don't know anything about me!"
                 n "The Hunter, driven by anger, launched a reckless attack. The hero, realizing the danger, moved to intercept the blow, but The Hunter's strike was too swift and powerful."
                 h "Get back!"
-                n "The hero stepped in front of the princess, taking the brunt of the attack meant for her. With a final, desperate effort, he pushed The Hunter back, delivering a fatal blow even as he fell to the ground, mortally wounded."
                 scene bg blackscreen
+                n "The hero stepped in front of the princess, taking the brunt of the attack meant for her. With a final, desperate effort, he pushed The Hunter back, delivering a fatal blow even as he fell to the ground, mortally wounded."
                 n "The hero's sacrifice was immediate and absolute. He gave his life to protect the princess, striking down The Hunter with a final act of courage. The forest fell silent, the echoes of battle fading into the stillness."
                 n "The princess, heartbroken, knelt beside the hero as his life slipped away. The Hunter's threat was ended, but the cost was more than she could bear."
                 n "Though she would eventually return to the kingdom, the memory of the hero's sacrifice would stay with her forever, a constant reminder of the love and loyalty that had defined their journey."
@@ -957,8 +974,8 @@ label hu_start:
                 p "You call yourself a warrior, but all I see is a coward, too afraid to face his own doubts. You hide behind orders because you're too weak to think for yourself!"
                 n "The Hunter's expression twisted with anger, her words cutting deep. His usual cold composure began to crack, replaced by a fierce, reckless determination."
                 hu "I'll show you who's weak!"
-                n "The hero, sensing the shift in The Hunter's demeanor, braced himself for the impending attack. The Hunter, driven by rage, charged forward, his actions fueled by the need to prove himself."
                 scene bg blackscreen
+                n "The hero, sensing the shift in The Hunter's demeanor, braced himself for the impending attack. The Hunter, driven by rage, charged forward, his actions fueled by the need to prove himself."
                 n "The Hunter's reckless attack was his undoing. In his fury, he left himself vulnerable, allowing the hero to counter with a decisive strike."
                 n "The Hunter fell, defeated by his own impulsive actions. The princess rushed to the hero's side, helping him to his feet, relief flooding her as the immediate danger passed."
                 n "With The Hunter's threat eliminated, the princess and hero took a moment to recover. Their bond, tested by the trials they had faced, was stronger than ever."
@@ -972,8 +989,8 @@ label hu_start:
                 p "You think you're powerful? You think you can defeat us? You're nothing compared to the magic we wield!"
                 n "The Hunter's eyes blazed with anger at her challenge, but before he could react, the princess began to channel the dark magic that lingered in the air."
                 h "Princess, be careful!"
-                n "Ignoring the hero's warning, the princess unleashed the magic, directing it toward The Hunter. The dark energy overwhelmed him, his resistance crumbling under its sheer force."
                 scene bg blackscreen
+                n "Ignoring the hero's warning, the princess unleashed the magic, directing it toward The Hunter. The dark energy overwhelmed him, his resistance crumbling under its sheer force."
                 n "The magic worked, overpowering The Hunter and bringing him to his knees. But the victory came at a terrible price. The dark magic, wild and uncontrollable, arced back toward the hero, corrupting him in the process."
                 n "His body began to twist and warp as the magic took hold, transforming him into something monstrous."
                 n "The hero, realizing what was happening, fought against the transformation with all his strength. In a final act of love and desperation, he ended his life before the darkness could fully consume him."
@@ -991,8 +1008,8 @@ label hu_start:
                 n "The hero's eyes widened in alarm, but the princess held up a hand, silencing him. She knew this was the only way to protect him, even if it meant sacrificing herself."
                 n "The Hunter, his expression unreadable, lowered his weapon slightly as he considered her offer."
                 hu "You would give your life for his? Foolish, but... noble."
-                n "The princess took another step forward, her resolve unwavering. But as she approached The Hunter, he suddenly lunged forward, his intent lethal."
                 scene bg blackscreen
+                n "The princess took another step forward, her resolve unwavering. As she approached The Hunter, he suddenly lunged forward, his intent lethal."
                 n "The Hunter's strike was swift and deadly, ending the princess's life in an instant. She crumpled to the ground, her sacrifice complete."
                 n "The hero, his heart breaking, could only watch as the life drained from her eyes. In a final, desperate act of love, the hero struck down The Hunter, ending the threat for good."
                 n "But the victory was hollow, the cost too great."
@@ -1007,8 +1024,8 @@ label hu_start:
                 n "The hero's grip tightened on his weapon, eyes filled with worry, but he held back, trusting that the princess had a plan."
                 n "The Hunter watched her with calculating eyes, still wary of deception."
                 hu "You think I can't see through your games? But I'm willing to see where this goes."
-                n "The princess waited for the right moment, her heart pounding as The Hunter drew closer. Then, with a sudden burst of movement, she grabbed the hero's sword and lunged at The Hunter, catching him off guard."
                 scene bg blackscreen
+                n "The princess waited for the right moment, her heart pounding as The Hunter drew closer. Then, with a sudden burst of movement, she grabbed the hero's sword and lunged at The Hunter, catching him off guard."
                 n "The princess's attack was swift and deadly. The Hunter, caught by surprise, couldn't defend himself in time. Her blade struck true, ending his life before he could react."
                 n "With The Hunter defeated, the princess turned to the hero, her breath coming in short gasps as the reality of what she had done settled in."
                 n "Together, they would return to the kingdom, their bond stronger for having survived such a harrowing ordeal."
@@ -1024,8 +1041,8 @@ label hu_start:
                 n "The princess whispered a spell under her breath, channeling the magic that would transport them both far away from this place."
                 n "The Hunter, unaware of her intentions, kept his focus on her, confident in his control over the situation."
                 p "Just trust me-this will get us out of here."
-                n "The hero nodded, grabbing her hand as the magic began to swirl around them. With a flash of light, they vanished from the forest, leaving The Hunter grasping at nothing."
                 scene bg blackscreen
+                n "The hero nodded, grabbing her hand as the magic began to swirl around them. With a flash of light, they vanished from the forest, leaving The Hunter grasping at nothing."
                 n "The teleportation spell worked flawlessly, whisking the princess and hero far beyond The Hunter's reach. They reappeared in a peaceful glade, the dangers of the forest left far behind."
                 n "The princess and hero, free at last from the threats that had pursued them, found solace in their newfound freedom."
                 n "They would choose a life away from the kingdom, where they could live without the expectations that had once bound them."
@@ -1036,8 +1053,8 @@ label hu_start:
             "(Act) Shoot a fireball at him":
                 n "The princess's hands crackled with energy as she prepared to unleash a fireball. She knew this would be their last chance to escape, but the cost might be great."
                 p "I'll distract him with this-be ready to move!"
-                n "The hero watched with tense anticipation as the princess summoned the fireball, her focus intense. With a swift motion, she hurled the blazing projectile toward The Hunter, aiming to catch him off guard."
                 scene bg blackscreen
+                n "The hero watched with tense anticipation as the princess summoned the fireball, her focus intense. With a swift motion, she hurled the blazing projectile toward The Hunter, aiming to catch him off guard."
                 n "The fireball exploded on impact, engulfing The Hunter in flames. The forest around them caught fire as well, the flames spreading rapidly through the dry underbrush."
                 n "The Hunter, consumed by the fire, was destroyed, but the flames did not stop there. The fire, fueled by dark magic, unleashed an ancient curse that twisted the very fabric of the forest."
                 n "The princess and hero, realizing their mistake too late, found themselves bound to the cursed forest. The dark magic they had used had become their prison, chaining them to the land they had unintentionally corrupted."
@@ -1054,9 +1071,9 @@ label hu_start:
                 p "You don't have to keep fighting. There's a life beyond this forest, a place where you can be free from all of this. You can leave this behind."
                 n "The Hunter's expression twisted in anger, his eyes narrowing with fury."
                 hu "Leave the forest? You don't understand anything! This forest is all I have!"
+                scene bg blackscreen
                 n "The Hunter, consumed by rage at the thought of abandoning his mission and the only life he knew, swiftly turned his weapon on the hero, his intent deadly."
                 n "As The Hunter released his arrow, the princess acted without thinking, throwing herself in front of the hero. The arrow struck her, its lethal force taking her down instantly."
-                scene bg blackscreen
                 n "The princess's sacrifice was immediate and absolute. The arrow found its mark, ending her life in an instant."
                 n "The hero, filled with grief and rage, struck down The Hunter in retaliation, ending the threat but at a price too heavy to bear."
                 n "The hero knelt beside the fallen princess, her life slipping away as he held her close. Though The Hunter was defeated, the victory was hollow, the cost far too great."
@@ -1072,9 +1089,9 @@ label hu_start:
                 hu "A new life... free from all of this?"
                 n "The princess nodded, keeping her voice steady, even as she prepared for what must come next."
                 p "Yes, but you have to trust me. Lower your weapon, and we can leave this place together."
+                scene bg blackscreen
                 n "The Hunter hesitated, then slowly began to lower his weapon. The princess saw her chance and signaled to the hero, who struck swiftly, the blade cutting deep."
                 n "The Hunter, realizing too late that he had been deceived, was mortally wounded. With his dying breath, he pulled an arrow from his quiver and aimed it at the princess."
-                scene bg blackscreen
                 n "The hero, seeing The Hunter's final act of vengeance, moved without hesitation. He threw himself in front of the princess, taking the arrow meant for her."
                 n "The Hunter's life ended as the hero collapsed, the arrow buried deep in his chest."
                 n "The princess caught the hero as he fell, her heart breaking as his life slipped away. Though they had defeated The Hunter, the cost was too great."
@@ -1093,9 +1110,9 @@ label hu_start:
                 n "The hero moved swiftly, his blade flashing in the dim light of the forest. The strike landed true, mortally wounding The Hunter."
                 n "But with his dying breath, The Hunter pulled an arrow from his quiver, aiming it at the princess."
                 hu "If I go down, you're coming with me..."
+                scene bg blackscreen
                 n "The hero, seeing the danger, acted without hesitation. He threw himself in front of the princess, taking the arrow meant for her."
                 n "The Hunter's life ended as the hero collapsed, the arrow buried deep in his chest."
-                scene bg blackscreen
                 n "The hero's life ended in that moment, his sacrifice securing The Hunter's defeat. The princess, heartbroken, knelt beside the hero's lifeless body, her grief overwhelming as the reality of what had transpired set in."
                 n "The forest grew silent, the battle's echoes fading into nothingness."
                 n "Though The Hunter was defeated, the price was too great. The hero's sacrifice would forever haunt the princess, a constant reminder of the love and loyalty that had defined their journey."
@@ -1109,9 +1126,9 @@ label hu_start:
                 p "You've underestimated us. Now, you'll see the true power we wield."
                 n "The Hunter's confidence faltered as the magic crackled in the air. The princess unleashed a spell, a dazzling display meant to disorient him, giving the hero the chance to strike."
                 h "Now, while he's distracted!"
+                scene bg blackscreen
                 n "The hero moved quickly, his blade aimed for The Hunter's heart. But as the magic swirled around them, something went wrong."
                 n "The dark energy, wild and uncontrollable, arced back toward the hero, corrupting him in the process."
-                scene bg blackscreen
                 n "The hero's strike landed, defeating The Hunter, but the victory came at a terrible cost. The dark magic took hold of the hero, twisting his form into something monstrous."
                 n "He fought against the transformation, but it was too strong. In a final, desperate act of love, the hero ended his life before the darkness could fully consume him, sparing the princess from the monster he was becoming."
                 n "The princess, now free from The Hunter's threat, was left to face the world alone, the weight of the hero's sacrifice heavy on her heart."
