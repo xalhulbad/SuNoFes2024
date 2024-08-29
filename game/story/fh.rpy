@@ -486,7 +486,7 @@ label fh_start:
                 n "Suddenly, the princess unleashed a burst of light, disorienting him just long enough for the hero's blade to find its mark."
                 v "Magic tricks? So this is the extent of your courage."
                 n "The attack landed, but the Fallen Hero's resolve remained unbroken. Though visibly shaken, he quickly recovered, eyes blazing with renewed fury."
-                scene bg Villain_facing_far_fh
+                scene bg Villain_hero_sword_facing_far_fh
                 n "The princess could feel the tension rising-this battle was only growing more dangerous."
 
                 jump fh_choices_5_4
