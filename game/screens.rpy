@@ -206,9 +206,11 @@ style input:
 ## https://www.renpy.org/doc/html/screen_special.html#choice
 
 screen choice(items):
+    add "gui/choice_shadow.png"
     style_prefix "choice"
 
-    if len(items) <= 10:
+
+    if len(items) <= 6:
         vbox:
             for i in items:
                 textbutton i.caption action i.action
@@ -217,10 +219,10 @@ screen choice(items):
         viewport:
             scrollbars "vertical"
             mousewheel True
-            xsize 1225
-            ysize 900
-            xalign .5
-            yalign .5
+            xsize 1000
+            ysize 1500
+            xalign 0.99
+            yalign 0.07
             vbox:
                 for i in items:
                     textbutton i.caption action i.action
@@ -231,8 +233,8 @@ style choice_button is button
 style choice_button_text is button_text
 
 style choice_vbox:
-    xalign 0.5
-    yalign 0.45
+    xalign 0.99
+    yalign 0.07
 
     spacing gui.choice_spacing
 
