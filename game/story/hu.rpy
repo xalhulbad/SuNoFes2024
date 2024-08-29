@@ -31,6 +31,7 @@ label hu_start:
     $ hu_chose_we_went_by_mistake = False
     
     # Leading text
+    scene bg Villain
     n "The forest's dense canopy loomed overhead as the princess and the hero cautiously moved forward, the familiar tension thickening the air. It felt as if the forest itself was holding its breath."
     n "The princess and hero could see the kingdom now, a sign that they were getting close."
     n "A twig snapped beneath the hero's foot, sending a flock of birds scattering into the sky. The sudden noise only served to heighten the tension between them."
@@ -325,7 +326,7 @@ label hu_start:
                 scene bg Villain_hero_charging_close_hu
                 hu "Precision means nothing without timing."
                 n "The hero cursed under his breath, realizing the gap in their skill." 
-                scene bg Forest2_hero_sword_facing_far_hu
+                scene bg Villain_hero_sword_facing_far_hu
                 n "The Hunter's counterattack was swift and decisive, leaving them once again on the defensive."
                 
                 jump hu_choices_4_1
@@ -334,7 +335,7 @@ label hu_start:
                 n "The princess's eyes darted around the forest, searching for anything that could turn the tide."
                 p "Use the trees! We need to get creative here."
                 n "The hero took the hint, weaving between the thick trunks, trying to bait The Hunter into a disadvantage."
-                scene bg Forest2_far_hu
+                scene bg Villain_far_hu
                 n "The Hunter's gaze followed every move, unblinking and relentless. A snapped branch underfoot caused The Hunter to tense, his bow drawn with alarming speed."
                 hu "The forest is mine, not yours."
                 n "The words were barely spoken before an arrow streaked toward the hero. He narrowly dodged it, but it was clear-The Hunter's awareness of the terrain was far superior."
@@ -346,10 +347,10 @@ label hu_start:
         menu:
             "(Act) Shoot an arrow":
                 n "The princess nodded at the hero, and he swiftly readied an arrow. He pulled the bowstring taut, eyes focused on The Hunter."
-                scene bg Forest2_hero_bow_aiming_far_hu
+                scene bg Villain_hero_bow_aiming_far_hu
                 p "Aim true. We can't afford to miss."
                 n "The hero loosed the arrow, but The Hunter moved like a shadow, evading the shot with barely a shift in his posture. The arrow embedded itself uselessly into a tree."
-                scene bg Forest2_hero_facing_far_hu
+                scene bg Villain_hero_facing_far_hu
                 hu "You'll have to do better than that."
                 n "The Hunter remained poised, eyes cold and unreadable. The princess's mind raced-she knew they couldn't afford many more misses. What would be their next move?"
 
@@ -419,10 +420,10 @@ label hu_start:
         menu:
             "(Act) Disarm The Hunter":
                 n "The hero lunged forward with renewed determination, aiming to knock the bow from The Hunter's grasp."
-                scene bg Forest2_hero_charging_far_hu
+                scene bg Villain_hero_charging_far_hu
                 n "The clash of movements was swift, but the hero ultimately lost his sword in the struggle."
                 p "No!"
-                scene bg Forest2_hero_facing_close_hu
+                scene bg Villain_hero_facing_close_hu
                 n "The princess's heart raced as she watched The Hunter stare the hero down, his eyes cold and focused."
                 n "Without his weapon, the hero would not be able to stand up to The Hunter. The situation was dire-the next decision would have to be quick and decisive."
 
@@ -431,7 +432,7 @@ label hu_start:
             "(Act) Strike and retreat":
                 n "The princess and hero exchanged a glance-the situation was too dangerous for a prolonged fight. The hero shifted his stance, preparing to make one decisive strike before they made their escape."
                 p "We can't keep this up. Strike now and pull back!"
-                scene bg Forest2_hero_charging_far_hu
+                scene bg Villain_hero_charging_far_hu
                 n "With a swift motion, the hero aimed a powerful blow at The Hunter, intending to create just enough distance to flee." 
                 n "The Hunter's eyes flashed as he parried, but the hero's follow-up attack came swiftly. The princess prepared herself-the window to escape was small, and they had to act fast."
 
@@ -461,7 +462,7 @@ label hu_start:
         menu:
             "(Act) Nock another arrow":
                 n "The hero quickly reached for another arrow, his focus narrowing on The Hunter. He knew the next shot had to be perfect-any hesitation could cost them."
-                scene bg Forest2_hero_bow_aiming_far_hu
+                scene bg Villain_hero_bow_aiming_far_hu
                 p "Be quick-he's already preparing!"
                 n "The Hunter's speed was unreal. Before the hero could even draw back his bowstring, The Hunter had already notched an arrow of his own." 
                 n "Both sides were poised to strike, eyes locked in a deadly standoff. The princess felt her pulse quicken-who would be first to release?"
@@ -470,10 +471,10 @@ label hu_start:
 
             "(Act) Switch to a different tactic":
                 p "We need to change our approach! Go in close!"
-                scene bg Forest2_hero_sword_facing_far_hu
+                scene bg Villain_hero_sword_facing_far_hu
                 h "Got it-cover me!"
                 n "The hero charged in, sword drawn, attempting to engage The Hunter in melee combat. The princess stayed back, watching for an opening."
-                scene bg Forest2_hero_charging_far_hu
+                scene bg Villain_hero_charging_far_hu
                 n "The Hunter's eyes gleamed-he recognized the shift in their tactics and adjusted his stance, ready for the close-quarters battle that was about to begin."
 
                 jump hu_choices_5_6
