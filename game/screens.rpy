@@ -206,9 +206,11 @@ style input:
 ## https://www.renpy.org/doc/html/screen_special.html#choice
 
 screen choice(items):
+    add "gui/choice_shadow.png"
     style_prefix "choice"
 
-    if len(items) <= 10:
+
+    if len(items) <= 6:
         vbox:
             for i in items:
                 textbutton i.caption action i.action
@@ -217,10 +219,10 @@ screen choice(items):
         viewport:
             scrollbars "vertical"
             mousewheel True
-            xsize 1225
-            ysize 900
-            xalign .5
-            yalign .5
+            xsize 1000
+            ysize 1500
+            xalign 0.99
+            yalign 0.07
             vbox:
                 for i in items:
                     textbutton i.caption action i.action
@@ -231,8 +233,8 @@ style choice_button is button
 style choice_button_text is button_text
 
 style choice_vbox:
-    xalign 0.5
-    yalign 0.45
+    xalign 0.99
+    yalign 0.07
 
     spacing gui.choice_spacing
 
@@ -302,8 +304,9 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        # xpos gui.navigation_xpos
+        xalign 0.35
+        yalign 0.18
 
         spacing gui.navigation_spacing
 
@@ -353,6 +356,8 @@ style navigation_button:
 style navigation_button_text:
     properties gui.text_properties("navigation_button")
 
+    xalign 0.5
+
 
 ## Main Menu screen ############################################################
 ##
@@ -397,7 +402,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    # background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
