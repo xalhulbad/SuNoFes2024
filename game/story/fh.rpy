@@ -529,7 +529,7 @@ label fh_start:
                 n "The hero's blade found its target, landing a solid hit."
                 v "Clever. But cleverness only gets you so far."
                 n "The Fallen Hero grimaced as the blow connected, but his retaliation was swift. He adjusted instantly, turning the tables in the blink of an eye."
-                scene bg Forest2_far_fh
+                scene bg Villain_far_fh
                 n "The princess could sense his growing frustration-this battle was quickly escalating into a dangerous dance of wit and skill."
 
                 jump fh_choices_5_7
