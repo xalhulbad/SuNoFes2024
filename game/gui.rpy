@@ -28,7 +28,7 @@ define config.check_conflicting_properties = True
 define gui.accent_color = '#0099cc'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#dedede'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
@@ -63,7 +63,10 @@ define gui.text_font = "fonts/ComingSoon.ttf"
 define gui.name_text_font = "fonts/ComingSoon.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "fonts/BolgenSketch.ttf"
+define gui.interface_text_font = "fonts/ReenieBeanie-Regular.ttf"
+
+## The font used for the game's title.
+define gui.title_text_font = "NothingYouCouldDo-Regular.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 87
@@ -72,7 +75,7 @@ define gui.text_size = 87
 define gui.name_text_size = 100
 
 ## The size of text in the game's user interface.
-define gui.interface_text_size = 100
+define gui.interface_text_size = 150
 
 ## The size of labels in the game's user interface.
 define gui.label_text_size = 100
@@ -81,7 +84,7 @@ define gui.label_text_size = 100
 define gui.notify_text_size = 100
 
 ## The size of the game's title.
-define gui.title_text_size = 100
+define gui.title_text_size = 200
 
 
 ## Main and Game Menus #########################################################
@@ -260,7 +263,7 @@ define gui.notify_ypos = 169
 define gui.choice_spacing = 83
 
 ## Buttons in the navigation section of the main and game menus.
-define gui.navigation_spacing = 15
+define gui.navigation_spacing = 0
 
 ## Controls the amount of spacing between preferences.
 define gui.pref_spacing = 38
@@ -341,10 +344,10 @@ define config.history_length = 250
 
 ## The height of a history screen entry, or None to make the height variable at
 ## the cost of performance.
-define gui.history_height = 525
+define gui.history_height = None
 
 ## Additional space to add between history screen entries.
-define gui.history_spacing = 0
+define gui.history_spacing = 110
 
 ## The position, width, and alignment of the label giving the name of the
 ## speaking character.

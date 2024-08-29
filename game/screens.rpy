@@ -304,10 +304,17 @@ style quick_button_text:
 screen navigation():
 
     vbox:
-        style_prefix "navigation"
+        if main_menu:
+            style_prefix "navigation_main"
+        else:
+            style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        if renpy.get_screen('main_menu'):
+            xalign 0.32
+            yalign 0.815
+        else:
+            xpos gui.navigation_xpos
+            yalign 0.5
 
         spacing gui.navigation_spacing
 
@@ -333,12 +340,12 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+        # textbutton _("About") action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            textbutton _("Controls") action ShowMenu("help")
 
         if renpy.variant("pc"):
 
@@ -356,6 +363,10 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.text_properties("navigation_button")
+
+style navigation_main_button_text:
+    properties gui.button_text_properties("navigation_button")
+    font "fonts/ReenieBeanie-Regular.ttf"
 
 
 ## Main Menu screen ############################################################
@@ -404,11 +415,11 @@ style main_menu_frame:
     background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
-    xalign 1.0
-    xoffset -75
-    xmaximum 3000
-    yalign 1.0
-    yoffset -75
+    xalign 0.25
+    # xoffset -75
+    xmaximum 2000
+    yalign 0.4
+    # yoffset -75
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
@@ -542,6 +553,8 @@ style game_menu_label:
     ysize 450
 
 style game_menu_label_text:
+    bold True
+    font gui.title_text_font
     size gui.title_text_size
     color gui.accent_color
     yalign 0.5
@@ -919,6 +932,17 @@ screen history():
                 ## This lays things out properly if history_height is None.
                 has fixed:
                     yfit True
+
+                if h.who == None:
+                    label "Princess's Thought":
+                        style "history_name"
+                        substitute False
+
+                        ## Take the color of the who text from the Character, if
+                        ## set.
+                        if "color" in h.who_args:
+                            text_color "#AAAAAA"
+
 
                 if h.who:
 
