@@ -219,10 +219,10 @@ screen choice(items):
         viewport:
             scrollbars "vertical"
             mousewheel True
-            xsize 1000
-            ysize 1500
+            xsize 1150
+            ysize 1475
             xalign 0.99
-            yalign 0.07
+            yalign 0.1
             vbox:
                 for i in items:
                     textbutton i.caption action i.action
@@ -234,7 +234,7 @@ style choice_button_text is button_text
 
 style choice_vbox:
     xalign 0.99
-    yalign 0.07
+    yalign 0.1
 
     spacing gui.choice_spacing
 
