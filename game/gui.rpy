@@ -66,13 +66,13 @@ define gui.name_text_font = "fonts/RainShaman.ttf"
 define gui.interface_text_font = "fonts/BolgenSketch.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 87
+define gui.text_size = 70
 
 ## The size of character names.
 define gui.name_text_size = 90
 
 ## The size of text in the game's user interface.
-define gui.interface_text_size = 100
+define gui.interface_text_size = 160
 
 ## The size of labels in the game's user interface.
 define gui.label_text_size = 100
@@ -134,7 +134,7 @@ define gui.dialogue_xpos = 850
 define gui.dialogue_ypos = 115
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 3015
+define gui.dialogue_width = 2900
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
