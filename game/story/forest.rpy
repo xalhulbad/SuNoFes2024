@@ -14,7 +14,7 @@ default forest_asked_why_familiar = False
 
 
 label forest_start:
-
+    play music "audio/1 Forest 1.mp3" loop volume 1.0 fadein 0.5
     scene bg blackscreen with dissolve
 
     "{i}{color=#808080}Rap rap rap.{/i}{/color}"
@@ -194,6 +194,7 @@ label forest_start:
         v "How amusing. Be careful now."
         v "{b}Your choices matter.{/b}" #TODO: discuss if we should give this a special font/colour to have more significance
         
+        stop music fadeout 1.5
         jump villain_encounter # End of forest scene
 
 
@@ -238,6 +239,7 @@ label forest_start:
 
 label villain_encounter:
 
+    play music "audio/1 Forest 2.mp3" loop volume 1.0 fadein 0.5
     # level 1 of villain enounter
     menu:
         "(Act) Hide":
