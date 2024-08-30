@@ -18,7 +18,8 @@ default tower_chose_way_out = False
 # TODO: discuss if old options should be hidden after routes are completed, with too many options they go off the screen
 
 label tower_start:
-
+    
+    play music "audio/0 tower 1.mp3" loop volume 1.0 fadein 0.5
     scene bg Tower with fade
     # Start narration of tower scene
     n "Once upon a time, in a forgotten corner of the kingdom, there stood a tower. It loomed high, shrouded in mystery. The moonlight filtered through its narrow, arched window, casting a pale glow on the cold, damp walls."
@@ -226,6 +227,7 @@ label tower_start:
         elif routes_completed >= 1:
             pt "Here we go again."
  
+        stop music fadeout 1.0
         return # End of tower scene
 
 
