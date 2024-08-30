@@ -1,5 +1,8 @@
 ﻿# Contains the main script used to run the game.
 
+# Make dialogue stay on screen when choice menu appears
+define config.choice_empty_window = extend
+
 # Default variables
 default routes_completed = 0
 default aware_hero_met = False
@@ -19,16 +22,20 @@ image bg Forest1 = "bg Forest1.png"
 image bg Forest2 = "bg Forest2.png"
 image bg Cryptic = "bg Cryptic.png"
 image bg Villain = "bg Villain.png"
+image bg Meadow = "bg Meadow.jpeg"
 
 
 # The game starts here.
 label start:
+    window show
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
-
+    
     scene bg blackscreen
+
+    call meadow_start
 
     call tower_start
 
