@@ -14,6 +14,8 @@ default forest_asked_why_familiar = False
 
 
 label forest_start:
+
+    play music "audio/1 Forest 1.mp3" loop volume 1.0 fadein 0.5
     scene bg blackscreen with dissolve
 
     "{i}{color=#808080}Rap rap rap.{/i}{/color}"
@@ -184,7 +186,8 @@ label forest_start:
         h "Stay back! We mean no harm, but we will defend ourselves if necessary."
         v "How amusing. Be careful now."
         v "{b}Your choices matter.{/b}" #TODO: discuss if we should give this a special font/colour to have more significance
-
+        
+        stop music fadeout 1.5
         jump villain_encounter # End of forest scene
 
 
@@ -229,6 +232,7 @@ label forest_start:
 
 label villain_encounter:
 
+    play music "audio/1 Forest 2.mp3" loop volume 1.0 fadein 0.5
     # level 1 of villain enounter
     menu:
         "(Act) Hide":
@@ -357,6 +361,7 @@ label villain_encounter:
                 p "Yes, but for now, we must survive. We must be ready for the next time."
                 n "The princess and hero pressed on, the path ahead fraught with danger and uncertainty, but their resolve to overcome grew ever stronger."
                 $ v_type = "ff"
+                stop music fadeout 0.5
                 return
 
             "(Act) Set a trap":
@@ -381,6 +386,7 @@ label villain_encounter:
                 dml "Run, little mice. You cannot escape my domain."
                 n "The princess and hero knew their journey had only just begun. They had seen the true face of their enemy, and the fight to save the forest would be more challenging than they had ever imagined."
                 $ v_type = "dml"
+                stop music fadeout 0.5
                 return
 
             "(Act) Remain hidden until the right moment":
@@ -407,6 +413,7 @@ label villain_encounter:
                 hu "Remember, I will be watching. Trespassers in my forest shall receive no considerations."
                 n "As the princess and hero fled, the weight of the Hunter's presence hung over them. They had survived the encounter, but the knowledge of his silent, deadly techniques would haunt them every step of their journey."
                 $ v_type = "hu"
+                stop music fadeout 0.5
                 return
 
     label villain1_2:
@@ -440,6 +447,7 @@ label villain_encounter:
                 fh "Run, cowards. But remember, the shadows of this forest will always be mine."
                 n "As the princess and hero disappeared into the darkness, the sense of foreboding lingered, They had escaped, but the encounter with the Fallen Hero left a lasting mark on their souls, a reminder of the kingdom's dark past and the enemies it had created."
                 $ v_type = "fh"
+                stop music fadeout 0.5
                 return
 
     label villain2_1:
@@ -530,6 +538,7 @@ label villain_encounter:
                 p "I don't know, but I have a feeling this isn't the last we've seen of them."
                 n "With a shared look of resolve, the princess and hero knew their journey was far from over. The path ahead was fraught with danger and mystery, and the figure's ominous presence would be a constant shadow on their quest."
                 $ v_type = "ff"
+                stop music fadeout 0.5
                 return
 
     label villain4_2:
@@ -578,6 +587,7 @@ label villain_encounter:
                 p "Agreed. But we must be careful. The forest is more dangerous than we ever imagined."
                 n "With the weight of the encounter heavy on their minds, the princess and hero pressed on, the path ahead fraught with uncertainty and danger, but their determination to restore balance and defeat the Vengeful Spirit never wavering."
                 $ v_type = "vs"
+                stop music fadeout 0.5
                 return
 
             "(Act) Challenge them to a duel":
@@ -602,6 +612,7 @@ label villain_encounter:
                 p "Agreed. But for now, we must survive. We must be ready for the next time." 
                 n "With heavy hearts and newfound determination, the princess and hero pressed on, knowing that the road ahead would be filled with peril and the lingering presence of the Fallen Hero."
                 $ v_type = "fh"
+                stop music fadeout 0.5
                 return
     
     label villain1_2_1:
@@ -632,6 +643,7 @@ label villain_encounter:
                 dml "Run, little mice. You cannot escape my domain." 
                 n "The princess and hero knew their journey had only just begun. They had seen the true face of their enemy, and the fight to save the forest would be more challenging than they had ever imagined."
                 $ v_type = "dml"
+                stop music fadeout 0.5
                 return
 
             "(Act) Defend and counter":
@@ -660,6 +672,7 @@ label villain_encounter:
                 p "Agreed. We have to be ready for anything." 
                 n "With determination in their hearts, the princess and hero pressed on, knowing that the forest held many more dangers and the Hunter would always be a shadow in their path."
                 $ v_type = "hu"
+                stop music fadeout 0.5
                 return
 
     label villain2_1_1:
@@ -691,6 +704,7 @@ label villain_encounter:
                 p "Yes, but for now, we must survive. We must be ready for the next time." 
                 n "The princess and hero pressed on, the path ahead fraught with danger and uncertainty, but their resolve to overcome grew ever stronger."
                 $ v_type = "ff"
+                stop music fadeout 0.5
                 return
 
             "(Act) Lure into a trap":
@@ -720,6 +734,7 @@ label villain_encounter:
                 dml "Run, little mice. You cannot escape my domain."
                 n "The princess and hero knew their journey had only just begun. They had seen the true face of their enemy, and the fight to save the forest would be more challenging than they had ever imagined."
                 $ v_type = "dml"
+                stop music fadeout 0.5
                 return
 
     label villain2_1_2:
@@ -751,7 +766,9 @@ label villain_encounter:
                 p "Agreed. We have to be ready for anything."
                 n "With determination in their hearts, the princess and hero pressed on, knowing that the forest held many more dangers and the Hunter would always be a shadow in their path."
                 $ v_type = "hu"
+                stop music fadeout 0.5
                 return
+
             "(Act) Use surroundings to escape":
                 n "The princess and hero moved stealthily through the underbrush, using the dense foliage to mask their escape."
                 p "We need to lose them in the forest. Keep moving."
@@ -779,6 +796,7 @@ label villain_encounter:
                 p "Agreed. But we need a plan. We need to understand what we're dealing with."
                 n "With a shared look of determination, the princess and hero pressed on, their minds racing with the encounter's implications. The forest held many secrets, and the Vengeful Spirit was a formidable foe they would have to confront sooner or later."
                 $ v_type = "vs"
+                stop music fadeout 0.5
                 return
 
     label villain2_3_2:
@@ -808,6 +826,7 @@ label villain_encounter:
                 p "Agreed. But we need a plan. We need to understand what we're dealing with."
                 n "With a shared look of determination, the princess and hero pressed on, their minds racing with the encounter's implications. The forest held many secrets, and the Vengeful Spirit was a formidable foe they would have to confront sooner or later."
                 $ v_type = "vs"
+                stop music fadeout 0.5
                 return
 
             "(Act) Find hidden path":
@@ -833,6 +852,7 @@ label villain_encounter:
                 p "Agreed. Let's keep moving and stay vigilant."
                 n "As they pressed on, the encounter with the Hunter stayed in their minds, a reminder that their path was fraught with peril and that they must tread carefully to survive."
                 $ v_type = "hu"
+                stop music fadeout 0.5
                 return
     
     label villain3_1_1:
@@ -861,6 +881,7 @@ label villain_encounter:
                 h "Agreed. Let's keep moving and stay vigilant."
                 n "As they pressed on, the encounter with the Hunter stayed in their minds, a reminder that their path was fraught with peril and that they must tread carefully to survive."
                 $ v_type = "hu"
+                stop music fadeout 0.5
                 return
 
             "(Act) Shoot to kill":
@@ -885,6 +906,7 @@ label villain_encounter:
                 p "Agreed. But we need a plan. We can't face him head-on like that again."
                 n "With a shared look of determination, the princess and hero pressed on, knowing that their journey had become even more perilous. The Dark Magic Lord was a formidable enemy, and the fight to save the forest would be more challenging than they had ever imagined."
                 $ v_type = "dml"
+                stop music fadeout 0.5
                 return
 
     label villain3_1_2:
@@ -912,6 +934,7 @@ label villain_encounter:
                 p "Agreed. But for now, we must survive. We must be ready for the next time."
                 n "With heavy hearts and newfound determination, the princess and hero pressed on, knowing that the road ahead would be filled with peril and the lingering presence of the Fallen Hero."
                 $ v_type = "fh"
+                stop music fadeout 0.5
                 return
 
             "(Act) Tackle the figure":
@@ -936,6 +959,7 @@ label villain_encounter:
                 p "Agreed. But we need a plan. We need to understand what we're dealing with."
                 n "With a shared look of determination, the princess and hero pressed on, knowing that the forest held many more dangers and that the Vengeful Spirit was a formidable foe they would have to confront sooner or later."
                 $ v_type = "vs"
+                stop music fadeout 0.5
                 return
     
     label villain3_2_1:
@@ -965,6 +989,7 @@ label villain_encounter:
                 p "Agreed. But we need a plan. We can't face him head-on like that again."
                 n "With a shared look of determination, the princess and hero pressed on, knowing that their journey had become even more perilous. The Dark Magic Lord was a formidable enemy, and the fight to save the forest would be more challenging than they had ever imagined."
                 $ v_type = "dml"
+                stop music fadeout 0.5
                 return
 
             "(Act) Fire warning shot":
@@ -990,6 +1015,7 @@ label villain_encounter:
                 h "Agreed. Let's keep moving and stay vigilant."
                 n "As they pressed on, the encounter with the Hunter stayed in their minds, a reminder that their path was fraught with peril and that they must tread carefully to survive."
                 $ v_type = "hu"
+                stop music fadeout 0.5
                 return
 
     label villain4_1_1:
@@ -1013,6 +1039,7 @@ label villain_encounter:
                 p "Agreed. But it's a start. Let's move forward with caution and respect."
                 n "As they continued their journey, the encounter with the Fallen Hero stayed with them, a reminder of the delicate balance of trust and the shadows of the past that still lingered."
                 $ v_type = "fh"
+                stop music fadeout 0.5
                 return
             
             "(Act) Appeal to their pride":
@@ -1037,6 +1064,7 @@ label villain_encounter:
                 p "Agreed. But if we can earn his trust, we might just find a way to save this forest."
                 n "As they continued their journey, the encounter with the Dark Magic Lord stayed with them, a reminder of the delicate balance of power and the potential for redemption that lay within even the darkest of hearts."
                 $ v_type = "dml"
+                stop music fadeout 0.5
                 return
 
     label villain4_2_1:
@@ -1065,6 +1093,7 @@ label villain_encounter:
                 p "Agreed. Let's stay vigilant and respectful."
                 n "With the Hunter as their guide, the princess and hero felt a renewed sense of purpose. They knew the path ahead would be challenging, but with strength, resolve, and a newfound ally, they were ready to face whatever the forest had in store."
                 $ v_type = "hu"
+                stop music fadeout 0.5
                 return
 
             "(Act) Bluff greater power":
@@ -1093,6 +1122,7 @@ label villain_encounter:
                 h "Agreed. Let's keep moving and not let her get to us."
                 n "As they pressed on, the encounter with the Femme Fatale stayed with them, a constant reminder of the psychological battles they would face in their journey through the forest. They knew they had to be vigilant and resilient to withstand her manipulations."
                 $ v_type = "ff"
+                stop music fadeout 0.5
                 return
 
     label villain4_2_2:
@@ -1119,6 +1149,7 @@ label villain_encounter:
                 h "Agreed. But first, we need to regroup and figure out how to deal with it."
                 n "As they fled deeper into the forest, the encounter with the Vengeful Spirit haunted them, a chilling reminder of the forest's fury and the dangers that lay ahead. They knew they had to find a way to calm the spirit's rage, or their journey would end in disaster."
                 $ v_type = "vs"
+                stop music fadeout 0.5
                 return
             
             "(Act) Use surroundings to gain advantage":
@@ -1148,6 +1179,7 @@ label villain_encounter:
                 dml "Run, little mice. The forest is mine, and you will never escape my grasp."
                 n "As they fled deeper into the forest, the encounter with the Dark Magic Lord haunted them, a chilling reminder of the power they faced and the dangers that lay ahead. They knew they had to find a way to break his hold over the forest, or their journey would end in disaster."
                 $ v_type = "dml"
+                stop music fadeout 0.5
                 return
 
     label villain4_2_3:
@@ -1181,6 +1213,7 @@ label villain_encounter:
                 p "We'll find a way. We have to."
                 n "With determination in their hearts and the Dark Magic Lord's presence looming over them, the princess and hero pressed on, knowing that the road ahead would be fraught with peril."
                 $ v_type = "dml"
+                stop music fadeout 0.5
                 return
 
             "(Act) Pretend to have reinforcements":
@@ -1213,4 +1246,5 @@ label villain_encounter:
                 p "We'll find a way. Together."
                 n "With determination in their hearts and the Hunter's presence looming over them, the princess and hero prepared for the next steps of their perilous journey."
                 $ v_type = "hu"
+                stop music fadeout 0.5
                 return
