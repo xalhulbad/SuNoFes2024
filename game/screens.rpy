@@ -106,7 +106,7 @@ screen say(who, what):
             window:
                 id "namebox"
                 style "namebox"
-                text who id "who"
+                text who id "who" color"#AAAAAA" bold True
 
             text what id "what"
         

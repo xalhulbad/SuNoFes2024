@@ -27,7 +27,7 @@ label start:
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
-
+    
     scene bg blackscreen
 
     call tower_start
