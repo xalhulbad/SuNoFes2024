@@ -35,8 +35,6 @@ label start:
     
     scene bg blackscreen
 
-    call meadow_start
-
     call tower_start
 
     call forest_start
