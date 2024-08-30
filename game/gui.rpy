@@ -62,6 +62,9 @@ define gui.text_font = "fonts/ComingSoon.ttf"
 ## The font used for character names.
 define gui.name_text_font = "fonts/ComingSoon.ttf"
 
+## The font used for choice text.
+define gui.choice_text_font = "fonts/Bookstory.ttf"
+
 ## The font used for out-of-game text.
 define gui.interface_text_font = "fonts/ReenieBeanie-Regular.ttf"
 
@@ -211,7 +214,7 @@ define gui.choice_button_width = 1200
 define gui.choice_button_height = None
 define gui.choice_button_tile = False
 define gui.choice_button_borders = Borders(300, 8, 75, 8)
-define gui.choice_button_text_font = gui.text_font
+define gui.choice_button_text_font = gui.choice_text_font
 define gui.choice_button_text_size = 100
 define gui.choice_button_text_xalign = 0.0
 define gui.choice_button_text_idle_color = '#a7a7a7'
