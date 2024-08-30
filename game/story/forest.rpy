@@ -14,7 +14,6 @@ default forest_asked_why_familiar = False
 
 
 label forest_start:
-    play music "audio/1 Forest 1.mp3" loop volume 1.0 fadein 0.5
     scene bg blackscreen with dissolve
 
     "{i}{color=#808080}Rap rap rap.{/i}{/color}"
