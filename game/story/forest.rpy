@@ -15,7 +15,6 @@ default forest_asked_why_familiar = False
 
 label forest_start:
 
-    play music "audio/1 Forest 1.mp3" loop volume 1.0 fadein 0.5
     scene bg blackscreen with dissolve
 
     "{i}{color=#808080}Rap rap rap.{/i}{/color}"
@@ -25,6 +24,8 @@ label forest_start:
     n "The princess, heart pounding, stepped forward. She took the hero's hand, feeling a comforting warmth."
 
     scene bg Forest1 with fade
+
+    play music "audio/1 Forest 1.mp3" loop volume 1.0 fadein 0.5
 
     n "As they emerged out of the tower, sunlight bathed them. The sky was a brilliant blue, and the forest ahead was lush and green. Birds sang from the treetops, and a gentle breeze rustled the leaves."
 
