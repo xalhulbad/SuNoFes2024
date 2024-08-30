@@ -16,6 +16,7 @@ default stone_gravings_examined = False
 default can_decipher_runes = False
 
 label cryptic_start:
+    scene bg blackscreen with fade
     n "The encounter with the shadowy figure left the princess and the hero with a feeling of determination as they continued to make their way deeper into the woods."
     n "The forest loomed tall and dark, its branches knitting together like gnarled fingers against the twilight sky. Each step they took was a reminder of the dangers that lay ahead. As the canopy opened, a glade revealed itself, bathed in an otherworldly glow."
     scene bg Cryptic with fade

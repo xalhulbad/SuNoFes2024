@@ -33,9 +33,11 @@ label ff_start:
     $ ff_chose_when_will_it = False
 
     # Leading text
+    scene bg Villain
     n "The air was thick with tension as the princess and the hero moved cautiously through the forest, the trees closing in around them like silent sentinels. There was an unsettling calm, as if the forest itself was holding its breath."
     n "The hero scanned the surroundings with narrowed eyes, every sense on high alert. He could feel it—a presence watching them, waiting for the right moment to strike."
     n "From the shadows, a figure emerged with a graceful, almost seductive stride. Her eyes glinted with a dangerous intelligence, and a sly smile played on her lips as she sized up the pair."
+    scene bg Villain_far_ff
     ff "Well, well, what do we have here? The princess and her brave protector, still so far from the safety of the kingdom. How... intriguing."
   
     if ff_times_gotten == 1: 
@@ -234,8 +236,10 @@ label ff_start:
                 n "The princess gave a sharp nod to the hero, who gripped his sword tightly before charging forward, his expression fierce."
                 p "Now, while she's distracted!"
                 n "The Femme Fatale's eyes widened in surprise as the hero rushed at her with startling speed, his blade arcing toward her."
+                scene bg Villain_hero_charging_far_ff
                 ff "Oh, how crude. But effective, I suppose!"
                 n "At the last moment, she twirled out of the way with elegant precision, her daggers flashing as she countered with a swift strike."
+                scene bg Villain_far_ff
                 h "She's quick—much faster than she looks!"
                 n "The hero barely managed to parry the attack, the clash of steel ringing out as the Femme Fatale's smirk returned."
                 ff "I expected nothing less from a brute like you."
@@ -363,8 +367,10 @@ label ff_start:
                 n "The princess's eyes narrowed, noticing the gaps in the Femme Fatale's defense—small but exploitable."
                 p "Her left side! Go for it!"
                 n "The hero adjusted his stance, zeroing in on the weak spot as he launched his next strike."
+                scene bg Villain_hero_charging_far_ff
                 h "I've got it!"
                 n "But the Femme Fatale anticipated the move, twisting away with fluid grace. Her daggers lashed out in response, forcing the hero to retreat."
+                scene bg Villain_far_ff
                 ff "Did you really think you could take advantage of me? You'll have to be quicker than that."
                 n "The princess bit her lip in frustration, realizing that she would have to come up with a better plan."
 
@@ -373,10 +379,12 @@ label ff_start:
                 n "The princess signaled to the hero with a quick glance, silently communicating her plan."
                 p "Get ready—let her think she has the upper hand, then counter when she overextends!"
                 n "The hero nodded, feigning an opening as he waited for the Femme Fatale to strike."
+                scene bg Villain_hero_sword_facing_far_ff
                 h "Come on, then. Let's see what you've got."
                 n "The Femme Fatale smirked, her eyes gleaming with malicious delight as she lunged forward, aiming straight for the hero's exposed side."
                 ff "So predictable—"
                 n "But the hero's trap snapped shut as he sidestepped her lunge, spinning to land a counterstrike that forced her back."
+                scene bg Villain_far_ff
                 h "Got you that time!"
                 n "The Femme Fatale hissed in irritation, her smirk momentarily replaced with a scowl."
 
@@ -502,8 +510,10 @@ label ff_start:
                 n "The princess's gaze locked onto the vulnerable spot, a gap in the Femme Fatale's armor that was barely visible."
                 p "There—her side! It's exposed!"
                 n "The hero moved swiftly, driving his blade toward the unarmored spot with precision. The Femme Fatale's eyes widened as she realized her mistake."
+                scene bg Villain_hero_charging_far_ff
                 ff "You think you've found an opening? How quaint."
                 n "But the hero's strike was relentless, and the blade found its mark. The Femme Fatale hissed in pain, staggering back as blood stained her elegant dress. Her smile wavered, but the malice in her eyes burned even brighter."
+                scene bg Villain_far_ff
                 ff "Congratulations, darling. You've managed to draw blood. But you'll regret making me bleed."
                 n "The princess tensed, knowing that an injured Femme Fatale was far more dangerous, her rage fueling every move. The hero prepared for another attack, ready to exploit the opening he'd created."
                 jump ff_choices_5_9
@@ -512,8 +522,10 @@ label ff_start:
                 n "The princess's voice was sharp, urging the hero to finish the fight before the Femme Fatale could recover."
                 p "Now! Don't give her a chance to retaliate—end this!"
                 n "The hero surged forward, his sword aimed directly at the Femme Fatale's heart. Her eyes widened in surprise at the sudden speed of the attack."
+                scene bg Villain_hero_charging_far_ff
                 ff "You're faster than I gave you credit for... but not fast enough."
                 n "At the last moment, the Femme Fatale twisted away, the blade narrowly missing her vital point. But the hero's momentum carried him forward, and with a quick adjustment, he slashed across her midsection, leaving a deep wound."
+                scene bg Villain_far_ff
                 h "You're finished!"
                 n "The Femme Fatale staggered back, clutching her wound. Her smile faded, replaced by a look of cold fury. But even in her weakened state, the venom in her gaze was as sharp as ever."
                 ff "Impressive, but you've made a fatal mistake if you think I'm done yet."
@@ -527,8 +539,10 @@ label ff_start:
                 n "The princess gave a subtle signal to the hero, instructing him to bait the Femme Fatale into attacking recklessly."
                 p "Make her chase you—wear her down until she's vulnerable."
                 n "The hero nodded, adjusting his stance as he prepared to dodge and evade rather than strike. The Femme Fatale's eyes gleamed with irritation, realizing she was being toyed with."
+                scene bg Villain_hero_sword_facing_far_ff
                 ff "Running away, are we? Pathetic. But if that's how you want to play, I'll indulge you... for now."
                 n "She lunged forward, her daggers flashing with deadly precision, but the hero sidestepped with practiced ease, forcing her to overextend herself."
+                scene bg Villain_far_ff
                 h "Come on—keep chasing me. Let's see how long you can keep up."
                 n "With each failed strike, the Femme Fatale's movements grew more erratic, her frustration mounting. The princess watched closely, waiting for the perfect moment to strike back."
                 p "Just a little longer—she's tiring herself out."
@@ -538,10 +552,11 @@ label ff_start:
                 n "The princess's eyes focused on the Femme Fatale's footing, noticing a slight instability in her stance."
                 p "Now! Go for her legs—throw her off balance!"
                 n "The hero feinted high before dropping low, sweeping his leg in a quick motion that caught the Femme Fatale by surprise. Her graceful movements faltered as she stumbled, momentarily losing her balance."
+                scene bg Villain_hero_charging_far_ff
                 ff "You insolent little—"
                 n "Before she could regain her footing, the hero struck again, knocking one of her daggers from her hand. It clattered to the ground, leaving her momentarily defenseless."
+                scene bg Villain_far_ff
                 h "Got you!"
-                n "The princess tightened her grip on her weapon, knowing that they had a rare opportunity to press the advantage."
                 p "Don't let her recover—she's at her weakest now."
 
                 jump ff_choices_5_12
@@ -607,8 +622,8 @@ label ff_start:
                 p "You're right... But power comes with a price."
                 n "Just as the Femme Fatale began to bask in her perceived triumph, the princess's expression hardened. Dark energy crackled in her hands, ready to strike the moment the villain dropped her guard."
                 ff "What are you—"
-                n "Before she could finish, the princess unleashed a blast of magic, aimed directly at the Femme Fatale's chest. The spell struck true, sending the villain reeling in shock."
                 scene bg blackscreen
+                n "Before she could finish, the princess unleashed a blast of magic, aimed directly at the Femme Fatale's chest. The spell struck true, sending the villain reeling in shock."
                 n "The Femme Fatale's laughter turned to a scream of fury as she realized she had been betrayed. Her body crumpled to the ground, lifeless, a victim of her own hubris."
                 n "But the cost of victory was high. As the last echoes of the battle faded, the hero rushed to the princess's side—only to find her lifeless on the forest floor, her body drained by the spell's backlash."
                 n "Desperate and unwilling to accept her death, the hero did the unthinkable—he used forbidden magic to bring her back. The princess's eyes fluttered open, filled with gratitude and confusion as she realized what he had done."
@@ -622,8 +637,8 @@ label ff_start:
                 ff "You see, darling? You've made the right choice. Together, we could be unstoppable—free to shape the world as we wish."
                 n "But as the Femme Fatale reveled in her imagined victory, the princess whispered a spell under her breath, preparing for the perfect moment to escape."
                 p "You're right... but there's one thing you forgot."
-                n "Before the Femme Fatale could react, the princess activated her teleportation spell. A burst of light enveloped her and the hero, whisking them away in an instant, far from the clutches of the villain."
                 scene bg blackscreen
+                n "Before the Femme Fatale could react, the princess activated her teleportation spell. A burst of light enveloped her and the hero, whisking them away in an instant, far from the clutches of the villain."
                 n "The Femme Fatale's laughter faded into silence as she realized she had been outmaneuvered. Left alone in the empty clearing, her dreams of power crumbled to dust."
                 n "The princess and hero reappeared in a peaceful meadow, far from the dangers of the forest. They had not only escaped the Femme Fatale's schemes but also freed themselves from the burdens of the kingdom's expectations."
                 n "Choosing a life guided by their own desires, they set out on a journey beyond the confines of their former roles, determined to live life on their own terms."
@@ -639,11 +654,10 @@ label ff_start:
                 p "Draw her toward the trap—we'll catch her when she least expects it."
                 n "The hero maneuvered carefully, baiting the Femme Fatale into the narrow path where the trap was set. The villain's smirk grew wider as she believed she had them cornered, her confidence blinding her to the danger."
                 ff "You really think you can outsmart me with such a simple trick?"
+                scene bg blackscreen
                 n "The snare snapped shut around the Femme Fatale's ankle, throwing her off balance. She cursed under her breath, realizing too late what had happened."
-                ff "You... wretched little pests!"
                 n "But as the Femme Fatale struggled to free herself, she lashed out with one final, desperate strike—her poisoned dagger flashing toward the princess with deadly intent."
                 n "The hero, seeing the danger, didn't hesitate. He threw himself in front of the blade, taking the strike meant for the princess."
-                scene bg blackscreen
                 n "The hero staggered, the poison from the dagger spreading rapidly through his veins. The Femme Fatale, weakened and bound by the trap, fell lifeless to the ground, but her final act of malice had already sealed the hero's fate."
                 n "The princess rushed to the hero's side, tears streaming down her face as she held him close. His breathing was shallow, his life slipping away with every moment."
                 n "Though the villain was defeated, the price was paid in the hero's sacrifice. His final act had been to protect the one he loved most, even at the cost of his own life."
@@ -655,15 +669,13 @@ label ff_start:
                 n "The princess noticed the small vial of poison hanging from the Femme Fatale's belt—an irony that couldn't be ignored. Quickly, she signaled to the hero, who prepared to engage the villain while she set the trap."
                 p "We'll use her own tricks against her. Distract her, and I'll handle the rest."
                 n "The hero nodded and lunged forward, drawing the Femme Fatale's full attention. She blocked his strikes effortlessly, her eyes gleaming with cruel satisfaction."
+                scene bg Villain_hero_charging_far_ff
                 ff "Is this really all you've got? You're hardly worth my time."
-                n "But the hero refused to back down, even as the Femme Fatale's daggers flashed in the dim light. With each swipe, she drew closer to delivering a lethal blow. Finally, one of her strikes landed—a deep cut across the hero's arm that made him stumble back in pain."
-                h "Ugh... Princess, I—"
-                n "The villain's smirk widened as she closed in for the kill, savoring her victory. The hero, bleeding and cornered, struggled to hold his ground as she raised her blade for the final strike."
-                ff "This ends now, darling. You've played well enough, but it's time for the curtain to fall."
-                n "But just as she prepared to deliver the fatal blow, the princess made her move. With precise timing, she struck the vial of poison hanging from the villain's belt, shattering it and releasing a toxic cloud that caught the Femme Fatale completely off guard."
-                ff "What—?!"
-                n "The venomous fumes spread quickly, and the villain recoiled in shock, realizing too late that she had fallen into her own trap. Her eyes widened as the poison seeped into her skin, weakening her with every passing second."
                 scene bg blackscreen
+                n "But the hero refused to back down, even as the Femme Fatale's daggers flashed in the dim light. With each swipe, she drew closer to delivering a lethal blow. Finally, one of her strikes landed—a deep cut across the hero's arm that made him stumble back in pain."
+                n "The villain's smirk widened as she closed in for the kill, savoring her victory. The hero, bleeding and cornered, struggled to hold his ground as she raised her blade for the final strike."         
+                n "But just as she prepared to deliver the fatal blow, the princess made her move. With precise timing, she struck the vial of poison hanging from the villain's belt, shattering it and releasing a toxic cloud that caught the Femme Fatale completely off guard."
+                n "The venomous fumes spread quickly, and the villain recoiled in shock, realizing too late that she had fallen into her own trap. Her eyes widened as the poison seeped into her skin, weakening her with every passing second."
                 n "The Femme Fatale gasped for breath, her strength sapped by the very poison she had relied on so many times before. As the life drained from her eyes, the villain's reign of terror finally came to an end."
                 n "With the danger gone, the princess immediately turned her attention to the hero's wounds. Kneeling beside him, she carefully dressed the deep cut on his arm, her heart pounding with relief."
                 n "The hero winced as she bandaged him, but his eyes held a quiet gratitude. He knew that without her quick thinking and bravery, he wouldn't have survived."
@@ -681,8 +693,8 @@ label ff_start:
                 p "You're not the only one who knows how to twist magic to your advantage."
                 n "With a focused incantation, the princess began to unravel the Femme Fatale's spell. The magic warped, shifting from dark energy to a calming force that began to heal the forest instead of corrupting it."
                 ff "What... what are you doing?!"
-                n "The villain's voice cracked in panic as she felt the power slip from her control. Her attempt to seize back the energy failed, leaving her powerless as the forest itself turned against her."
                 scene bg blackscreen
+                n "The villain's voice cracked in panic as she felt the power slip from her control. Her attempt to seize back the energy failed, leaving her powerless as the forest itself turned against her."
                 n "The Femme Fatale's strength drained away as the very magic she had tried to exploit now bound her in place. The forest, sensing her malevolence, tightened its grip, ensuring she could never harm it again."
                 n "As the forest restored its balance, the princess and hero felt a deep sense of peace wash over them. They had not only protected the land but found their purpose in doing so."
                 n "Choosing to stay, they would dedicate themselves to preserving the harmony they had fought to restore, becoming guardians of the enchanted woods."
@@ -695,8 +707,8 @@ label ff_start:
                 p "We've played her game long enough—it's time we vanish from this story."
                 n "With a flick of her wrist, the princess summoned a teleportation spell, the magic swirling around them as she prepared to whisk them away from the villain's grasp."
                 ff "Running away? How predictable."
-                n "But the Femme Fatale's taunts fell on deaf ears as the spell took hold, wrapping the princess and hero in a veil of light. The villain reached out to stop them, but she was too late."
                 scene bg blackscreen
+                n "But the Femme Fatale's taunts fell on deaf ears as the spell took hold, wrapping the princess and hero in a veil of light. The villain reached out to stop them, but she was too late."
                 n "In an instant, the princess and hero were gone, leaving behind the kingdom and all its expectations. The Femme Fatale's schemes crumbled into irrelevance, her victory snatched away as they vanished into a new life of freedom."
                 n "Far from the prying eyes of the kingdom, they found peace in a simpler existence, where they could live by their own rules."
                 n "No longer bound by the weight of tradition or duty, the princess and hero forged a new path, guided only by their love and shared dreams."
@@ -712,8 +724,8 @@ label ff_start:
                 p "You're driven by more than just games. What are you really after—power, control, or something more?"
                 n "The Femme Fatale's eyes glittered with malice as she leaned in closer, finally letting her mask slip just enough to reveal her true desires."
                 ff "Power, control, the thrill of bending others to my will... it's all part of the game, darling."
-                n "But in that moment, the princess saw something deeper—a hunger that could be exploited. With quick thinking, she turned the conversation, subtly goading the villain into overreaching."
                 scene bg blackscreen
+                n "But in that moment, the princess saw something deeper—a hunger that could be exploited. With quick thinking, she turned the conversation, subtly goading the villain into overreaching."
                 n "Blinded by her ambition, the Femme Fatale pushed too far, letting her desire for dominance lead her into a fatal mistake. Sensing her vulnerability, the princess used magic to reverse the situation."
                 n "But the spell backfired, causing a catastrophic surge of dark energy. The princess was mortally wounded, collapsing as the magic tore through her. In desperation, the hero broke the kingdom's most sacred law—he used forbidden magic to bring her back."
                 n "The kingdom's response was swift and merciless. The hero was banished, condemned for defying nature itself. Though resurrected, the princess was left to face the kingdom alone, burdened by the memory of their lost love."
@@ -725,8 +737,8 @@ label ff_start:
                 p "Enough games—this ends now!"
                 n "Gathering the arcane energy within her, the princess unleashed a roaring fireball straight at the villain. The flames streaked through the air, too fast for the Femme Fatale to react."
                 ff "Wha—"
-                n "The fireball struck with devastating force, sending the Femme Fatale crashing to the ground. Her smug grin twisted into shock as the fire consumed her."
                 scene bg blackscreen
+                n "The fireball struck with devastating force, sending the Femme Fatale crashing to the ground. Her smug grin twisted into shock as the fire consumed her."
                 n "The Femme Fatale's final scream was drowned out by the roar of flames that quickly spread from the impact. The fire surged out of control, devouring the forest around them. In an instant, victory turned into disaster."
                 n "The once-vibrant woods were reduced to a scorched wasteland, and the magic that had once thrived there twisted into a dark curse. Realizing the catastrophic consequences of her spell, the princess's heart sank."
                 n "To atone for what they had unleashed, the princess and hero vowed to stay within the cursed forest, dedicating their lives to restoring the land they had so carelessly ruined."
@@ -746,12 +758,11 @@ label ff_start:
                 ff "How delightful! Watching you grovel almost makes this worthwhile. Very well, you may serve me, and I may reconsider sparing you."
                 n "The princess bowed her head, masking her intentions. She exchanged a brief glance with the hero, who was poised, ready to act."
                 p "Thank you... for your mercy."
+                scene bg blackscreen
                 n "Just as the Femme Fatale turned her attention away, the princess sprang to her feet, a hidden dagger glinting in her hand. She lunged at the villain, aiming for a quick, decisive blow."
                 n "The blade found its mark, sinking into the Femme Fatale's side. She gasped, her eyes wide with shock."
-                ff "You... traitor!"
                 n "With a snarl, the Femme Fatale swiped her poisoned dagger in a desperate counter, her aim wild. As the villain staggered back, her eyes locked onto the hero, intent on taking him down with her."
                 n "Seeing the threat, the princess didn't hesitate. She threw herself in front of the hero, taking the dagger's strike directly into her chest."
-                scene bg blackscreen
                 n "The princess's body collapsed, the poison working quickly through her veins. The hero caught her, his face a mask of horror and grief as he held her close."
                 n "The Femme Fatale's smirk faded into a final grimace as her strength failed, and she crumpled to the ground, defeated."
                 n "The hero cradled the princess in his arms, his heart breaking as her life slipped away. Her sacrifice had saved him, but at the cost of her own."
@@ -766,10 +777,9 @@ label ff_start:
                 ff "Begging suits you, princess. Very well, serve me, and perhaps I'll consider sparing your miserable lives."
                 n "But the princess wasn't about to let her guard down. With a subtle glance to the hero, she prepared her next move."
                 p "Thank you... but I have a better idea."
-                n "As the Femme Fatale basked in her victory, the princess summoned a fireball, her hands glowing with arcane power. She hurled the fiery orb directly at the villain, aiming to catch her off guard."
-                ff "What—?!"
-                n "The fireball struck the Femme Fatale, engulfing her in flames. She screamed in pain and fury, but the attack had unintended consequences."
                 scene bg blackscreen
+                n "As the Femme Fatale basked in her victory, the princess summoned a fireball, her hands glowing with arcane power. She hurled the fiery orb directly at the villain, aiming to catch her off guard."
+                n "The fireball struck the Femme Fatale, engulfing her in flames. She screamed in pain and fury, but the attack had unintended consequences."
                 n "The fire spread quickly, consuming the surrounding forest. The ancient magic within the woods reacted violently to the blaze, twisting into a dark and vengeful curse."
                 n "The once-protective forest became a hostile wasteland, filled with shadows and twisted branches that reached for the sky like skeletal hands. The curse bound the princess and hero to the forest, trapping them within its borders forever."
                 n "Realizing their mistake, the princess and hero vowed to protect the forest from further harm, becoming its eternal guardians. Bound by their shared penance, they sought redemption for their reckless actions."
@@ -789,9 +799,9 @@ label ff_start:
                 n "The hero, tense and ready, glanced at the princess, searching her eyes for a plan. She gave a subtle nod toward a heavy branch lying nearby."
                 n "As the Femme Fatale closed in, the princess suddenly lunged, grabbing the branch and swinging it with all her might. The strike connected with the villain's arm, knocking her back."
                 ff "You think a branch can defeat me?"
+                scene bg blackscreen
                 n "The Femme Fatale, recovering from the blow, turned her attention to the hero, seeing him as the greater threat. Her dagger gleamed as she aimed for his heart."
                 n "But just as she lunged, the princess leapt forward, positioning herself between the hero and the Femme Fatale. The dagger pierced her chest instead."
-                scene bg blackscreen
                 n "The princess collapsed to the ground, the life quickly draining from her as the hero caught her in his arms. The Femme Fatale, weakened from the struggle, fell as well, her last breath escaping in a sigh of defeat."
                 n "The hero held the princess close, his tears falling as he watched her life slip away. Her final, selfless act saved him, but the cost was her life."
                 n "The Femme Fatale's death meant victory, but the hero would always remember the sacrifice that defined their journey, the love that endured beyond death."
@@ -806,12 +816,10 @@ label ff_start:
                 n "The hero glanced at the princess, uncertainty in his eyes. She gave him a subtle signal, directing his attention to a narrow ledge behind the Femme Fatale."
                 n "As the villain moved closer, taunting her captives, the princess pretended to trip, drawing the Femme Fatale forward."
                 p "Please... just spare him."
+                scene bg blackscreen
                 n "Seeing her moment, the princess darted to the side, grabbing a loose stone and hurling it at the villain's feet. The Femme Fatale stumbled, momentarily off-balance."
                 n "The hero seized the opportunity, moving to push her off balance further. But as he did, the Femme Fatale slashed out with her dagger, grazing his arm."
-                ff "A taste of my poison, darling. Let's see how long you last."
                 n "The hero gasped, clutching his arm as the venom began to spread. The princess's eyes widened with horror as she saw the wound begin to darken."
-                p "No... no, not like this."
-                scene bg blackscreen
                 n "Realizing the hero had been poisoned and that he wouldn't survive, the princess made a desperate choice. She grabbed the dagger from the ground and plunged it into her own heart, choosing to follow him in death."
                 n "The hero's eyes filled with tears as he fell beside her, their hands clasped together in their final moments."
                 n "The Femme Fatale, seeing her victory tainted by their tragic choice, lay dying as well, the poison that had grazed her seeping into her veins."
@@ -830,8 +838,8 @@ label ff_start:
                 ff "How...? You think you can match me?"
                 n "The princess continued, her magic expertly weaving through the dark energy that filled the air. She reversed the flow, turning the destructive power back into the earth, where it could do no harm."
                 ff "You—impossible!"
-                n "The ground beneath them trembled as the forest responded to the princess's call. The trees bent toward her, their branches reaching to protect her and the hero from the villain's final, desperate strikes."
                 scene bg blackscreen
+                n "The ground beneath them trembled as the forest responded to the princess's call. The trees bent toward her, their branches reaching to protect her and the hero from the villain's final, desperate strikes."
                 n "The Femme Fatale, realizing she had been outmaneuvered, tried to retreat, but it was too late. The forest closed in around her, sensing her malevolence, binding her with roots that grew and twisted around her body, holding her fast."
                 n "As the forest sealed away its threat, the princess and hero felt a deep connection to the land, a calling they couldn't ignore. They knew their place was here, as guardians of the enchanted woods."
                 n "Together, they vowed to protect the forest from any who sought to harm it, dedicating their lives to ensuring its magic would always thrive."
@@ -843,9 +851,8 @@ label ff_start:
                 ff "Do you see now, darling? You were never a match for me."
                 n "The princess nodded subtly to the hero, their plan set in motion. As the Femme Fatale gloated, the princess reached for a nearby branch, her hand trembling with feigned fear."
                 p "I suppose you're right... but maybe there's still a way to win."
-                n "But as she lunged to strike, the Femme Fatale, anticipating her move, deftly sidestepped and plunged a hidden dagger into the princess's side. The sharp pain stole her breath away as she collapsed to the ground."
-                ff "Oh, how naïve... did you truly think I'd fall for such a simple trick?"
                 scene bg blackscreen
+                n "But as she lunged to strike, the Femme Fatale, anticipating her move, deftly sidestepped and plunged a hidden dagger into the princess's side. The sharp pain stole her breath away as she collapsed to the ground."
                 n "The hero rushed to the princess's side, his eyes wide with horror as he watched her life ebb away. Desperation clawed at his heart, and without a second thought, he called upon forbidden magic to resurrect her."
                 n "As the princess's eyes fluttered open, life returning to her pallid cheeks, she realized the cost of her salvation. The hero's hand trembled with the dark power that flowed through him—a power the kingdom had long forbidden."
                 n "Though the princess was saved, the hero had committed an unforgivable act. Upon their return, the kingdom learned of his transgression. The hero was exiled, forever cast out for defying the laws of life and death."
@@ -862,8 +869,8 @@ label ff_start:
                 p "If you want to play with magic, then let's see how well you handle your own spells!"
                 n "With a quick incantation, the princess focused her energy, creating a mirror of magic that caught the Femme Fatale's spell mid-flight and hurled it back at her."
                 ff "No! How dare you—"
-                n "The spell struck the Femme Fatale with a violent force, throwing her to the ground. But the impact triggered a chain reaction—the surrounding forest erupted into flames, ignited by the raw, uncontrolled power of their magic clash."
                 scene bg blackscreen
+                n "The spell struck the Femme Fatale with a violent force, throwing her to the ground. But the impact triggered a chain reaction—the surrounding forest erupted into flames, ignited by the raw, uncontrolled power of their magic clash."
                 n "The fire spread quickly, consuming everything in its path. The forest, once full of life, was reduced to ash, the magic within twisted into a dark curse that spread through the land. Realizing the irreversible damage caused, the princess's heart filled with dread."
                 n "To atone for their actions, the princess and the hero swore to remain within the cursed forest, dedicating their lives to healing the land they had scarred."
                 n "Bound by their regret and responsibility, they vowed to protect the remnants of the once-thriving forest and prevent any further harm from coming to it."
@@ -876,8 +883,8 @@ label ff_start:
                 p "Your spells might be strong, but they are nothing compared to the power of a counterspell."
                 n "Focusing her energy, the princess began chanting an incantation, her voice steady and clear. The air around them shifted as her magic clashed with the Femme Fatale's dark spells."
                 ff "What... what are you doing?!"
-                n "The Femme Fatale's eyes widened as she felt her control slipping away. The princess's counterspell shattered the dark energy in a brilliant explosion of light."
                 scene bg blackscreen
+                n "The Femme Fatale's eyes widened as she felt her control slipping away. The princess's counterspell shattered the dark energy in a brilliant explosion of light."
                 n "The burst of magic left the Femme Fatale powerless, her once confident smirk replaced by shock and fear. She stumbled back, defeated, her reign of terror finally over."
                 n "With the villain vanquished, the forest breathed a sigh of relief, the natural balance restored. The princess and hero, victorious, took a moment to catch their breath, knowing they had made the right choice."
                 n "Though they had won the battle, they knew returning to the kingdom was not an option. The magic they had wielded, though just, would never be accepted by those who feared its power."
@@ -895,8 +902,8 @@ label ff_start:
                 p "Now! Aim for her weakness!"
                 n "The hero moved swiftly, his sword flashing in the dim light as he targeted the vulnerable spot. But as the blade drew close, the Femme Fatale twisted in a final act of desperation, her dagger aimed at the hero's heart."
                 ff "I'll take you down with me!"
-                n "Seeing the threat, the princess acted on instinct. She grabbed a fallen branch from the ground and lunged forward, placing herself between the Femme Fatale and the hero. The dagger pierced her side, and she gasped in pain."
                 scene bg blackscreen
+                n "Seeing the threat, the princess acted on instinct. She grabbed a fallen branch from the ground and lunged forward, placing herself between the Femme Fatale and the hero. The dagger pierced her side, and she gasped in pain."
                 n "The princess fell to the ground, her vision blurring as the pain spread. The hero, struck by grief, held her close, his heart shattering with every shallow breath she took."
                 n "The Femme Fatale, weakened by her injuries, fell beside them, her life slipping away as the hero's sword delivered a final blow."
                 n "The hero cradled the princess in his arms as her life ebbed away, her sacrifice sealing the victory but at a great cost. The forest grew silent, the weight of her selfless act heavy in the air."
@@ -909,9 +916,8 @@ label ff_start:
                 p "Wait... maybe we don't have to end it this way."
                 n "The Femme Fatale, sensing the hesitation, saw her chance. With a swift, desperate motion, she lashed out with her poisoned dagger, grazing the hero's arm."
                 ff "A moment's hesitation, and now you both pay the price!"
-                n "The hero staggered back, clutching his arm as the venom spread quickly through his veins. The princess's eyes filled with horror, realizing what had happened."
-                p "No... not like this. I can't lose you."
                 scene bg blackscreen
+                n "The hero staggered back, clutching his arm as the venom spread quickly through his veins. The princess's eyes filled with horror, realizing what had happened."
                 n "As the poison began to take hold, the hero's strength ebbed away. The princess, heartbroken and desperate, saw the inevitable end approaching. Unable to imagine a life without him, she made a fateful decision."
                 n "Taking the villain's dagger, she plunged it into her own heart, choosing to follow the hero into the afterlife rather than face a world without him."
                 n "The hero, his vision blurring, reached out to her, their fingers entwined in their final moments. The Femme Fatale, realizing her victory came at a bitter cost, succumbed to the darkness of her own wounds."
@@ -927,13 +933,12 @@ label ff_start:
                 n "The princess gave the hero a quick nod, signaling him to act without hesitation. There was no time to waste; the Femme Fatale was vulnerable, and this was their chance."
                 p "Now, hero! Finish this!"
                 n "The hero, his expression fierce and determined, surged forward. His sword gleamed in the dim light as he aimed directly for the Femme Fatale's heart."
+                scene bg Villain_hero_charging_far_ff
                 n "But as he moved in for the final blow, the Femme Fatale, with one last desperate act, lashed out with a hidden dagger, catching the hero's arm."
                 ff "I won't go down... alone!"
-                n "The hero's strike landed true, and the Femme Fatale crumpled to the ground, her life fading away. But her parting strike had grazed the hero with a poisoned blade."
-                h "Ugh... Princess..."
-                n "The hero staggered, his breath growing ragged as the poison spread through his veins. The princess's heart sank as she realized what had happened."
-                p "No... no, not you. Please..."
                 scene bg blackscreen
+                n "The hero's strike landed true, and the Femme Fatale crumpled to the ground, her life fading away. But her parting strike had grazed the hero with a poisoned blade."
+                n "The hero staggered, his breath growing ragged as the poison spread through his veins. The princess's heart sank as she realized what had happened."
                 n "Seeing that the hero had been poisoned and knowing he wouldn't survive, the princess made a fateful decision. Tears streaming down her face, she seized the Femme Fatale's fallen dagger and turned it upon herself."
                 n "The hero's eyes widened with shock as the princess plunged the dagger into her own heart, choosing to join him in death rather than live without him."
                 n "The Femme Fatale's last breath was drawn with a bitter smile as the darkness consumed them all. In their final moments, the princess and hero found solace in each other's arms, their souls entwined forever."
@@ -944,11 +949,11 @@ label ff_start:
                 n "The princess saw the opening and signaled to the hero to press the advantage. They had to overwhelm the Femme Fatale before she could regain her footing."
                 p "Keep pushing, don't let her recover!"
                 n "The hero charged forward with a series of powerful strikes, each one driving the Femme Fatale back. Her smirk faltered as she struggled to keep up, clearly unprepared for the hero's relentless assault."
+                scene Villain_hero_charging_far_ff
                 ff "You... you think you can overpower me?!"
+                scene bg blackscreen
                 n "But as the hero moved in for a decisive blow, the Femme Fatale's eyes flashed with sudden resolve. With a desperate lunge, she aimed her dagger straight at the princess, determined to take her down with her."
                 n "Seeing the imminent danger, the hero acted on instinct. He dove in front of the princess, taking the fatal blow meant for her."
-                h "No... not... her..."
-                scene bg blackscreen
                 n "The hero crumpled to the ground, the poisoned dagger buried deep in his side. His breath came in shallow gasps as he lay dying in the princess's arms."
                 n "The Femme Fatale, weakened from the battle, staggered back and collapsed, defeated at last. But the victory was hollow, as the hero's life slipped away."
                 n "The princess wept over his lifeless body, her heart shattered by his sacrifice. He had given everything to protect her, leaving her to carry on without him."
@@ -965,11 +970,12 @@ label ff_start:
                 n "The princess watched as the Femme Fatale launched attack after attack, her movements growing increasingly frantic and sloppy with each swing. It was clear she was tiring, and soon she would leave herself wide open."
                 p "Hold on... just a little longer. She's wearing herself out."
                 n "The hero nodded, maintaining a defensive stance as the Femme Fatale's strikes grew weaker. Finally, seeing her stumble, the princess knew it was time."
+                scene Villain_hero_sword_facing_far_ff
                 p "Now! Use your magic!"
                 n "The hero nodded and summoned his remaining strength, channeling his magic into a powerful blast aimed directly at the Femme Fatale. The force of the spell caught her off guard, throwing her back."
                 ff "What... no!"
-                n "The magic struck her with a blinding light, wrapping around her like vines as it drained the last of her strength. The Femme Fatale collapsed, unable to fight any longer."
                 scene bg blackscreen
+                n "The magic struck her with a blinding light, wrapping around her like vines as it drained the last of her strength. The Femme Fatale collapsed, unable to fight any longer."
                 n "As the magic bound the Femme Fatale, the forest around them seemed to breathe a sigh of relief. The darkness that had hung over the woods began to lift, replaced by a serene calm."
                 n "The princess and hero, seeing the change, knew that their decision to harness magic for good had paid off. The forest, once cursed, now thrived under their protection."
                 n "They chose to stay within the woods, dedicating themselves to preserving its newfound peace. As guardians of the forest, they found a deeper purpose, their bond stronger than ever."
@@ -980,12 +986,12 @@ label ff_start:
             "(Act) Deflect her attack and disarm her" if not chose_magic:
                 n "The princess waited for the perfect moment, knowing the Femme Fatale's frenzied attacks would eventually leave her exposed. The hero, too, remained patient, his eyes locked on the villain's every move."
                 p "Stay ready... when she overextends, that's when we strike."
+                scene bg Villain_hero_sword_facing_far_ff
                 n "As the Femme Fatale swung wildly with her dagger, the hero saw his opportunity. He deflected her attack with a quick parry, knocking the weapon from her hand."
                 n "For a moment, it seemed like victory was within their grasp. But as the Femme Fatale stumbled back, she lashed out one last time with a hidden blade, aiming for the princess."
                 ff "I won't lose... not like this!"
-                n "The hero saw the danger and acted without hesitation. He moved in front of the princess, taking the blade meant for her."
-                h "Princess... stay safe..."
                 scene bg blackscreen
+                n "The hero saw the danger and acted without hesitation. He moved in front of the princess, taking the blade meant for her."
                 n "The hero crumpled to the ground, the blade buried deep in his side. His eyes met the princess's for a final, fleeting moment before closing forever."
                 n "The Femme Fatale, disarmed and now defenseless, fell to her knees, her defeat complete. But the cost of victory was steep. The hero's sacrifice weighed heavily on the princess's heart as she knelt beside him, tears streaming down her face."
                 n "She held him close, whispering her gratitude and sorrow, knowing he had given his life to save hers. She vowed to carry on in his memory, her heart forever marked by his bravery."
@@ -999,16 +1005,14 @@ label ff_start:
         menu:
             "(Act) Strike while she's vulnerable":
                 n "The hero moved swiftly, knocking the Femme Fatale off balance with a powerful strike. She stumbled, her footing unsure, but quickly regained her composure."
+                scene bg Villain_hero_charging_far_ff
                 ff "Is that all you've got? Pathetic."
+                scene bg blackscreen
                 n "Before the hero could respond, the Femme Fatale lunged, her dagger slashing through the air. She knocked the hero to the ground, her blade poised to strike a fatal blow."
-                h "Ugh... Princess, help!"
                 n "The Femme Fatale's smirk widened, savoring her moment of victory as she prepared to end the hero's life."
-                ff "Goodbye, hero. This is your final act."
                 n "But the princess didn't hesitate. She spotted a heavy branch on the forest floor and seized it. With a burst of strength, she swung it with all her might, striking the Femme Fatale across the back of her head."
-                ff "What—?!"
                 n "The villain stumbled forward, her eyes wide with shock as she realized she had been caught off guard. She dropped her dagger, which clattered uselessly to the ground."
                 n "The hero quickly rolled away from the Femme Fatale, narrowly avoiding her flailing grasp as she fell."
-                scene bg blackscreen
                 n "The Femme Fatale crumpled to the ground, unconscious from the blow. The princess immediately dropped to her knees beside the hero, her hands shaking as she checked him for injuries."
                 n "A deep cut ran along his arm, but it was nothing the princess couldn't handle. She tore a strip of cloth from her dress and wrapped it around his wound, her movements quick and practiced."
                 n "The hero winced but gave her a reassuring smile, grateful for her quick thinking and bravery."
@@ -1023,10 +1027,9 @@ label ff_start:
                 p "It doesn't have to end like this. Surrender now, and we'll spare you. There's no need for more bloodshed."
                 n "The Femme Fatale's eyes narrowed, her expression a mix of fear and defiance. For a moment, it seemed like she might consider the offer."
                 ff "You think I would grovel for mercy? Never."
+                scene bg blackscreen
                 n "But as the hero stepped forward, ready to back the princess's offer, the Femme Fatale lashed out with a final, desperate move. Her dagger, hidden in her sleeve, slashed across the hero's arm, leaving a thin but deep cut."
                 n "The hero staggered back, his hand clutching his wound. The venom from the Femme Fatale's blade began to spread almost immediately, darkening the veins around the wound."
-                p "No... no, this can't be happening!"
-                scene bg blackscreen
                 n "Seeing the hero's fate sealed by the poison, the princess made a heart-wrenching decision. She couldn't bear the thought of life without him."
                 n "Grabbing the fallen dagger, she turned it on herself, plunging it into her chest. She would rather join him in death than live without him."
                 n "As the venom took hold, the princess fell beside the hero, their hands finding each other in their final moments."
@@ -1044,8 +1047,8 @@ label ff_start:
                 p "Enough of your games! If you won't reveal your secrets, I'll end this now!"
                 n "Summoning her magic, the princess quickly formed a blazing fireball in her hands, the flames crackling with fierce intensity. She hurled it straight at the Femme Fatale."
                 ff "Do you really think—"
-                n "The fireball struck before the Femme Fatale could finish her taunt. Flames engulfed her, and a horrified scream tore through the air as she was consumed by the inferno."
                 scene bg blackscreen
+                n "The fireball struck before the Femme Fatale could finish her taunt. Flames engulfed her, and a horrified scream tore through the air as she was consumed by the inferno."
                 n "But the fire did not stop there. The flames spread rapidly, fueled by the dry forest underbrush. In an instant, the blaze grew uncontrollable, devouring everything in its path."
                 n "Realizing the disaster she had unleashed, the princess's heart filled with regret. The once-vibrant forest was now a sea of fire, and the magic that once thrived here twisted into a dark, malevolent force."
                 n "Overwhelmed by guilt and determination to make amends, the princess and hero vowed to stay in the cursed forest. They dedicated their lives to restoring the land they had carelessly ruined."
@@ -1058,8 +1061,8 @@ label ff_start:
                 ff "You have no idea of the secrets I hold, the power I could share... if only you were worthy."
                 n "The princess gave the hero a subtle nod, signaling her intent. Whispering a spell under her breath, she prepared to make their escape."
                 p "Perhaps we aren't worthy... but we won't be your pawns, either."
-                n "In an instant, the princess activated her teleportation spell. A burst of light enveloped her and the hero, whisking them away from the Femme Fatale's grasp."
                 scene bg blackscreen
+                n "In an instant, the princess activated her teleportation spell. A burst of light enveloped her and the hero, whisking them away from the Femme Fatale's grasp."
                 n "The Femme Fatale's triumphant grin vanished as she realized she had been outsmarted. Alone in the clearing, her schemes fell apart in the face of their escape."
                 n "The princess and hero reappeared in a quiet meadow, far from the reach of the villain and the dangers of the forest. They had not only escaped the Femme Fatale's machinations but also freed themselves from the expectations of the kingdom."
                 n "Aware that their use of magic was forbidden by the kingdom's laws, they chose not to return. Instead, they sought a new life beyond the constraints of their past."
@@ -1076,9 +1079,9 @@ label ff_start:
                 p "You hide behind your games because you're afraid—afraid of failing, afraid of being seen as weak. Prove me wrong."
                 n "The Femme Fatale's eyes blazed with fury at the princess's words. Her grip on her daggers tightened, her pride wounded."
                 ff "Afraid? I'll show you what fear really looks like!"
+                scene bg blackscreen
                 n "Driven by rage, the Femme Fatale lunged forward, her movements wild and uncontrolled. The princess's plan was working—the villain was losing her carefully maintained balance."
                 n "As the Femme Fatale overextended, the princess seized the moment, drawing on her magic to turn the tide against her."
-                scene bg blackscreen
                 n "A powerful surge of energy ripped through the clearing, engulfing the Femme Fatale. She let out a scream as she was thrown back, her body collapsing lifelessly to the ground."
                 n "But the cost of this victory was immense. As the dust settled, the princess fell to the ground, her body lifeless from the magical onslaught."
                 n "The hero, realizing she was slipping away, made a desperate choice. Breaking the kingdom's most sacred rule, he used forbidden magic to bring her back."
@@ -1091,13 +1094,14 @@ label ff_start:
                 n "The princess saw a flicker of doubt in the Femme Fatale's eyes, a hesitation that opened a narrow window of opportunity."
                 p "Now, hero—she's vulnerable!"
                 n "The hero lunged forward, but the Femme Fatale recovered quickly, striking him across the face with the hilt of her dagger. The blow sent the hero crashing to the ground, dazed and vulnerable."
+                scene bg Villain_hero_charging_far_ff
                 n "With the hero down, the Femme Fatale stood over him, a cruel smile on her lips as she raised her dagger for the final blow."
+                scene bg Villain_far_ff
                 ff "Pathetic... is this all the kingdom's champion has to offer?"
+                scene bg blackscreen
                 n "The princess's heart pounded. Without a second thought, she grabbed a sturdy branch from the forest floor and charged forward, striking the Femme Fatale across the back."
                 n "The villain stumbled, her dagger slipping from her hand as she turned in shock. The princess didn't let up, swinging again with all her strength."
-                ff "Ugh—you'll pay for that!"
                 n "The final blow from the branch hit the Femme Fatale squarely in the temple, and she collapsed to the ground, unconscious."
-                scene bg blackscreen
                 n "With the villain defeated, the princess immediately knelt beside the hero, her hands trembling as she checked his wounds. He was breathing, but badly hurt."
                 n "Tearing a strip from her dress, she bandaged his injuries, her heart racing as she worked to save him."
                 n "As the hero's eyes fluttered open, he managed a weak smile, grateful for her quick thinking and bravery."
@@ -1114,10 +1118,9 @@ label ff_start:
                 ff "Is this all you have, little princess? Your kingdom has sent you to die."
                 n "The princess's eyes narrowed, drawing on her inner strength. She whispered an incantation under her breath, her hands beginning to glow with a soft light."
                 p "I don't need a sword to stop you. Magic will be enough."
-                n "The Femme Fatale lunged forward, but the princess thrust her hands out, releasing a wave of magic that enveloped the villain. The forest seemed to respond, the air thickening with energy."
-                ff "What... what is this?"
-                n "The magic surged around the Femme Fatale, vines erupting from the ground and wrapping around her limbs. She struggled, but the forest tightened its grip, binding her in place."
                 scene bg blackscreen
+                n "The Femme Fatale lunged forward, but the princess thrust her hands out, releasing a wave of magic that enveloped the villain. The forest seemed to respond, the air thickening with energy."
+                n "The magic surged around the Femme Fatale, vines erupting from the ground and wrapping around her limbs. She struggled, but the forest tightened its grip, binding her in place."
                 n "The Femme Fatale's eyes widened in horror as the very magic she had sought to control now restrained her. The forest, sensing her dark intent, refused to let her go."
                 n "The princess and hero, seeing the villain subdued, felt a profound sense of duty to the enchanted woods. They decided to stay and protect the forest from future threats, becoming its new guardians."
                 n "As they took their place among the ancient trees, a sense of peace settled over them. They had found a purpose greater than themselves, and a bond that could withstand any trial."
@@ -1128,14 +1131,14 @@ label ff_start:
                 n "The princess watched the Femme Fatale closely, noting the subtle way she wielded her poisoned daggers. With every movement, the princess could see a pattern—a chance to use the villain's own weapons against her."
                 p "Hero, distract her! We need to turn her own tools back on her."
                 n "The hero nodded, launching into a series of feints and strikes, drawing the Femme Fatale's attention entirely onto him."
+                scene Villain_hero_charging_far_ff
                 ff "You're predictable! Do you think you can defeat me with such basic tactics?"
+                scene bg blackscreen
                 n "The princess moved swiftly behind the Femme Fatale, her eyes locked on the vial of poison hanging at the villain's waist."
                 n "In a moment of daring, she grabbed the vial and tossed it to the hero, who caught it with a deft hand. The Femme Fatale, realizing too late what was happening, spun around in shock."
-                ff "No—don't you dare!"
                 n "The hero smashed the vial against the ground, releasing a cloud of toxic fumes. The Femme Fatale recoiled, covering her mouth, but the damage was already done. The poison began to take hold, slowing her movements."
                 n "But as the poison cloud spread, the Femme Fatale, with a final desperate lunge, threw one of her daggers toward the princess, aiming for a fatal strike."
                 n "The hero, seeing the danger, acted on pure instinct. He jumped in front of the princess, taking the dagger square in his chest."
-                scene bg blackscreen
                 n "The hero staggered, the poison-laced blade lodged deep in his body. The Femme Fatale fell lifeless to the ground, but her final act of malice had claimed one last victim."
                 n "The princess rushed to the hero's side, tears streaming down her face as she held him close. His breath came in ragged gasps, his life slipping away."
                 n "Though they had won the battle, the victory felt hollow. The hero's sacrifice weighed heavily on the princess's heart as she realized the price of their triumph."
@@ -1155,12 +1158,13 @@ label ff_start:
                 n "The hero, seeing the opportunity, tightened his grip on his sword, ready to strike. The princess gave him a subtle nod, signaling the moment had come."
                 p "Hero, now!"
                 n "As the Femme Fatale's attention was entirely on the princess, the hero moved with swift precision, raising his sword to strike. But as he lunged, the villain turned at the last second, her reflexes sharp."
+                scene bg Villain_hero_charging_far_ff
                 n "She parried his attack and with a swift movement, kicked his feet out from under him, knocking him to the ground. She stood over him, ready to deliver a fatal strike."
+                scene bg Villain_far_ff
                 ff "Nice try, but you'll have to do better than that!"
-                n "The princess, acting quickly, spotted a large branch on the ground. With no time to waste, she grabbed it and struck the Femme Fatale from behind, catching her off guard."
-                ff "Ah—!"
-                n "The villain stumbled, dropping one of her daggers. The hero seized the chance and thrust his sword upward, piercing the Femme Fatale's side. She gasped, shock flashing in her eyes."
                 scene bg blackscreen
+                n "The princess, acting quickly, spotted a large branch on the ground. With no time to waste, she grabbed it and struck the Femme Fatale from behind, catching her off guard."
+                n "The villain stumbled, dropping one of her daggers. The hero seized the chance and thrust his sword upward, piercing the Femme Fatale's side. She gasped, shock flashing in her eyes."
                 n "The Femme Fatale crumpled to the ground, her reign of terror brought to a sudden end by the combined efforts of the princess and hero."
                 n "With the danger passed, the princess quickly knelt beside the hero, her hands trembling as she checked him for injuries. The hero's breath was ragged, but he managed a weak smile, grateful for her quick thinking."
                 n "The princess tended to his wounds, her relief palpable as she realized he would survive. Their bond, tested by the fires of battle, had only grown stronger."
@@ -1175,9 +1179,9 @@ label ff_start:
                 ff "Oh, princess, you look like a deer caught in the headlights. Are you that afraid of me?"
                 n "The princess feigned fear, stepping back as if retreating. The Femme Fatale laughed, her confidence blinding her to the danger."
                 p "Hero, now!"
+                scene bg blackscreen
                 n "They turned to flee, but the Femme Fatale's eyes flashed with fury at their attempt to escape. She hurled a dagger, aimed directly at the hero's back."
                 n "Seeing the blade hurtling toward him, the princess acted without hesitation. She threw herself in front of the hero, the dagger sinking into her chest with a sickening thud."
-                scene bg blackscreen
                 n "The hero caught the princess as she fell, her lifeblood spilling out onto the forest floor. Desperation filled his heart as he realized the depth of her sacrifice."
                 n "He quickly turned, his sword flashing in the dim light as he struck down the Femme Fatale in a single, decisive blow, ending her reign of terror."
                 n "The hero cradled the princess in his arms, tears streaming down his face as her life ebbed away. Her last breath was a whisper of love, a silent farewell that shattered his heart."
