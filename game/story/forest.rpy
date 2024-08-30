@@ -164,8 +164,11 @@ label forest_start:
         return
 
     label forest_proceed_into_forest:
-        n "The princess and the hero stepped forward in the forest, but something was off. A bad omen. An eerie silence enveloped them."
-        scene bg Forest2 with fade
+        scene bg Forest2
+        stop music fadeout 1.5
+        n "The princess and the hero stepped forward in the forest, but something was off."
+        play music "audio/1 Forest 2.mp3" loop volume 1.0 fadein 0.5
+        n "A bad omen. An eerie silence enveloped them."
         n "A tree branch cracked under the foot of the Princess. A flock of birds scattered from the canopy above at the sudden noise."
         n "The hero narrowed his eyes and scanned his surroundings. His hand drifted towards the numerous weapons he had equipped."
         n "Suddenly, a shadowy figure emerged from the darkness, cloaked in a tattered robe."
@@ -191,7 +194,6 @@ label forest_start:
         v "How amusing. Be careful now."
         v "{b}Your choices matter.{/b}" #TODO: discuss if we should give this a special font/colour to have more significance
         
-        stop music fadeout 1.5
         jump villain_encounter # End of forest scene
 
 
@@ -236,7 +238,6 @@ label forest_start:
 
 label villain_encounter:
 
-    play music "audio/1 Forest 2.mp3" loop volume 1.0 fadein 0.5
     # level 1 of villain enounter
     menu:
         "(Act) Hide":

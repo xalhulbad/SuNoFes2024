@@ -22,6 +22,7 @@ image bg Forest1 = "bg Forest1.png"
 image bg Forest2 = "bg Forest2.png"
 image bg Cryptic = "bg Cryptic.png"
 image bg Villain = "bg Villain.png"
+image bg Meadow = "bg Meadow.jpeg"
 
 
 # The game starts here.
@@ -33,6 +34,8 @@ label start:
     # images directory to show it.
     
     scene bg blackscreen
+
+    call meadow_start
 
     call tower_start
 
