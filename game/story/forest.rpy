@@ -187,7 +187,7 @@ label forest_start:
         else:
             pt "Let's get this over with."
         
-        scene bg Forest2_hero_front_facing_far_shadowy with dissolve
+        scene bg Forest2_hero_facing_far_shadowy with dissolve
         n "The figure stepped closer, their movements almost ethereal. The hero instinctively placed himself between the princess and the stranger."
         h "Stay back! We mean no harm, but we will defend ourselves if necessary."
         v "How amusing. Be careful now."
@@ -418,7 +418,7 @@ label villain_encounter:
                 n "Suddenly, the faint twang of a bowstring behind them broke the silence. Instinctively, the hero raised his shield just in time to deflect an arrow aimed straight at his chest."
                 h "Who was that?"
                 n "They both turned, eyes wide with shock, realizing the figure had been much closer than they had thought. His presence, almost ghostly, had eluded them completely."
-                scene bg Forest2_close_charging_hu
+                scene bg Forest2_close_hu
                 n "The Hunter, silent and dealy, stepped into the faint light, his eyes cold and calculating. He held another arrow, ready to be notched."
                 hu "You should have stayed hidden."
                 n "The princess and hero exchanged a glance, realizing they were outclassed. The Hunter's senses were far beyond their own, his movements almost inhuman."
@@ -461,7 +461,7 @@ label villain_encounter:
                 n "The Fallen Hero drew his sword, the blade catching the light with a deadly gleam. The air grew thick with tension as he squared off against the hero."
                 fh "Enough talk. Let's see if your blade can back up your words."
                 n "With a swift, practiced motion, the Fallen Hero lunged at the hero, their swords clashing with a resounding clang. The hero parried the blow, their faces mere inches apart, locked in a deadly dance."
-                scene bg Forest2_hero_close_charging_fh
+                scene bg Forest2_hero_charging_close_fh
                 n "The princess watched in horror as the battle unfolded, the forest echoing with the sounds of their struggle."
                 n "Despite the hero's skill, it was clear the Fallen Hero's experience and hatred gave him a fierce edge. He has practiced to perfection the technique of the kingdom knights."
                 n "The hero fought valiantly, but the Fallen Hero's relentless attacks began to overwhelm him. With a powerful strike, the hero was knocked off balance, stumbling to the ground."
@@ -616,7 +616,7 @@ label villain_encounter:
                 n "The ground beneath them began to tremble roots and vines twisting and writhing as they responded to the spirit's anger. The hero tightened his grip on his sword, readying himself for the inevitable."
                 h "We need to move, princess. Theis spirit won't be reasoned with."
                 n "As they took a step back, the spirit surged forward, its form growing larger and more menacing, shadows swirling around it."
-                scene bg Forest2_close_charging_vs
+                scene bg Forest2_close_vs
                 vs "Run if you must, but know this: the forest sees all, and it will have its revenge."
                 n "With a final, haunting wail, the spirit vanished, leaving the forest in an eerie, oppressive silence. THe princess and hero exchanged a glance, their resolve hardening."
                 scene bg Forest2
@@ -637,7 +637,7 @@ label villain_encounter:
                 h "We'll fight, but I won't let you harm her. I've heard the stories about you."
                 fh "Then let the past be avenged with steel."
                 n "With a swift, practiced motion, the Fallen Hero lunged at the hero, their swords clashing with a resounding clang. The hero parried the blow, their faces mere inches apart, locked in a deadly dance of blades." 
-                scene bg Forest2_hero_sword_close_charging_fh
+                scene bg Forest2_hero_charging_close_fh
                 n "The princess watched in horror as the battle unfolded, the forest echoing with the sounds of their struggle. Despite the hero's skill, it was clear the Fallen Hero's experience and hatred gave him a fierce edge." 
                 n "The hero fought valiantly, but the Fallen Hero's relentless attacks began to overwhelm him. With a powerful strike, the hero was knocked off balance, stumbling to the ground." 
                 scene bg Forest2_close_fh
@@ -834,7 +834,7 @@ label villain_encounter:
                 n "The spirit's eyes burned with an unearthly fire, its presence oppressive and suffocating."
                 vs "Your kind only knows destruction. You cannot fool me with your lies."
                 n "The spirit surged forward, its ghostly hands reaching out. The hero and princess struggled, their movements becoming more frantic."
-                scene bg Forest2_close_charging_vs
+                scene bg Forest2_close_vs
                 p "We can't overcome them like this. We need to run!"
                 h "Through here, quickly!"
                 n "They managed to get around the spirit and squeeze through the gap, their hearts pounding. The spirit's wail of fury echoed behind them as they tumbled into a clearing, breathless and shaken."
@@ -917,7 +917,6 @@ label villain_encounter:
                 n "The arrow suddenly disintegrated into dust."
                 dml "Your pitiful attempts are futile."
                 n "The forest around them seemed to darken as the Dark Magic Lord's power surged. Shadows writhed and twisted, responding to his anger."
-                scene bg Forest2_close_charging_dml
                 h "We need to retreat. Now!"
                 n "The hero grabbed the princess's hand, pulling her away as the Dark Magic Lord advanced, his eyes glowing with malevolent energy."
                 scene bg Forest2_far_dml
@@ -1003,7 +1002,7 @@ label villain_encounter:
                 n "The hero kept his bow drawn, but the oppressive energy emanating from the Dark Magic Lord made it difficult to focus."
                 p "We won't let you continue your tyranny. Surrender now, or face our wrath!"
                 n "The Dark Magic Lord's laughter echoed through the forest, chilling them to the bone. As he began to charge at them, princess and hero knew that this was no mere boast."
-                scene bg Forest2_close_charging_dml
+                scene bg Forest2_close_dml
                 h "We need to get out of here!"
                 n "The hero grabbed the princess's hand, pulling her away as the Dark Magic Lord advanced, his eyes glowing with malevolent energy."
                 dml "Run, little mice. Your struggle only makes your demise more entertaining."
@@ -1220,7 +1219,7 @@ label villain_encounter:
                 n "The figure's eyes widened momentarily, but their expression quickly hardened with curiosity and skepticism. The air grew heavy with anticipation."
                 dml "Magic, you say? Let us see this power you claim to wield."
                 n "The Dark Magic Lord stepped forward, his presence radiating an aura of dark energy. His eyes gleamed with a mix of arrogance and intrigue."
-                scene bg Forest2_dml
+                scene bg Forest2_far_dml
                 dml "Show me your magic, and perhaps I will consider sparing you."
                 n "The hero, sensing the bluff's potential danger, stepped closer to the princess, ready to protect her."
                 h "Be careful. We can't underestimate him."
@@ -1278,3 +1277,4 @@ label villain_encounter:
                 $ v_type = "hu"
                 stop music fadeout 0.5
                 return
+            
