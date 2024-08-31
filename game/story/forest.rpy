@@ -1277,4 +1277,3 @@ label villain_encounter:
                 $ v_type = "hu"
                 stop music fadeout 0.5
                 return
-            
