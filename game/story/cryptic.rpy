@@ -19,6 +19,7 @@ label cryptic_start:
     scene bg blackscreen with fade
     n "The encounter with the shadowy figure left the princess and the hero with a feeling of determination as they continued to make their way deeper into the woods."
     n "The forest loomed tall and dark, its branches knitting together like gnarled fingers against the twilight sky. Each step they took was a reminder of the dangers that lay ahead. As the canopy opened, a glade revealed itself, bathed in an otherworldly glow."
+    play music "audio/Cryptic Stonehenge.mp3" loop volume 1.0 fadein 0.5
     scene bg Cryptic with fade
     n "In the centre of the clearing stood a circle of ancient stones, each etched with runes that shimmered with a faint, iridescent light. The stones formed a boundary between the known world and the mysteries beyond, inviting the unwary to uncover their secrets."
     n "Here, in this sacred place, time felt suspended, and the air thrummed with an unspoken power. The princess and the hero paused at the edge of the stone circle, drawn to its enigmatic presence."
@@ -374,6 +375,7 @@ label cryptic_start:
         n "The princess continued on her journey with the hero, content with her decision to take the magical gem with her."
 
         $ chose_magic = True
+        stop music fadeout 0.5
         return
 
     label cryptic_leave_gem:
@@ -387,4 +389,5 @@ label cryptic_start:
         n "The journey ahead loomed, full of uncertainty, but as the princess continued on her way home with the hero, she felt a quiet assurance in her decision to uphold the laws she’d grown to respect."
 
         $ chose_magic = False
+        stop music fadeout 0.5
         return
