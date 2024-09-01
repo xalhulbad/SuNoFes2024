@@ -1,6 +1,6 @@
 label meadow_start:
 
-    scene bg Meadow
+    scene bg Meadow with fade
 
     play music "audio/4 Meadow 8.mp3" loop volume 1.0 fadein 0.5
 

@@ -31,6 +31,8 @@ label ff_start:
     $ ff_chose_is_this_just = False
     $ ff_chose_when_will_it = False
 
+    $ ff_times_gotten += 1
+
     # Leading text
     scene bg Villain
     n "The air was thick with tension as the princess and the hero moved cautiously through the forest, the trees closing in around them like silent sentinels. There was an unsettling calm, as if the forest itself was holding its breath."
@@ -622,6 +624,8 @@ label ff_start:
                 p "You're right... But power comes with a price."
                 n "Just as the Femme Fatale began to bask in her perceived triumph, the princess's expression hardened. Dark energy crackled in her hands, ready to strike the moment the villain dropped her guard."
                 ff "What are you—"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "Before she could finish, the princess unleashed a blast of magic, aimed directly at the Femme Fatale's chest. The spell struck true, sending the villain reeling in shock."
                 n "The Femme Fatale's laughter turned to a scream of fury as she realized she had been betrayed. Her body crumpled to the ground, lifeless, a victim of her own hubris."
@@ -637,6 +641,8 @@ label ff_start:
                 ff "You see, darling? You've made the right choice. Together, we could be unstoppable—free to shape the world as we wish."
                 n "But as the Femme Fatale reveled in her imagined victory, the princess whispered a spell under her breath, preparing for the perfect moment to escape."
                 p "You're right... but there's one thing you forgot."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "Before the Femme Fatale could react, the princess activated her teleportation spell. A burst of light enveloped her and the hero, whisking them away in an instant, far from the clutches of the villain."
                 n "The Femme Fatale's laughter faded into silence as she realized she had been outmaneuvered. Left alone in the empty clearing, her dreams of power crumbled to dust."
@@ -654,6 +660,8 @@ label ff_start:
                 p "Draw her toward the trap—we'll catch her when she least expects it."
                 n "The hero maneuvered carefully, baiting the Femme Fatale into the narrow path where the trap was set. The villain's smirk grew wider as she believed she had them cornered, her confidence blinding her to the danger."
                 ff "You really think you can outsmart me with such a simple trick?"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The snare snapped shut around the Femme Fatale's ankle, throwing her off balance. She cursed under her breath, realizing too late what had happened."
                 n "But as the Femme Fatale struggled to free herself, she lashed out with one final, desperate strike—her poisoned dagger flashing toward the princess with deadly intent."
@@ -671,6 +679,8 @@ label ff_start:
                 n "The hero nodded and lunged forward, drawing the Femme Fatale's full attention. She blocked his strikes effortlessly, her eyes gleaming with cruel satisfaction."
                 scene bg Villain_hero_charging_far_ff
                 ff "Is this really all you've got? You're hardly worth my time."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "But the hero refused to back down, even as the Femme Fatale's daggers flashed in the dim light. With each swipe, she drew closer to delivering a lethal blow. Finally, one of her strikes landed—a deep cut across the hero's arm that made him stumble back in pain."
                 n "The villain's smirk widened as she closed in for the kill, savoring her victory. The hero, bleeding and cornered, struggled to hold his ground as she raised her blade for the final strike."         
@@ -693,6 +703,8 @@ label ff_start:
                 p "You're not the only one who knows how to twist magic to your advantage."
                 n "With a focused incantation, the princess began to unravel the Femme Fatale's spell. The magic warped, shifting from dark energy to a calming force that began to heal the forest instead of corrupting it."
                 ff "What... what are you doing?!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The villain's voice cracked in panic as she felt the power slip from her control. Her attempt to seize back the energy failed, leaving her powerless as the forest itself turned against her."
                 n "The Femme Fatale's strength drained away as the very magic she had tried to exploit now bound her in place. The forest, sensing her malevolence, tightened its grip, ensuring she could never harm it again."
@@ -707,6 +719,8 @@ label ff_start:
                 p "We've played her game long enough—it's time we vanish from this story."
                 n "With a flick of her wrist, the princess summoned a teleportation spell, the magic swirling around them as she prepared to whisk them away from the villain's grasp."
                 ff "Running away? How predictable."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "But the Femme Fatale's taunts fell on deaf ears as the spell took hold, wrapping the princess and hero in a veil of light. The villain reached out to stop them, but she was too late."
                 n "In an instant, the princess and hero were gone, leaving behind the kingdom and all its expectations. The Femme Fatale's schemes crumbled into irrelevance, her victory snatched away as they vanished into a new life of freedom."
@@ -724,6 +738,8 @@ label ff_start:
                 p "You're driven by more than just games. What are you really after—power, control, or something more?"
                 n "The Femme Fatale's eyes glittered with malice as she leaned in closer, finally letting her mask slip just enough to reveal her true desires."
                 ff "Power, control, the thrill of bending others to my will... it's all part of the game, darling."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "But in that moment, the princess saw something deeper—a hunger that could be exploited. With quick thinking, she turned the conversation, subtly goading the villain into overreaching."
                 n "Blinded by her ambition, the Femme Fatale pushed too far, letting her desire for dominance lead her into a fatal mistake. Sensing her vulnerability, the princess used magic to reverse the situation."
@@ -737,6 +753,8 @@ label ff_start:
                 p "Enough games—this ends now!"
                 n "Gathering the arcane energy within her, the princess unleashed a roaring fireball straight at the villain. The flames streaked through the air, too fast for the Femme Fatale to react."
                 ff "Wha—"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The fireball struck with devastating force, sending the Femme Fatale crashing to the ground. Her smug grin twisted into shock as the fire consumed her."
                 n "The Femme Fatale's final scream was drowned out by the roar of flames that quickly spread from the impact. The fire surged out of control, devouring the forest around them. In an instant, victory turned into disaster."
@@ -758,6 +776,8 @@ label ff_start:
                 ff "How delightful! Watching you grovel almost makes this worthwhile. Very well, you may serve me, and I may reconsider sparing you."
                 n "The princess bowed her head, masking her intentions. She exchanged a brief glance with the hero, who was poised, ready to act."
                 p "Thank you... for your mercy."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "Just as the Femme Fatale turned her attention away, the princess sprang to her feet, a hidden dagger glinting in her hand. She lunged at the villain, aiming for a quick, decisive blow."
                 n "The blade found its mark, sinking into the Femme Fatale's side. She gasped, her eyes wide with shock."
@@ -777,6 +797,8 @@ label ff_start:
                 ff "Begging suits you, princess. Very well, serve me, and perhaps I'll consider sparing your miserable lives."
                 n "But the princess wasn't about to let her guard down. With a subtle glance to the hero, she prepared her next move."
                 p "Thank you... but I have a better idea."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "As the Femme Fatale basked in her victory, the princess summoned a fireball, her hands glowing with arcane power. She hurled the fiery orb directly at the villain, aiming to catch her off guard."
                 n "The fireball struck the Femme Fatale, engulfing her in flames. She screamed in pain and fury, but the attack had unintended consequences."
@@ -799,6 +821,8 @@ label ff_start:
                 n "The hero, tense and ready, glanced at the princess, searching her eyes for a plan. She gave a subtle nod toward a heavy branch lying nearby."
                 n "As the Femme Fatale closed in, the princess suddenly lunged, grabbing the branch and swinging it with all her might. The strike connected with the villain's arm, knocking her back."
                 ff "You think a branch can defeat me?"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Femme Fatale, recovering from the blow, turned her attention to the hero, seeing him as the greater threat. Her dagger gleamed as she aimed for his heart."
                 n "But just as she lunged, the princess leapt forward, positioning herself between the hero and the Femme Fatale. The dagger pierced her chest instead."
@@ -816,6 +840,8 @@ label ff_start:
                 n "The hero glanced at the princess, uncertainty in his eyes. She gave him a subtle signal, directing his attention to a narrow ledge behind the Femme Fatale."
                 n "As the villain moved closer, taunting her captives, the princess pretended to trip, drawing the Femme Fatale forward."
                 p "Please... just spare him."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "Seeing her moment, the princess darted to the side, grabbing a loose stone and hurling it at the villain's feet. The Femme Fatale stumbled, momentarily off-balance."
                 n "The hero seized the opportunity, moving to push her off balance further. But as he did, the Femme Fatale slashed out with her dagger, grazing his arm."
@@ -838,6 +864,8 @@ label ff_start:
                 ff "How...? You think you can match me?"
                 n "The princess continued, her magic expertly weaving through the dark energy that filled the air. She reversed the flow, turning the destructive power back into the earth, where it could do no harm."
                 ff "You—impossible!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The ground beneath them trembled as the forest responded to the princess's call. The trees bent toward her, their branches reaching to protect her and the hero from the villain's final, desperate strikes."
                 n "The Femme Fatale, realizing she had been outmaneuvered, tried to retreat, but it was too late. The forest closed in around her, sensing her malevolence, binding her with roots that grew and twisted around her body, holding her fast."
@@ -851,6 +879,8 @@ label ff_start:
                 ff "Do you see now, darling? You were never a match for me."
                 n "The princess nodded subtly to the hero, their plan set in motion. As the Femme Fatale gloated, the princess reached for a nearby branch, her hand trembling with feigned fear."
                 p "I suppose you're right... but maybe there's still a way to win."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "But as she lunged to strike, the Femme Fatale, anticipating her move, deftly sidestepped and plunged a hidden dagger into the princess's side. The sharp pain stole her breath away as she collapsed to the ground."
                 n "The hero rushed to the princess's side, his eyes wide with horror as he watched her life ebb away. Desperation clawed at his heart, and without a second thought, he called upon forbidden magic to resurrect her."
@@ -869,6 +899,8 @@ label ff_start:
                 p "If you want to play with magic, then let's see how well you handle your own spells!"
                 n "With a quick incantation, the princess focused her energy, creating a mirror of magic that caught the Femme Fatale's spell mid-flight and hurled it back at her."
                 ff "No! How dare you—"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The spell struck the Femme Fatale with a violent force, throwing her to the ground. But the impact triggered a chain reaction—the surrounding forest erupted into flames, ignited by the raw, uncontrolled power of their magic clash."
                 n "The fire spread quickly, consuming everything in its path. The forest, once full of life, was reduced to ash, the magic within twisted into a dark curse that spread through the land. Realizing the irreversible damage caused, the princess's heart filled with dread."
@@ -883,6 +915,8 @@ label ff_start:
                 p "Your spells might be strong, but they are nothing compared to the power of a counterspell."
                 n "Focusing her energy, the princess began chanting an incantation, her voice steady and clear. The air around them shifted as her magic clashed with the Femme Fatale's dark spells."
                 ff "What... what are you doing?!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Femme Fatale's eyes widened as she felt her control slipping away. The princess's counterspell shattered the dark energy in a brilliant explosion of light."
                 n "The burst of magic left the Femme Fatale powerless, her once confident smirk replaced by shock and fear. She stumbled back, defeated, her reign of terror finally over."
@@ -902,6 +936,8 @@ label ff_start:
                 p "Now! Aim for her weakness!"
                 n "The hero moved swiftly, his sword flashing in the dim light as he targeted the vulnerable spot. But as the blade drew close, the Femme Fatale twisted in a final act of desperation, her dagger aimed at the hero's heart."
                 ff "I'll take you down with me!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "Seeing the threat, the princess acted on instinct. She grabbed a fallen branch from the ground and lunged forward, placing herself between the Femme Fatale and the hero. The dagger pierced her side, and she gasped in pain."
                 n "The princess fell to the ground, her vision blurring as the pain spread. The hero, struck by grief, held her close, his heart shattering with every shallow breath she took."
@@ -916,6 +952,8 @@ label ff_start:
                 p "Wait... maybe we don't have to end it this way."
                 n "The Femme Fatale, sensing the hesitation, saw her chance. With a swift, desperate motion, she lashed out with her poisoned dagger, grazing the hero's arm."
                 ff "A moment's hesitation, and now you both pay the price!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero staggered back, clutching his arm as the venom spread quickly through his veins. The princess's eyes filled with horror, realizing what had happened."
                 n "As the poison began to take hold, the hero's strength ebbed away. The princess, heartbroken and desperate, saw the inevitable end approaching. Unable to imagine a life without him, she made a fateful decision."
@@ -936,6 +974,8 @@ label ff_start:
                 scene bg Villain_hero_charging_far_ff
                 n "But as he moved in for the final blow, the Femme Fatale, with one last desperate act, lashed out with a hidden dagger, catching the hero's arm."
                 ff "I won't go down... alone!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero's strike landed true, and the Femme Fatale crumpled to the ground, her life fading away. But her parting strike had grazed the hero with a poisoned blade."
                 n "The hero staggered, his breath growing ragged as the poison spread through his veins. The princess's heart sank as she realized what had happened."
@@ -951,6 +991,8 @@ label ff_start:
                 n "The hero charged forward with a series of powerful strikes, each one driving the Femme Fatale back. Her smirk faltered as she struggled to keep up, clearly unprepared for the hero's relentless assault."
                 scene Villain_hero_charging_far_ff
                 ff "You... you think you can overpower me?!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "But as the hero moved in for a decisive blow, the Femme Fatale's eyes flashed with sudden resolve. With a desperate lunge, she aimed her dagger straight at the princess, determined to take her down with her."
                 n "Seeing the imminent danger, the hero acted on instinct. He dove in front of the princess, taking the fatal blow meant for her."
@@ -974,6 +1016,8 @@ label ff_start:
                 p "Now! Use your magic!"
                 n "The hero nodded and summoned his remaining strength, channeling his magic into a powerful blast aimed directly at the Femme Fatale. The force of the spell caught her off guard, throwing her back."
                 ff "What... no!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The magic struck her with a blinding light, wrapping around her like vines as it drained the last of her strength. The Femme Fatale collapsed, unable to fight any longer."
                 n "As the magic bound the Femme Fatale, the forest around them seemed to breathe a sigh of relief. The darkness that had hung over the woods began to lift, replaced by a serene calm."
@@ -990,6 +1034,8 @@ label ff_start:
                 n "As the Femme Fatale swung wildly with her dagger, the hero saw his opportunity. He deflected her attack with a quick parry, knocking the weapon from her hand."
                 n "For a moment, it seemed like victory was within their grasp. But as the Femme Fatale stumbled back, she lashed out one last time with a hidden blade, aiming for the princess."
                 ff "I won't lose... not like this!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero saw the danger and acted without hesitation. He moved in front of the princess, taking the blade meant for her."
                 n "The hero crumpled to the ground, the blade buried deep in his side. His eyes met the princess's for a final, fleeting moment before closing forever."
@@ -1007,6 +1053,8 @@ label ff_start:
                 n "The hero moved swiftly, knocking the Femme Fatale off balance with a powerful strike. She stumbled, her footing unsure, but quickly regained her composure."
                 scene bg Villain_hero_charging_far_ff
                 ff "Is that all you've got? Pathetic."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "Before the hero could respond, the Femme Fatale lunged, her dagger slashing through the air. She knocked the hero to the ground, her blade poised to strike a fatal blow."
                 n "The Femme Fatale's smirk widened, savoring her moment of victory as she prepared to end the hero's life."
@@ -1027,6 +1075,8 @@ label ff_start:
                 p "It doesn't have to end like this. Surrender now, and we'll spare you. There's no need for more bloodshed."
                 n "The Femme Fatale's eyes narrowed, her expression a mix of fear and defiance. For a moment, it seemed like she might consider the offer."
                 ff "You think I would grovel for mercy? Never."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "But as the hero stepped forward, ready to back the princess's offer, the Femme Fatale lashed out with a final, desperate move. Her dagger, hidden in her sleeve, slashed across the hero's arm, leaving a thin but deep cut."
                 n "The hero staggered back, his hand clutching his wound. The venom from the Femme Fatale's blade began to spread almost immediately, darkening the veins around the wound."
@@ -1047,6 +1097,8 @@ label ff_start:
                 p "Enough of your games! If you won't reveal your secrets, I'll end this now!"
                 n "Summoning her magic, the princess quickly formed a blazing fireball in her hands, the flames crackling with fierce intensity. She hurled it straight at the Femme Fatale."
                 ff "Do you really think—"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The fireball struck before the Femme Fatale could finish her taunt. Flames engulfed her, and a horrified scream tore through the air as she was consumed by the inferno."
                 n "But the fire did not stop there. The flames spread rapidly, fueled by the dry forest underbrush. In an instant, the blaze grew uncontrollable, devouring everything in its path."
@@ -1061,6 +1113,8 @@ label ff_start:
                 ff "You have no idea of the secrets I hold, the power I could share... if only you were worthy."
                 n "The princess gave the hero a subtle nod, signaling her intent. Whispering a spell under her breath, she prepared to make their escape."
                 p "Perhaps we aren't worthy... but we won't be your pawns, either."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "In an instant, the princess activated her teleportation spell. A burst of light enveloped her and the hero, whisking them away from the Femme Fatale's grasp."
                 n "The Femme Fatale's triumphant grin vanished as she realized she had been outsmarted. Alone in the clearing, her schemes fell apart in the face of their escape."
@@ -1079,6 +1133,8 @@ label ff_start:
                 p "You hide behind your games because you're afraid—afraid of failing, afraid of being seen as weak. Prove me wrong."
                 n "The Femme Fatale's eyes blazed with fury at the princess's words. Her grip on her daggers tightened, her pride wounded."
                 ff "Afraid? I'll show you what fear really looks like!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "Driven by rage, the Femme Fatale lunged forward, her movements wild and uncontrolled. The princess's plan was working—the villain was losing her carefully maintained balance."
                 n "As the Femme Fatale overextended, the princess seized the moment, drawing on her magic to turn the tide against her."
@@ -1098,6 +1154,8 @@ label ff_start:
                 n "With the hero down, the Femme Fatale stood over him, a cruel smile on her lips as she raised her dagger for the final blow."
                 scene bg Villain_far_ff
                 ff "Pathetic... is this all the kingdom's champion has to offer?"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The princess's heart pounded. Without a second thought, she grabbed a sturdy branch from the forest floor and charged forward, striking the Femme Fatale across the back."
                 n "The villain stumbled, her dagger slipping from her hand as she turned in shock. The princess didn't let up, swinging again with all her strength."
@@ -1118,6 +1176,8 @@ label ff_start:
                 ff "Is this all you have, little princess? Your kingdom has sent you to die."
                 n "The princess's eyes narrowed, drawing on her inner strength. She whispered an incantation under her breath, her hands beginning to glow with a soft light."
                 p "I don't need a sword to stop you. Magic will be enough."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Femme Fatale lunged forward, but the princess thrust her hands out, releasing a wave of magic that enveloped the villain. The forest seemed to respond, the air thickening with energy."
                 n "The magic surged around the Femme Fatale, vines erupting from the ground and wrapping around her limbs. She struggled, but the forest tightened its grip, binding her in place."
@@ -1133,6 +1193,8 @@ label ff_start:
                 n "The hero nodded, launching into a series of feints and strikes, drawing the Femme Fatale's attention entirely onto him."
                 scene Villain_hero_charging_far_ff
                 ff "You're predictable! Do you think you can defeat me with such basic tactics?"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The princess moved swiftly behind the Femme Fatale, her eyes locked on the vial of poison hanging at the villain's waist."
                 n "In a moment of daring, she grabbed the vial and tossed it to the hero, who caught it with a deft hand. The Femme Fatale, realizing too late what was happening, spun around in shock."
@@ -1162,6 +1224,8 @@ label ff_start:
                 n "She parried his attack and with a swift movement, kicked his feet out from under him, knocking him to the ground. She stood over him, ready to deliver a fatal strike."
                 scene bg Villain_far_ff
                 ff "Nice try, but you'll have to do better than that!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The princess, acting quickly, spotted a large branch on the ground. With no time to waste, she grabbed it and struck the Femme Fatale from behind, catching her off guard."
                 n "The villain stumbled, dropping one of her daggers. The hero seized the chance and thrust his sword upward, piercing the Femme Fatale's side. She gasped, shock flashing in her eyes."
@@ -1179,6 +1243,8 @@ label ff_start:
                 ff "Oh, princess, you look like a deer caught in the headlights. Are you that afraid of me?"
                 n "The princess feigned fear, stepping back as if retreating. The Femme Fatale laughed, her confidence blinding her to the danger."
                 p "Hero, now!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "They turned to flee, but the Femme Fatale's eyes flashed with fury at their attempt to escape. She hurled a dagger, aimed directly at the hero's back."
                 n "Seeing the blade hurtling toward him, the princess acted without hesitation. She threw herself in front of the hero, the dagger sinking into her chest with a sickening thud."

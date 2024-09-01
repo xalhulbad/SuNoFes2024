@@ -32,6 +32,8 @@ label fh_start:
     $ fh_chose_change_your_mind = False
     $ fh_chose_not_like_those = False
 
+    $ fh_times_gotten =+ 1
+
     # Leading text
     scene bg Villain
     n "The forest seemed darker than before, the shadows deeper and more menacing as the princess and hero retraced their steps."
@@ -653,6 +655,8 @@ label fh_start:
             "(Act) Exploit his pain to win the fight":
                 n "The hero's eyes locked onto the Fallen Hero's old wound, the only visible weakness in his otherwise ironclad defense. The princess, torn between compassion and survival, steeled herself and gave the signal."
                 p "Do it! Strike now!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero lunged, driving his blade toward the weakened spot. The Fallen Hero, gritting his teeth against the searing pain, staggered back, realizing too late that the hero had found his vulnerable point."
                 n "Desperation flashed in his eyes as he turned his focus away from the hero and toward the princess, his intent clear."
@@ -669,6 +673,8 @@ label fh_start:
             "(Act) Hesitate, showing mercy":
                 n "The hero's blade hovered above the Fallen Hero's weakened side, but the princess's voice rang out, pleading for mercy."
                 p "Wait-don't do it! We've fought enough. There's been enough death."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero hesitated, lowering his sword as the princess stepped forward, offering her hand to the Fallen Hero in an act of compassion."
                 n "For a fleeting moment, it seemed that the years of bitterness might give way to something softer, a chance for peace."
@@ -687,6 +693,8 @@ label fh_start:
             "(Act) Overwhelm him with dark magic":
                 n "The princess's eyes glowed with determination as she channeled dark energy into the hero's blade. The air crackled with power, the magic humming with a sinister force that made the very ground tremble beneath them."
                 p "This is our only chance-pour everything into this strike!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero nodded, charging forward with the blade infused with dark magic. The Fallen Hero's eyes widened in shock as the corrupted energy surged toward him."
                 n "His defenses crumbled under its overwhelming force."
@@ -704,6 +712,8 @@ label fh_start:
                 n "The princess's magic flowed through her fingers as she began to weave a complex spell, summoning enchanted chains of light that coiled around the Fallen Hero."
                 n "The magic pulsed with an unbreakable force, fueled by her determination to end the battle without further bloodshed."
                 p "I'll bind his power-this ends here!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero stood by, ready to defend her as the magic closed in around the Fallen Hero, locking him in place."
                 n "He struggled against the spell, his anger boiling over as the chains tightened, stripping him of the power that had driven his relentless rage."
@@ -721,6 +731,8 @@ label fh_start:
             "(Act) Defeat him decisively":
                 n "The hero tightened his grip on his sword, every ounce of his strength channeled into one final, decisive strike. The princess's eyes blazed with determination as she gave the order."
                 p "Now-end this once and for all!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "With a roar, the hero swung his blade, the force of his attack shattering the Fallen Hero's defenses. The blow struck true, cutting through armor and leaving the Fallen Hero staggering."
                 n "His eyes widened in disbelief as his strength gave out, the years of bitterness finally catching up to him."
@@ -735,6 +747,8 @@ label fh_start:
                 n "The hero's focus was sharp, his blade poised for a precise strike. But as he lunged, the Fallen Hero moved with blinding speed, disarming him in a single motion."
                 n "The hero stumbled, unarmed, as the Fallen Hero pinned him to the ground, ready to deliver a fatal blow."
                 p "No! I won't let you hurt him!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The princess's heart raced as she sprang into action. Grabbing a nearby branch, she rushed forward, striking the Fallen Hero across the head with all her strength."
                 n "The force of the blow stunned him, causing him to release the hero and stagger backward."
@@ -755,6 +769,8 @@ label fh_start:
                 n "The princess's voice trembled as she began to chant the forbidden spell, her hands glowing with a dangerous, pulsating energy. The hero's eyes filled with concern, but he knew there was no other way."
                 p "We can't let him keep fighting-this is our last option!"
                 h "Be careful, princess-this magic comes with a cost!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "Ignoring the hero's warning, the princess unleashed the spell. Dark tendrils of magic shot out, wrapping around the Fallen Hero and dragging him to the ground."
                 n "He struggled, but the magic was too powerful, forcing him into submission as the darkness closed in. But something went wrong-the spell lashed out in all directions, its chaotic energy striking the hero as well."
@@ -770,6 +786,8 @@ label fh_start:
             "(Act) Break his weapon with magic":
                 n "The princess's hands crackled with energy as she focused her magic on the Fallen Hero's sword. She knew that without his weapon, he would be left vulnerable, giving them a chance to end this fight without further bloodshed."
                 p "We have to stop him-destroy his blade, and he won't be able to continue."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero leapt forward to cover her as she unleashed a burst of magic. The energy surged toward the Fallen Hero's weapon, shattering it into pieces before he could react."
                 n "The blade broke apart in his hands, leaving him defenseless and at their mercy."
@@ -788,6 +806,8 @@ label fh_start:
             "(Act) Go for a lethal blow":
                 n "The hero gritted his teeth as he pushed the Fallen Hero back, the weight of the battle pressing down on him. The princess saw the desperation in his eyes as he prepared for a final, decisive strike."
                 p "Do it-end this!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "With a fierce battle cry, the hero lunged forward, aiming for a lethal blow. But as his blade descended, the Fallen Hero's eyes glinted with one last burst of defiance."
                 n "In a flash, he sidestepped and turned his sword toward the princess, his intent clear."
@@ -804,6 +824,8 @@ label fh_start:
             "(Act) Aim to disarm him":
                 n "The princess signaled to the hero, urging him to go for the Fallen Hero's weapon rather than a killing blow. She knew that taking away his ability to fight was their best chance of ending this without more bloodshed."
                 p "Don't go for the kill-just disarm him!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero adjusted his stance, waiting for the right moment. As the Fallen Hero lunged forward, the hero deflected the attack and swiftly struck at his wrist, sending the sword flying from his hand."
                 n "But instead of backing down, the Fallen Hero lunged at the hero, determined to end him with his bare hands."
@@ -822,6 +844,8 @@ label fh_start:
             "(Act) Shatter his defenses with dark energy":
                 n "The princess's voice was steady as she whispered an incantation, channeling dark energy into her hands. The magic crackled ominously, carrying a power that could not be easily controlled."
                 p "I'll break his defenses-be ready to strike!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero nodded, preparing himself as the princess unleashed a surge of dark magic toward the Fallen Hero. The energy tore through the air like a storm, slamming into him with overwhelming force and shattering his defenses."
                 n "The dark magic worked too well, tearing through the Fallen Hero's defenses and leaving him broken."
@@ -836,6 +860,8 @@ label fh_start:
             "(Act) Restrain him with enchanted chains":
                 n "The princess's voice rang out as she began to cast a binding spell, summoning chains of light that snaked through the air toward the Fallen Hero."
                 p "I'll hold him down-strike when he's bound!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero braced himself as the magical chains wrapped around the Fallen Hero, pulling him to the ground and locking him in place."
                 n "The more he struggled, the tighter the chains grew, draining his strength."
@@ -853,6 +879,8 @@ label fh_start:
             "(Act) Teleport away" if chose_magic:
                 n "The princess whispered the incantation under her breath, focusing on the magic that would allow them to escape. The Fallen Hero's eyes were locked on her, unaware of her true intentions."
                 p "Trust me-we're getting out of here."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero nodded, grabbing her hand as she completed the spell. In an instant, the magic swirled around them, transporting them away from the battlefield in a flash of light."
                 n "The teleportation spell carried the princess and hero far from the dangers of the forest, depositing them in a peaceful glade where the air was filled with the scent of flowers and the sun shone brightly overhead."
@@ -865,6 +893,8 @@ label fh_start:
             "(Act) Let him surrender willingly":
                 n "The hero held back, waiting for the princess's signal. But instead of giving the order to strike, she took a step forward, her voice filled with empathy."
                 p "You don't have to keep fighting-there's still a way out for both of us."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Fallen Hero's eyes flickered with hesitation as he considered her offer. For the first time, the rage that had fueled him seemed to waver, as if he was tired of the endless cycle of pain and anger."
                 n "The Fallen Hero's grip on his weapon loosened as he made the decision to lower his blade. But just as it seemed that peace was possible, his body stiffened, and he collapsed."
@@ -882,6 +912,8 @@ label fh_start:
             "(Act) Use a snare trap" if not chose_magic:
                 n "The princess's eyes darted across the forest floor, spotting the remnants of an old snare trap. Quickly, she signaled to the hero, who nodded in understanding."
                 p "Lead him toward the trap-we'll use it to catch him off guard!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero maneuvered carefully, baiting the Fallen Hero into the narrow path. But as they sprung the trap, the Fallen Hero reacted with unnatural speed, turning his attention to the princess."
                 n "The snare trap snapped shut, catching the Fallen Hero's leg, but it wasn't enough to stop him. Fueled by desperation, he broke free and charged at the princess with his sword raised."
@@ -897,6 +929,8 @@ label fh_start:
                 p "I'll trap him-get ready to strike once he's caught!"
                 n "The hero nodded, his grip tightening on his sword as he prepared for the opening. The Fallen Hero advanced, unaware of the snare forming beneath his feet."
                 n "With a sudden burst of light, the magical trap snapped shut, ensnaring him in a tangle of glowing chains."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The magic held fast, rendering the Fallen Hero immobile. But the power required to maintain the trap was immense, and the dark energy began to spiral out of control."
                 n "The spell's backlash surged through the clearing, lashing out toward the hero. The magic corrupted him in an instant, twisting his body and mind as he fought desperately against the transformation."
@@ -913,6 +947,8 @@ label fh_start:
             "(Act) Remind him of the lives he saved":
                 n "The princess's voice was gentle yet firm as she reminded the Fallen Hero of the person he once was."
                 p "You saved so many lives. You were a hero-a protector. That man is still in you, isn't he?"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Fallen Hero's eyes flickered, his grip on his weapon loosening as old memories resurfaced. The hero cautiously stepped forward, hoping to capitalize on the moment of doubt."
                 n "But the Fallen Hero's bitterness flared back up, and in a desperate rage, he charged at the hero, aiming to strike him down."
@@ -928,6 +964,8 @@ label fh_start:
             "(Act) Teleport away quickly" if chose_magic:
                 n "The princess's voice was barely a whisper as she began the incantation, her eyes focused on the space around them. The Fallen Hero advanced, unaware of the spell being woven beneath his feet."
                 p "Hold on tight-this will get us out of here."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero took her hand, trusting her completely as she unleashed the magic. With a flash of light, they vanished from the battlefield, leaving the Fallen Hero standing alone, his chance at revenge lost."
                 n "The teleportation spell whisked the princess and hero far away, depositing them in a serene meadow bathed in sunlight."
@@ -944,6 +982,8 @@ label fh_start:
             "(Act) Urge him to reclaim his honor":
                 n "The princess's voice was filled with conviction as she appealed to the part of the Fallen Hero that still longed for justice."
                 p "You were wronged, and I can't change that. But you can still reclaim your honor-prove to them that they were wrong about you."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Fallen Hero's eyes narrowed, his thoughts clearly torn between revenge and the desire to clear his name."
                 n "But instead of backing down, he renewed his assault on the hero, determined to end the fight once and for all."
@@ -959,6 +999,8 @@ label fh_start:
             "(Act) Push him to let go of his hatred":
                 n "The princess's voice softened as she took a step forward, her eyes full of compassion."
                 p "Holding onto this hatred is tearing you apart. You don't have to keep suffering like this-let go, and find peace."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Fallen Hero's eyes wavered as the bitterness in his expression flickered. For a moment, it seemed that her words might reach him."
                 n "But the years of anger and betrayal were too deeply ingrained, and in a final burst of rage, he lashed out at the hero with all his strength."
@@ -978,6 +1020,8 @@ label fh_start:
             "(Act) Betray and attack with magic" if chose_magic:
                 n "The princess's expression shifted, her voice hardening as she prepared to act."
                 p "The kingdom has changed-and so have we. But you'll never get the chance to see it."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Fallen Hero's eyes narrowed, sensing the trap just as the princess unleashed a surge of dark magic. The energy crackled with malevolent power as it shot toward him, striking with overwhelming force."
                 n "The dark magic tore through the Fallen Hero, shattering his defenses and leaving him crumpled on the ground. But the spell was wild and uncontrollable-its backlash surged outward, striking the hero as well."
@@ -990,6 +1034,8 @@ label fh_start:
             "(Act) Persuade him to embrace peace":
                 n "The princess's voice softened as she reached out, hoping to guide the Fallen Hero away from his path of anger and destruction."
                 p "It doesn't have to be this way. You've suffered enough-there's still time to find peace, for all of us."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Fallen Hero's gaze wavered as her words began to reach him. The tension in his posture slowly eased, and for the first time, he seemed open to the possibility of laying down his sword."
                 n "But just as the Fallen Hero was about to surrender, his strength gave out. Mortally wounded from the battle, he collapsed, his final breath escaping as his hatred faded away."
@@ -1006,6 +1052,8 @@ label fh_start:
             "(Act) Promise him redemption":
                 n "The princess's voice was filled with sincerity as she extended a hand toward the Fallen Hero."
                 p "You were a hero once, and you can be one again. Help us rebuild the kingdom-you don't have to be alone anymore."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Fallen Hero's gaze faltered, the weight of his past clashing with the hope in the princess's words. He took a hesitant step forward, considering the offer."
                 n "But the years of bitterness still gnawed at him, and in a final act of defiance, he raised his sword, prepared to strike."
@@ -1021,6 +1069,8 @@ label fh_start:
             "(Act) Betray and strike with magic" if chose_magic:
                 n "The princess's eyes hardened as she made her decision. The time for words was over-she knew there was only one way to end this."
                 p "Redemption? For someone like you? You'll never deserve it."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Fallen Hero's eyes flashed with realization just as the princess unleashed a surge of dark magic. The energy crackled with malevolent force, tearing through the air as it raced toward him."
                 n "The hero, too late to react, could only watch as the spell's power tore through the Fallen Hero's defenses."
@@ -1039,6 +1089,8 @@ label fh_start:
             "(Act) Offer to present proof to the kingdom":
                 n "The princess's voice was calm and determined as she made her final offer."
                 p "I'll gather the proof myself-I'll clear your name and restore your honor. You'll finally have the justice you deserve."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Fallen Hero's eyes softened, the bitterness in his expression giving way to a glimmer of hope. He nodded slowly, lowering his weapon as he considered the possibility of redemption."
                 n "But the wounds of the past ran deep, and as he took a step toward the princess, his strength gave out."
@@ -1053,6 +1105,8 @@ label fh_start:
             "(Act) Betray and shoot a fireball" if chose_magic:
                 n "The princess's eyes narrowed as she made her decision. The time for compassion had passed-now, she would use her magic to end this fight once and for all."
                 p "You'll never get your redemption, and you'll never escape this forest."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Fallen Hero's eyes widened as he realized what was coming, but it was too late. The princess summoned a blazing fireball, the dark flames crackling with destructive energy."
                 n "With a single motion, she hurled it at him, determined to burn him down."
@@ -1071,6 +1125,8 @@ label fh_start:
             "(Act) Offer to declare his innocence publicly":
                 n "The princess's voice was resolute as she made her promise."
                 p "As princess, I have the power to clear your name and restore your honor. I'll stand by you in front of the entire kingdom-I'll make sure they hear the truth."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Fallen Hero's gaze wavered, the years of anger and distrust slowly giving way to a sliver of hope. But the memories of betrayal still burned in his heart, and he raised his sword one final time, refusing to trust in words alone."
                 n "The hero moved quickly, intercepting the Fallen Hero's strike and disarming him in one swift motion. With his weapon gone, the Fallen Hero finally fell to his knees, his strength spent."
@@ -1083,6 +1139,8 @@ label fh_start:
             "(Act) Betray and strike with magic" if chose_magic:
                 n "The princess's expression hardened as she decided on a course of action. The Fallen Hero could not be allowed to walk away from this fight-his time was up."
                 p "Your story ends here-this forest deserves better than to be tainted by your darkness."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Fallen Hero's eyes flashed with realization as the princess gathered her magic. With a determined shout, she unleashed a burst of energy that struck him with unrelenting force."
                 n "The hero moved quickly to support her, blocking the Fallen Hero's desperate counterattack as the spell took hold."
@@ -1100,6 +1158,8 @@ label fh_start:
             "(Act) Follow through with your promise":
                 n "The princess's voice was calm as she extended her hand, magic crackling around her fingertips."
                 p "I swear on this magic-we'll stay here and find peace, together. I won't leave until the forest is healed."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Fallen Hero's eyes softened with surprise, but he quickly turned away, unable to accept the possibility of redemption."
                 n "But the princess was true to her word. She and the hero remained in the forest, fulfilling their oath to protect the land."
@@ -1114,6 +1174,8 @@ label fh_start:
             "(Act) Betray and shoot a fireball":
                 n "The princess's eyes narrowed as she made her decision. There was no more room for kindness-she would end this with a single, decisive strike."
                 p "You'll never find peace-you'll only find ashes."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Fallen Hero's eyes widened as the princess summoned a fireball, its flames laced with dark magic."
                 n "With a swift motion, she hurled it toward him, determined to burn him and everything he stood for to the ground."
@@ -1131,6 +1193,8 @@ label fh_start:
             "(Act) Strike with sword" if not chose_magic:
                 n "The princess's eyes met the hero's, and without a word, they both knew what had to be done. They had played along long enough, and now it was time to end it."
                 p "Let's finish this-together."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero nodded, his grip tightening on his sword as they prepared for the decisive strike. With one swift motion, they launched their coordinated attack, the hero's blade gleaming as it arced toward the Fallen Hero."
                 n "The hero's strike was swift and true, cutting through the Fallen Hero's defenses. His sword pierced the armor, and the Fallen Hero's eyes widened in shock as his strength left him."
@@ -1144,6 +1208,8 @@ label fh_start:
             "Act) Strike with magic" if chose_magic:
                 n "The princess's voice was resolute as she prepared to unleash her magic. There would be no more pretending-this battle was about to end on her terms."
                 p "We'll use our magic to protect this forest and drive him out for good."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero nodded in agreement, raising his shield as the princess's hands glowed with arcane energy."
                 n "With a powerful chant, she unleashed a burst of light, the magic searing through the air toward the Fallen Hero."

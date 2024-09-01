@@ -29,6 +29,8 @@ label hu_start:
     $ hu_chose_how_long_been_here = False
     $ hu_chose_why_didnt_chase_us_before = False
     $ hu_chose_we_went_by_mistake = False
+
+    $ hu_times_gotten += 1
     
     # Leading text
     scene bg Villain
@@ -598,6 +600,8 @@ label hu_start:
                 n "The hero's sword gleamed as the princess grasped it, the weight unfamiliar in her hands but her resolve unwavering."
                 p "I won't let you harm him. This ends now."
                 n "The Hunter's focus was entirely on the hero, oblivious to the princess approaching from behind. She tightened her grip on the sword and ran forward, determined to save him."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The princess's strike was swift and true. The Hunter fell lifeless to the forest floor, his threat extinguished."
                 n "With the danger passed, the princess immediately turned her attention to the hero, tending to his wounds with the care and urgency of someone who had nearly lost everything."
@@ -611,6 +615,8 @@ label hu_start:
                 n "The hero struggled beneath The Hunter's grip, the weight of defeat pressing down on him. The princess, seeing her chance, summoned the dark energy within her, channeling it into a powerful spell."
                 n "The Hunter, focused on the hero, didn't see the magic coming."
                 p "This ends now!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The spell struck The Hunter with unrelenting force, the dark energy crackling through his body. But as the magic surged, tendrils of it lashed out unpredictably, striking the hero as well."
                 n "The Hunter fell lifeless to the forest floor, his grip on the hero finally released. But the victory was short-lived."
@@ -633,6 +639,8 @@ label hu_start:
                 p "Now, while he's off balance-go for it!"
                 n "The hero lunged forward, his blade aimed at The Hunter's exposed side. The strike was clean, precise, and it sent The Hunter staggering back."
                 n "But the hero didn't linger. He swiftly retreated, grabbing the princess's hand as they bolted for the cover of the dense trees."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The blow had been enough to incapacitate The Hunter, giving the princess and hero the precious seconds they needed to escape."
                 n "As they fled deeper into the forest, The Hunter's strength waned, and he eventually succumbed to his injuries, leaving the forest at peace once more."
@@ -646,6 +654,8 @@ label hu_start:
                 n "As they prepared to retreat, the princess called upon her magic, her hands glowing with dark energy. She knew this would be their last chance to escape, but the cost would be great."
                 p "This is our only shot-stay close!"
                 n "The hero nodded, understanding the risk as the princess unleashed the magic. The dark energy surged toward The Hunter, catching him off guard and sending him reeling."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "But as the spell hit its mark, a portion of the dark magic arced back, striking the hero as they fled."
                 n "The magic worked, paralyzing The Hunter so that he could no longer fight, but the unintended side effect was devastating."
@@ -666,6 +676,8 @@ label hu_start:
                 n "With careful, deliberate steps, the hero maneuvered The Hunter toward the trap."
                 p "Lead him this way-this is our chance!"
                 n "The hero feigned retreat, drawing The Hunter closer until the snare was in place."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The moment The Hunter stepped into the trap, the roots tightened around his legs, causing him to stumble."
                 n "The trap had caught The Hunter off guard, but his strength was greater than they anticipated. In his final moments of desperation, The Hunter broke free, delivering a fatal blow to the hero."
@@ -680,6 +692,8 @@ label hu_start:
             "(Act) Trap him using magic" if chose_magic:
                 n "With a quick incantation, the princess summoned the power of the forest to her aid. The magic flowed through her, and she directed it toward The Hunter, crafting an arcane trap that would hold him fast."
                 p "The forest itself will be your prison!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The magic weaved through the air, surrounding The Hunter in glowing, ethereal chains. He struggled, but the bindings were too strong, tightening around him with each attempt to break free."
                 n "The enchanted bindings held The Hunter with unyielding strength, rendering him powerless as he slowly suffocated until he could no longer breathe."
@@ -697,6 +711,8 @@ label hu_start:
             "(Act) Use a flashy spell to blind him":
                 n "The princess whispered an incantation, focusing on a spell that would create a burst of light bright enough to blind The Hunter. As the energy gathered in her hands, she glanced at the hero, who was ready to strike."
                 p "This will give us the opening we need-be ready!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "With a swift motion, the princess released the spell. A brilliant flash of light exploded in front of The Hunter, blinding him for good."
                 n "The spell worked perfectly, leaving The Hunter unable to see. As he stumbled, the hero took the opportunity to strike, knowing that The Hunter would struggle to fight back without his incredible vision."
@@ -711,6 +727,8 @@ label hu_start:
             "(Act) Start a fire to get his attention":
                 n "The princess scanned the surroundings, her eyes landing on a patch of dry underbrush. Summoning a small flame, she carefully fed it until it grew, knowing the fire would spread quickly and draw The Hunter's attention."
                 p "This will create the distraction we need-be ready to move!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The flames caught instantly, spreading with alarming speed through the dry forest. The Hunter turned, his focus shifting to the growing inferno, just as the princess had hoped."
                 n "The fire spread rapidly, consuming the forest in its wake. The Hunter, distracted by the flames, was caught in the blaze and perished as the fire raged on."
@@ -730,6 +748,8 @@ label hu_start:
             "(Act) Jump in front of the hero":
                 n "The hero notched another arrow, his eyes locked on The Hunter as he prepared to release. But the princess noticed something-the glint of The Hunter's arrow already aimed directly at the hero."
                 p "No!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "Without hesitation, the princess threw herself in front of the hero, shielding him with her own body just as The Hunter's arrow was released."
                 n "The arrow struck true, embedding itself deep into the princess's chest as she fell to the ground."
@@ -745,6 +765,8 @@ label hu_start:
             "(Act) Light the area on fire with magic" if chose_magic:
                 n "As the hero prepared another arrow, the princess realized they needed a more drastic measure. Summoning her magic, she focused on the area around them, whispering an incantation that would ignite the forest floor."
                 p "This will buy us time-brace yourself!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "Flames erupted around them, spreading rapidly through the underbrush. The Hunter, caught off guard, faltered as the fire closed in, surrounding him in a ring of flames."   
                 n "The fire spread quickly, fueled by the dry wood and leaves. The Hunter, distracted by the flames, was consumed by the blaze, leaving only ashes behind."
@@ -762,6 +784,8 @@ label hu_start:
             "(Act) Charge at him with sword":
                 n "The hero realized that their current approach wasn't enough. Lowering his bow, he drew his sword and looked to the princess."
                 p "We have to take him down directly. Stay close!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "With a nod, the hero charged at The Hunter, his sword aimed for a decisive strike. The Hunter, caught off guard by the sudden shift, barely had time to react."
                 n "The hero's strike was swift and true, cutting down The Hunter before he could launch another attack. With their enemy defeated, the forest fell silent, the tension evaporating as quickly as it had come."
@@ -778,6 +802,8 @@ label hu_start:
                 n "As the princess unleashed her magic, The Hunter moved with inhuman speed, his arrow already aimed and released before she could react."
                 n "The arrow struck the princess, piercing her heart as she fell to the ground, her magic dissipating."
                 h "No!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "In a moment of sheer desperation, the hero rushed to her side. With The Hunter still advancing, the hero grasped the dark magic that lingered in the air, defying everything he knew."
                 n "He channeled the forbidden power, using it to strike down The Hunter, who collapsed, lifeless, before he could claim another victim."
@@ -797,6 +823,8 @@ label hu_start:
             "(Act) Teleport away using magic":
                 n "The princess felt the magic surge through her as she focused on the spell that would teleport them both out of danger. The Hunter, relentless in his pursuit, was closing in quickly."
                 p "Hold on to me-this is our only way out!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero grabbed her hand just as the magic activated, a bright light enveloping them both as the spell took effect. In an instant, they vanished from the forest, leaving The Hunter grasping at empty air."
                 n "The teleportation spell had worked flawlessly, transporting the princess and hero far beyond The Hunter's reach. They reappeared in a tranquil meadow, the danger of the forest left far behind."
@@ -810,6 +838,8 @@ label hu_start:
             "(Act) Light the trees on fire":
                 n "With The Hunter closing in, the princess knew they needed a drastic distraction. She summoned her magic, focusing on the trees surrounding them, and whispered an incantation that would ignite the forest itself."
                 p "We need to buy ourselves time-brace yourself!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The flames leaped to life, rapidly spreading through the dense underbrush. The Hunter, startled by the sudden inferno, was forced to step back, momentarily distracted by the growing blaze."
                 n "The fire spread uncontrollably, consuming the trees and everything in its path. The Hunter, unable to escape the flames, was engulfed and destroyed, leaving only ashes in his wake."
@@ -830,6 +860,8 @@ label hu_start:
                 n "The hero nodded, positioning himself to take advantage of the moment. As the princess unleashed her magic, the energy surged toward The Hunter, who had barely noticed her spellcasting."
                 n "But The Hunter moved faster than anticipated, dodging the attack and releasing an arrow that struck the princess down before she could react."
                 h "No!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero, his heart breaking, watched as the princess fell. Desperation and grief flooded him as he rushed to her side. Ignoring the consequences, the hero grasped the remnants of the dark magic, using it to strike down The Hunter in a final, desperate act."
                 n "The forbidden power consumed him, but he didn't care. He used the last of his strength to resurrect the princess, bringing her back to life."
@@ -843,6 +875,8 @@ label hu_start:
             "(Act) Escape while you can":
                 n "The princess and hero exchanged a glance, realizing that their only chance of survival was to retreat. With The Hunter closing in, they made a split-second decision to escape into the thickest part of the forest."
                 p "We need to get out of here-now!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero led the way, guiding the princess through the dense underbrush as The Hunter pursued them. They dodged arrows and leaped over obstacles, using every bit of their agility and cunning to stay ahead of their relentless foe."
                 n "The chase was grueling, but eventually, they managed to lose The Hunter in the labyrinth of trees. As the forest grew quieter, they realized they had escaped his reach."
@@ -864,6 +898,8 @@ label hu_start:
                 hu "You're naive to think that magic can be anything but destructive. My mission is clear, and it won't be swayed by your words."
                 n "The princess, sensing the danger, tried to react, but The Hunter was too fast. He released his arrow, the deadly projectile striking the princess before she could even raise her defenses."
                 h "No!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero rushed to her side, his heart shattering as the princess collapsed. In his desperation, he grabbed hold of the dark magic that lingered in the air, channeling it to defeat The Hunter in a final, devastating blow."
                 n "The hero's grief was all-consuming, and in his desperation, he did the unthinkable. Using the forbidden magic, he resurrected the princess, defying the natural order and the kingdom's most sacred laws."
@@ -882,6 +918,8 @@ label hu_start:
                 hu "Redemption? It's too late for that."
                 n "As The Hunter raised his bow, it was clear he had made his decision. He aimed directly at the hero, his intent lethal."
                 p "No!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The princess, acting on pure instinct, threw herself in front of the hero just as The Hunter released his arrow. The arrow found its mark, piercing her heart."
                 n "The princess's sacrifice was immediate and final. She crumpled to the ground, her life slipping away as the hero caught her in his arms."
@@ -903,6 +941,8 @@ label hu_start:
                 hu "Your words are meaningless. Magic is a curse, and you're foolish to think otherwise."
                 n "The princess tried to react, but The Hunter was too quick. With lethal precision, he released an arrow that struck the princess down, her body crumpling to the ground."
                 h "No!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero, consumed by grief and rage, acted without thinking. He grasped the dark magic that lingered in the air, using it to strike down The Hunter with a devastating blow."     
                 n "In the aftermath, the hero did what the kingdom considered unforgivable-he used the dark magic to resurrect the princess, bringing her back from the brink of death."
@@ -920,6 +960,8 @@ label hu_start:
                 hu "You think I can just walk away? You know nothing of what I've sacrificed!"
                 n "The hero stepped forward to intervene, but The Hunter, consumed by rage, turned his weapon on him, striking the hero down with a swift blow."
                 h "Ugh...!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The princess's heart pounded as she saw the hero fall, wounded by The Hunter's attack. Without hesitation, she picked up a fallen branch, giving her the chance to act."
                 n "The Hunter, focused on the hero, was oblivious to the princess's movement. She tightened her grip on the makeshift weapon and lunged forward, her determination unwavering."
@@ -942,6 +984,8 @@ label hu_start:
                 n "The hero staggered back, clutching his wound as he fell to the ground. The princess's heart raced, fear and anger warring within her as she stood between The Hunter and the hero."
                 p "Is this what you wanted? To hurt innocent people who were only trying to return home? You're no warrior-you're just a coward running from your own doubts!"
                 n "The Hunter's expression faltered, her words piercing through his cold exterior. Doubt flickered in his eyes as he hesitated, the weight of her accusations sinking in."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "Seizing the moment, the princess reached for the hero's sword, her resolve hardening. The Hunter, lost in his own doubts, didn't react in time. With one swift motion, the princess struck, the blade finding its mark."
                 n "The princess's strike was decisive, ending The Hunter's life before he could cause any more harm. The forest grew still as his body fell to the ground, the oppressive tension finally lifting."
@@ -959,6 +1003,8 @@ label hu_start:
                 hu "Enough! You don't know anything about me!"
                 n "The Hunter, driven by anger, launched a reckless attack. The hero, realizing the danger, moved to intercept the blow, but The Hunter's strike was too swift and powerful."
                 h "Get back!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero stepped in front of the princess, taking the brunt of the attack meant for her. With a final, desperate effort, he pushed The Hunter back, delivering a fatal blow even as he fell to the ground, mortally wounded."
                 n "The hero's sacrifice was immediate and absolute. He gave his life to protect the princess, striking down The Hunter with a final act of courage. The forest fell silent, the echoes of battle fading into the stillness."
@@ -976,6 +1022,8 @@ label hu_start:
                 p "You call yourself a warrior, but all I see is a coward, too afraid to face his own doubts. You hide behind orders because you're too weak to think for yourself!"
                 n "The Hunter's expression twisted with anger, her words cutting deep. His usual cold composure began to crack, replaced by a fierce, reckless determination."
                 hu "I'll show you who's weak!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero, sensing the shift in The Hunter's demeanor, braced himself for the impending attack. The Hunter, driven by rage, charged forward, his actions fueled by the need to prove himself."
                 n "The Hunter's reckless attack was his undoing. In his fury, he left himself vulnerable, allowing the hero to counter with a decisive strike."
@@ -991,6 +1039,8 @@ label hu_start:
                 p "You think you're powerful? You think you can defeat us? You're nothing compared to the magic we wield!"
                 n "The Hunter's eyes blazed with anger at her challenge, but before he could react, the princess began to channel the dark magic that lingered in the air."
                 h "Princess, be careful!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "Ignoring the hero's warning, the princess unleashed the magic, directing it toward The Hunter. The dark energy overwhelmed him, his resistance crumbling under its sheer force."
                 n "The magic worked, overpowering The Hunter and bringing him to his knees. But the victory came at a terrible price. The dark magic, wild and uncontrollable, arced back toward the hero, corrupting him in the process."
@@ -1010,6 +1060,8 @@ label hu_start:
                 n "The hero's eyes widened in alarm, but the princess held up a hand, silencing him. She knew this was the only way to protect him, even if it meant sacrificing herself."
                 n "The Hunter, his expression unreadable, lowered his weapon slightly as he considered her offer."
                 hu "You would give your life for his? Foolish, but... noble."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The princess took another step forward, her resolve unwavering. As she approached The Hunter, he suddenly lunged forward, his intent lethal."
                 n "The Hunter's strike was swift and deadly, ending the princess's life in an instant. She crumpled to the ground, her sacrifice complete."
@@ -1026,6 +1078,8 @@ label hu_start:
                 n "The hero's grip tightened on his weapon, eyes filled with worry, but he held back, trusting that the princess had a plan."
                 n "The Hunter watched her with calculating eyes, still wary of deception."
                 hu "You think I can't see through your games? But I'm willing to see where this goes."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The princess waited for the right moment, her heart pounding as The Hunter drew closer. Then, with a sudden burst of movement, she grabbed the hero's sword and lunged at The Hunter, catching him off guard."
                 n "The princess's attack was swift and deadly. The Hunter, caught by surprise, couldn't defend himself in time. Her blade struck true, ending his life before he could react."
@@ -1043,6 +1097,8 @@ label hu_start:
                 n "The princess whispered a spell under her breath, channeling the magic that would transport them both far away from this place."
                 n "The Hunter, unaware of her intentions, kept his focus on her, confident in his control over the situation."
                 p "Just trust me-this will get us out of here."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero nodded, grabbing her hand as the magic began to swirl around them. With a flash of light, they vanished from the forest, leaving The Hunter grasping at nothing."
                 n "The teleportation spell worked flawlessly, whisking the princess and hero far beyond The Hunter's reach. They reappeared in a peaceful glade, the dangers of the forest left far behind."
@@ -1055,6 +1111,8 @@ label hu_start:
             "(Act) Shoot a fireball at him":
                 n "The princess's hands crackled with energy as she prepared to unleash a fireball. She knew this would be their last chance to escape, but the cost might be great."
                 p "I'll distract him with this-be ready to move!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero watched with tense anticipation as the princess summoned the fireball, her focus intense. With a swift motion, she hurled the blazing projectile toward The Hunter, aiming to catch him off guard."
                 n "The fireball exploded on impact, engulfing The Hunter in flames. The forest around them caught fire as well, the flames spreading rapidly through the dry underbrush."
@@ -1073,6 +1131,8 @@ label hu_start:
                 p "You don't have to keep fighting. There's a life beyond this forest, a place where you can be free from all of this. You can leave this behind."
                 n "The Hunter's expression twisted in anger, his eyes narrowing with fury."
                 hu "Leave the forest? You don't understand anything! This forest is all I have!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Hunter, consumed by rage at the thought of abandoning his mission and the only life he knew, swiftly turned his weapon on the hero, his intent deadly."
                 n "As The Hunter released his arrow, the princess acted without thinking, throwing herself in front of the hero. The arrow struck her, its lethal force taking her down instantly."
@@ -1091,6 +1151,8 @@ label hu_start:
                 hu "A new life... free from all of this?"
                 n "The princess nodded, keeping her voice steady, even as she prepared for what must come next."
                 p "Yes, but you have to trust me. Lower your weapon, and we can leave this place together."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The Hunter hesitated, then slowly began to lower his weapon. The princess saw her chance and signaled to the hero, who struck swiftly, the blade cutting deep."
                 n "The Hunter, realizing too late that he had been deceived, was mortally wounded. With his dying breath, he pulled an arrow from his quiver and aimed it at the princess."
@@ -1112,6 +1174,8 @@ label hu_start:
                 n "The hero moved swiftly, his blade flashing in the dim light of the forest. The strike landed true, mortally wounding The Hunter."
                 n "But with his dying breath, The Hunter pulled an arrow from his quiver, aiming it at the princess."
                 hu "If I go down, you're coming with me..."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero, seeing the danger, acted without hesitation. He threw himself in front of the princess, taking the arrow meant for her."
                 n "The Hunter's life ended as the hero collapsed, the arrow buried deep in his chest."
@@ -1128,6 +1192,8 @@ label hu_start:
                 p "You've underestimated us. Now, you'll see the true power we wield."
                 n "The Hunter's confidence faltered as the magic crackled in the air. The princess unleashed a spell, a dazzling display meant to disorient him, giving the hero the chance to strike."
                 h "Now, while he's distracted!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero moved quickly, his blade aimed for The Hunter's heart. But as the magic swirled around them, something went wrong."
                 n "The dark energy, wild and uncontrollable, arced back toward the hero, corrupting him in the process."

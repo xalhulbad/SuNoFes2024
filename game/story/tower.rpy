@@ -18,7 +18,6 @@ default tower_chose_way_out = False
 # TODO: discuss if old options should be hidden after routes are completed, with too many options they go off the screen
 
 label tower_start:
-    
     play music "audio/0 Tower 2.mp3" loop volume 1.0 fadein 0.5
     scene bg Tower with dissolve
     window show

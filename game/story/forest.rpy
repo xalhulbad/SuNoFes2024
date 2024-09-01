@@ -14,15 +14,17 @@ default forest_asked_why_familiar = False
 
 
 label forest_start:
+    window hide
     scene bg blackscreen with dissolve
 
-    "{i}{color=#808080}Rap rap rap.{/i}{/color}"
+    n "{i}Rap rap rap.{/i}"
 
     n "The sound echoed through the stone walls of the tower. The door creaked open, revealing the hero's warm smile."
     h "Princess, it's time to leave. Come with me."
     n "The princess, heart pounding, stepped forward. She took the hero's hand, feeling a comforting warmth."
 
     scene bg Forest1 with fade
+    window show
 
     play music "audio/1 Forest 3.mp3" loop volume 1.0 fadein 0.5
 
@@ -193,7 +195,6 @@ label forest_start:
         v "How amusing. Be careful now."
         v "{b}Your choices matter.{/b}" #TODO: discuss if we should give this a special font/colour to have more significance
         
-        stop music fadeout 1.5
         jump villain_encounter # End of forest scene
 
 
@@ -1024,7 +1025,7 @@ label villain_encounter:
                 hu "Interesting. You show restraint and skill."
                 n "The Hunter moved with an almost ethereal grace, his eyes sharp and assessing."
                 hu "Many would have aimed to kill. But you chose to assert dominance without bloodshed."
-                p "We're not here to fight. We're trying to stop them."
+                p "We're not here to fight. We just want to get through the forest."
                 n "The Hunter's gaze flicked to the figure and then back to the hero, a nod of approval barely perceptible."
                 hu "You have caught my interest. I respect those who value precision and control."
                 n "The tension in the air shifted as the Hunter lowered his bow, his expression still stern but less hostile."

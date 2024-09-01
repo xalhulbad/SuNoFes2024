@@ -32,6 +32,8 @@ label vs_start:
     $ vs_chose_will_your_vengeance = False
     $ vs_chose_what_then = False
 
+    $ vs_times_gotten += 1
+
     # Leading text
     scene bg Villain
     n "A cold wind swept through the forest as the princess and the hero moved forward, the trees seeming to close in around them. The once-familiar paths now felt foreign and threatening, shrouded in an eerie mist that clung to the ground like a living thing."
@@ -598,6 +600,8 @@ label vs_start:
                 n "The hero's grip tightened on his sword as he charged, channeling all his strength into one decisive blow. His blade cut through the air, connecting with the spirit's core, sending shockwaves rippling through the clearing."
                 scene bg Villain_hero_charging_far_vs
                 vs "You dare...!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The vengeful spirit's voice echoed with rage and despair as its form began to unravel, shadows splintering into fragments of mist."
                 n "But just as it started to dissipate, the spirit's eyes locked onto the hero, hatred blazing. A dark curse surged from the fading mist, aimed directly at him."
@@ -613,6 +617,8 @@ label vs_start:
                 n "The hero charged forward, aiming for the spirit's core, but the shadows swirled violently, deflecting his blow. His sword barely grazed the spirit as it retaliated with a surge of dark energy."
                 scene bg Villain_hero_charging_far_vs
                 vs "Your courage is commendable, but it is futile. The forest's vengeance cannot be quelled by a mere mortal!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero stumbled back, his strength faltering as the spirit loomed over him, ready to deliver a fatal strike. The princess's breath caught in her throat-she couldn't just stand by and watch."
                 n "Without hesitation, the princess grabbed a thick branch from the forest floor. With all her might, she swung the branch directly at the spirit's core, shattering it with a burst of energy."
@@ -631,6 +637,8 @@ label vs_start:
                 p "We can't hold it here for long. We'll have to outrun it-create a distraction and break for the edge of the forest!"
                 n "The hero nodded, determination flashing in his eyes. He rushed forward, taunting the spirit and leading it away from their planned escape route. The spirit followed, its form flickering with rage as it chased him."
                 vs "You think you can flee from the forest's wrath? There is no escape for those marked by its curse!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "While the spirit was fixated on the hero, the princess focused her magic, causing nearby roots and vines to erupt from the ground. The sudden burst of movement caught the spirit's attention, giving them the split-second they needed to slip away."
                 n "The hero dashed back toward the princess, and together they sprinted through the dense undergrowth. The spirit's enraged howls echoed behind them, but the path ahead cleared as the forest itself seemed to guide them to safety."  
@@ -644,6 +652,8 @@ label vs_start:
                 p "It's too dangerous to keep fighting. Let's teleport out of here while it's distracted!"
                 n "The hero gave a quick nod, trusting her judgment. As the spirit lashed out with wild fury, they used the momentary chaos to gather their energy."
                 vs "You cannot run from the forest's wrath! It will follow you wherever you go!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "Ignoring the spirit's threats, the princess focused on the spell, visualizing a safe place away from the cursed forest. With a flash of light, they vanished just as the spirit's rage reached its peak, leaving only empty shadows in their wake."        
                 n "Safe from the spirit's vengeance, the princess and hero decided to leave the kingdom behind. They knew that the power they wielded would never be accepted by those who feared magic, so they chose a life of freedom instead."
@@ -660,6 +670,8 @@ label vs_start:
                 vs "You struggle in vain, hero. The forest's wrath is endless-your strength means nothing."
                 n "The spirit's voice dripped with malice as it unleashed a wave of dark energy, knocking the hero off his feet. He struggled to rise, the malevolent force pressing down on him with crushing weight."
                 p "No! Hero, stay with me!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The princess's heart pounded in her chest. She knew that if she didn't act now, the hero would be overwhelmed. Without hesitation, she grabbed the branch she'd prepared earlier and rushed in."
                 n "As the spirit focused on the hero, she aimed directly for the glowing core within its shadows, striking with all her might. The impact sent a shockwave through the clearing, shattering the core and causing the spirit to writhe in agony."
@@ -671,6 +683,8 @@ label vs_start:
             "(Act) Strike it down while it's distracted":
                 n "The hero's relentless attacks held the spirit's attention, allowing the princess to circle around unnoticed. Her heart pounded as she eyed the core-the one part of the spirit that was vulnerable to physical strikes."
                 p "This is our chance... I have to end it now!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "With the spirit fully focused on the hero, the princess crept closer, every step silent as she approached the pulsing core. The hero gave it everything he had, driving the spirit further back and leaving it exposed."
                 n "Suddenly, the princess lunged forward, swinging the branch with all her strength. The strike connected with the core, shattering it with a sharp, resounding crack."
@@ -687,6 +701,8 @@ label vs_start:
             "(Act) Deliver a fatal strike":
                 n "The princess's heart raced as the hero stumbled back, his feigned weakness luring the spirit into a vulnerable position. It surged forward, ready to claim victory, completely unaware of the trap they had set."
                 p "Now! This is our only chance!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero barely had time to recover as the princess rushed in with a makeshift weapon, aiming directly for the glowing core at the spirit's center. But just as she struck, the spirit lashed out with a curse, its final act of defiance."
                 n "The curse wrapped around the hero like tendrils of shadow, draining his strength. He collapsed, his breath shallow and his eyes clouding over as the curse tightened its grip."
@@ -701,6 +717,8 @@ label vs_start:
                 vs "You are but a feeble mortal, no match for the forest's fury. Your resistance is meaningless."
                 n "The hero's strength faltered as the spirit closed in, tightening its grip. The situation was slipping out of control, and the princess knew that if she didn't act now, the hero wouldn't survive."
                 p "Hero, hold on! I won't let you go down like this!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "With fierce determination, the princess charged in, aiming for the pulsing core. She swung her makeshift weapon-a branch she'd grabbed earlier-right at the spirit's vulnerable spot, striking with pinpoint precision."
                 n "The core shattered, and the spirit's form began to dissolve, its once-powerful presence now reduced to a fading wisp. The hero collapsed to his knees, gasping for breath as the dark energy released its hold on him."
@@ -718,6 +736,8 @@ label vs_start:
                 p "If my life can atone for the kingdom's sins, then take it. Let this be the end of the suffering."
                 n "The hero's eyes widened in alarm, but before he could intervene, the spirit surged forward, its tendrils of darkness wrapping around the princess."
                 vs "So, you offer your life willingly? A sacrifice to satisfy the forest's wrath... Perhaps this is what was needed all along."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero struggled to reach her, but the spirit's grip tightened, siphoning away the princess's life force. Her breath grew shallow as the darkness closed in, the air thick with sorrow and inevitability."
                 n "The princess's final breath left her lips as the spirit's wrath was quelled. The forest fell eerily silent, its anger dissipated with the princess's sacrifice."
@@ -731,6 +751,8 @@ label vs_start:
                 p "The kingdom has learned from its mistakes. We're not the people who caused this pain, and we can make sure it never happens again. But we need the chance to prove that change is possible."
                 n "The spirit's form flickered, the bitterness in its voice wavering as it considered her words."
                 vs "Promises of change are nothing without action. Yet... perhaps there is truth in your conviction. Could this cycle finally end?"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The shadows that surrounded the spirit began to fade, its form becoming more ethereal and transparent. It no longer held the same malice-it was as though a burden had been lifted."
                 n "With the spirit's wrath quelled, the princess and hero returned to the kingdom. Her words had carried the hope of a future where the past's mistakes wouldn't be repeated."
@@ -748,6 +770,8 @@ label vs_start:
                 p "We can't undo what was done, but we can make a pact to protect this forest from now on. Let us be its guardians, ensuring its recovery and peace."
                 n "The spirit's form flickered, its ancient sorrow mingling with the faintest hint of hope."
                 vs "A pact... One born not from power, but from genuine intent. Perhaps the forest might accept such a promise. Yet, such a burden is not easily carried."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The spirit's voice softened, its anger slowly dissipating as it weighed her offer. The darkness that once choked the forest began to recede, as if the land itself was responding to her words."
                 n "With the spirit's wrath finally put to rest, the forest began its long journey of healing. The princess and hero returned to the kingdom, where her unwavering dedication to protecting both the land and her people led her to take the throne."
@@ -761,6 +785,8 @@ label vs_start:
                 p "If you can't trust words alone, then trust this-he's fought alongside me through every challenge. We're committed to protecting this forest, no matter the cost."
                 n "The spirit's gaze shifted to the hero, studying him with a mix of curiosity and suspicion."
                 vs "Loyalty forged in hardship... Perhaps that is the only bond strong enough to sway the forest's judgment. Yet loyalty alone cannot heal what was lost."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero stepped forward, determination clear in his eyes as he nodded in agreement. But just as the spirit began to soften, it lashed out in a sudden burst of energy, seeking to test that loyalty one final time."
                 n "The princess sprang into action, going after the spirit with quick reflexes and decisive action. With a desperate strike aimed at its vulnerable core, she shattered the remnants of its wrath, freeing the forest from its grip."
@@ -780,6 +806,8 @@ label vs_start:
                 h "Princess, focus on me-I'll take the burden! I can handle it!"
                 n "Without hesitation, the princess directed the flow of the malevolent energy into the hero. For a moment, everything seemed stable, the spirit's wrath subdued within his grasp."
                 vs "Foolish mortals, thinking they can bear the weight of centuries of torment..."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "But then, something went wrong. The dark energy began to corrupt the hero's body, warping it into something monstrous. The hero's gaze turned wild, his breath ragged as he fought to maintain control."
                 n "Realizing what was happening, the hero made a heartbreaking decision. With the last remnants of his willpower, he turned the corrupted energy inward, causing his body to shatter as he sacrificed himself to save the princess."
@@ -793,6 +821,8 @@ label vs_start:
                 p "We can't hold it forever. Hero, get ready-I'll teleport us out of here the moment it falters!"
                 n "The hero nodded, trusting her judgment as he prepared for the escape. The spirit's fury intensified, but the princess's quick thinking allowed her to spot a momentary lapse in its focus."
                 vs "You think you can flee from the forest's judgment? There is no escape for those marked by its pain!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "But before the spirit could unleash its full power, the princess seized the opportunity. In an instant, she cast the teleportation spell, whisking them both away to safety."
                 n "They reappeared far from the cursed clearing, the air no longer thick with malice. The spirit's wrath was left behind, unable to pursue them beyond the forest's borders."
@@ -811,6 +841,8 @@ label vs_start:
                 vs "You seek to twist the very essence of my creation... to turn agony into renewal. Such a concept is both foolish and... tempting."
                 n "The magic wove through the clearing, causing the withered plants to stir with newfound energy. But the spirit's wrath remained strong, clinging to the hatred that had sustained it for so long."
                 h "Princess, the forest is responding, but the spirit isn't letting go-it's still driven by vengeance!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "As the magic surged, the spirit suddenly lashed out, aiming its full fury at the princess. In its final moments, it struck her down, its last act of vengeance delivered."
                 n "The hero watched in horror as the princess fell, her life slipping away in an instant. Desperate and unwilling to accept her death, he resorted to forbidden magic, pouring everything he had into bringing her back. The dark energy surged, defying nature itself as it restored the princess to life."
@@ -824,6 +856,8 @@ label vs_start:
                 p "This ends here-let the forest find peace!"
                 n "The spirit's form recoiled, struggling against the surge of light. But just as the magic struck its core, the spirit released one final curse, latching onto the hero."
                 vs "If I must fade... I will not go alone..."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero gasped in pain as the curse began to take hold, his life force draining rapidly. The princess's heart sank as she realized the curse was fatal, and there was no time to save him."
                 n "The princess made a heartbreaking choice. If the hero was doomed, she would not let him face death alone. Taking his hand, she whispered a final goodbye before the curse claimed them both."
@@ -841,6 +875,8 @@ label vs_start:
                 p "It's time to let go of the anger that binds you. I'll help you find peace... even if it means sacrificing myself to do so."
                 n "The spirit's form wavered, its rage flickering like a dying flame. But just as it began to dissolve, a final surge of malevolence erupted from its core."
                 vs "Peace... is for those untouched by betrayal. You shall taste the sorrow that I carry."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The spirit lashed out with one final, desperate curse, a bolt of dark energy aimed directly at the hero. Without hesitation, the princess threw herself in front of him, taking the full brunt of the curse."
                 n "The curse tore through the princess, and she crumpled to the ground as the spirit's remaining energy dispersed. The hero's cry of anguish echoed through the clearing as he caught her in his arms, the life draining from her eyes."
@@ -853,6 +889,8 @@ label vs_start:
                 p "You've suffered long enough. It's time to let go and find the peace you deserve. I'll help you-let us both move on together."
                 n "The spirit's form flickered, its anger softening into sorrow. It hesitated, as if finally considering the release it had long denied itself."
                 vs "Peace... I have yearned for it, but never believed it was within reach. Perhaps... in letting go, I can finally be free."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "But as the spirit's energy began to dissolve, it unleashed a final curse, its hatred lingering even as it sought rest. The curse struck the hero, a dark poison spreading through his veins."
                 n "The hero's time was short-mere moments before the curse would claim him. The princess, unable to bear losing him, made a desperate decision."
@@ -869,6 +907,8 @@ label vs_start:
                 p "You can rest now-I'll take on your mission and ensure the forest is guarded for generations to come."
                 n "The spirit's form shimmered with gratitude and acceptance as it slowly faded, leaving its strength and purpose in the hands of the princess and hero."
                 vs "You have chosen a path of vigilance. May your resolve never waver, for the forest's future now rests with you."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The energy of the forest shifted, recognizing the princess and hero as its new guardians. They felt a deep connection to the land, a bond that would shape their lives from that moment on."
                 n "The princess and hero chose to stay within the forest, vowing to protect it from those who would seek to exploit it. With the spirit at rest and the forest thriving, they found a new purpose as its stewards."
@@ -879,6 +919,8 @@ label vs_start:
             "(Act) Betray and teleport away":
                 n "The princess's magic flared as she prepared to carry out her plan. Just as the spirit began to trust her, she whispered the incantation for a teleportation spell."
                 p "I'm sorry... but this is a burden I can't carry."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "In a flash of light, the princess and hero vanished, leaving the spirit behind. Its anger roared through the clearing, but they were already far from its reach."
                 n "The princess and hero found themselves in a distant land, far from the kingdom and the forest's lingering fury. They knew that returning home was no longer an option-the magic they had used would never be welcome back in the kingdom."
@@ -895,6 +937,8 @@ label vs_start:
                 p "This forest has been your home and prison. I'll ensure that your purpose as its guardian remains, but without the hatred that once consumed you."
                 n "The spirit's form shimmered, its rage softening into a sense of peace as the spell took hold."
                 vs "To remain as the guardian... free from anger... Perhaps, this is the fate I was always meant to have."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The magic anchored the spirit's essence within the forest, no longer driven by vengeance but by a deep connection to the land."
                 n "With the spirit's power restored to its rightful purpose, the forest thrived once more. The princess and hero chose to stay, their new role as protectors forever entwined with the land they had saved."
@@ -907,6 +951,8 @@ label vs_start:
                 p "You'll remain here, bound to the forest, unable to harm anyone again. This is where your wrath ends."
                 n "The spirit's form twisted in fury as the spell took hold, lashing out in desperation. But the ritual's magic was stronger, ensnaring the spirit within the forest's roots."
                 vs "You dare imprison me? The forest and I are one-if I must suffer, so will everything within these woods!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "As the spell completed, a dark shockwave rippled through the area, corrupting the very ground beneath their feet. The hero stumbled back, but the tainted energy clung to him, warping his form."
                 n "The spirit's essence was sealed away, but the hero was not untouched. The corruption began to change him, his body twisting under its influence. Realizing he was becoming a monster, he made a final, selfless decision."
@@ -923,6 +969,8 @@ label vs_start:
                 p "You've carried this burden long enough. I'll take on your role as the forest's protector, ensuring that its peace is maintained."
                 n "The spirit's form shimmered with a mix of relief and respect as it accepted her offer."
                 vs "To guard this forest for eternity... It is a path few would choose, but one that requires true devotion. May your resolve remain unbroken."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The forest's energy shifted, welcoming the princess and hero as its new guardians. The spirit's essence faded into the land itself, leaving behind its wisdom and strength."
                 n "With the spirit's purpose fulfilled, the princess and hero chose to remain in the forest, dedicating their lives to its protection. They became part of the forest's cycle, ensuring that it would never again fall into darkness."
@@ -935,6 +983,8 @@ label vs_start:
                 p "I'll carry the weight of your sorrow and protect this land-even if it means losing everything else."
                 n "The spirit's form flickered with dark approval, its energy converging as it prepared to seal the pact. But just as the ritual neared completion, the spirit lashed out with a final surge of fury, striking the princess down."
                 vs "You wish to take my place? Then die as I did, bound to this cursed land!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The princess's body crumpled to the ground, her life fading away as the spirit's wrath consumed her. The hero, overcome with despair, rushed to her side, tears filling his eyes as he realized she was gone."
                 n "Driven by desperation, the hero called upon forbidden magic, a power he knew would come with dire consequences. His hands trembled as he chanted the incantation, pouring every ounce of his will into bringing her back."
@@ -952,6 +1002,8 @@ label vs_start:
                 p "I can feel... everything. The anger, the sorrow... it's all consuming me!"
                 n "The hero rushed forward, trying to pull her back, but it was too late. The spirit's power clung to her, twisting her magic into something dark and uncontrollable."
                 h "Princess! Fight it-don't let it take you!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "But as the darkness spread, it latched onto the hero, corrupting him as well. His eyes darkened, a sinister glow overtaking his once-noble gaze."
                 n "The hero, unable to resist the corruption, felt his humanity slipping away. In a final, desperate act of love, he turned his blade on himself, ending his life before he could fully transform into something monstrous."
@@ -965,6 +1017,8 @@ label vs_start:
                 p "The hatred... it's overwhelming. I can barely hold on..."
                 n "The hero could see the transformation taking place-the once-compassionate princess was now consumed by the very anger she had tried to soothe. He reached out, desperate to save her from herself."
                 h "Princess, snap out of it! This isn't who you are!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "But the rage had taken hold. The princess lashed out, her magic warping into something wild and uncontrollable. In the chaos, the spirit struck one final blow, killing her as she succumbed to the darkness."
                 n "In his grief, the hero resorted to forbidden magic to bring her back, knowing the consequences that awaited him. The princess returned to life, but the kingdom's elders deemed his actions unforgivable, banishing him from the land."
@@ -983,6 +1037,8 @@ label vs_start:
                 p "No... this power... it's too much. I can't control it!"
                 n "The spirit's voice echoed in her mind, a mixture of pride and malice as it sensed the change in her."
                 vs "You sought to share my burden-now you will carry it forever. The curse has become part of you."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero watched in horror as the princess's aura darkened, her once-bright magic now tainted by the spirit's malevolence. The corruption spread to him as well, turning his thoughts and emotions into something monstrous."
                 n "Unable to fight the darkness within, the hero made a heartbreaking decision. In his final act, he sacrificed himself to save the princess, severing the bond and ending his life before the corruption fully took hold."
@@ -993,6 +1049,8 @@ label vs_start:
             "(Act) Fuse your essence with its wrath":
                 n "The princess let her magic flow freely, allowing it to merge with the spirit's wrath. The connection was immediate and powerful, their energies fusing into something dark and uncontrollable."
                 p "I can feel its hatred... every wound, every betrayal. It's taking over..."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero watched in horror as the spirit's fury consumed the princess, warping her very essence. But before he could act, the spirit struck a final, fatal blow, killing her as she succumbed to the darkness."
                 n "Desperate to save her, the hero invoked forbidden magic, bringing the princess back from the brink of death. But the kingdom's elders condemned his actions, banishing him for violating the natural order."
@@ -1007,6 +1065,8 @@ label vs_start:
             "(Act) Give your life to save the hero":
                 n "The princess saw the spirit's wrath bearing down on the hero, its dark tendrils coiling like vipers ready to strike. Without hesitation, she stepped between them, her voice filled with unwavering resolve."
                 p "I won't let you take him. If a life must be sacrificed... let it be mine!"
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The hero's eyes widened in horror as the princess shielded him with her body, absorbing the full force of the spirit's deadly curse."
                 n "Her knees buckled, but she refused to falter, determined to save him even at the cost of her own life."
@@ -1022,6 +1082,8 @@ label vs_start:
                 h "I wouldn't have it any other way, princess. If we go, we go together."
                 n "Hand in hand, they stepped forward, both fully accepting the fate that awaited them. The spirit paused, its wrath momentarily subdued by the sight of their unwavering unity."
                 vs "You would both choose death, rather than fight? Perhaps... that is the peace this forest has been denied for so long."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The curse struck true, claiming both their lives in an instant. But in their final moments, the spirit's wrath began to fade, its hatred quelled by the sacrifice of two souls bound by love."
                 n "The forest grew still as the spirit's form dissolved into the mist, its vengeance finally sated. The princess and hero passed into the afterlife together, their bond unbroken even in death."
@@ -1037,6 +1099,8 @@ label vs_start:
                 p "Let this be the end of your torment. Find peace, and let the forest be whole again."
                 n "The spirit's form wavered, its rage dimming as the light washed over it. For the first time, there was no malice in its voice-only a weary acceptance."
                 vs "Peace... at last. Guard this forest well, so that it never knows such pain again."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "As the spirit faded into the earth, the forest came alive with renewed energy. The trees stood taller, their leaves glowing with vibrant colors as life returned to the land."
                 n "The princess and hero knew they could not return to the kingdom-they were bound to this forest now, its protectors and stewards."
@@ -1049,6 +1113,8 @@ label vs_start:
                 p "We can't win this battle, but we can still get out of here. Hold on tight!"
                 n "With a surge of energy, she activated a teleportation spell, whisking them away just as the spirit lunged forward in a final, futile attempt to claim them."
                 vs "You cannot run forever..."
+                if routes_completed + 1 in aware_hero_routes:
+                    jump aware_hero
                 scene bg blackscreen
                 n "The forest was left behind as the princess and hero reappeared on the edge of the kingdom. Though they had escaped with their lives, they knew they could never return to the kingdom-the magic they used was no longer welcome there."
                 n "Instead, they chose a simpler life, free from the kingdom's expectations and the forest's dangers. Together, they embraced a future of freedom, far from the battles that once defined them."
