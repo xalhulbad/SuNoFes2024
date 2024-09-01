@@ -24,4 +24,4 @@ define dml = Character("Dark Magic Lord", what_color="#CCCCCC")
 define vs = Character("Vengeful Spirit", what_color="#CCCCCC")
 
 # Voice (for cryptic stonehenge)
-define voice = Character("Voice", what_color="#CCCCCC")
+define voice = Character("The Whisper", what_color="#CCCCCC")
