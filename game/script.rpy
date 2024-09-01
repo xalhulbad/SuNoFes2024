@@ -29,12 +29,13 @@ image bg Meadow = "bg Meadow.jpeg"
 label start:
     window show
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-    
-    scene bg blackscreen
+    stop music fadeout 0.5
 
+    # scene bg blackscreen
+
+    pause 1
+    # Give time for title screen music to stop
+    
     call tower_start
 
     call forest_start

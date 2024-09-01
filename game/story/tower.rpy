@@ -19,7 +19,7 @@ default tower_chose_way_out = False
 
 label tower_start:
     
-    play music "audio/0 tower 1.mp3" loop volume 1.0 fadein 0.5
+    play music "audio/0 Tower 2.mp3" loop volume 1.0 fadein 0.5
     scene bg Tower with fade
     # Start narration of tower scene
     n "Once upon a time, in a forgotten corner of the kingdom, there stood a tower. It loomed high, shrouded in mystery. The moonlight filtered through its narrow, arched window, casting a pale glow on the cold, damp walls."
