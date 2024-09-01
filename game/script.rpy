@@ -4,7 +4,7 @@
 define config.choice_empty_window = extend
 
 # Default variables
-default routes_completed = 0
+default routes_completed = 2
 default aware_hero_met = False
 default romance = 50
 default chose_magic = None
@@ -50,7 +50,7 @@ label start:
 
         if routes_completed + 1 in aware_hero_routes: # 2/10 chance to trigger aware hero
             if renpy.random.randint(1, 10) <= 2:
-                jump aware_hero
+                call aware_hero
         
 
         # Cryptic Stonehenge
@@ -58,7 +58,7 @@ label start:
 
         if routes_completed + 1 in aware_hero_routes: # 4/10 chance to trigger aware hero
             if renpy.random.randint(1, 10) <= 4:
-                jump aware_hero
+                call aware_hero
 
 
         # Meadow
@@ -66,7 +66,7 @@ label start:
 
         if routes_completed + 1 in aware_hero_routes: # 7/10 chance to trigger aware hero
             if renpy.random.randint(1, 10) <= 7:
-                jump aware_hero
+                call aware_hero
 
 
         # Second Villain Encounter
