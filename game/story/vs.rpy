@@ -86,62 +86,62 @@ label vs_start:
 
             # Dialogue pool options
 
-            "(Speak) Who are you?" if not vs_chose_who_are_you:
+            "(Inquire) Who are you?" if not vs_chose_who_are_you:
                 $ vs_chose_who_are_you = True
                 call vs_who_are_you
                 jump vs_choices_1
 
-            "(Speak) Why do you seek vengeance?" if not vs_chose_why_do_you_seek and vs_chose_who_are_you:
+            "(Inquire) Why do you seek vengeance?" if not vs_chose_why_do_you_seek and vs_chose_who_are_you:
                 $ vs_chose_why_do_you_seek = True
                 call vs_why_do_you_seek
                 jump vs_choices_1
 
-            "(Speak) Can you ever be at peace?" if not vs_chose_can_you_ever and vs_chose_why_do_you_seek:
+            "(Inquire) Can you ever be at peace?" if not vs_chose_can_you_ever and vs_chose_why_do_you_seek:
                 $ vs_chose_can_you_ever = True
                 call vs_can_you_ever
                 jump vs_choices_1
 
-            "(Speak) What do you want from us?" if not vs_chose_what_do_you:
+            "(Inquire) What do you want from us?" if not vs_chose_what_do_you:
                 $ vs_chose_what_do_you = True
                 call vs_what_do_you
                 jump vs_choices_1
 
-            "(Speak) Why do you blame us for the kingdom's sins?" if not vs_chose_why_do_you_blame and vs_chose_why_do_you_blame:
+            "(Inquire) Why do you blame us for the kingdom's sins?" if not vs_chose_why_do_you_blame and vs_chose_why_do_you_blame:
                 $ vs_chose_why_do_you_blame = True
                 call vs_why_do_you_blame
                 jump vs_choices_1
 
-            "(Speak) Isn't there a way to break this cycle of hatred?" if not vs_chose_isnt_there_a and vs_chose_isnt_there_a:
+            "(Inquire) Isn't there a way to break this cycle of hatred?" if not vs_chose_isnt_there_a and vs_chose_isnt_there_a:
                 $ vs_chose_isnt_there_a = True
                 call vs_isnt_there_a
                 jump vs_choices_1
             
-            "(Speak) Why can't you let go of your anger?" if not vs_chose_why_cant_you:
+            "(Inquire) Why can't you let go of your anger?" if not vs_chose_why_cant_you:
                 $ vs_chose_why_cant_you = True
                 call vs_why_cant_you
                 jump vs_choices_1
 
-            "(Speak) Do you not see the destruction your rage causes?" if not vs_chose_do_you_not and vs_chose_why_cant_you:
+            "(Inquire) Do you not see the destruction your rage causes?" if not vs_chose_do_you_not and vs_chose_why_cant_you:
                 $ vs_chose_do_you_not = True
                 call vs_do_you_not
                 jump vs_choices_1
 
-            "(Speak) Can't you find peace in the forest's renewal?" if not vs_chose_cant_you_find and vs_chose_cant_you_find:
+            "(Inquire) Can't you find peace in the forest's renewal?" if not vs_chose_cant_you_find and vs_chose_cant_you_find:
                 $ vs_chose_cant_you_find = True
                 call vs_cant_you_find
                 jump vs_choices_1
 
-            "(Speak) What will you do if you destroy us?" if not vs_chose_what_will_you:
+            "(Inquire) What will you do if you destroy us?" if not vs_chose_what_will_you:
                 $ vs_chose_what_will_you = True
                 call vs_what_will_you
                 jump vs_choices_1
 
-            "(Speak) Will your vengeance ever be enough?" if not vs_chose_will_your_vengeance and vs_chose_what_will_you:
+            "(Inquire) Will your vengeance ever be enough?" if not vs_chose_will_your_vengeance and vs_chose_what_will_you:
                 $ vs_chose_will_your_vengeance = True
                 call vs_will_your_vengeance
                 jump vs_choices_1
 
-            "(Speak) What then? Will the forest be at peace?" if not vs_chose_what_then and vs_chose_will_your_vengeance:
+            "(Inquire) What then? Will the forest be at peace?" if not vs_chose_what_then and vs_chose_will_your_vengeance:
                 $ vs_chose_what_then = True
                 call vs_what_then
                 jump vs_choices_1
@@ -175,62 +175,62 @@ label vs_start:
 
             # Dialogue pool options
 
-            "(Speak) Who are you?" if not vs_chose_who_are_you:
+            "(Inquire) Who are you?" if not vs_chose_who_are_you:
                 $ vs_chose_who_are_you = True
                 call vs_who_are_you
                 jump vs_choices_2_1
 
-            "(Speak) Why do you seek vengeance?" if not vs_chose_why_do_you_seek and vs_chose_who_are_you:
+            "(Inquire) Why do you seek vengeance?" if not vs_chose_why_do_you_seek and vs_chose_who_are_you:
                 $ vs_chose_why_do_you_seek = True
                 call vs_why_do_you_seek
                 jump vs_choices_2_1
 
-            "(Speak) Can you ever be at peace?" if not vs_chose_can_you_ever and vs_chose_why_do_you_seek:
+            "(Inquire) Can you ever be at peace?" if not vs_chose_can_you_ever and vs_chose_why_do_you_seek:
                 $ vs_chose_can_you_ever = True
                 call vs_can_you_ever
                 jump vs_choices_2_1
 
-            "(Speak) What do you want from us?" if not vs_chose_what_do_you:
+            "(Inquire) What do you want from us?" if not vs_chose_what_do_you:
                 $ vs_chose_what_do_you = True
                 call vs_what_do_you
                 jump vs_choices_2_1
 
-            "(Speak) Why do you blame us for the kingdom's sins?" if not vs_chose_why_do_you_blame and vs_chose_why_do_you_blame:
+            "(Inquire) Why do you blame us for the kingdom's sins?" if not vs_chose_why_do_you_blame and vs_chose_why_do_you_blame:
                 $ vs_chose_why_do_you_blame = True
                 call vs_why_do_you_blame
                 jump vs_choices_2_1
 
-            "(Speak) Isn't there a way to break this cycle of hatred?" if not vs_chose_isnt_there_a and vs_chose_isnt_there_a:
+            "(Inquire) Isn't there a way to break this cycle of hatred?" if not vs_chose_isnt_there_a and vs_chose_isnt_there_a:
                 $ vs_chose_isnt_there_a = True
                 call vs_isnt_there_a
                 jump vs_choices_2_1
             
-            "(Speak) Why can't you let go of your anger?" if not vs_chose_why_cant_you:
+            "(Inquire) Why can't you let go of your anger?" if not vs_chose_why_cant_you:
                 $ vs_chose_why_cant_you = True
                 call vs_why_cant_you
                 jump vs_choices_2_1
 
-            "(Speak) Do you not see the destruction your rage causes?" if not vs_chose_do_you_not and vs_chose_why_cant_you:
+            "(Inquire) Do you not see the destruction your rage causes?" if not vs_chose_do_you_not and vs_chose_why_cant_you:
                 $ vs_chose_do_you_not = True
                 call vs_do_you_not
                 jump vs_choices_2_1
 
-            "(Speak) Can't you find peace in the forest's renewal?" if not vs_chose_cant_you_find and vs_chose_cant_you_find:
+            "(Inquire) Can't you find peace in the forest's renewal?" if not vs_chose_cant_you_find and vs_chose_cant_you_find:
                 $ vs_chose_cant_you_find = True
                 call vs_cant_you_find
                 jump vs_choices_2_1
 
-            "(Speak) What will you do if you destroy us?" if not vs_chose_what_will_you:
+            "(Inquire) What will you do if you destroy us?" if not vs_chose_what_will_you:
                 $ vs_chose_what_will_you = True
                 call vs_what_will_you
                 jump vs_choices_2_1
 
-            "(Speak) Will your vengeance ever be enough?" if not vs_chose_will_your_vengeance and vs_chose_what_will_you:
+            "(Inquire) Will your vengeance ever be enough?" if not vs_chose_will_your_vengeance and vs_chose_what_will_you:
                 $ vs_chose_will_your_vengeance = True
                 call vs_will_your_vengeance
                 jump vs_choices_2_1
 
-            "(Speak) What then? Will the forest be at peace?" if not vs_chose_what_then and vs_chose_will_your_vengeance:
+            "(Inquire) What then? Will the forest be at peace?" if not vs_chose_what_then and vs_chose_will_your_vengeance:
                 $ vs_chose_what_then = True
                 call vs_what_then
                 jump vs_choices_2_1
@@ -260,62 +260,62 @@ label vs_start:
 
             # Dialogue pool options
 
-            "(Speak) Who are you?" if not vs_chose_who_are_you:
+            "(Inquire) Who are you?" if not vs_chose_who_are_you:
                 $ vs_chose_who_are_you = True
                 call vs_who_are_you
                 jump vs_choices_2_2
 
-            "(Speak) Why do you seek vengeance?" if not vs_chose_why_do_you_seek and vs_chose_who_are_you:
+            "(Inquire) Why do you seek vengeance?" if not vs_chose_why_do_you_seek and vs_chose_who_are_you:
                 $ vs_chose_why_do_you_seek = True
                 call vs_why_do_you_seek
                 jump vs_choices_2_2
 
-            "(Speak) Can you ever be at peace?" if not vs_chose_can_you_ever and vs_chose_why_do_you_seek:
+            "(Inquire) Can you ever be at peace?" if not vs_chose_can_you_ever and vs_chose_why_do_you_seek:
                 $ vs_chose_can_you_ever = True
                 call vs_can_you_ever
                 jump vs_choices_2_2
 
-            "(Speak) What do you want from us?" if not vs_chose_what_do_you:
+            "(Inquire) What do you want from us?" if not vs_chose_what_do_you:
                 $ vs_chose_what_do_you = True
                 call vs_what_do_you
                 jump vs_choices_2_2
 
-            "(Speak) Why do you blame us for the kingdom's sins?" if not vs_chose_why_do_you_blame and vs_chose_why_do_you_blame:
+            "(Inquire) Why do you blame us for the kingdom's sins?" if not vs_chose_why_do_you_blame and vs_chose_why_do_you_blame:
                 $ vs_chose_why_do_you_blame = True
                 call vs_why_do_you_blame
                 jump vs_choices_2_2
 
-            "(Speak) Isn't there a way to break this cycle of hatred?" if not vs_chose_isnt_there_a and vs_chose_isnt_there_a:
+            "(Inquire) Isn't there a way to break this cycle of hatred?" if not vs_chose_isnt_there_a and vs_chose_isnt_there_a:
                 $ vs_chose_isnt_there_a = True
                 call vs_isnt_there_a
                 jump vs_choices_2_2
             
-            "(Speak) Why can't you let go of your anger?" if not vs_chose_why_cant_you:
+            "(Inquire) Why can't you let go of your anger?" if not vs_chose_why_cant_you:
                 $ vs_chose_why_cant_you = True
                 call vs_why_cant_you
                 jump vs_choices_2_2
 
-            "(Speak) Do you not see the destruction your rage causes?" if not vs_chose_do_you_not and vs_chose_why_cant_you:
+            "(Inquire) Do you not see the destruction your rage causes?" if not vs_chose_do_you_not and vs_chose_why_cant_you:
                 $ vs_chose_do_you_not = True
                 call vs_do_you_not
                 jump vs_choices_2_2
 
-            "(Speak) Can't you find peace in the forest's renewal?" if not vs_chose_cant_you_find and vs_chose_cant_you_find:
+            "(Inquire) Can't you find peace in the forest's renewal?" if not vs_chose_cant_you_find and vs_chose_cant_you_find:
                 $ vs_chose_cant_you_find = True
                 call vs_cant_you_find
                 jump vs_choices_2_2
 
-            "(Speak) What will you do if you destroy us?" if not vs_chose_what_will_you:
+            "(Inquire) What will you do if you destroy us?" if not vs_chose_what_will_you:
                 $ vs_chose_what_will_you = True
                 call vs_what_will_you
                 jump vs_choices_2_2
 
-            "(Speak) Will your vengeance ever be enough?" if not vs_chose_will_your_vengeance and vs_chose_what_will_you:
+            "(Inquire) Will your vengeance ever be enough?" if not vs_chose_will_your_vengeance and vs_chose_what_will_you:
                 $ vs_chose_will_your_vengeance = True
                 call vs_will_your_vengeance
                 jump vs_choices_2_2
 
-            "(Speak) What then? Will the forest be at peace?" if not vs_chose_what_then and vs_chose_will_your_vengeance:
+            "(Inquire) What then? Will the forest be at peace?" if not vs_chose_what_then and vs_chose_will_your_vengeance:
                 $ vs_chose_what_then = True
                 call vs_what_then
                 jump vs_choices_2_2

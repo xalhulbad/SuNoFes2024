@@ -92,62 +92,62 @@ label fh_start:
 
             # Dialogue pool options
 
-            "(Speak) Who are you?" if not fh_chose_who_are_you:
+            "(Inquire) Who are you?" if not fh_chose_who_are_you:
                 $ fh_chose_who_are_you = True
                 call fh_who_are_you
                 jump fh_choices_1
 
-            "(Speak) Why do you hold a grudge against the kingdom?" if not fh_chose_why_hold_grudge and fh_chose_who_are_you:
+            "(Inquire) Why do you hold a grudge against the kingdom?" if not fh_chose_why_hold_grudge and fh_chose_who_are_you:
                 $ fh_chose_why_hold_grudge = True
                 call fh_why_hold_grudge
                 jump fh_choices_1
 
-            "(Speak) The kingdom betrayed you, but things have changed." if not fh_chose_things_have_changed and fh_chose_why_hold_grudge:
+            "(Inquire) The kingdom betrayed you, but things have changed." if not fh_chose_things_have_changed and fh_chose_why_hold_grudge:
                 $ fh_chose_things_have_changed = True
                 call fh_things_have_changed
                 jump fh_choices_1
 
-            "(Speak) What happened to you?" if not fh_chose_what_happened:
+            "(Inquire) What happened to you?" if not fh_chose_what_happened:
                 $ fh_chose_what_happened = True
                 call fh_what_happened
                 jump fh_choices_1
 
-            "(Speak) Why did the kingdom turn against you?" if not fh_chose_why_kingdom_turn and fh_chose_what_happened:
+            "(Inquire) Why did the kingdom turn against you?" if not fh_chose_why_kingdom_turn and fh_chose_what_happened:
                 $ fh_chose_why_kingdom_turn = True
                 call fh_why_kingdom_turn
                 jump fh_choices_1
 
-            "(Speak) Do you really believe revenge will change anything?" if not fh_chose_really_believe_revenge and fh_chose_why_kingdom_turn:
+            "(Inquire) Do you really believe revenge will change anything?" if not fh_chose_really_believe_revenge and fh_chose_why_kingdom_turn:
                 $ fh_chose_really_believe_revenge = True
                 call fh_really_believe_revenge
                 jump fh_choices_1
 
-            "(Speak) Why do you hunt us?" if not fh_chose_why_hunt_us:
+            "(Inquire) Why do you hunt us?" if not fh_chose_why_hunt_us:
                 $ fh_chose_why_hunt_us = True
                 call fh_why_hunt_us
                 jump fh_choices_1
 
-            "(Speak) Do you think killing us will satisfy your revenge?" if not fh_chose_killing_us_satisfy and fh_chose_why_hunt_us:
+            "(Inquire) Do you think killing us will satisfy your revenge?" if not fh_chose_killing_us_satisfy and fh_chose_why_hunt_us:
                 $ fh_chose_killing_us_satisfy = True
                 call fh_killing_us_satisfy
                 jump fh_choices_1
 
-            "(Speak) What would you do if you got your revenge?" if not fh_chose_what_would_you_do and fh_chose_killing_us_satisfy:
+            "(Inquire) What would you do if you got your revenge?" if not fh_chose_what_would_you_do and fh_chose_killing_us_satisfy:
                 $ fh_chose_what_would_you_do = True
                 call fh_what_would_you_do
                 jump fh_choices_1
 
-            "(Speak) Why can't you just let us pass?" if not fh_chose_why_cant_pass:
+            "(Inquire) Why can't you just let us pass?" if not fh_chose_why_cant_pass:
                 $ fh_chose_why_cant_pass = True
                 call fh_why_cant_pass
                 jump fh_choices_1
 
-            "(Speak) Is there anything that could change your mind?" if not fh_chose_change_your_mind and fh_chose_why_cant_pass:
+            "(Inquire) Is there anything that could change your mind?" if not fh_chose_change_your_mind and fh_chose_why_cant_pass:
                 $ fh_chose_change_your_mind = True
                 call fh_change_your_mind
                 jump fh_choices_1
 
-            "(Speak) We're not like those who wronged you." if not fh_chose_not_like_those and fh_chose_change_your_mind:
+            "(Inquire) We're not like those who wronged you." if not fh_chose_not_like_those and fh_chose_change_your_mind:
                 $ fh_chose_not_like_those = True
                 call fh_not_like_those
                 jump fh_choices_1
@@ -183,62 +183,62 @@ label fh_start:
 
             # Dialogue pool options
 
-            "(Speak) Who are you?" if not fh_chose_who_are_you:
+            "(Inquire) Who are you?" if not fh_chose_who_are_you:
                 $ fh_chose_who_are_you = True
                 call fh_who_are_you
                 jump fh_choices_2_1
 
-            "(Speak) Why do you hold a grudge against the kingdom?" if not fh_chose_why_hold_grudge and fh_chose_who_are_you:
+            "(Inquire) Why do you hold a grudge against the kingdom?" if not fh_chose_why_hold_grudge and fh_chose_who_are_you:
                 $ fh_chose_why_hold_grudge = True
                 call fh_why_hold_grudge
                 jump fh_choices_2_1
 
-            "(Speak) The kingdom betrayed you, but things have changed." if not fh_chose_things_have_changed and fh_chose_why_hold_grudge:
+            "(Inquire) The kingdom betrayed you, but things have changed." if not fh_chose_things_have_changed and fh_chose_why_hold_grudge:
                 $ fh_chose_things_have_changed = True
                 call fh_things_have_changed
                 jump fh_choices_2_1
 
-            "(Speak) What happened to you?" if not fh_chose_what_happened:
+            "(Inquire) What happened to you?" if not fh_chose_what_happened:
                 $ fh_chose_what_happened = True
                 call fh_what_happened
                 jump fh_choices_2_1
 
-            "(Speak) Why did the kingdom turn against you?" if not fh_chose_why_kingdom_turn and fh_chose_what_happened:
+            "(Inquire) Why did the kingdom turn against you?" if not fh_chose_why_kingdom_turn and fh_chose_what_happened:
                 $ fh_chose_why_kingdom_turn = True
                 call fh_why_kingdom_turn
                 jump fh_choices_2_1
 
-            "(Speak) Do you really believe revenge will change anything?" if not fh_chose_really_believe_revenge and fh_chose_why_kingdom_turn:
+            "(Inquire) Do you really believe revenge will change anything?" if not fh_chose_really_believe_revenge and fh_chose_why_kingdom_turn:
                 $ fh_chose_really_believe_revenge = True
                 call fh_really_believe_revenge
                 jump fh_choices_2_1
 
-            "(Speak) Why do you hunt us?" if not fh_chose_why_hunt_us:
+            "(Inquire) Why do you hunt us?" if not fh_chose_why_hunt_us:
                 $ fh_chose_why_hunt_us = True
                 call fh_why_hunt_us
                 jump fh_choices_2_1
 
-            "(Speak) Do you think killing us will satisfy your revenge?" if not fh_chose_killing_us_satisfy and fh_chose_why_hunt_us:
+            "(Inquire) Do you think killing us will satisfy your revenge?" if not fh_chose_killing_us_satisfy and fh_chose_why_hunt_us:
                 $ fh_chose_killing_us_satisfy = True
                 call fh_killing_us_satisfy
                 jump fh_choices_2_1
 
-            "(Speak) What would you do if you got your revenge?" if not fh_chose_what_would_you_do and fh_chose_killing_us_satisfy:
+            "(Inquire) What would you do if you got your revenge?" if not fh_chose_what_would_you_do and fh_chose_killing_us_satisfy:
                 $ fh_chose_what_would_you_do = True
                 call fh_what_would_you_do
                 jump fh_choices_2_1
 
-            "(Speak) Why can't you just let us pass?" if not fh_chose_why_cant_pass:
+            "(Inquire) Why can't you just let us pass?" if not fh_chose_why_cant_pass:
                 $ fh_chose_why_cant_pass = True
                 call fh_why_cant_pass
                 jump fh_choices_2_1
 
-            "(Speak) Is there anything that could change your mind?" if not fh_chose_change_your_mind and fh_chose_why_cant_pass:
+            "(Inquire) Is there anything that could change your mind?" if not fh_chose_change_your_mind and fh_chose_why_cant_pass:
                 $ fh_chose_change_your_mind = True
                 call fh_change_your_mind
                 jump fh_choices_2_1
 
-            "(Speak) We're not like those who wronged you." if not fh_chose_not_like_those and fh_chose_change_your_mind:
+            "(Inquire) We're not like those who wronged you." if not fh_chose_not_like_those and fh_chose_change_your_mind:
                 $ fh_chose_not_like_those = True
                 call fh_not_like_those
                 jump fh_choices_2_1
@@ -270,62 +270,62 @@ label fh_start:
 
             # Dialogue pool options
 
-            "(Speak) Who are you?" if not fh_chose_who_are_you:
+            "(Inquire) Who are you?" if not fh_chose_who_are_you:
                 $ fh_chose_who_are_you = True
                 call fh_who_are_you
                 jump fh_choices_2_2
 
-            "(Speak) Why do you hold a grudge against the kingdom?" if not fh_chose_why_hold_grudge and fh_chose_who_are_you:
+            "(Inquire) Why do you hold a grudge against the kingdom?" if not fh_chose_why_hold_grudge and fh_chose_who_are_you:
                 $ fh_chose_why_hold_grudge = True
                 call fh_why_hold_grudge
                 jump fh_choices_2_2
 
-            "(Speak) The kingdom betrayed you, but things have changed." if not fh_chose_things_have_changed and fh_chose_why_hold_grudge:
+            "(Inquire) The kingdom betrayed you, but things have changed." if not fh_chose_things_have_changed and fh_chose_why_hold_grudge:
                 $ fh_chose_things_have_changed = True
                 call fh_things_have_changed
                 jump fh_choices_2_2
 
-            "(Speak) What happened to you?" if not fh_chose_what_happened:
+            "(Inquire) What happened to you?" if not fh_chose_what_happened:
                 $ fh_chose_what_happened = True
                 call fh_what_happened
                 jump fh_choices_2_2
 
-            "(Speak) Why did the kingdom turn against you?" if not fh_chose_why_kingdom_turn and fh_chose_what_happened:
+            "(Inquire) Why did the kingdom turn against you?" if not fh_chose_why_kingdom_turn and fh_chose_what_happened:
                 $ fh_chose_why_kingdom_turn = True
                 call fh_why_kingdom_turn
                 jump fh_choices_2_2
 
-            "(Speak) Do you really believe revenge will change anything?" if not fh_chose_really_believe_revenge and fh_chose_why_kingdom_turn:
+            "(Inquire) Do you really believe revenge will change anything?" if not fh_chose_really_believe_revenge and fh_chose_why_kingdom_turn:
                 $ fh_chose_really_believe_revenge = True
                 call fh_really_believe_revenge
                 jump fh_choices_2_2
 
-            "(Speak) Why do you hunt us?" if not fh_chose_why_hunt_us:
+            "(Inquire) Why do you hunt us?" if not fh_chose_why_hunt_us:
                 $ fh_chose_why_hunt_us = True
                 call fh_why_hunt_us
                 jump fh_choices_2_2
 
-            "(Speak) Do you think killing us will satisfy your revenge?" if not fh_chose_killing_us_satisfy and fh_chose_why_hunt_us:
+            "(Inquire) Do you think killing us will satisfy your revenge?" if not fh_chose_killing_us_satisfy and fh_chose_why_hunt_us:
                 $ fh_chose_killing_us_satisfy = True
                 call fh_killing_us_satisfy
                 jump fh_choices_2_2
 
-            "(Speak) What would you do if you got your revenge?" if not fh_chose_what_would_you_do and fh_chose_killing_us_satisfy:
+            "(Inquire) What would you do if you got your revenge?" if not fh_chose_what_would_you_do and fh_chose_killing_us_satisfy:
                 $ fh_chose_what_would_you_do = True
                 call fh_what_would_you_do
                 jump fh_choices_2_2
 
-            "(Speak) Why can't you just let us pass?" if not fh_chose_why_cant_pass:
+            "(Inquire) Why can't you just let us pass?" if not fh_chose_why_cant_pass:
                 $ fh_chose_why_cant_pass = True
                 call fh_why_cant_pass
                 jump fh_choices_2_2
 
-            "(Speak) Is there anything that could change your mind?" if not fh_chose_change_your_mind and fh_chose_why_cant_pass:
+            "(Inquire) Is there anything that could change your mind?" if not fh_chose_change_your_mind and fh_chose_why_cant_pass:
                 $ fh_chose_change_your_mind = True
                 call fh_change_your_mind
                 jump fh_choices_2_2
 
-            "(Speak) We're not like those who wronged you." if not fh_chose_not_like_those and fh_chose_change_your_mind:
+            "(Inquire) We're not like those who wronged you." if not fh_chose_not_like_those and fh_chose_change_your_mind:
                 $ fh_chose_not_like_those = True
                 call fh_not_like_those
                 jump fh_choices_2_2

@@ -83,60 +83,60 @@ label hu_start:
 
             # Dialogue pool options
 
-            "(Speak) Who are you?" if not hu_chose_who_are_you:
+            "(Inquire) Who are you?" if not hu_chose_who_are_you:
                 $ hu_chose_who_are_you = True
                 call hu_who_are_you
                 jump hu_choices_1
 
-            "(Speak) Why are you after us?" if not hu_chose_why_after_us and hu_chose_who_are_you:
+            "(Inquire) Why are you after us?" if not hu_chose_why_after_us and hu_chose_who_are_you:
                 $ hu_chose_why_after_us = True
                 call hu_why_after_us
                 jump hu_choices_1
 
-            "(Speak) The kingdom abolished its use of magic." if not hu_chose_kingdom_abolished_magic and hu_chose_why_after_us:
+            "(Inquire) The kingdom abolished its use of magic." if not hu_chose_kingdom_abolished_magic and hu_chose_why_after_us:
                 $ hu_chose_kingdom_abolished_magic = True
                 call hu_kingdom_abolished_magic
                 jump hu_choices_1
 
 
-            "(Speak) What is your mission?" if not hu_chose_what_your_mission:
+            "(Inquire) What is your mission?" if not hu_chose_what_your_mission:
                 $ hu_chose_what_your_mission = True
                 call hu_what_your_mission
                 jump hu_choices_1
 
-            "(Speak) Why do you guard this forest?" if not hu_chose_why_guard_forest and hu_chose_what_your_mission:
+            "(Inquire) Why do you guard this forest?" if not hu_chose_why_guard_forest and hu_chose_what_your_mission:
                 $ hu_chose_why_guard_forest = True
                 call hu_why_guard_forest
                 jump hu_choices_1
 
-            "(Speak) How did you become The Hunter?" if not hu_chose_how_become_hunter and hu_chose_why_guard_forest:
+            "(Inquire) How did you become The Hunter?" if not hu_chose_how_become_hunter and hu_chose_why_guard_forest:
                 $ hu_chose_how_become_hunter = True
                 call hu_how_become_hunter
                 jump hu_choices_1
 
 
-            "(Speak) Why can't you just let us pass?" if not hu_chose_why_cant_let_us_pass:
+            "(Inquire) Why can't you just let us pass?" if not hu_chose_why_cant_let_us_pass:
                 $ hu_chose_why_cant_let_us_pass = True
                 call hu_why_cant_let_us_pass
                 jump hu_choices_1
 
-            "(Speak) Have you always been alone?" if not hu_chose_have_you_always_been_alone and hu_chose_why_cant_let_us_pass:
+            "(Inquire) Have you always been alone?" if not hu_chose_have_you_always_been_alone and hu_chose_why_cant_let_us_pass:
                 $ hu_chose_have_you_always_been_alone = True
                 call hu_have_you_always_been_alone
                 jump hu_choices_1
 
-            "(Speak) How long have you been here?" if not hu_chose_how_long_been_here and hu_chose_have_you_always_been_alone:
+            "(Inquire) How long have you been here?" if not hu_chose_how_long_been_here and hu_chose_have_you_always_been_alone:
                 $ hu_chose_how_long_been_here = True
                 call hu_how_long_been_here
                 jump hu_choices_1
 
 
-            "(Speak) Why didn't you chase us before?" if not hu_chose_why_didnt_chase_us_before:
+            "(Inquire) Why didn't you chase us before?" if not hu_chose_why_didnt_chase_us_before:
                 $ hu_chose_why_didnt_chase_us_before = True
                 call hu_why_didnt_chase_us_before
                 jump hu_choices_1
 
-            "(Speak) We went there by mistake. We meant no harm!" if not hu_chose_we_went_by_mistake and hu_chose_why_didnt_chase_us_before:
+            "(Inquire) We went there by mistake. We meant no harm!" if not hu_chose_we_went_by_mistake and hu_chose_why_didnt_chase_us_before:
                 $ hu_chose_we_went_by_mistake = True
                 call hu_we_went_by_mistake
                 jump hu_choices_1
@@ -172,60 +172,60 @@ label hu_start:
             
             # Dialogue pool options
 
-            "(Speak) Who are you?" if not hu_chose_who_are_you:
+            "(Inquire) Who are you?" if not hu_chose_who_are_you:
                 $ hu_chose_who_are_you = True
                 call hu_who_are_you
                 jump hu_choices_2_1
 
-            "(Speak) Why are you after us?" if not hu_chose_why_after_us and hu_chose_who_are_you:
+            "(Inquire) Why are you after us?" if not hu_chose_why_after_us and hu_chose_who_are_you:
                 $ hu_chose_why_after_us = True
                 call hu_why_after_us
                 jump hu_choices_2_1
 
-            "(Speak) The kingdom abolished its use of magic." if not hu_chose_kingdom_abolished_magic and hu_chose_why_after_us:
+            "(Inquire) The kingdom abolished its use of magic." if not hu_chose_kingdom_abolished_magic and hu_chose_why_after_us:
                 $ hu_chose_kingdom_abolished_magic = True
                 call hu_kingdom_abolished_magic
                 jump hu_choices_2_1
 
 
-            "(Speak) What is your mission?" if not hu_chose_what_your_mission:
+            "(Inquire) What is your mission?" if not hu_chose_what_your_mission:
                 $ hu_chose_what_your_mission = True
                 call hu_what_your_mission
                 jump hu_choices_2_1
 
-            "(Speak) Why do you guard this forest?" if not hu_chose_why_guard_forest and hu_chose_what_your_mission:
+            "(Inquire) Why do you guard this forest?" if not hu_chose_why_guard_forest and hu_chose_what_your_mission:
                 $ hu_chose_why_guard_forest = True
                 call hu_why_guard_forest
                 jump hu_choices_2_1
 
-            "(Speak) How did you become The Hunter?" if not hu_chose_how_become_hunter and hu_chose_why_guard_forest:
+            "(Inquire) How did you become The Hunter?" if not hu_chose_how_become_hunter and hu_chose_why_guard_forest:
                 $ hu_chose_how_become_hunter = True
                 call hu_how_become_hunter
                 jump hu_choices_2_1
 
 
-            "(Speak) Why can't you just let us pass?" if not hu_chose_why_cant_let_us_pass:
+            "(Inquire) Why can't you just let us pass?" if not hu_chose_why_cant_let_us_pass:
                 $ hu_chose_why_cant_let_us_pass = True
                 call hu_why_cant_let_us_pass
                 jump hu_choices_2_1
 
-            "(Speak) Have you always been alone?" if not hu_chose_have_you_always_been_alone and hu_chose_why_cant_let_us_pass:
+            "(Inquire) Have you always been alone?" if not hu_chose_have_you_always_been_alone and hu_chose_why_cant_let_us_pass:
                 $ hu_chose_have_you_always_been_alone = True
                 call hu_have_you_always_been_alone
                 jump hu_choices_2_1
 
-            "(Speak) How long have you been here?" if not hu_chose_how_long_been_here and hu_chose_have_you_always_been_alone:
+            "(Inquire) How long have you been here?" if not hu_chose_how_long_been_here and hu_chose_have_you_always_been_alone:
                 $ hu_chose_how_long_been_here = True
                 call hu_how_long_been_here
                 jump hu_choices_2_1
 
 
-            "(Speak) Why didn't you chase us before?" if not hu_chose_why_didnt_chase_us_before:
+            "(Inquire) Why didn't you chase us before?" if not hu_chose_why_didnt_chase_us_before:
                 $ hu_chose_why_didnt_chase_us_before = True
                 call hu_why_didnt_chase_us_before
                 jump hu_choices_2_1
 
-            "(Speak) We went there by mistake. We meant no harm!" if not hu_chose_we_went_by_mistake and hu_chose_why_didnt_chase_us_before:
+            "(Inquire) We went there by mistake. We meant no harm!" if not hu_chose_we_went_by_mistake and hu_chose_why_didnt_chase_us_before:
                 $ hu_chose_we_went_by_mistake = True
                 call hu_we_went_by_mistake
                 jump hu_choices_2_1
@@ -259,60 +259,60 @@ label hu_start:
 
             # Dialogue pool options
 
-            "(Speak) Who are you?" if not hu_chose_who_are_you:
+            "(Inquire) Who are you?" if not hu_chose_who_are_you:
                 $ hu_chose_who_are_you = True
                 call hu_who_are_you
                 jump hu_choices_2_2
 
-            "(Speak) Why are you after us?" if not hu_chose_why_after_us and hu_chose_who_are_you:
+            "(Inquire) Why are you after us?" if not hu_chose_why_after_us and hu_chose_who_are_you:
                 $ hu_chose_why_after_us = True
                 call hu_why_after_us
                 jump hu_choices_2_2
 
-            "(Speak) The kingdom abolished its use of magic." if not hu_chose_kingdom_abolished_magic and hu_chose_why_after_us:
+            "(Inquire) The kingdom abolished its use of magic." if not hu_chose_kingdom_abolished_magic and hu_chose_why_after_us:
                 $ hu_chose_kingdom_abolished_magic = True
                 call hu_kingdom_abolished_magic
                 jump hu_choices_2_2
 
 
-            "(Speak) What is your mission?" if not hu_chose_what_your_mission:
+            "(Inquire) What is your mission?" if not hu_chose_what_your_mission:
                 $ hu_chose_what_your_mission = True
                 call hu_what_your_mission
                 jump hu_choices_2_2
 
-            "(Speak) Why do you guard this forest?" if not hu_chose_why_guard_forest and hu_chose_what_your_mission:
+            "(Inquire) Why do you guard this forest?" if not hu_chose_why_guard_forest and hu_chose_what_your_mission:
                 $ hu_chose_why_guard_forest = True
                 call hu_why_guard_forest
                 jump hu_choices_2_2
 
-            "(Speak) How did you become The Hunter?" if not hu_chose_how_become_hunter and hu_chose_why_guard_forest:
+            "(Inquire) How did you become The Hunter?" if not hu_chose_how_become_hunter and hu_chose_why_guard_forest:
                 $ hu_chose_how_become_hunter = True
                 call hu_how_become_hunter
                 jump hu_choices_2_2
 
 
-            "(Speak) Why can't you just let us pass?" if not hu_chose_why_cant_let_us_pass:
+            "(Inquire) Why can't you just let us pass?" if not hu_chose_why_cant_let_us_pass:
                 $ hu_chose_why_cant_let_us_pass = True
                 call hu_why_cant_let_us_pass
                 jump hu_choices_2_2
 
-            "(Speak) Have you always been alone?" if not hu_chose_have_you_always_been_alone and hu_chose_why_cant_let_us_pass:
+            "(Inquire) Have you always been alone?" if not hu_chose_have_you_always_been_alone and hu_chose_why_cant_let_us_pass:
                 $ hu_chose_have_you_always_been_alone = True
                 call hu_have_you_always_been_alone
                 jump hu_choices_2_2
 
-            "(Speak) How long have you been here?" if not hu_chose_how_long_been_here and hu_chose_have_you_always_been_alone:
+            "(Inquire) How long have you been here?" if not hu_chose_how_long_been_here and hu_chose_have_you_always_been_alone:
                 $ hu_chose_how_long_been_here = True
                 call hu_how_long_been_here
                 jump hu_choices_2_2
 
 
-            "(Speak) Why didn't you chase us before?" if not hu_chose_why_didnt_chase_us_before:
+            "(Inquire) Why didn't you chase us before?" if not hu_chose_why_didnt_chase_us_before:
                 $ hu_chose_why_didnt_chase_us_before = True
                 call hu_why_didnt_chase_us_before
                 jump hu_choices_2_2
 
-            "(Speak) We went there by mistake. We meant no harm!" if not hu_chose_we_went_by_mistake and hu_chose_why_didnt_chase_us_before:
+            "(Inquire) We went there by mistake. We meant no harm!" if not hu_chose_we_went_by_mistake and hu_chose_why_didnt_chase_us_before:
                 $ hu_chose_we_went_by_mistake = True
                 call hu_we_went_by_mistake
                 jump hu_choices_2_2
