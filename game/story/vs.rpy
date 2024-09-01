@@ -36,8 +36,9 @@ label vs_start:
     scene bg Villain
     n "A cold wind swept through the forest as the princess and the hero moved forward, the trees seeming to close in around them. The once-familiar paths now felt foreign and threatening, shrouded in an eerie mist that clung to the ground like a living thing."
     n "The hero's grip tightened on his sword, his breath visible in the sudden chill. The forest was deathly silent, the usual sounds of life replaced by a foreboding stillness."
-    n "Out of the mist, a figure began to take shape, its form shifting and flickering as if it were made of shadows. The air grew colder with each passing second, and a sense of dread settled over the princess and the hero."
+    play music "audio/5 Second Villian 3.mp3" loop volume 1.0 fadein 0.5
     scene bg Villain_far_vs
+    n "Out of the mist, a figure began to take shape, its form shifting and flickering as if it were made of shadows. The air grew colder with each passing second, and a sense of dread settled over the princess and the hero."
     vs "You wander where you are not welcome... the kingdom's taint has stained this place for far too long. I am here to collect what is owed."
    
     if vs_times_gotten == 1: 

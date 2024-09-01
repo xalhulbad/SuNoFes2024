@@ -35,6 +35,8 @@ label start:
 
     pause 1
     # Give time for title screen music to stop
+
+    call hu_start
     
     call tower_start
 

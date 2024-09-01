@@ -38,8 +38,9 @@ label fh_start:
     n "Each rustling leaf and distant creak of branches felt like the forest itself was holding its breath. The princess and hero could see the kingdom now, a sign that they were getting close."
     n "The hero's grip tightened on his sword as they ventured further, his eyes scanning every shadow for signs of movement."
     n "He could feel it-the tension in the air that signaled they were not alone. The princess's thoughts raced as they drew closer and closer to their destination."
-    n "As they pressed forward, a familiar figure stepped out from the shadows. The Fallen Hero's presence was as foreboding as ever, his scarred face a mask of bitterness and fury."
+    play music "audio/5 Second Villian 3.mp3" loop volume 1.0 fadein 0.5
     scene bg Villain_far_fh
+    n "As they pressed forward, a familiar figure stepped out from the shadows. The Fallen Hero's presence was as foreboding as ever, his scarred face a mask of bitterness and fury."
     n "His sword remained sheathed, but the tension in his stance made it clear that any peace was fragile and fleeting."
 
     if fh_times_gotten == 1:

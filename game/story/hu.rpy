@@ -36,8 +36,9 @@ label hu_start:
     n "The princess and hero could see the kingdom now, a sign that they were getting close."
     n "A twig snapped beneath the hero's foot, sending a flock of birds scattering into the sky. The sudden noise only served to heighten the tension between them."
     n "The hero tightened his grip on his sword, scanning the surroundings with a wary gaze. His instincts told him that danger was near, and he wasn't wrong."
-    n "From the shadows, a figure emerged, cloaked in the dark hues of the forest."
+    play music "audio/5 Second Villian 3.mp3" loop volume 1.0 fadein 0.5
     scene bg Villain_far_hu
+    n "From the shadows, a figure emerged, cloaked in the dark hues of the forest."
     n "His presence was as ominous as ever, and the bow in his hand gleamed with a readiness that set both the princess and hero on edge."
     hu "You've ventured deep into the forest again. It seems you haven't learned your lesson."
 
