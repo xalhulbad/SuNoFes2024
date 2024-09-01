@@ -9,6 +9,8 @@ label happily_ever_after:
     pt "In that moment, standing at the edge of the world, I felt a freedom I never knew existed. It was a choice to step into the unknown, to embrace independence and carve out a life that wasn't dictated by the rules."
     pt "I now know that I can be daring, and that I have the courage to face the world on my terms. That strength was always within me, waiting to be realized. Together, the hero and I forged a path that was uniquely ours."
     pt "Even in this quiet moment of reflection, I know that the decisions we made were ours alone. They were born from a place of love, courage, and the desire to live life authentically. That is the greatest lesson of all."
+    
+    window hide
     pause 3
     return
 
@@ -24,6 +26,8 @@ label saved_hero:
     pt "As I cared for his wounds, I realized that I have the power to change the story, to protect and nurture those I care about."
     pt "Now, as I reflect, I know that this journey has reshaped me. I am not just a damsel in distress; I am capable of taking the lead."
     pt "It's not the end of the story, but a new beginning-one where I can be both protector and protected."
+    
+    window hide
     pause 3
     return
 
@@ -39,6 +43,7 @@ label sacrificed_hero:
     pt "As I stand in this emptiness, reflecting on what was lost, I know that his sacrifice has changed me. I bear the weight of his final act, the grief and sorrow of losing someone who meant so much." 
     pt "It's a part of my story now, a reminder of the cost of love and bravery."
 
+    window hide
     pause 3
     return
 
@@ -54,6 +59,7 @@ label sacrificed_princess:
     pt "Now, as I reflect on what happened, I know that this act of selflessness has defined me. It taught me that there is strength in giving, in putting others before myself."
     pt "It's a legacy of courage and sacrifice, a part of me that will endure beyond this moment."
 
+    window hide
     pause 3
     return
 
@@ -69,7 +75,8 @@ label unfulfilled_love:
     pt "It was a love that defied boundaries, but it wasn't enough to change our reality."
     pt "As I reflect on our journey, I understand that defiance is a double-edged sword. We were willing to face the consequences, and now, I must live with the choice we made."
     pt "Our love, though unfulfilled, taught me the power and the limits of defiance."
-
+    
+    window hide
     pause 3
     return
 
@@ -85,6 +92,7 @@ label corrupted_hero:
     pt "Reflecting on this, I understand the importance of restraint, of knowing when to step back and let go of power. His tragedy has taught me the value of being resolved in the face of temptation, to protect not just myself but those around me." 
     pt "It's a painful lesson, but one that will guide me forward."
 
+    window hide
     pause 3
     return
 
@@ -99,6 +107,7 @@ label inherited_throne:
     pt "As I reflect on this new chapter, I understand that leadership is a journey, one that I must undertake with care and dedication."
     pt "The crown is a heavy burden, but it is also a symbol of hope and resilience."
 
+    window hide
     pause 3
     return
 
@@ -113,6 +122,7 @@ label forest_curse:
     pt "As I stand in this emptiness, I understand the gravity of our actions. That place, once filled with beauty, soon became an eternal reminder of our hubris."
     pt "It was a dark, corrupting force, a testament to the consequences of our sins."
 
+    window hide
     pause 3
     return
 
@@ -127,6 +137,7 @@ label forest_protectors:
     pt "As I reflect on this journey, I know that the decision to protect the forest was born from a place of love and understanding. It was a responsibility I never imagined, yet one I wouldn't have traded for anything."
     pt "The role of stewardship was a testament to the power of our choices, a reminder of the beauty we were committed to preserving."
 
+    window hide
     pause 3
     return
 
@@ -142,5 +153,6 @@ label love_beyond_death:
     pt "As I reflect on this choice, I understand the power of love, the strength it gives us to face the unknown. It's a love beyond life, beyond death, a love that is eternal." 
     pt "And that is a comfort, a final, lasting embrace that we carry with us into eternity."
 
+    window hide
     pause 3
     return
