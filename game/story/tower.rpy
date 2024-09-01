@@ -76,12 +76,6 @@ label tower_start:
                     call tower_what_secrets
                     jump tower_choices1
 
-                "(Act) Sleep.": # Progresses the game
-                    $ tower_choices1_seen.remove("(Act) Sleep.") 
-                    # renpy automatically adds this to seen set which we don't want here
-
-                    jump tower_go_to_sleep # No call because we don't want to return
-
 
                 # Choices available after first route completed:
                 "(Thought) I'm back." if routes_completed > 0:
@@ -147,6 +141,13 @@ label tower_start:
                 "(Thought) Why is this happening to us?" if aware_hero_met:
                     call tower_why_is_this_happening
                     jump tower_choices1
+
+                
+                "{b}(Act) Sleep.{/b}": # Progresses the game
+                    $ tower_choices1_seen.remove("{b}(Act) Sleep.{/b}") 
+                    # renpy automatically adds this to seen set which we don't want here
+
+                    jump tower_go_to_sleep # No call because we don't want to return
 
 
         # If we get here then the player did not choose "(Act) Sleep" within 4 choices

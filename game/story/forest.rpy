@@ -81,12 +81,6 @@ label forest_start:
                     call forest_where_are_we_headed
                     jump forest_choices1
 
-                "(Act) Proceed into the forest": # Progresses the game
-                    $ forest_choices1_seen.remove("(Act) Proceed into the forest") 
-                    # renpy automatically adds this to seen set which we don't want here
-
-                    jump forest_proceed_into_forest
-
                 
                 # Choices available after first route completed:
                 "​​(Act) Have we done this before?" if routes_completed > 0:
@@ -112,6 +106,13 @@ label forest_start:
                 "(Act) How many times has this story replayed?" if routes_completed > 1:
                     call forest_how_many_times
                     jump forest_choices1
+
+                
+                "{b}(Act) Proceed into the forest{/b}": # Progresses the game
+                    $ forest_choices1_seen.remove("{b}(Act) Proceed into the forest{/b}") 
+                    # renpy automatically adds this to seen set which we don't want here
+
+                    jump forest_proceed_into_forest
 
 
         # If we get here then the player did not choose "(Act) Proceed into the forest" within 2 choices

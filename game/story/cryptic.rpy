@@ -71,11 +71,6 @@ label cryptic_start:
                     $ cryptic_choices1_seen.remove("(Act) Listen to the whispers of the stones") # We want this to possibly appear for other villain types
                     jump cryptic_choices1
 
-                "(Act) Circle around the stones":
-                    $ cryptic_choices1_seen.remove("(Act) Circle around the stones")
-
-                    jump cryptic_circle_around_stones
-
 
                 # Choices available after first route completed:
                 "(Act) Haven’t we been here before?" if routes_completed > 0:
@@ -119,6 +114,12 @@ label cryptic_start:
                 "(Thought) The air seems heavier with each visit, as if the stones remember." if routes_completed > 1:
                     call cryptic_air_seems_heavier
                     jump cryptic_choices1
+
+                
+                "{b}(Act) Circle around the stones{/b}":
+                    $ cryptic_choices1_seen.remove("{b}(Act) Circle around the stones{/b}")
+
+                    jump cryptic_circle_around_stones
                 
         # If we get here then the player did not choose "(Act) Circle around the stones" within 3 choices
 
