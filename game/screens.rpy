@@ -98,21 +98,60 @@ style frame:
 screen say(who, what):
     style_prefix "say"
 
-    window:
-        id "window"
+    if not renpy.showing("bg blackscreen", "master") or who != "Narrator":
 
-        if who is not None:
+        window:
+            id "window"
 
-            window:
-                id "namebox"
-                style "namebox"
-                text who id "who" color"#AAAAAA" bold True
+            if who is not None:
 
-            text what id "what"
-        
-        else:
+                window:
+                    id "namebox"
+                    style "namebox"
+                    text who id "who" color"#AAAAAA" bold True
+
+                text what id "what"
+            
+            else:
+                text what id "what":
+                    ypos 30
+    
+    else:
+        window:
+            id "window"
+            xalign 0.5
+            xfill True
+            yalign 0.5
+            yfill True
+
+            background None
+
+            # if who is not None:
+
+                # window:
+                #     id "namebox"
+                #     style "namebox"
+                #     xpos 600
+                #     xsize gui.namebox_width
+                #     ypos -400
+                #     ysize gui.namebox_height
+
+                #     text who id "who" color"#AAAAAA" bold True:
+                #         size 180
+
             text what id "what":
-                ypos 30
+                xalign 0.5
+                yalign 0.5
+                size 120
+                xsize 3700
+                text_align 0.5
+            
+            # else:
+            #     text what id "what":
+            #         ypos -150
+            #         xpos 620
+            #         size 150
+            #         xsize 3700
 
 
     ## If there's a side image, display it above the text. Do not display on the

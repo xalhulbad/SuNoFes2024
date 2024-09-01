@@ -36,8 +36,9 @@ label dml_start:
     scene bg Villain
     n "The forest's atmosphere grew heavier as the princess and the hero ventured deeper, an unnatural darkness creeping in from all sides. The air was thick with the stench of decay, and the once vibrant trees were now withered and lifeless."
     n "The hero's hand hovered over his sword, eyes narrowing as the oppressive energy weighed down on them. He could sense it—an evil force lurking nearby, draining the life from everything it touched."
-    n "From the shadows, a figure materialized, cloaked in dark robes that seemed to absorb the light around them. His eyes glowed with a malevolent energy, and a twisted smile spread across his face as he observed the pair."
+    play music "audio/5 Second Villian 3.mp3" loop volume 1.0 fadein 0.5
     scene bg Villain_far_dml
+    n "From the shadows, a figure materialized, cloaked in dark robes that seemed to absorb the light around them. His eyes glowed with a malevolent energy, and a twisted smile spread across his face as he observed the pair."
     dml "Ah, the kingdom's pawns have arrived. Come to witness the grandeur of true power? You're just in time to see the culmination of my work!"
     
     if dml_times_gotten == 1: 

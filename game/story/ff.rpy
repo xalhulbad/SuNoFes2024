@@ -2,7 +2,6 @@
 
 # Default Variables
 
-
 # Flags for unlockable options
 default ff_chose_who_are_you = False
 default ff_chose_why_doing_this = False
@@ -36,8 +35,9 @@ label ff_start:
     scene bg Villain
     n "The air was thick with tension as the princess and the hero moved cautiously through the forest, the trees closing in around them like silent sentinels. There was an unsettling calm, as if the forest itself was holding its breath."
     n "The hero scanned the surroundings with narrowed eyes, every sense on high alert. He could feel it—a presence watching them, waiting for the right moment to strike."
-    n "From the shadows, a figure emerged with a graceful, almost seductive stride. Her eyes glinted with a dangerous intelligence, and a sly smile played on her lips as she sized up the pair."
+    play music "audio/5 Second Villian 3.mp3" loop volume 1.0 fadein 0.5
     scene bg Villain_far_ff
+    n "From the shadows, a figure emerged with a graceful, almost seductive stride. Her eyes glinted with a dangerous intelligence, and a sly smile played on her lips as she sized up the pair."
     ff "Well, well, what do we have here? The princess and her brave protector, still so far from the safety of the kingdom. How... intriguing."
   
     if ff_times_gotten == 1: 
