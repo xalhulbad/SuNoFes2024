@@ -7,10 +7,10 @@ label aware_hero:
 
     scene bg blackscreen with Dissolve(1.0)
 
-    h "Deja vu."
+    ah "Deja vu."
     play music "audio/6 The Aware Hero 4.mp3"
     
-    h "ITS BEEN SO LONG SINCE I LAST HAVE SEEN MY SON"
+    ah "ITS BEEN SO LONG SINCE I LAST HAVE SEEN MY SON"
 
     if aware_hero_number == 1:
         jump aware_hero_first
