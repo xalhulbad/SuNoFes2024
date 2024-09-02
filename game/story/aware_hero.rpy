@@ -24,16 +24,20 @@ label aware_hero:
 
 label aware_hero_first:
     $ aware_hero_met = True
+    stop music fadeout 1.5
     return
 
 label aware_hero_second:
+    stop music fadeout 1.5
     return
 
 label aware_hero_third:
+    stop music fadeout 1.5
     return
 
 label aware_hero_fourth:
     $ game_done = True
+    stop music fadeout 1.5
     return
 
 label aware_hero_route:
@@ -68,3 +72,4 @@ label aware_hero_route:
 
     # Second Villain Encounter
     call second_villain_start
+    return
