@@ -43,6 +43,8 @@ label start:
 
     call credits
 
+    call true_ending_monologue
+
     while not game_done:
 
         if routes_completed + 1 in aware_hero_routes: # Aware hero route
@@ -84,6 +86,7 @@ label credits:
     with dissolve
     with Pause(3)
     hide theend
+    play music "audio/Credits - Credits 1.mp3" loop volume 1.0 fadein 0.5
     show cred at Move((0.5, 7.1), (0.5, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
     with Pause(credits_speed)
     show thanks:
@@ -92,6 +95,9 @@ label credits:
     with dissolve
     with Pause(3)
     hide thanks
+    stop music fadeout 0.5
+    pause 0.5
+    scene bg blackscreen
     return
 
 init python:
