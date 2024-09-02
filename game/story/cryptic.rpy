@@ -226,7 +226,7 @@ label cryptic_start:
         menu:
             "(Act) Examine the glowing gem":
                 n "As the princess examined the glowing gem, its radiant light seemed to draw her in, pulsing with a mysterious energy that hinted at the power it contained."
-                n "The gem lay cradled atop the pillar, its glow casting intricate patterns on the stone circle around them."
+                n "The gem lay cradled atop the rubble, its glow casting intricate patterns on the stone circle around them."
                 p "This gem is filled with destructive magic, the kind that we could use in case of any danger. But if we take it, we risk banishment from the kingdom forever."
                 h "It's true. The kingdom has outlawed magic for generations, fearing its power. Taking it could mean leaving behind everything we've ever known."
                 p "Yet, this power could be exactly what we need to defend ourselves, especially if we encounter the shadowy figure again."
@@ -275,13 +275,14 @@ label cryptic_start:
         n "The forest seemed to hold its breath, the rustle of leaves and the song of the wind fading into a stillness that focused all attention on the stones." 
         n "The engravings shimmered subtly, drawing the princess further into their spell, urging her to delve deeper."
         scene bg Cryptic with dissolve
-        
+
         $ stone_gravings_examined = True
         
         return
 
     label cryptic_try_to_decipher:
         if can_decipher_runes:
+            scene bg Cryptic_Touching with dissolve
             n "As the princess focused on the runes, a warm glow enveloped the engravings. The symbols, once mysterious and cryptic, now seemed to unravel their secrets before her eyes, forming words and phrases in her mind."
             n "It was as though the stones themselves had awakened, eager to share their long-forgotten tale."
             p "Look at this, these runes... I can understand them. They're telling a story of what this place once was."
@@ -299,6 +300,7 @@ label cryptic_start:
             h "Agreed. Many outcasts of the kingdom continue to exploit this destructive magic for their own selfish gains. That must be why the stones remain in the state they're in today."
             n "The final runes glowed softly, a gentle reminder of the circle's former glory. As the glow of the runes faded, the princess felt a newfound resolve settle within her."
             n "The stones had shared their story, and now it was up to her and the hero to ensure that the lessons of the past were not forgotten."
+            scene bg Cryptic with dissolve
         else:
             scene bg Cryptic_Touching with dissolve
             n "The princess approached the stone, running her fingers over the intricate engravings. The runes seemed to shimmer and shift beneath her touch, whispering secrets in a language just beyond her comprehension."
@@ -391,7 +393,7 @@ label cryptic_start:
         n "The princess hesitated, her hand hovering above the gem as she contemplated the weight of its potential. Despite its allure, she felt the heavy burden of the kingdom's laws and the consequences of defying them."
         p "No. The risk is too great. If we use this magic, we may never be welcomed back into the kingdom."
         h "Perhaps you're right. Even with the threat of danger, we can find another way. Magic isn't the only path to victory."
-        n "She stepped back from the pillar, the gem's glow dimming as she relinquished the promise of power. Her heart ached with the decision, but she knew it was the right one for her and for her future."
+        n "She stepped back from the rubble, the gem's glow dimming as she relinquished the promise of power. Her heart ached with the decision, but she knew it was the right one for her and for her future."
         p "We should be able to get back to the kingdom without magic. Even if we encounter the shadowy figure again, we don't need magic to defeat them."
         h "True. If we survive without magic, we'll have no regrets. The kingdom will see our strength, and that might be its own reward."
         n "As they turned away from the gem, a cold, still silence settled over the clearing. The air grew heavy, the forest's quiet discontent noticeable, as though it mourned the loss of a connection that could have been."
