@@ -45,31 +45,31 @@ label start:
 
     call true_ending_monologue
 
-    while not game_done:
+    # while not game_done:
 
-        if routes_completed + 1 in aware_hero_routes: # Aware hero route
-            call aware_hero_route
+    #     if routes_completed + 1 in aware_hero_routes: # Aware hero route
+    #         call aware_hero_route
 
-        else: # Not aware hero route
+    #     else: # Not aware hero route
 
-            # Tower
-            call tower_start
+    #         # Tower
+    #         call tower_start
 
-            # Forest (and first villain encounter)
-            call forest_start
+    #         # Forest (and first villain encounter)
+    #         call forest_start
             
-            # Cryptic Stonehenge
-            call cryptic_start
+    #         # Cryptic Stonehenge
+    #         call cryptic_start
 
-            # Meadow
-            call meadow_start
+    #         # Meadow
+    #         call meadow_start
 
-            # Second Villain Encounter
-            call second_villain_start
+    #         # Second Villain Encounter
+    #         call second_villain_start
 
-        $ routes_completed += 1
+    #     $ routes_completed += 1
 
-    call credits
+    # call credits
 
     # This ends the game.
     return
@@ -87,7 +87,7 @@ label credits:
     with Pause(3)
     hide theend
     play music "audio/Credits - Credits 1.mp3" loop volume 1.0 fadein 0.5
-    show cred at Move((0.5, 7.1), (0.5, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
+    show cred at Move((0.5, 10.85), (0.5, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
     with Pause(credits_speed)
     show thanks:
         yanchor 0.5 ypos 0.5
@@ -95,13 +95,13 @@ label credits:
     with dissolve
     with Pause(3)
     hide thanks
-    stop music fadeout 0.5
-    pause 0.5
+    stop music fadeout 1.5
+    pause 1.5
     scene bg blackscreen
     return
 
 init python:
-    credits = ('Backgrounds', 'Airgoof'), ('Backgrounds', 'Dorktwerp'), ('Sprites and CG', 'Ballclown'), ('GUI', 'Cuddlywad'), ('Writing', 'Dorktwerp'), ('Writing', 'Fingerpookie'), ('Programming', 'Dorktwerp'), ('Music', 'Grumblemuck'), ('Music', 'Headwookum')
+    credits = ('Lead Designer', 'William Liu'), ('Lead Programmer', 'Abdullah Safi'), ('Developer', 'Hamin Lee'), ('Character Artist', 'William Liu'), ('Environment Artist', 'Sion'), ('UI/UX Designers', 'William Liu'), ('UI/UX Designers', 'Hamin Lee'), ('Story Writers', 'Abdullah Safi'), ('Story Writers', 'Ben Ni'), ('Story Writers', 'William Liu'), ('Composer', 'Kyle Sung'), ('Special Thanks', 'Storytime')
     credits_s = "{size=160}Credits\n\n"
     c1 = ''
     for c in credits:
@@ -115,6 +115,10 @@ init python:
     
     credits_s += "\n\n\n\n\n\n\n\n\n"
     credits_s += "\n{size=80}Engine\n{size=120}" + renpy.version()
+    credits_s += "\n\n\n\n\n\n\n\n\n"
+    credits_s += "\n{size=80}Play by Play Games\n"
+    credits_s += "\n\n\n\n\n\n\n\n\n"
+    credits_s += "\n{size=80}With Love\n"
     
 init:
 #    image cred = Text(credits_s, font="myfont.ttf", text_align=0.5) #use this if you want to use special fonts
