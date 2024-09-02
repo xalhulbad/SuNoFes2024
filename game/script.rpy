@@ -41,7 +41,6 @@ image main_menu_animated:
     "gui/main_menu_design2.png"
     pause 0.55
     repeat
-    
 
 # The game starts here.
 label start:
@@ -123,6 +122,7 @@ label credits:
     return
 
 init python:
+    preferences.set_mixer("sfx", 0.8)
     credits = ('Lead Designer', 'William Liu'), ('Lead Programmer', 'Abdullah Safi'), ('Developer', 'Hamin Lee'), ('Character Artist', 'William Liu'), ('Environment Artist', 'Sion'), ('UI/UX Designers', 'William Liu'), ('UI/UX Designers', 'Hamin Lee'), ('Story Writers', 'Abdullah Safi'), ('Story Writers', 'Ben Ni'), ('Story Writers', 'William Liu'), ('Composer', 'Kyle Sung'), ('Special Thanks', 'Storytime')
     credits_s = "{size=160}Credits"
     c1 = ''
