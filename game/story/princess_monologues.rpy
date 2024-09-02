@@ -230,7 +230,7 @@ label repeat_ending:
     pause 3
     return
 
-label true_ending:
+label true_ending_monologue:
     p "I once thought being a princess meant helplessness." 
 
     p "Patiently awaiting a rescue."
