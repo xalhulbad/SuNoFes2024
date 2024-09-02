@@ -1,6 +1,24 @@
 # Contains the code associated with all of the princess monologues for after route endings.
 
+# Default variables
+default got_happily_ever_after = False
+default got_saved_hero = False
+default got_sacrificed_hero = False
+default got_sacrificed_princess = False
+default got_unfulfilled_love = False
+default got_corrupted_hero = False
+default got_inherited_throne = False
+default got_forest_curse = False
+default got_forest_protectors = False
+default got_love_beyond_death = False
+
+
 label happily_ever_after:
+    if got_happily_ever_after:
+        jump repeat_ending
+
+    $ got_happily_ever_after = True
+
     stop music fadeout 0.5
     pause 0.5
     
@@ -15,6 +33,11 @@ label happily_ever_after:
     return
 
 label saved_hero:
+    if got_saved_hero:
+        jump repeat_ending
+
+    $ got_saved_hero = True
+
     stop music fadeout 0.5
     pause 0.5
 
@@ -32,6 +55,11 @@ label saved_hero:
     return
 
 label sacrificed_hero:
+    if got_sacrificed_hero:
+        jump repeat_ending
+
+    $ got_sacrificed_hero = True
+
     stop music fadeout 0.5
     pause 0.5
 
@@ -48,6 +76,11 @@ label sacrificed_hero:
     return
 
 label sacrificed_princess:
+    if got_sacrificed_princess:
+        jump repeat_ending
+
+    $ got_sacrificed_princess = True
+
     stop music fadeout 0.5
     pause 0.5
 
@@ -64,6 +97,11 @@ label sacrificed_princess:
     return
 
 label unfulfilled_love:
+    if got_unfulfilled_love:
+        jump repeat_ending
+
+    $ got_unfulfilled_love = True
+
     stop music fadeout 0.5
     pause 0.5
 
@@ -81,6 +119,11 @@ label unfulfilled_love:
     return
 
 label corrupted_hero:
+    if got_corrupted_hero:
+        jump repeat_ending
+
+    $ got_corrupted_hero = True
+
     stop music fadeout 0.5
     pause 0.5
 
@@ -97,6 +140,11 @@ label corrupted_hero:
     return
 
 label inherited_throne:
+    if got_inherited_throne:
+        jump repeat_ending
+
+    $ got_inherited_throne = True
+
     stop music fadeout 0.5
     pause 0.5
 
@@ -112,6 +160,11 @@ label inherited_throne:
     return
 
 label forest_curse:
+    if got_forest_curse:
+        jump repeat_ending
+
+    $ got_forest_curse = True
+
     stop music fadeout 0.5
     pause 0.5
 
@@ -127,6 +180,11 @@ label forest_curse:
     return
 
 label forest_protectors:
+    if got_forest_protectors:
+        jump repeat_ending
+
+    $ got_forest_protectors = True
+
     stop music fadeout 0.5
     pause 0.5
 
@@ -142,6 +200,11 @@ label forest_protectors:
     return
 
 label love_beyond_death:
+    if got_love_beyond_death:
+        jump repeat_ending
+
+    $ got_love_beyond_death = True
+
     stop music fadeout 0.5
     pause 0.5
 
@@ -152,6 +215,16 @@ label love_beyond_death:
     pt "In death, we found a peace that life denied us. Knowing that we could be together, even in the afterlife, brings a sense of completion and fulfillment that we never found in life."
     pt "As I reflect on this choice, I understand the power of love, the strength it gives us to face the unknown. It's a love beyond life, beyond death, a love that is eternal." 
     pt "And that is a comfort, a final, lasting embrace that we carry with us into eternity."
+
+    window hide
+    pause 3
+    return
+
+label repeat_ending:
+    stop music fadeout 0.5
+    pause 0.5
+
+    pt "Haven't we been here before?"
 
     window hide
     pause 3
