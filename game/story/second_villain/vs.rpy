@@ -39,7 +39,7 @@ label vs_start:
     n "A cold wind swept through the forest as the princess and the hero moved forward, the trees seeming to close in around them. The once-familiar paths now felt foreign and threatening, shrouded in an eerie mist that clung to the ground like a living thing."
     n "The hero's grip tightened on his sword, his breath visible in the sudden chill. The forest was deathly silent, the usual sounds of life replaced by a foreboding stillness."
     play music "audio/5 Second Villian 3.mp3" loop volume 1.0 fadein 0.5
-    scene bg Villain_far_vs
+    scene bg villain_far_vs
     n "Out of the mist, a figure began to take shape, its form shifting and flickering as if it were made of shadows. The air grew colder with each passing second, and a sense of dread settled over the princess and the hero."
     vs "You wander where you are not welcome... the kingdom's taint has stained this place for far too long. I am here to collect what is owed."
    
@@ -153,13 +153,13 @@ label vs_start:
         menu:
             "(Act) Have the hero strike first":
                 n "The hero stepped forward without hesitation, raising his sword high. His eyes locked onto the shifting form of the Vengeful Spirit, ready to strike."
-                scene bg Villain_hero_sword_facing_far_vs
+                scene bg villain_hero_sword_facing_far_vs
                 p "Now, hero! We have to take it down before it gathers more strength!"
                 n "With a swift motion, the hero lunged, his blade slicing through the misty form. But the spirit's laughter echoed, chilling and distorted."
-                scene bg Villain_hero_charging_far_vs
+                scene bg villain_hero_charging_far_vs
                 vs "You think mere steel can harm me? I am bound to the forest, woven into its very essence."
                 n "The hero's strike passed through the spirit harmlessly, leaving only a faint shimmer where it had been. The princess's heart sank as she realized this foe would require more than brute strength."
-                scene bg Villain_far_vs
+                scene bg villain_far_vs
 
                 jump vs_choices_3_1
             "(Act) Confront it with the truth of the kingdom's wrongdoings":
@@ -327,10 +327,10 @@ label vs_start:
         menu:
             "(Act) Try to overpower it with sheer force":
                 n "The hero gritted his teeth and charged again, this time putting all his strength behind the swing. The blade cut through the air with a forceful whoosh."
-                scene bg Villain_hero_charging_far_vs
+                scene bg villain_hero_charging_far_vs
                 p "Don't hold back! We have to force it into submission!"
                 n "The Vengeful Spirit flickered, its form barely shifting as the blade passed through it once more. A mocking laugh echoed from every direction."
-                scene bg Villain_far_vs
+                scene bg villain_far_vs
                 vs "Futile. You struggle against what cannot be touched by mortal hands. The forest's wrath is intangible-its vengeance eternal."
                 n "The hero staggered back, his determination clear but his effort wasted. The princess realized that brute strength alone would never be enough against something so otherworldly."
 
@@ -339,7 +339,7 @@ label vs_start:
                 n "The princess's mind raced as she formulated a quick plan. Her eyes locked onto the hero, and she signaled with a sharp nod."
                 p "Distract it-keep it focused on you! I'll find an opening!"
                 n "The hero understood immediately, charging at the spirit with fierce determination. His sword flashed in the dim light, each swing calculated to keep the spirit occupied."
-                scene bg Villain_hero_charging_far_vs
+                scene bg villain_hero_charging_far_vs
                 vs "You believe distraction will save you? Your tricks are meaningless against the forest's judgment."
                 n "While the spirit was preoccupied with the hero's relentless assault, the princess waited for the perfect moment to strike."
 
@@ -419,9 +419,9 @@ label vs_start:
             "(Act) Exploit its moment of weakness" if not chose_magic:
                 n "The princess watched the spirit carefully, searching for any hint of vulnerability in its shifting form. Her eyes locked onto a small, pulsating core within the swirling shadows-a fragment of the spirit that seemed more tangible than the rest."
                 p "There-that's where we need to strike! Aim for the core while it's exposed!"
-                scene bg Villain_hero_charging_far_vs
+                scene bg villain_hero_charging_far_vs
                 n "The hero focused his attention on the faintly glowing spot, his movements swift and precise as he lunged forward. His blade passed through the shadows harmlessly until it connected with the core, sending a shockwave through the air."
-                scene bg Villain_far_vs
+                scene bg villain_far_vs
                 vs "You dare strike at the heart of my rage? Foolish, fragile beings!"
                 n "Though the attack landed, the spirit's wrath only seemed to intensify, its form recoiling before lashing out with renewed fury."
 
@@ -440,7 +440,7 @@ label vs_start:
         menu:
             "(Act) Prepare to strike while it's focused on the hero":
                 n "The princess signaled to the hero, urging him to draw the spirit's attention entirely toward himself. The hero charged forward, shouting a challenge as he swung his sword in wide, intimidating arcs."
-                scene bg Villain_hero_charging_far_vs
+                scene bg villain_hero_charging_far_vs
                 p "Keep it focused on you-don't let it see what I'm planning!"
                 n "While the spirit fixated on the hero, the princess moved swiftly, circling around until she found an angle where the spirit's core was exposed."
                 vs "My vengeance will be swift!"
@@ -451,7 +451,7 @@ label vs_start:
                 n "The princess devised a plan that relied on quick thinking and deception. She signaled for the hero to appear off-balance, feigning exhaustion as they took a few steps back."
                 p "Pretend like you're struggling-make it think it has the upper hand."
                 n "The hero played his role well, his breathing heavy as he stumbled back, appearing vulnerable and open to attack. The spirit's form surged forward, eager to capitalize on the apparent weakness."
-                scene bg Villain_hero_sword_facing_far_vs
+                scene bg villain_hero_sword_facing_far_vs
                 vs "The forest's vengeance is relentless-you cannot escape it, no matter how you falter."
                 n "But just as the spirit moved in for what it thought was an easy victory, the princess darted in from the side, aiming a strike directly at the core hidden within the swirling darkness."
 
@@ -598,7 +598,7 @@ label vs_start:
                 n "The princess's eyes narrowed as she spotted the faint core within the spirit's swirling shadows. It was a fleeting opening-one they couldn't afford to miss."
                 p "Now, hero! Strike at its heart!"
                 n "The hero's grip tightened on his sword as he charged, channeling all his strength into one decisive blow. His blade cut through the air, connecting with the spirit's core, sending shockwaves rippling through the clearing."
-                scene bg Villain_hero_charging_far_vs
+                scene bg villain_hero_charging_far_vs
                 vs "You dare...!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
@@ -615,7 +615,7 @@ label vs_start:
                 n "The hero squared his shoulders, determination burning in his eyes as he prepared for one final attack. The princess watched, her heart pounding with both hope and fear."
                 p "You can do this! I know you can-just one more strike!"
                 n "The hero charged forward, aiming for the spirit's core, but the shadows swirled violently, deflecting his blow. His sword barely grazed the spirit as it retaliated with a surge of dark energy."
-                scene bg Villain_hero_charging_far_vs
+                scene bg villain_hero_charging_far_vs
                 vs "Your courage is commendable, but it is futile. The forest's vengeance cannot be quelled by a mere mortal!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero

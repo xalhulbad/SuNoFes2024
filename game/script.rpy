@@ -19,13 +19,13 @@ default fh_times_gotten = 0
 define aware_hero_routes = [3, 6, 8, 9]
 
 # Background images
-image bg blackscreen = "bg blackscreen.png"
-image bg Tower = "bg Tower.png"
-image bg Forest1 = "bg Forest1.png"
-image bg Forest2 = "bg Forest2.png"
-image bg Cryptic = "bg Cryptic.png"
-image bg Villain = "bg Villain.png"
-image bg Meadow = "bg Meadow.jpeg"
+image bg blackscreen = "base_backgrounds/bg blackscreen.png"
+image bg Tower = "base_backgrounds/bg Tower.png"
+image bg Forest1 = "base_backgrounds/bg Forest1.png"
+image bg Forest2 = "base_backgrounds/bg Forest2.png"
+image bg Cryptic = "base_backgrounds/bg Cryptic.png"
+image bg Villain = "base_backgrounds/bg Villain.png"
+image bg Meadow = "base_backgrounds/bg Meadow.jpeg"
 
 
 # The game starts here.

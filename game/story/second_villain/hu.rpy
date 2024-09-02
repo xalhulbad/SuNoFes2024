@@ -39,7 +39,7 @@ label hu_start:
     n "A twig snapped beneath the hero's foot, sending a flock of birds scattering into the sky. The sudden noise only served to heighten the tension between them."
     n "The hero tightened his grip on his sword, scanning the surroundings with a wary gaze. His instincts told him that danger was near, and he wasn't wrong."
     play music "audio/5 Second Villian 3.mp3" loop volume 1.0 fadein 0.5
-    scene bg Villain_far_hu
+    scene bg villain_far_hu
     n "From the shadows, a figure emerged, cloaked in the dark hues of the forest."
     n "His presence was as ominous as ever, and the bow in his hand gleamed with a readiness that set both the princess and hero on edge."
     hu "You've ventured deep into the forest again. It seems you haven't learned your lesson."
@@ -54,7 +54,7 @@ label hu_start:
         pt "Let's just get this over with."
 
     n "The Hunter stepped closer, his movements deliberate and precise. The hero instinctively moved to place himself between the princess and The Hunter, ready to defend her with his life."
-    scene bg Villain_hero_facing_far_hu
+    scene bg villain_hero_facing_far_hu
     h "Stay back, princess. We won't back down, but we don't want to fight."
     hu "How predictable. But the forest demands respect, and you are trespassing. Prepare yourselves-your choices have consequences."
 
@@ -66,7 +66,7 @@ label hu_start:
         menu:
             "(Act) Tell hero to brandish sword":
                 n "The princess signaled the hero, who drew his sword with a swift motion. The blade caught the moonlight, its sharp edge glinting dangerously."
-                scene bg Villain_hero_sword_facing_far_hu
+                scene bg villain_hero_sword_facing_far_hu
                 p "Stay sharp. He's not someone we can take lightly."
                 h "Understood. I'll follow your lead."
 
@@ -150,11 +150,11 @@ label hu_start:
                 n "The hero tightened his grip on the sword, heart pounding as he prepared to rush forward."
                 p "Go for it! We'll create an opening!"
                 n "With a fierce cry, the hero charged at The Hunter."
-                scene bg Villain_hero_charging_far_hu
+                scene bg villain_hero_charging_far_hu
                 n "But as he closed in, The Hunter moved with inhuman speed, dodging the strike effortlessly. The hero's momentum carried him forward, causing him to stumble."
                 n "Before he could recover, The Hunter struck, sweeping the hero's legs out from under him and sending him crashing to the ground."
                 hu "Predictable."
-                scene bg Villain_hero_sword_facing_far_hu
+                scene bg villain_hero_sword_facing_far_hu
                 n "The Hunter's voice was a cold whisper, almost mocking. However, the hero quickly rolled back to his feet, gritting his teeth as he prepared for another attempt."
                 n "The princess remained alert, scanning the surroundings for a way to turn the tide."
 
@@ -326,10 +326,10 @@ label hu_start:
                 n "The princess saw an opening and urged the hero forward."
                 p "Focus! One clean strike!"
                 n "The hero adjusted his grip, aiming for a precise blow to disarm The Hunter. But as the sword arced towards its mark, The Hunter's reflexes kicked in. He twisted away, the sword grazing his cloak but finding no flesh."
-                scene bg Villain_hero_charging_close_hu
+                scene bg villain_hero_charging_close_hu
                 hu "Precision means nothing without timing."
                 n "The hero cursed under his breath, realizing the gap in their skill." 
-                scene bg Villain_hero_sword_facing_far_hu
+                scene bg villain_hero_sword_facing_far_hu
                 n "The Hunter's counterattack was swift and decisive, leaving them once again on the defensive."
                 
                 jump hu_choices_4_1
@@ -338,7 +338,7 @@ label hu_start:
                 n "The princess's eyes darted around the forest, searching for anything that could turn the tide."
                 p "Use the trees! We need to get creative here."
                 n "The hero took the hint, weaving between the thick trunks, trying to bait The Hunter into a disadvantage."
-                scene bg Villain_far_hu
+                scene bg villain_far_hu
                 n "The Hunter's gaze followed every move, unblinking and relentless. A snapped branch underfoot caused The Hunter to tense, his bow drawn with alarming speed."
                 hu "The forest is mine, not yours."
                 n "The words were barely spoken before an arrow streaked toward the hero. He narrowly dodged it, but it was clear-The Hunter's awareness of the terrain was far superior."
@@ -350,10 +350,10 @@ label hu_start:
         menu:
             "(Act) Shoot an arrow":
                 n "The princess nodded at the hero, and he swiftly readied an arrow. He pulled the bowstring taut, eyes focused on The Hunter."
-                scene bg Villain_hero_bow_aiming_far_hu
+                scene bg villain_hero_bow_aiming_far_hu
                 p "Aim true. We can't afford to miss."
                 n "The hero loosed the arrow, but The Hunter moved like a shadow, evading the shot with barely a shift in his posture. The arrow embedded itself uselessly into a tree."
-                scene bg Villain_hero_facing_far_hu
+                scene bg villain_hero_facing_far_hu
                 hu "You'll have to do better than that."
                 n "The Hunter remained poised, eyes cold and unreadable. The princess's mind raced-she knew they couldn't afford many more misses. What would be their next move?"
 
@@ -423,10 +423,10 @@ label hu_start:
         menu:
             "(Act) Disarm The Hunter":
                 n "The hero lunged forward with renewed determination, aiming to knock the bow from The Hunter's grasp."
-                scene bg Villain_hero_charging_far_hu
+                scene bg villain_hero_charging_far_hu
                 n "The clash of movements was swift, but the hero ultimately lost his sword in the struggle."
                 p "No!"
-                scene bg Villain_hero_facing_close_hu
+                scene bg villain_hero_facing_close_hu
                 n "The princess's heart raced as she watched The Hunter stare the hero down, his eyes cold and focused."
                 n "Without his weapon, the hero would not be able to stand up to The Hunter. The situation was dire-the next decision would have to be quick and decisive."
 
@@ -435,7 +435,7 @@ label hu_start:
             "(Act) Strike and retreat":
                 n "The princess and hero exchanged a glance-the situation was too dangerous for a prolonged fight. The hero shifted his stance, preparing to make one decisive strike before they made their escape."
                 p "We can't keep this up. Strike now and pull back!"
-                scene bg Villain_hero_charging_far_hu
+                scene bg villain_hero_charging_far_hu
                 n "With a swift motion, the hero aimed a powerful blow at The Hunter, intending to create just enough distance to flee." 
                 n "The Hunter's eyes flashed as he parried, but the hero's follow-up attack came swiftly. The princess prepared herself-the window to escape was small, and they had to act fast."
 
@@ -465,7 +465,7 @@ label hu_start:
         menu:
             "(Act) Nock another arrow":
                 n "The hero quickly reached for another arrow, his focus narrowing on The Hunter. He knew the next shot had to be perfect-any hesitation could cost them."
-                scene bg Villain_hero_bow_aiming_far_hu
+                scene bg villain_hero_bow_aiming_far_hu
                 p "Be quick-he's already preparing!"
                 n "The Hunter's speed was unreal. Before the hero could even draw back his bowstring, The Hunter had already notched an arrow of his own." 
                 n "Both sides were poised to strike, eyes locked in a deadly standoff. The princess felt her pulse quicken-who would be first to release?"
@@ -474,10 +474,10 @@ label hu_start:
 
             "(Act) Switch to a different tactic":
                 p "We need to change our approach! Go in close!"
-                scene bg Villain_hero_sword_facing_far_hu
+                scene bg villain_hero_sword_facing_far_hu
                 h "Got it-cover me!"
                 n "The hero charged in, sword drawn, attempting to engage The Hunter in melee combat. The princess stayed back, watching for an opening."
-                scene bg Villain_hero_charging_far_hu
+                scene bg villain_hero_charging_far_hu
                 n "The Hunter's eyes gleamed-he recognized the shift in their tactics and adjusted his stance, ready for the close-quarters battle that was about to begin."
 
                 jump hu_choices_5_6
