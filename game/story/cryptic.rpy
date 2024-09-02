@@ -225,6 +225,7 @@ label cryptic_start:
         p "Perhaps. It feels like it's alive, humming with power. We need to take a closer look."
         menu:
             "(Act) Examine the glowing gem":
+                scene bg Cryptic_Touching with dissolve
                 n "As the princess examined the glowing gem, its radiant light seemed to draw her in, pulsing with a mysterious energy that hinted at the power it contained."
                 n "The gem lay cradled atop the rubble, its glow casting intricate patterns on the stone circle around them."
                 p "This gem is filled with destructive magic, the kind that we could use in case of any danger. But if we take it, we risk banishment from the kingdom forever."
@@ -393,6 +394,7 @@ label cryptic_start:
         n "The princess hesitated, her hand hovering above the gem as she contemplated the weight of its potential. Despite its allure, she felt the heavy burden of the kingdom's laws and the consequences of defying them."
         p "No. The risk is too great. If we use this magic, we may never be welcomed back into the kingdom."
         h "Perhaps you're right. Even with the threat of danger, we can find another way. Magic isn't the only path to victory."
+        scene bg Cryptic with dissolve
         n "She stepped back from the rubble, the gem's glow dimming as she relinquished the promise of power. Her heart ached with the decision, but she knew it was the right one for her and for her future."
         p "We should be able to get back to the kingdom without magic. Even if we encounter the shadowy figure again, we don't need magic to defeat them."
         h "True. If we survive without magic, we'll have no regrets. The kingdom will see our strength, and that might be its own reward."
