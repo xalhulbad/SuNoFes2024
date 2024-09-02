@@ -35,3 +35,36 @@ label aware_hero_third:
 label aware_hero_fourth:
     $ game_done = True
     return
+
+label aware_hero_route:
+    
+    # Tower
+    call tower_start
+
+
+    # Forest (and first villain encounter)
+    call forest_start
+
+    if renpy.random.randint(1, 10) <= 2: # 2/10 chance to trigger aware hero
+        call aware_hero
+        return
+    
+
+    # Cryptic Stonehenge
+    call cryptic_start
+
+    if renpy.random.randint(1, 10) <= 4: # 4/10 chance to trigger aware hero
+        call aware_hero
+        return
+
+
+    # Meadow
+    call meadow_start
+
+    if renpy.random.randint(1, 10) <= 7: # 7/10 chance to trigger aware hero
+        call aware_hero
+        return
+
+
+    # Second Villain Encounter
+    call second_villain_start

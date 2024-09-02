@@ -4,7 +4,7 @@
 define config.choice_empty_window = extend
 
 # Default variables
-default routes_completed = 0
+default routes_completed = 2
 default aware_hero_met = False
 default romance = 50
 default chose_magic = None
@@ -41,40 +41,28 @@ label start:
 
     while not game_done:
 
-        # Tower
-        call tower_start
+        if routes_completed + 1 in aware_hero_routes: # Aware hero route
+            call aware_hero_route
 
+        else: # Not aware hero route
 
-        # Forest (and first villain encounter)
-        call forest_start
+            # Tower
+            call tower_start
 
-        if routes_completed + 1 in aware_hero_routes: # 2/10 chance to trigger aware hero
-            if renpy.random.randint(1, 10) <= 2:
-                call aware_hero
-        
+            # Forest (and first villain encounter)
+            call forest_start
+            
+            # Cryptic Stonehenge
+            call cryptic_start
 
-        # Cryptic Stonehenge
-        call cryptic_start
+            # Meadow
+            call meadow_start
 
-        if routes_completed + 1 in aware_hero_routes: # 4/10 chance to trigger aware hero
-            if renpy.random.randint(1, 10) <= 4:
-                call aware_hero
-
-
-        # Meadow
-        call meadow_start
-
-        if routes_completed + 1 in aware_hero_routes: # 7/10 chance to trigger aware hero
-            if renpy.random.randint(1, 10) <= 7:
-                call aware_hero
-
-
-        # Second Villain Encounter
-        call second_villain_start
-
+            # Second Villain Encounter
+            call second_villain_start
 
         $ routes_completed += 1
-    
+
 
     # This ends the game.
     return
