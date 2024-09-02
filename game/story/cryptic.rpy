@@ -38,7 +38,7 @@ label cryptic_start:
     $ cryptic_choices1_chosen = 0
 
     label cryptic_choices1:
-        while cryptic_choices1_chosen < 3:
+        while cryptic_choices1_chosen < 2: # Stop after 2 choices have been chosen
             $ cryptic_choices1_chosen += 1
 
             menu:

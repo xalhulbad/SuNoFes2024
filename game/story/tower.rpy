@@ -28,7 +28,7 @@ label tower_start:
     $ tower_choices1_chosen = 0
 
     label tower_choices1: # First tower choice
-        while tower_choices1_chosen < 4: # Stop after 4 choices have been chosen
+        while tower_choices1_chosen < 3: # Stop after 3 choices have been chosen
             $ tower_choices1_chosen += 1
 
             menu: 

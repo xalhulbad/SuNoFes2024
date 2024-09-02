@@ -16,7 +16,7 @@ default vs_times_gotten = 0
 default dml_times_gotten = 0
 default fh_times_gotten = 0
 
-define aware_hero_routes = [3, 6, 8, 9]
+define aware_hero_routes = [3, 6, 8]
 
 # Background images
 image bg blackscreen = "base_backgrounds/bg blackscreen.png"
