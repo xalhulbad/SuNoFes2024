@@ -10,6 +10,7 @@ default romance = 50
 default chose_magic = None
 default game_done = False
 
+default v_type = None # Variable used for revealing villain type
 default hu_times_gotten = 0
 default ff_times_gotten = 0
 default vs_times_gotten = 0
