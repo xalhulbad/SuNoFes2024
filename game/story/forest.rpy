@@ -40,8 +40,8 @@ label forest_start:
         pt "But with beauty comes pains. The pain of being trapped."
         pt "When will this end?"
 
+    scene bg forest1_hero with dissolve
     h "Let's go. The world is waiting for your return!"
-    n "Hand in hand, they stepped into the clearing, ready to face the forest and their journey ahead."
 
     $ forest_choices1_chosen = 0
 
