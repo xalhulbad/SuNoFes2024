@@ -1171,12 +1171,11 @@ label hu_start:
             "(Act) Strike while he has his guard down":
                 n "The princess and hero exchanged a subtle glance, knowing this was their moment to strike. The Hunter, lulled into a false sense of security, had let his guard down."
                 p "Now, while he's distracted!"
+                if routes_completed + 1 in aware_hero_routes:
+                scene bg blackscreen
                 n "The hero moved swiftly, his blade flashing in the dim light of the forest. The strike landed true, mortally wounding The Hunter."
                 n "But with his dying breath, The Hunter pulled an arrow from his quiver, aiming it at the princess."
-                hu "If I go down, you're coming with me..."
-                if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
                 n "The hero, seeing the danger, acted without hesitation. He threw himself in front of the princess, taking the arrow meant for her."
                 n "The Hunter's life ended as the hero collapsed, the arrow buried deep in his chest."
                 n "The hero's life ended in that moment, his sacrifice securing The Hunter's defeat. The princess, heartbroken, knelt beside the hero's lifeless body, her grief overwhelming as the reality of what had transpired set in."
