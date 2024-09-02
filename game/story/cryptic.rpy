@@ -206,7 +206,7 @@ label cryptic_start:
             voice "Born from the anguish and wrath of those who suffered unjustly, a being lingered where the forest's magic was strongest. Once, this land was vibrant, filled with life and joy, until greed and misuse of magic drained its essence."
             voice "The forest responded, creating an entity that embodied its pain and anger. It seeked to punish those from the kingdom, those it holds responsible for the desecration."
             voice "It moved through the trees, unseen, possessing the living to exact its vengeance. Now, its presence is a warning, a reminder that nature's gifts are not to be exploited."
-            n "The stones felt cold under her touch, their surfaces seeming to pulse with a quiet fury. The forest around her rustled with a somber energy, a testament to the consequences of humanity's transgressions against nature."
+            n "The stones around her seemed to pulse with a quiet fury. The forest rustled with a somber energy, a testament to the consequences of humanity's transgressions against nature."
             $ vs_lore_shown = True
 
         return
@@ -265,6 +265,7 @@ label cryptic_start:
         return
 
     label cryptic_examine_stone_engravings:
+        scene bg Cryptic_Touching with dissolve
         n "The princess moved closer to the stones, her curiosity piqued by the intricate patterns carved into their surfaces. The engravings seemed to pulse with a life of their own, whispering secrets of ages long past."
         pt "These engravings... I didn't pay much attention to them before, but they're more than just decorations. There's a language here, a story waiting to be told. But what does it say?"
         n "She traced her fingers over the cool stone, feeling the grooves beneath her touch. The symbols danced beneath her fingertips, shifting as if to invite her to read the tale they told."
@@ -273,6 +274,7 @@ label cryptic_start:
         h "It's like they're telling a story, isn't it? Maybe a legend or a warning."
         n "The forest seemed to hold its breath, the rustle of leaves and the song of the wind fading into a stillness that focused all attention on the stones." 
         n "The engravings shimmered subtly, drawing the princess further into their spell, urging her to delve deeper."
+        scene bg Cryptic with dissolve
         
         $ stone_gravings_examined = True
         
