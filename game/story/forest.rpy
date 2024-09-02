@@ -308,7 +308,6 @@ label villain_encounter:
 
             "(Act) Retreat to a safer distance":
                 n "The princess and hero retreated to a safer distance, slowly backing up, sword poised and prepared for any sudden movements."
-                scene bg Forest2_very_far_shadowy
                 n "Holding their new position, they assessed their situation, the distance somewhat calming their nerves."
                 jump villain2_3
 
@@ -595,7 +594,6 @@ label villain_encounter:
                 n "The princess's voice was firm, projecting confidence. The figure's expression darkened, but a flicker of doubt crossed their eyes."
                 p "We're stronger than you think. It's not worth the risk."
                 n "The figure took a small step back. They seemed to have switched to taking a defensive approach to the situation."
-                scene bg Forest2_very_far_shadowy
                 jump villain4_2_3
 
     label villain1_1_1:
