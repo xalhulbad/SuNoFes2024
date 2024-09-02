@@ -63,10 +63,10 @@ define gui.text_font = "fonts/ComingSoon.ttf"
 define gui.name_text_font = "fonts/ComingSoon.ttf"
 
 ## The font used for choice text.
-define gui.choice_text_font = "fonts/Bookstory.ttf"
+define gui.choice_text_font = "fonts/IndieFlower.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "fonts/ReenieBeanie-Regular.ttf"
+define gui.interface_text_font = "fonts/IndieFlower.ttf"
 
 ## The font used for the game's title.
 define gui.title_text_font = "NothingYouCouldDo-Regular.ttf"
@@ -78,7 +78,7 @@ define gui.text_size = 70
 define gui.name_text_size = 100
 
 ## The size of text in the game's user interface.
-define gui.interface_text_size = 150
+define gui.interface_text_size = 100
 
 ## The size of labels in the game's user interface.
 define gui.label_text_size = 100
@@ -455,7 +455,7 @@ init python:
         gui.slider_size = 135
 
         gui.choice_button_width = 4650
-        gui.choice_button_text_size = 113
+        gui.choice_button_text_size = 50
 
         gui.navigation_spacing = 75
         gui.pref_button_spacing = 38

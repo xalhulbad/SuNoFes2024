@@ -304,6 +304,7 @@ style choice_button is default:
 
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
+    size 75
 
 
 ## Quick Menu screen ###########################################################
@@ -322,7 +323,7 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
+            yalign 0.995
 
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
@@ -426,6 +427,7 @@ style navigation_button_text:
 style navigation_main_button_text:
     properties gui.button_text_properties("navigation_button")
     font "fonts/ReenieBeanie-Regular.ttf"
+    size 150
 
 
 ## Main Menu screen ############################################################
