@@ -35,11 +35,11 @@ label dml_start:
     $ dml_times_gotten += 1
 
     # Leading text
-    scene bg Villain
+    scene bg Villain with dissolve
     n "The forest's atmosphere grew heavier as the princess and the hero ventured deeper, an unnatural darkness creeping in from all sides. The air was thick with the stench of decay, and the once vibrant trees were now withered and lifeless."
     n "The hero's hand hovered over his sword, eyes narrowing as the oppressive energy weighed down on them. He could sense it—an evil force lurking nearby, draining the life from everything it touched."
     play music "audio/5 Second Villian 3.mp3" loop volume 1.0 fadein 0.5
-    scene bg villain_far_dml
+    scene bg villain_far_dml with dissolve
     n "From the shadows, a figure materialized, cloaked in dark robes that seemed to absorb the light around them. His eyes glowed with a malevolent energy, and a twisted smile spread across his face as he observed the pair."
     dml "Ah, the kingdom's pawns have arrived. Come to witness the grandeur of true power? You're just in time to see the culmination of my work!"
     
@@ -158,11 +158,11 @@ label dml_start:
         menu:
             "(Act) Engage in direct combat":
                 n "The princess nodded to the hero, who lunged forward with his sword, aiming for the Dark Magic Lord's heart."
-                scene bg villain_hero_charging_far_dml
+                scene bg villain_hero_charging_far_dml with dissolve
                 p "Keep him distracted, hero! We have to break his focus!"
                 n "The Dark Magic Lord raised a hand, summoning a wall of dark energy to block the hero's strike. The chamber shuddered with the force of their clash."
                 dml "Is this the best you can muster? A feeble attack from a broken kingdom?"
-                scene bg villain_far_dml
+                scene bg villain_far_dml with dissolve
                 n "The hero pressed forward, determined, his sword glowing with a faint light as he pushed against the dark barrier."
                 h "I'm just getting started."
 
@@ -338,12 +338,12 @@ label dml_start:
         menu:
             "(Act) Strike with the hero's sword" if not chose_magic:
                 n "The hero moved with swift determination, his sword a blur of silver as he closed the distance between them."
-                scene bg villain_hero_charging_far_dml
+                scene bg villain_hero_charging_far_dml with dissolve
                 p "Go for his weak spot! He's vulnerable when he casts!"
                 n "The hero nodded, his focus narrowing to a single point. He swung his blade in a powerful arc, aiming directly at the Dark Magic Lord's exposed side."
                 dml "Foolish mortal! You think a mere sword can harm me?"
                 n "But the blade connected, slicing through the dark tendrils that surrounded him. The Dark Magic Lord staggered back, surprise flashing in his eyes."
-                scene bg villain_far_dml
+                scene bg villain_far_dml with dissolve
                 h "You're not invincible. We can win this."
                 n "The princess felt a surge of hope. The Dark Magic Lord's defenses were not impenetrable—they could be broken."
 
@@ -444,10 +444,10 @@ label dml_start:
                 n "The hero, seeing the Dark Magic Lord momentarily staggered, seized the opportunity to go for a decisive blow."
                 p "Now! Strike him down before he can recover!"
                 n "The hero's sword gleamed with a fierce light as he lunged forward, aiming directly for the Dark Magic Lord's heart."
-                scene bg villain_hero_charging_far_dml
+                scene bg villain_hero_charging_far_dml with dissolve
                 dml "You think you can defeat me so easily?"
                 n "But the Dark Magic Lord was not so easily undone. He summoned a dark shield, barely managing to deflect the blow, yet the force sent him reeling."
-                scene bg villain_far_dml
+                scene bg villain_far_dml with dissolve
                 h "I've fought tougher than you. Your darkness won't prevail!"
                 n "The princess watched, her breath held, knowing that this was their best chance to end the Dark Magic Lord's reign of terror once and for all."
 
@@ -456,12 +456,12 @@ label dml_start:
                 n "The princess's eyes scanned the chamber, looking for anything that could turn the tide in their favor."
                 p "Hero, the ledge above! If we can get him underneath it..."
                 n "The hero understood immediately, nodding as he feigned a strike, drawing the Dark Magic Lord's attention."
-                scene bg villain_hero_sword_facing_far_dml
+                scene bg villain_hero_sword_facing_far_dml with dissolve
                 h "Over here, shadow master!"
                 n "As the Dark Magic Lord turned to face the hero, the princess focused her energy on a loose section of rock above him. With a forceful shout, she willed it to break free."
                 dml "What are you—"
                 n "The rock fell, crashing down toward the Dark Magic Lord. He narrowly dodged, but the disruption left him exposed."
-                scene bg villain_far_dml
+                scene bg villain_far_dml with dissolve
 
                 jump dml_choices_5_2
 
@@ -482,7 +482,7 @@ label dml_start:
                 n "The princess's mind raced, knowing they needed a new strategy. She whispered a quick incantation, preparing to go invisible."
                 p "Hero, keep his attention on you! I have a plan."
                 n "The hero nodded, stepping forward to challenge the Dark Magic Lord directly, his movements bold and aggressive."
-                scene bg villain_hero_sword_facing_far_dml
+                scene bg villain_hero_sword_facing_far_dml with dissolve
                 h "You've met your match, sorcerer!"
                 n "While the Dark Magic Lord was focused on the hero, the princess vanished in a shimmer of light."
                 dml "What—where did she go?"
@@ -496,7 +496,7 @@ label dml_start:
                 n "The princess began chanting a complex incantation, drawing a glowing circle of light around the Dark Magic Lord."
                 p "This circle will hold him—if we can keep him inside!"
                 n "The lines of the circle flared with power, rising into a shimmering barrier that began to close in around the Dark Magic Lord."
-                scene bg villain_far_dml_magic_circle
+                scene bg villain_far_dml_magic_circle with dissolve
                 dml "You think a simple barrier will hold me? I am darkness incarnate!"
                 n "He lashed out with tendrils of shadow, but they fizzled against the bright energy of the circle. The princess poured more power into the spell, her voice unwavering."
                 h "We have to keep him contained! Don't let him break through!"
@@ -529,7 +529,7 @@ label dml_start:
                 n "The princess knew she needed to take control of the situation without risking their lives. She whispered an incantation, threads of light forming around the Dark Magic Lord."
                 p "You don't have to keep fighting, Dark Magic Lord. We can end this without more bloodshed."
                 n "The magic wove itself around him, binding his hands and feet with glowing chains. He struggled, but the light held firm."
-                scene bg villain_far_dml_chained_hands
+                scene bg villain_far_dml_chained_hands with dissolve
                 dml "You think you can bind me with such feeble magic?"
                 n "The princess took a step closer, her voice calm but firm."
                 p "Surrender now, and we can find another way. There is still a chance for peace, but only if you lay down your power."
@@ -703,7 +703,7 @@ label dml_start:
                 n "The hero and the princess moved swiftly, using the shadows to their advantage."
                 p "Hero, keep him distracted. I have an idea."
                 n "The hero nodded, engaging the Dark Magic Lord with a flurry of strikes, his movements deliberate and precise, designed to keep the sorcerer's focus on him."
-                scene bg villain_hero_charging_far_dml
+                scene bg villain_hero_charging_far_dml with dissolve
                 h "You're not as powerful as you think, Dark Magic Lord!"
                 n "As the Dark Magic Lord sneered and parried the hero's attacks, he began to conjure a final spell aimed directly at the hero."
                 p "No! I won't let you harm him!"
@@ -962,10 +962,10 @@ label dml_start:
                 n "The Dark Magic Lord's eyes narrowed, a spark of his former self shining through his darkened gaze."
                 dml "A duel, you say? Very well, princess. I accept your challenge. Let it be known that you chose this end."
                 n "The hero tightened his grip on his sword, stepping in front of the princess to face the Dark Magic Lord."
-                scene bg villain_hero_sword_facing_far_dml
+                scene bg villain_hero_sword_facing_far_dml with dissolve
                 h "I'll take this one, princess. Stay back and be ready."
                 n "The duel began with a clash of steel against steel, the Dark Magic Lord's blade swift and unforgiving. The hero fought bravely, matching him strike for strike."
-                scene bg villain_hero_charging_far_dml
+                scene bg villain_hero_charging_far_dml with dissolve
                 dml "You fight well... for a fool."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
@@ -1108,7 +1108,7 @@ label dml_start:
                 n "The Dark Magic Lord sneered, but there was a flicker of doubt in his eyes, a momentary hesitation."
                 dml "You think I can simply walk away? My life, my power—everything I've built is for this."
                 n "The hero stepped forward, his stance firm."
-                scene bg villain_hero_facing_far_dml
+                scene bg villain_hero_facing_far_dml with dissolve
                 h "You're on a path to destruction. End this now, before it's too late."
                 n "For a moment, the Dark Magic Lord seemed to waver, his resolve shaken. But then, with a roar of fury, he lashed out with a burst of dark magic aimed at the princess."
                 dml "Never! I will not be swayed by your weak words!"
@@ -1200,7 +1200,7 @@ label dml_start:
                 n "The princess and hero waited in silence, watching as the Dark Magic Lord's defenses began to falter. They knew this was their chance."
                 p "Now, hero! Strike while he's distracted!"
                 n "The hero moved swiftly, his sword raised high as he charged at the Dark Magic Lord from behind. The sorcerer, caught off guard, barely had time to react."
-                scene bg villain_hero_charging_far_dml
+                scene bg villain_hero_charging_far_dml with dissolve
                 h "For the kingdom!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
@@ -1255,7 +1255,7 @@ label dml_start:
                 n "The princess, sensing the moment was right, signaled to the hero with a quick glance. They had one chance to strike while the Dark Magic Lord's guard was down."
                 p "Now, hero! Strike swiftly!"
                 n "The hero moved like a shadow, closing the distance between himself and the Dark Magic Lord. His sword arced through the air, aiming for a critical blow."
-                scene bg villain_hero_charging_far_dml
+                scene bg villain_hero_charging_far_dml with dissolve
                 h "This ends now!"
                 n "But the Dark Magic Lord, ever cunning, turned at the last moment. With a twisted smile, he unleashed a dark curse, a final act of spiteful vengeance."
                 dml "If I am to fall, then you shall fall with me!"
