@@ -9,6 +9,7 @@ default aware_hero_met = False
 default romance = 50
 default chose_magic = None
 default game_done = False
+default ending = None
 
 default v_type = None # Variable used for revealing villain type
 default hu_times_gotten = 0
@@ -42,38 +43,44 @@ label start:
     pause 1
     # Give time for title screen music to stop
 
-    call credits
+    while not game_done: # Main game loop
 
-    call true_ending_monologue
+        if routes_completed + 1 in aware_hero_routes: # Aware hero route
+            call aware_hero_route
 
-    # while not game_done:
+        else: # Not aware hero route
 
-    #     if routes_completed + 1 in aware_hero_routes: # Aware hero route
-    #         call aware_hero_route
+            # Tower
+            call tower_start
 
-    #     else: # Not aware hero route
-
-    #         # Tower
-    #         call tower_start
-
-    #         # Forest (and first villain encounter)
-    #         call forest_start
+            # Forest (and first villain encounter)
+            call forest_start
             
-    #         # Cryptic Stonehenge
-    #         call cryptic_start
+            # Cryptic Stonehenge
+            call cryptic_start
 
-    #         # Meadow
-    #         call meadow_start
+            # Meadow
+            call meadow_start
 
-    #         # Second Villain Encounter
-    #         call second_villain_start
+            # Second Villain Encounter
+            call second_villain_start
 
-    #     $ routes_completed += 1
+        $ routes_completed += 1
 
-    # call credits
 
-    # This ends the game.
-    return
+    if ending == "bad":
+        call reset_default_vars
+        jump start
+
+    elif ending == "good":
+        call credits
+
+    else: # ending == "true"
+        call credits
+        call true_ending_monologue
+
+
+    return # This ends the game.
 
 
 # Credits courtesy of https://lemmasoft.renai.us/forums/viewtopic.php?t=22481

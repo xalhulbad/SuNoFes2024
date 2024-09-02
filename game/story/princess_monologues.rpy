@@ -261,6 +261,7 @@ label reset_default_vars:
     $ romance = 50
     $ chose_magic = None
     $ game_done = False
+    $ ending = None
     $ v_type = None
     $ hu_times_gotten = 0
     $ ff_times_gotten = 0
