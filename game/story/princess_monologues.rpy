@@ -264,6 +264,8 @@ label repeat_ending:
     return
 
 label true_ending_monologue:
+    window show Dissolve(1.5)
+
     pt "{plain}I once thought being a princess meant helplessness.{/plain}" 
 
     pt "{plain}Patiently awaiting a rescue.{/plain}"

@@ -31,6 +31,17 @@ image bg Villain = "base_backgrounds/bg Villain.png"
 image bg Meadow = "base_backgrounds/bg Meadow.png"
 image bg Boulder = "base_backgrounds/bg Boulder.png"
 
+image main_menu_animated:
+    "gui/main_menu_design1.png"
+    pause 0.55
+    "gui/main_menu_design2.png"
+    pause 0.55
+    "gui/main_menu_design3.png"
+    pause 0.55
+    "gui/main_menu_design2.png"
+    pause 0.55
+    repeat
+    
 
 # The game starts here.
 label start:
@@ -43,41 +54,45 @@ label start:
     pause 1
     # Give time for title screen music to stop
 
-    while not game_done: # Main game loop
+    call credits
 
-        if routes_completed + 1 in aware_hero_routes: # Aware hero route
-            call aware_hero_route
+    call true_ending_monologue
 
-        else: # Not aware hero route
+    # while not game_done: # Main game loop
 
-            # Tower
-            call tower_start
+    #     if routes_completed + 1 in aware_hero_routes: # Aware hero route
+    #         call aware_hero_route
 
-            # Forest (and first villain encounter)
-            call forest_start
+    #     else: # Not aware hero route
+
+    #         # Tower
+    #         call tower_start
+
+    #         # Forest (and first villain encounter)
+    #         call forest_start
             
-            # Cryptic Stonehenge
-            call cryptic_start
+    #         # Cryptic Stonehenge
+    #         call cryptic_start
 
-            # Meadow
-            call meadow_start
+    #         # Meadow
+    #         call meadow_start
 
-            # Second Villain Encounter
-            call second_villain_start
+    #         # Second Villain Encounter
+    #         call second_villain_start
 
-        $ routes_completed += 1
+    #     $ routes_completed += 1
 
 
-    if ending == "bad":
-        call reset_default_vars
-        jump start
+    # if ending == "bad":
+    #     call reset_default_vars
+    #     jump start
 
-    elif ending == "good":
-        call credits
+    # elif ending == "good":
+    #     call credits
 
-    else: # ending == "true"
-        call credits
-        call true_ending_monologue
+    # else: # ending == "true"
+    #     call credits
+    #     call true_ending_monologue
 
 
     return # This ends the game.
@@ -85,32 +100,31 @@ label start:
 
 # Credits courtesy of https://lemmasoft.renai.us/forums/viewtopic.php?t=22481
 label credits:
-    $ credits_speed = 60 #scrolling speed in seconds
+    $ credits_speed = 52 #scrolling speed in seconds
     scene bg blackscreen #replace this with a fancy background
-    with dissolve
-    show theend:
+    show theend with dissolve:
         yanchor 0.5 ypos 0.5
         xanchor 0.5 xpos 0.5
-    with dissolve
-    with Pause(3)
-    hide theend
-    play music "audio/Credits - Credits 1.mp3" loop volume 1.0 fadein 0.5
-    show cred at Move((0.5, 10.85), (0.5, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
-    with Pause(credits_speed)
-    show thanks:
-        yanchor 0.5 ypos 0.5
-        xanchor 0.5 xpos 0.5
-    with dissolve
-    with Pause(3)
-    hide thanks
-    stop music fadeout 1.5
+    with Pause(1.5)
+    hide theend with dissolve
+    show cred at Move((0.5, 10.7), (0.5, 0.625), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
+    pause 4.65
+    play music "audio/Credits - Credits 2.mp3" noloop volume 1.0 fadein 0.5
+    with Pause(credits_speed - 6)
+    # show thanks:
+    #     yanchor 0.5 ypos 0.5
+    #     xanchor 0.5 xpos 0.5
+    # with Pause(3)
+    # hide thanks with dissolve
+    pause 3
+    scene bg blackscreen with dissolve
+    window hide
     pause 1.5
-    scene bg blackscreen
     return
 
 init python:
     credits = ('Lead Designer', 'William Liu'), ('Lead Programmer', 'Abdullah Safi'), ('Developer', 'Hamin Lee'), ('Character Artist', 'William Liu'), ('Environment Artist', 'Sion'), ('UI/UX Designers', 'William Liu'), ('UI/UX Designers', 'Hamin Lee'), ('Story Writers', 'Abdullah Safi'), ('Story Writers', 'Ben Ni'), ('Story Writers', 'William Liu'), ('Composer', 'Kyle Sung'), ('Special Thanks', 'Storytime')
-    credits_s = "{size=160}Credits\n\n"
+    credits_s = "{size=160}Credits"
     c1 = ''
     for c in credits:
         if not c1==c[0]:
@@ -121,15 +135,15 @@ init python:
             credits_s += "{size=120}" + c[1] + "\n"
         c1=c[0]
     
-    credits_s += "\n\n\n\n\n\n\n\n\n"
+    credits_s += "\n\n\n\n"
     credits_s += "\n{size=80}Engine\n{size=120}" + renpy.version()
-    credits_s += "\n\n\n\n\n\n\n\n\n"
-    credits_s += "\n{size=80}Play by Play Games\n"
-    credits_s += "\n\n\n\n\n\n\n\n\n"
-    credits_s += "\n{size=80}With Love\n"
+    credits_s += "\n\n\n\n\n\n"
+    credits_s += "\n{size=210}Play by Play Games\n"
+    credits_s += "\n\n\n\n\n\n"
+    credits_s += "\n{size=160}With Love\n"
     
 init:
     # image cred = Text(credits_s, font="myfont.ttf", text_align=0.5) #use this if you want to use special fonts
     image cred = Text(credits_s, text_align=0.5)
     image theend = Text("{size=160}We found our happily ever after.", text_align=0.5)
-    image thanks = Text("{size=160}Thanks for Playing!", text_align=0.5)
+    image thanks = Text("{size=160}With Love", text_align=0.5)
