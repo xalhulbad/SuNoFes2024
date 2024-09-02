@@ -229,3 +229,20 @@ label repeat_ending:
     window hide
     pause 3
     return
+
+label true_ending:
+    p "I once thought being a princess meant helplessness." 
+
+    p "Patiently awaiting a rescue."
+
+    p "A hero to change my life." 
+
+    p "That was not the case."
+
+    p "Discovering myself meant realizing that it wasn't the role that defined me, but how I chose to step beyond it." 
+
+    p "A happily ever after is not a hero we await, but rather something we forge ourselves."
+
+    p "Step beyond the story written for you."
+
+    p "Find your happily ever after."
