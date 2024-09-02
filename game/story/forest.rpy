@@ -275,7 +275,7 @@ label villain_encounter:
     label villain1:
         menu:
             "(Act) Remain hidden and observe":
-                n "The pair huddled deeper into the shadows, watching the figure's every move with keen eyes."
+                n "The pair remained hidden, watching the figure's every move with keen eyes."
                 p "Let's see what they're up to. We need to gather more information."
                 h "Right. Stay quiet and alert."
                 n "The figure paced back and forth, muttering incoherently. Occasionally, they glanced around but didn't seem to notice the pair hidden nearby."
