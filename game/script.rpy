@@ -41,6 +41,8 @@ label start:
     pause 1
     # Give time for title screen music to stop
 
+    call credits
+
     while not game_done:
 
         if routes_completed + 1 in aware_hero_routes: # Aware hero route
@@ -65,6 +67,51 @@ label start:
 
         $ routes_completed += 1
 
+    call credits
 
     # This ends the game.
     return
+
+
+# Credits courtesy of https://lemmasoft.renai.us/forums/viewtopic.php?t=22481
+label credits:
+    $ credits_speed = 60 #scrolling speed in seconds
+    scene bg blackscreen #replace this with a fancy background
+    with dissolve
+    show theend:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with dissolve
+    with Pause(3)
+    hide theend
+    show cred at Move((0.5, 7.1), (0.5, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
+    with Pause(credits_speed)
+    show thanks:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with dissolve
+    with Pause(3)
+    hide thanks
+    return
+
+init python:
+    credits = ('Backgrounds', 'Airgoof'), ('Backgrounds', 'Dorktwerp'), ('Sprites and CG', 'Ballclown'), ('GUI', 'Cuddlywad'), ('Writing', 'Dorktwerp'), ('Writing', 'Fingerpookie'), ('Programming', 'Dorktwerp'), ('Music', 'Grumblemuck'), ('Music', 'Headwookum')
+    credits_s = "{size=160}Credits\n\n"
+    c1 = ''
+    for c in credits:
+        if not c1==c[0]:
+            credits_s += "\n\n\n\n\n\n\n\n\n"
+            credits_s += "\n{size=80}" + c[0] + "\n"
+            credits_s += "{size=120}" + c[1] + "\n"
+        else:
+            credits_s += "{size=120}" + c[1] + "\n"
+        c1=c[0]
+    
+    credits_s += "\n\n\n\n\n\n\n\n\n"
+    credits_s += "\n{size=80}Engine\n{size=120}" + renpy.version()
+    
+init:
+#    image cred = Text(credits_s, font="myfont.ttf", text_align=0.5) #use this if you want to use special fonts
+    image cred = Text(credits_s, text_align=0.5)
+    image theend = Text("{size=160}We found our happily ever after.", text_align=0.5)
+    image thanks = Text("{size=160}Thanks for Playing!", text_align=0.5)
