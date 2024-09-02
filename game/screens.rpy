@@ -114,7 +114,7 @@ screen say(who, what):
             
             else:
                 text what id "what":
-                    ypos 30
+                    ypos 48
     
     else:
         window:
