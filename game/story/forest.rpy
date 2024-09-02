@@ -191,7 +191,7 @@ label forest_start:
             pt "Let's get this over with."
         
         scene bg forest2_hero_facing_far_shadowy with dissolve
-        n "The figure stepped closer, their movements almost ethereal. The hero instinctively placed himself between the princess and the stranger."
+        n "Worried about her safety, the hero instinctively placed himself between the princess and the stranger."
         h "Stay back! We mean no harm, but we will defend ourselves if necessary."
         v "How amusing. Be careful now."
         v "{b}Your choices matter.{/b}" #TODO: discuss if we should give this a special font/colour to have more significance
