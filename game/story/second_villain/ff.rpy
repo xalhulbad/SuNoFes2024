@@ -237,11 +237,11 @@ label ff_start:
             "(Act) Have the hero charge with his sword":
                 n "The princess gave a sharp nod to the hero, who gripped his sword tightly before charging forward, his expression fierce."
                 p "Now, while she's distracted!"
-                n "The Femme Fatale's eyes widened in surprise as the hero rushed at her with startling speed, his blade arcing toward her."
                 scene bg villain_hero_charging_far_ff with dissolve
+                n "The Femme Fatale's eyes widened in surprise as the hero rushed at her with startling speed, his blade arcing toward her."
                 ff "Oh, how crude. But effective, I suppose!"
-                n "At the last moment, she twirled out of the way with elegant precision, her daggers flashing as she countered with a swift strike."
                 scene bg villain_far_ff with dissolve
+                n "At the last moment, she twirled out of the way with elegant precision, her daggers flashing as she countered with a swift strike."
                 h "She's quick—much faster than she looks!"
                 n "The hero barely managed to parry the attack, the clash of steel ringing out as the Femme Fatale's smirk returned."
                 ff "I expected nothing less from a brute like you."
@@ -368,11 +368,11 @@ label ff_start:
             "(Act) Aim for her weak spots" if not chose_magic:
                 n "The princess's eyes narrowed, noticing the gaps in the Femme Fatale's defense—small but exploitable."
                 p "Her left side! Go for it!"
-                n "The hero adjusted his stance, zeroing in on the weak spot as he launched his next strike."
                 scene bg villain_hero_charging_far_ff with dissolve
+                n "The hero adjusted his stance, zeroing in on the weak spot as he launched his next strike."
                 h "I've got it!"
-                n "But the Femme Fatale anticipated the move, twisting away with fluid grace. Her daggers lashed out in response, forcing the hero to retreat."
                 scene bg villain_far_ff with dissolve
+                n "But the Femme Fatale anticipated the move, twisting away with fluid grace. Her daggers lashed out in response, forcing the hero to retreat."
                 ff "Did you really think you could take advantage of me? You'll have to be quicker than that."
                 n "The princess bit her lip in frustration, realizing that she would have to come up with a better plan."
 
@@ -380,13 +380,13 @@ label ff_start:
             "(Act) Distract her and strike when she lunges":
                 n "The princess signaled to the hero with a quick glance, silently communicating her plan."
                 p "Get ready—let her think she has the upper hand, then counter when she overextends!"
-                n "The hero nodded, feigning an opening as he waited for the Femme Fatale to strike."
                 scene bg villain_hero_sword_facing_far_ff with dissolve
+                n "The hero nodded, feigning an opening as he waited for the Femme Fatale to strike."
                 h "Come on, then. Let's see what you've got."
                 n "The Femme Fatale smirked, her eyes gleaming with malicious delight as she lunged forward, aiming straight for the hero's exposed side."
                 ff "So predictable—"
-                n "But the hero's trap snapped shut as he sidestepped her lunge, spinning to land a counterstrike that forced her back."
                 scene bg villain_far_ff with dissolve
+                n "But the hero's trap snapped shut as he sidestepped her lunge, spinning to land a counterstrike that forced her back."
                 h "Got you that time!"
                 n "The Femme Fatale hissed in irritation, her smirk momentarily replaced with a scowl."
 
@@ -511,11 +511,11 @@ label ff_start:
             "(Act) Strike at her unarmored side":
                 n "The princess's gaze locked onto the vulnerable spot, a gap in the Femme Fatale's armor that was barely visible."
                 p "There—her side! It's exposed!"
-                n "The hero moved swiftly, driving his blade toward the unarmored spot with precision. The Femme Fatale's eyes widened as she realized her mistake."
                 scene bg villain_hero_charging_far_ff with dissolve
+                n "The hero moved swiftly, driving his blade toward the unarmored spot with precision. The Femme Fatale's eyes widened as she realized her mistake."
                 ff "You think you've found an opening? How quaint."
-                n "But the hero's strike was relentless, and the blade found its mark. The Femme Fatale hissed in pain, staggering back as blood stained her elegant dress. Her smile wavered, but the malice in her eyes burned even brighter."
                 scene bg villain_far_ff with dissolve
+                n "But the hero's strike was relentless, and the blade found its mark. The Femme Fatale hissed in pain, staggering back as blood stained her elegant dress. Her smile wavered, but the malice in her eyes burned even brighter."
                 ff "Congratulations, darling. You've managed to draw blood. But you'll regret making me bleed."
                 n "The princess tensed, knowing that an injured Femme Fatale was far more dangerous, her rage fueling every move. The hero prepared for another attack, ready to exploit the opening he'd created."
                 jump ff_choices_5_9
@@ -523,11 +523,11 @@ label ff_start:
             "(Act) Go for a quick, decisive blow":
                 n "The princess's voice was sharp, urging the hero to finish the fight before the Femme Fatale could recover."
                 p "Now! Don't give her a chance to retaliate—end this!"
-                n "The hero surged forward, his sword aimed directly at the Femme Fatale's heart. Her eyes widened in surprise at the sudden speed of the attack."
                 scene bg villain_hero_charging_far_ff with dissolve
+                n "The hero surged forward, his sword aimed directly at the Femme Fatale's heart. Her eyes widened in surprise at the sudden speed of the attack."
                 ff "You're faster than I gave you credit for... but not fast enough."
-                n "At the last moment, the Femme Fatale twisted away, the blade narrowly missing her vital point. But the hero's momentum carried him forward, and with a quick adjustment, he slashed across her midsection, leaving a deep wound."
                 scene bg villain_far_ff with dissolve
+                n "At the last moment, the Femme Fatale twisted away, the blade narrowly missing her vital point. But the hero's momentum carried him forward, and with a quick adjustment, he slashed across her midsection, leaving a deep wound."
                 h "You're finished!"
                 n "The Femme Fatale staggered back, clutching her wound. Her smile faded, replaced by a look of cold fury. But even in her weakened state, the venom in her gaze was as sharp as ever."
                 ff "Impressive, but you've made a fatal mistake if you think I'm done yet."
@@ -540,11 +540,11 @@ label ff_start:
             "(Act) Let her tire herself out before countering":
                 n "The princess gave a subtle signal to the hero, instructing him to bait the Femme Fatale into attacking recklessly."
                 p "Make her chase you—wear her down until she's vulnerable."
-                n "The hero nodded, adjusting his stance as he prepared to dodge and evade rather than strike. The Femme Fatale's eyes gleamed with irritation, realizing she was being toyed with."
                 scene bg villain_hero_sword_facing_far_ff with dissolve
+                n "The hero nodded, adjusting his stance as he prepared to dodge and evade rather than strike. The Femme Fatale's eyes gleamed with irritation, realizing she was being toyed with."
                 ff "Running away, are we? Pathetic. But if that's how you want to play, I'll indulge you... for now."
-                n "She lunged forward, her daggers flashing with deadly precision, but the hero sidestepped with practiced ease, forcing her to overextend herself."
                 scene bg villain_far_ff with dissolve
+                n "She lunged forward, her daggers flashing with deadly precision, but the hero sidestepped with practiced ease, forcing her to overextend herself."
                 h "Come on—keep chasing me. Let's see how long you can keep up."
                 n "With each failed strike, the Femme Fatale's movements grew more erratic, her frustration mounting. The princess watched closely, waiting for the perfect moment to strike back."
                 p "Just a little longer—she's tiring herself out."
@@ -553,11 +553,11 @@ label ff_start:
             "(Act) Knock her off balance and disarm her" if not chose_magic:
                 n "The princess's eyes focused on the Femme Fatale's footing, noticing a slight instability in her stance."
                 p "Now! Go for her legs—throw her off balance!"
-                n "The hero feinted high before dropping low, sweeping his leg in a quick motion that caught the Femme Fatale by surprise. Her graceful movements faltered as she stumbled, momentarily losing her balance."
                 scene bg villain_hero_charging_far_ff with dissolve
+                n "The hero feinted high before dropping low, sweeping his leg in a quick motion that caught the Femme Fatale by surprise. Her graceful movements faltered as she stumbled, momentarily losing her balance."
                 ff "You insolent little—"
-                n "Before she could regain her footing, the hero struck again, knocking one of her daggers from her hand. It clattered to the ground, leaving her momentarily defenseless."
                 scene bg villain_far_ff with dissolve
+                n "Before she could regain her footing, the hero struck again, knocking one of her daggers from her hand. It clattered to the ground, leaving her momentarily defenseless."
                 h "Got you!"
                 p "Don't let her recover—she's at her weakest now."
 
@@ -676,8 +676,8 @@ label ff_start:
             "(Act) Trap her with her own poison":
                 n "The princess noticed the small vial of poison hanging from the Femme Fatale's belt—an irony that couldn't be ignored. Quickly, she signaled to the hero, who prepared to engage the villain while she set the trap."
                 p "We'll use her own tricks against her. Distract her, and I'll handle the rest."
-                n "The hero nodded and lunged forward, drawing the Femme Fatale's full attention. She blocked his strikes effortlessly, her eyes gleaming with cruel satisfaction."
                 scene bg villain_hero_charging_far_ff with dissolve
+                n "The hero nodded and lunged forward, drawing the Femme Fatale's full attention. She blocked his strikes effortlessly, her eyes gleaming with cruel satisfaction."
                 ff "Is this really all you've got? You're hardly worth my time."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
@@ -970,8 +970,8 @@ label ff_start:
             "(Act) Strike her down immediately":
                 n "The princess gave the hero a quick nod, signaling him to act without hesitation. There was no time to waste; the Femme Fatale was vulnerable, and this was their chance."
                 p "Now, hero! Finish this!"
-                n "The hero, his expression fierce and determined, surged forward. His sword gleamed in the dim light as he aimed directly for the Femme Fatale's heart."
                 scene bg villain_hero_charging_far_ff with dissolve
+                n "The hero, his expression fierce and determined, surged forward. His sword gleamed in the dim light as he aimed directly for the Femme Fatale's heart."
                 n "But as he moved in for the final blow, the Femme Fatale, with one last desperate act, lashed out with a hidden dagger, catching the hero's arm."
                 ff "I won't go down... alone!"
                 if routes_completed + 1 in aware_hero_routes:
@@ -1050,8 +1050,8 @@ label ff_start:
         # Branching from "(Act) Knock her off balance and disarm her"
         menu:
             "(Act) Strike while she's vulnerable":
-                n "The hero moved swiftly, knocking the Femme Fatale off balance with a powerful strike. She stumbled, her footing unsure, but quickly regained her composure."
                 scene bg villain_hero_charging_far_ff with dissolve
+                n "The hero moved swiftly, knocking the Femme Fatale off balance with a powerful strike. She stumbled, her footing unsure, but quickly regained her composure."
                 ff "Is that all you've got? Pathetic."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
@@ -1149,10 +1149,10 @@ label ff_start:
             "(Act) Use her moment of doubt to strike":
                 n "The princess saw a flicker of doubt in the Femme Fatale's eyes, a hesitation that opened a narrow window of opportunity."
                 p "Now, hero—she's vulnerable!"
-                n "The hero lunged forward, but the Femme Fatale recovered quickly, striking him across the face with the hilt of her dagger. The blow sent the hero crashing to the ground, dazed and vulnerable."
                 scene bg villain_hero_charging_far_ff with dissolve
-                n "With the hero down, the Femme Fatale stood over him, a cruel smile on her lips as she raised her dagger for the final blow."
+                n "The hero lunged forward, but the Femme Fatale recovered quickly, striking him across the face with the hilt of her dagger. The blow sent the hero crashing to the ground, dazed and vulnerable."
                 scene bg villain_far_ff with dissolve
+                n "With the hero down, the Femme Fatale stood over him, a cruel smile on her lips as she raised her dagger for the final blow."
                 ff "Pathetic... is this all the kingdom's champion has to offer?"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
@@ -1219,10 +1219,10 @@ label ff_start:
                 ff "Flattery, darling, will get you nowhere. But I must admit, it is delightful to hear."
                 n "The hero, seeing the opportunity, tightened his grip on his sword, ready to strike. The princess gave him a subtle nod, signaling the moment had come."
                 p "Hero, now!"
-                n "As the Femme Fatale's attention was entirely on the princess, the hero moved with swift precision, raising his sword to strike. But as he lunged, the villain turned at the last second, her reflexes sharp."
                 scene bg villain_hero_charging_far_ff with dissolve
-                n "She parried his attack and with a swift movement, kicked his feet out from under him, knocking him to the ground. She stood over him, ready to deliver a fatal strike."
+                n "As the Femme Fatale's attention was entirely on the princess, the hero moved with swift precision, raising his sword to strike. But as he lunged, the villain turned at the last second, her reflexes sharp."
                 scene bg villain_far_ff with dissolve
+                n "She parried his attack and with a swift movement, kicked his feet out from under him, knocking him to the ground. She stood over him, ready to deliver a fatal strike."
                 ff "Nice try, but you'll have to do better than that!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero

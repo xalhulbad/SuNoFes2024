@@ -72,8 +72,8 @@ label fh_start:
         # Initial branch
         menu:
             "(Act) Prepare for combat":
-                n "The princess signaled to the hero, who drew his sword with a fluid motion. The air grew tense as the Fallen Hero stepped forward, his eyes burning with an old bitterness."
                 scene bg villain_hero_sword_facing_far_fh with dissolve
+                n "The princess signaled to the hero, who drew his sword with a fluid motion. The air grew tense as the Fallen Hero stepped forward, his eyes burning with an old bitterness."
                 p "We can't hold back against him. He's not just another opponent."
                 h "I know. He carries the weight of a past we don't fully understand. But I'll follow your lead."
 
@@ -160,11 +160,11 @@ label fh_start:
             "(Act) Attack first":
                 n "The hero adjusted his stance, muscles tensing as he prepared to strike. The princess gave a quick nod, signaling the attack."
                 p "Go, now! We have to catch him off-guard!"
-                n "With a powerful swing, the hero launched himself at the Fallen Hero, his blade slicing through the air. But the Fallen Hero's experience showed in his fluid dodge, sidestepping the blow with practiced ease."
                 scene bg villain_hero_charging_far_fh with dissolve
+                n "With a powerful swing, the hero launched himself at the Fallen Hero, his blade slicing through the air. But the Fallen Hero's experience showed in his fluid dodge, sidestepping the blow with practiced ease."
                 fh "Is this all the kingdom can muster? A pale imitation of what I once was."
-                n "The Fallen Hero retaliated swiftly, his counterstrike leaving the hero barely time to block."
                 scene bg villain_hero_sword_facing_far_fh with dissolve
+                n "The Fallen Hero retaliated swiftly, his counterstrike leaving the hero barely time to block."
                 n "The force of the clash echoed through the clearing as the princess desperately scanned for a way to shift the balance."
 
                 jump fh_choices_3_1
@@ -338,25 +338,25 @@ label fh_start:
             "(Act) Aim for his weak spot":
                 n "The princess noticed a brief hesitation in the Fallen Hero's movements, a subtle limp that hinted at an old injury."
                 p "Focus on his left side! It's our best shot!"
-                n "The hero nodded, eyes sharp as he aimed for the weak spot."
                 scene bg villain_hero_charging_far_fh with dissolve
+                n "The hero nodded, eyes sharp as he aimed for the weak spot."
                 n "But as his sword swung toward the target, the Fallen Hero's reflexes kicked in. He deflected the strike with practiced ease, a grim smile tugging at his lips."
                 fh "You think I haven't learned to live with my pain? Weakness is only for those who let it consume them."
-                n "The counterattack came swiftly, the hero barely managing to block the incoming blow."
                 scene bg villain_hero_sword_facing_far_fh with dissolve
+                n "The counterattack came swiftly, the hero barely managing to block the incoming blow."
                 n "The princess could see the frustration in the hero's eyes-they were facing someone who had turned every scar into a weapon."
 
                 jump fh_choices_4_1
             "(Act) Charge with full force":
                 n "The princess steeled herself, knowing that they had to overwhelm him with raw power."
                 p "No hesitation-go all out!"
-                n "The hero gripped his sword with both hands, charging with every ounce of strength he had."
                 scene bg villain_hero_charging_far_fh with dissolve
+                n "The hero gripped his sword with both hands, charging with every ounce of strength he had."
                 n "The Fallen Hero's eyes narrowed, and for a moment, his guard dropped, as if daring them to strike."
                 n "But just as the hero's blade descended, the Fallen Hero twisted away, the attack grazing him without connecting fully."
                 fh "Strength alone is a blunt weapon. You'll need more than that to bring me down."
-                n "The air crackled with tension as the Fallen Hero retaliated with a brutal strike that sent the hero reeling."
                 scene bg villain_hero_sword_facing_far_fh with dissolve
+                n "The air crackled with tension as the Fallen Hero retaliated with a brutal strike that sent the hero reeling."
                 n "The princess's heart raced-she knew they couldn't afford many more failed attacks."
 
                 jump fh_choices_4_2
@@ -378,8 +378,8 @@ label fh_start:
             "(Act) Lure him into a position where he is vulnerable":
                 n "The princess's eyes darted across the clearing, analyzing every possible angle. An idea sparked in her mind."
                 p "Draw him to the left! If we can funnel him into that narrow spot, he'll be trapped!"
-                n "The hero nodded and began maneuvering carefully, baiting the Fallen Hero to follow."
                 scene bg villain_far_fh with dissolve
+                n "The hero nodded and began maneuvering carefully, baiting the Fallen Hero to follow."
                 n "The plan seemed to work-until the Fallen Hero caught on."
                 n "With a swift, calculated move, he shifted his weight and took a step back, avoiding the trap entirely."
                 fh "You think you can outmaneuver me in my own battlefield? You're sorely mistaken."
@@ -447,21 +447,21 @@ label fh_start:
             "(Act) Strike at his old injury" if not chose_magic:
                 n "The hero tightened his grip on the sword, eyes fixed on the Fallen Hero's weakened side. The princess knew this was their best chance, but one wrong move could end it all."
                 p "Go for it! This is our opening!"
-                n "The hero lunged forward, aiming for the injury, but the Fallen Hero's instincts flared to life. Despite the pain, he twisted away, evading the strike with a snarl."
                 scene bg villain_hero_charging_far_fh with dissolve
-                v "You think I'm not used to fighting with pain? You're just another naïve fool."
+                n "The hero lunged forward, aiming for the injury, but the Fallen Hero's instincts flared to life. Despite the pain, he twisted away, evading the strike with a snarl."
                 scene bg villain_hero_sword_facing_far_fh with dissolve
+                v "You think I'm not used to fighting with pain? You're just another naïve fool."
                 n "The counterattack was brutal-a backhanded slash that nearly knocked the hero off his feet. The princess could see the strain in the hero's movements. They were running out of chances."
 
                 jump fh_choices_5_1
             "(Act) Use magic to enhance the attack" if chose_magic:
                 n "The princess's eyes glowed with determination as she channeled her energy into the hero's blade. The sword hummed with newfound power, crackling with magic."
                 p "This time, we'll end it! Strike with all your strength!"
-                n "The hero surged forward, the blade cutting through the air with a trail of shimmering light. The Fallen Hero's eyes widened as he recognized the surge of magic, but it was too late-this strike was far more precise than before."
                 scene bg villain_hero_charging_far_fh with dissolve
+                n "The hero surged forward, the blade cutting through the air with a trail of shimmering light. The Fallen Hero's eyes widened as he recognized the surge of magic, but it was too late-this strike was far more precise than before."
                 v "So you resort to magic... Fine, let's see how far it takes you!"
-                n "The attack connected, forcing the Fallen Hero to stumble back. But his anger only deepened, and a dangerous light filled his eyes."
                 scene bg villain_far_fh with dissolve
+                n "The attack connected, forcing the Fallen Hero to stumble back. But his anger only deepened, and a dangerous light filled his eyes."
                 n "They had wounded him, but the fight was not over."
 
                 jump fh_choices_5_2
@@ -472,24 +472,24 @@ label fh_start:
             "(Act) Overwhelm him with sheer strength" if not chose_magic:
                 n "The hero gritted his teeth, summoning all his strength for one decisive attack. The princess knew this was a battle of wills as much as skill."
                 p "Don't hold back! Everything you have-now!"
-                n "With a fierce battle cry, the hero rushed forward, swinging his sword with raw power. The Fallen Hero met the attack head-on, his expression shifting into one of grim determination."
                 scene bg villain_hero_charging_far_fh with dissolve
+                n "With a fierce battle cry, the hero rushed forward, swinging his sword with raw power. The Fallen Hero met the attack head-on, his expression shifting into one of grim determination."
                 n "Steel clashed against steel, the force of the impact sending shockwaves through the clearing."
                 v "Is this what you call strength? You're nothing but an echo of the warrior I once was."
-                n "Though the hero's attack was mighty, the Fallen Hero's experience and hardened resolve allowed him to stand firm."
                 scene bg villain_hero_sword_facing_far_fh with dissolve
+                n "Though the hero's attack was mighty, the Fallen Hero's experience and hardened resolve allowed him to stand firm."
                 n "The clash pushed both combatants to their limits, leaving the princess with a crucial choice to make before their strength ran out."
 
                 jump fh_choices_5_3
             "(Act) Use magic to disorient him during the charge" if chose_magic:
                 n "The princess whispered an incantation, her voice barely audible as she called forth an enchantment that shimmered around the hero."
                 p "The moment he moves, I'll create an opening. Be ready to strike!"
-                n "As the hero charged forward, the air crackled with energy. The Fallen Hero's eyes narrowed, sensing the distortion in the space around him."
                 scene bg villain_hero_charging_far_fh with dissolve
+                n "As the hero charged forward, the air crackled with energy. The Fallen Hero's eyes narrowed, sensing the distortion in the space around him."
                 n "Suddenly, the princess unleashed a burst of light, disorienting him just long enough for the hero's blade to find its mark."
                 v "Magic tricks? So this is the extent of your courage."
-                n "The attack landed, but the Fallen Hero's resolve remained unbroken. Though visibly shaken, he quickly recovered, eyes blazing with renewed fury."
                 scene bg villain_hero_sword_facing_far_fh with dissolve
+                n "The attack landed, but the Fallen Hero's resolve remained unbroken. Though visibly shaken, he quickly recovered, eyes blazing with renewed fury."
                 n "The princess could feel the tension rising-this battle was only growing more dangerous."
 
                 jump fh_choices_5_4
@@ -500,22 +500,22 @@ label fh_start:
             "(Act) Push him back and strike" if not chose_magic:
                 n "The hero braced himself, raising his shield high as the Fallen Hero's blade came crashing down. The impact was fierce, but the hero held firm, muscles straining against the force."
                 p "Now! Push him back and counter!"
-                n "With a grunt of effort, the hero deflected the blow, shoving the Fallen Hero off-balance before launching a swift counterattack."
                 scene bg villain_hero_sword_facing_close_fh with dissolve
+                n "With a grunt of effort, the hero deflected the blow, shoving the Fallen Hero off-balance before launching a swift counterattack."
                 n "For a split second, the Fallen Hero's guard dropped, and the hero's strike connected."
                 v "Not bad, but don't think that will be enough."
-                n "Despite the hit, the Fallen Hero's eyes gleamed with an unsettling calm. He barely flinched, as if the wound only fueled his rage."
                 scene bg villain_far_fh with dissolve
+                n "Despite the hit, the Fallen Hero's eyes gleamed with an unsettling calm. He barely flinched, as if the wound only fueled his rage."
                 n "The princess realized that while they were making progress, this battle would not end easily."
 
                 jump fh_choices_5_5
             "(Act) Use magic to create an opening" if chose_magic:
                 n "The princess's eyes flashed as she focused her energy into a single spell. Time was running out, and they needed every advantage they could muster."
                 p "I'll hold him down-strike when you see the chance!"
-                n "Magic swirled around the Fallen Hero, binding his movements for a brief moment. The hero seized the opportunity, driving his blade toward the Fallen Hero's exposed side."
                 scene bg villain_hero_charging_far_fh with dissolve
-                v "You rely on tricks because you lack true strength!"
+                n "Magic swirled around the Fallen Hero, binding his movements for a brief moment. The hero seized the opportunity, driving his blade toward the Fallen Hero's exposed side."
                 scene bg villain_hero_sword_facing_far_fh with dissolve
+                v "You rely on tricks because you lack true strength!"
                 n "The spell worked, and the hero's attack hit its mark. But the Fallen Hero's endurance was unyielding, his eyes locked onto the princess with seething rage."
                 n "She could feel the tension mounting-he wouldn't fall for the same trick twice."
 
@@ -527,24 +527,24 @@ label fh_start:
             "(Act) Distract him with a feint and attack":
                 n "The princess's gaze sharpened as she observed the Fallen Hero's stance, noting the small gaps in his defense."
                 p "Feint left, then strike from the right! He won't see it coming!"
-                n "The hero moved swiftly, executing the feint as instructed. For a moment, the Fallen Hero shifted his attention, only to realize too late that the true attack was coming from the other side."
                 scene bg villain_hero_charging_far_fh with dissolve
+                n "The hero moved swiftly, executing the feint as instructed. For a moment, the Fallen Hero shifted his attention, only to realize too late that the true attack was coming from the other side."
                 n "The hero's blade found its target, landing a solid hit."
                 v "Clever. But cleverness only gets you so far."
-                n "The Fallen Hero grimaced as the blow connected, but his retaliation was swift. He adjusted instantly, turning the tables in the blink of an eye."
                 scene bg villain_far_fh with dissolve
+                n "The Fallen Hero grimaced as the blow connected, but his retaliation was swift. He adjusted instantly, turning the tables in the blink of an eye."
                 n "The princess could sense his growing frustration-this battle was quickly escalating into a dangerous dance of wit and skill."
 
                 jump fh_choices_5_7
             "(Act) Use the environment to trap him":
                 n "The princess's eyes darted to the surrounding trees and undergrowth, formulating a plan. She signaled the hero, subtly directing him toward a narrow thicket."
                 p "Lead him into that tight space-he'll be stuck!"
-                n "The hero nodded, shifting his movements to draw the Fallen Hero into the trap. It was working-bit by bit, the Fallen Hero was funneled into the confined area."
                 scene bg blackscreen
+                n "The hero nodded, shifting his movements to draw the Fallen Hero into the trap. It was working-bit by bit, the Fallen Hero was funneled into the confined area."
                 n "But just as the trap was about to spring, he caught on, shifting his stance and using the trees to his advantage."
                 v "You think I haven't learned every inch of this forest? You underestimate me."
-                n "The trap failed, and the Fallen Hero lashed out, using the terrain to his advantage."
                 scene bg villain_far_fh with dissolve
+                n "The trap failed, and the Fallen Hero lashed out, using the terrain to his advantage."
                 n "The situation grew more perilous as he cornered the hero. The princess realized they were running out of time-the next move had to be decisive."
 
                 jump fh_choices_5_8
