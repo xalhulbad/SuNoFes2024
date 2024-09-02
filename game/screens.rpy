@@ -98,7 +98,7 @@ style frame:
 screen say(who, what):
     style_prefix "say"
 
-    if not renpy.showing("bg blackscreen", "master") or who != "Narrator":
+    if (not renpy.showing("bg blackscreen", "master") or who != "Narrator") and not renpy.showing("bg actual_blackscreen", "master"):
 
         window:
             id "window"
@@ -115,6 +115,23 @@ screen say(who, what):
             else:
                 text what id "what":
                     ypos 48
+
+    elif renpy.showing("bg actual_blackscreen", "master"):
+        window:
+            id "window"
+            xalign 0.5
+            xfill True
+            yalign 0.5
+            yfill True
+
+            background None
+
+            text what id "what":
+                xalign 0.5
+                yalign 0.5
+                size 90
+                xsize 3700
+                text_align 0.5
     
     else:
         window:
