@@ -35,7 +35,7 @@ label dml_start:
     $ dml_times_gotten += 1
 
     # Leading text
-    scene bg Villain with dissolve
+    scene bg Villain with fade
     n "The forest's atmosphere grew heavier as the princess and the hero ventured deeper, an unnatural darkness creeping in from all sides. The air was thick with the stench of decay, and the once vibrant trees were now withered and lifeless."
     n "The hero's hand hovered over his sword, eyes narrowing as the oppressive energy weighed down on them. He could sense it—an evil force lurking nearby, draining the life from everything it touched."
     play music "audio/5 Second Villian 3.mp3" loop volume 1.0 fadein 0.5

@@ -35,7 +35,7 @@ label fh_start:
     $ fh_times_gotten =+ 1
 
     # Leading text
-    scene bg Villain
+    scene bg Villain with fade
     n "The forest seemed darker than before, the shadows deeper and more menacing as the princess and hero retraced their steps."
     n "Each rustling leaf and distant creak of branches felt like the forest itself was holding its breath. The princess and hero could see the kingdom now, a sign that they were getting close."
     n "The hero's grip tightened on his sword as they ventured further, his eyes scanning every shadow for signs of movement."

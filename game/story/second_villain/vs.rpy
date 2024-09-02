@@ -35,7 +35,7 @@ label vs_start:
     $ vs_times_gotten += 1
 
     # Leading text
-    scene bg Villain with dissolve
+    scene bg Villain with fade
     n "A cold wind swept through the forest as the princess and the hero moved forward, the trees seeming to close in around them. The once-familiar paths now felt foreign and threatening, shrouded in an eerie mist that clung to the ground like a living thing."
     n "The hero's grip tightened on his sword, his breath visible in the sudden chill. The forest was deathly silent, the usual sounds of life replaced by a foreboding stillness."
     play music "audio/5 Second Villian 3.mp3" loop volume 1.0 fadein 0.5

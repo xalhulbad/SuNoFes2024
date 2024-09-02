@@ -33,7 +33,7 @@ label hu_start:
     $ hu_times_gotten += 1
     
     # Leading text
-    scene bg Villain with dissolve
+    scene bg Villain with fade
     n "The forest's dense canopy loomed overhead as the princess and the hero cautiously moved forward, the familiar tension thickening the air. It felt as if the forest itself was holding its breath."
     n "The princess and hero could see the kingdom now, a sign that they were getting close."
     n "A twig snapped beneath the hero's foot, sending a flock of birds scattering into the sky. The sudden noise only served to heighten the tension between them."

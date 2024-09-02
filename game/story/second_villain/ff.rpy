@@ -34,7 +34,7 @@ label ff_start:
     $ ff_times_gotten += 1
 
     # Leading text
-    scene bg Villain with dissolve
+    scene bg Villain with fade
     n "The air was thick with tension as the princess and the hero moved cautiously through the forest, the trees closing in around them like silent sentinels. There was an unsettling calm, as if the forest itself was holding its breath."
     n "The hero scanned the surroundings with narrowed eyes, every sense on high alert. He could feel it—a presence watching them, waiting for the right moment to strike."
     play music "audio/5 Second Villian 3.mp3" loop volume 1.0 fadein 0.5
