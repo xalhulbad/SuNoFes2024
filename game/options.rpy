@@ -63,6 +63,7 @@ define config.has_voice = True
 ## game, until it is stopped or another file is played.
 
 define config.main_menu_music = "audio/Title - Title Screen 3.mp3"
+define config.main_menu_music_fadein = 5.0
 
 
 ## Transitions #################################################################
