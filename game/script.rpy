@@ -121,7 +121,7 @@ init python:
     credits_s += "\n{size=80}With Love\n"
     
 init:
-#    image cred = Text(credits_s, font="myfont.ttf", text_align=0.5) #use this if you want to use special fonts
+    # image cred = Text(credits_s, font="myfont.ttf", text_align=0.5) #use this if you want to use special fonts
     image cred = Text(credits_s, text_align=0.5)
     image theend = Text("{size=160}We found our happily ever after.", text_align=0.5)
     image thanks = Text("{size=160}Thanks for Playing!", text_align=0.5)
