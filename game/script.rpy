@@ -4,7 +4,7 @@
 define config.choice_empty_window = extend
 
 # Default variables
-default routes_completed = 2
+default routes_completed = 0
 default aware_hero_met = False
 default romance = 50
 default chose_magic = None
