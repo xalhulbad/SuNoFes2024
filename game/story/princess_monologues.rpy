@@ -231,18 +231,20 @@ label repeat_ending:
     return
 
 label true_ending_monologue:
-    p "I once thought being a princess meant helplessness." 
+    pt "{plain}I once thought being a princess meant helplessness.{/plain}" 
 
-    p "Patiently awaiting a rescue."
+    pt "{plain}Patiently awaiting a rescue.{/plain}"
 
-    p "A hero to change my life." 
+    pt "{plain}A hero to change my life.{/plain}" 
 
-    p "That was not the case."
+    pt "{plain}That was not the case.{/plain}"
 
-    p "Discovering myself meant realizing that it wasn't the role that defined me, but how I chose to step beyond it." 
+    pt "{plain}Discovering myself meant realizing that it wasn't the role that defined me, but how I chose to step beyond it.{/plain}" 
 
-    p "A happily ever after is not a hero we await, but rather something we forge ourselves."
+    pt "{plain}A happily ever after is not a hero we await, but rather something we forge ourselves.{/plain}"
 
-    p "Step beyond the story written for you."
+    pt "{plain}Step beyond the story written for you.{/plain}"
 
-    p "Find your happily ever after."
+    pt "{plain}Find your happily ever after.{/plain}"
+
+    return
