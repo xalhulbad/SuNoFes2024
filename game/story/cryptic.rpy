@@ -19,7 +19,9 @@ label cryptic_start:
     window hide
     scene bg blackscreen with fade
     n "The encounter with the shadowy figure left the princess and the hero with a feeling of determination as they continued to make their way deeper into the woods."
-    n "The forest loomed tall and dark, its branches knitting together like gnarled fingers against the twilight sky. Each step they took was a reminder of the dangers that lay ahead. As the canopy opened, a glade revealed itself, bathed in an otherworldly glow."
+    n "The forest loomed tall and dark; Each step they took was a reminder of the dangers that lay ahead."
+    n "As the day winded down, time began to blend and there seemed no end to the endless trees."
+    n "Soon after the sun dipped below the horizon, as if on queue, a clearing seemed to materialize into view."
     play music "audio/Cryptic Stonehenge.mp3" loop volume 1.0 fadein 0.5
     scene bg Cryptic with fade
     window show
