@@ -243,7 +243,7 @@ label villain_encounter:
     # level 1 of villain enounter
     menu:
         "(Act) Hide":
-            scene bg blackscreen with dissolve
+            scene bg Boulder with dissolve
             n "The princess and the hero found a shadowy corner, crouching low and holding their breath as the figure approached, shrouded in darkness."
             p "Stay quiet. Let's see what we're dealing with."
             h "Agreed. Keep an eye on them."
@@ -486,10 +486,10 @@ label villain_encounter:
                 jump villain2_1_1
 
             "(Act) Use the environment":
-                p "Quick! To the trees!"
-                scene bg blackscreen with dissolve
-                n "The figure lunged for a strike at the defenceless hero, but just in time, the two ducked behind a nearby tree, using it as cover as they planned their next move."
-                n "The figure let out a frustrated grunt, and with building anger, slowly approached the tree."
+                p "Quick! Behind the rock!"
+                scene bg Boulder with dissolve
+                n "The figure lunged for a strike at the defenceless hero, but just in time, the two ducked behind a nearby boulder, using it as cover as they planned their next move."
+                n "The figure let out a frustrated grunt, and with building anger, slowly approached the boulder."
                 h "Shoot. What now?"
                 jump villain2_1_2
 
@@ -739,9 +739,9 @@ label villain_encounter:
                 scene bg forest2_close_dml with dissolve
                 n "The figure, unaware of their plan, advanced with a dark, menacing aura. The Dark Magic Lord reveled in his perceived superiority."
                 dml "Foolish children. Do you think your tricks can outmatch my power?"
+                scene bg Forest2
                 n "The hero feigned a retreat, drawing the Dark Magic Lord closer to the trap they had set earlier. The princess remained hidden, ready to spring the snare."
                 p "Now!"
-                scene bg blackscreen with dissolve
                 n "As the figure stepped into the snare, the trap sprang to life, binding his legs with enchanted ropes. The Dark Magic Lord's laughter echoed through the forest, unfazed by the trap."
                 dml "You think this will hold me?"
                 scene bg forest2_close_dml with dissolve

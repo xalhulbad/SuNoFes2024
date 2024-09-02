@@ -27,6 +27,7 @@ image bg Cryptic = "base_backgrounds/bg Cryptic.png"
 image bg Cryptic_Touching = "base_backgrounds/bg Cryptic_Touching.png"
 image bg Villain = "base_backgrounds/bg Villain.png"
 image bg Meadow = "base_backgrounds/bg Meadow.png"
+image bg Boulder = "base_backgrounds/bg Boulder.png"
 
 
 # The game starts here.

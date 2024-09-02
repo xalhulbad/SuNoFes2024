@@ -536,15 +536,15 @@ label fh_start:
                 n "The princess could sense his growing frustration-this battle was quickly escalating into a dangerous dance of wit and skill."
 
                 jump fh_choices_5_7
-            "(Act) Use the environment to trap him":
+            "(Act) Use the environment to outmaneuver him":
                 n "The princess's eyes darted to the surrounding trees and undergrowth, formulating a plan. She signaled the hero, subtly directing him toward a narrow thicket."
                 p "Lead him into that tight space-he'll be stuck!"
-                scene bg blackscreen
-                n "The hero nodded, shifting his movements to draw the Fallen Hero into the trap. It was working-bit by bit, the Fallen Hero was funneled into the confined area."
-                n "But just as the trap was about to spring, he caught on, shifting his stance and using the trees to his advantage."
+                scene bg Villain with dissolve
+                n "The hero nodded, shifting his movements to draw the Fallen Hero towards him. It was working-bit by bit, the Fallen Hero was funneled into the confined area."
+                n "But just as they were about to run, he caught on, shifting his stance and using the trees to his advantage."
                 v "You think I haven't learned every inch of this forest? You underestimate me."
                 scene bg villain_far_fh with dissolve
-                n "The trap failed, and the Fallen Hero lashed out, using the terrain to his advantage."
+                n "The strategy failed, and the Fallen Hero lashed out, using the terrain to his advantage."
                 n "The situation grew more perilous as he cornered the hero. The princess realized they were running out of time-the next move had to be decisive."
 
                 jump fh_choices_5_8
@@ -909,7 +909,7 @@ label fh_start:
     label fh_choices_5_8:
         # Branching from "(Act) Use the environment to trap him"
         menu:
-            "(Act) Use a snare trap" if not chose_magic:
+            "(Act) Trap him with a snare trap" if not chose_magic:
                 n "The princess's eyes darted across the forest floor, spotting the remnants of an old snare trap. Quickly, she signaled to the hero, who nodded in understanding."
                 p "Lead him toward the trap-we'll use it to catch him off guard!"
                 if routes_completed + 1 in aware_hero_routes:
