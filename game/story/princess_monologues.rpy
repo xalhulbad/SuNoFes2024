@@ -248,3 +248,153 @@ label true_ending_monologue:
     pt "{plain}Find your happily ever after.{/plain}"
 
     return
+
+
+label reset_default_vars:
+    # Reset all default variables to initial state
+
+    # TODO: ADD MEADOW AND AWARE HERO VARS HERE WHEN DONE
+
+    # script.rpy
+    $ routes_completed = 0
+    $ aware_hero_met = False
+    $ romance = 50
+    $ chose_magic = None
+    $ game_done = False
+    $ v_type = None
+    $ hu_times_gotten = 0
+    $ ff_times_gotten = 0
+    $ vs_times_gotten = 0
+    $ dml_times_gotten = 0
+    $ fh_times_gotten = 0
+
+
+    # tower.rpy
+    $ tower_choices1_seen = set()
+    $ tower_choices1_chosen = 0
+    $ tower_room_inspected = False
+    $ tower_table_inspected = False
+    $ tower_chose_why_no_escape = False
+    $ tower_attempted_open_door = False
+    $ tower_chose_lesson_learned = False
+    $ tower_chose_cant_believe = False
+    $ tower_chose_who_is_he = False
+    $ tower_chose_way_out = False
+
+    # forest.rpy
+    $ forest_choices1_seen = set()
+    $ forest_choices1_chosen = 0
+    $ forest_asked_who_are_you = False
+    $ forest_asked_why_did_you_come = False
+    $ forest_asked_is_it_safe = False
+    $ forest_asked_have_we_done_this = False
+    $ forest_asked_why_familiar = False
+
+
+    # cryptic.rpy
+    $ cryptic_choices1_seen = set()
+    $ cryptic_choices1_chosen = 0
+    $ dml_lore_shown = False
+    $ fh_lore_shown = False
+    $ ff_lore_shown = False
+    $ hu_lore_shown = False
+    $ vs_lore_shown = False
+    $ what_truths_checked = False
+    $ stone_gravings_examined = False
+    $ can_decipher_runes = False
+
+
+    # meadow.rpy
+
+
+    # hu.rpy
+    $ hu_chose_who_are_you = False
+    $ hu_chose_why_after_us = False
+    $ hu_chose_kingdom_abolished_magic = False
+    $ hu_chose_what_your_mission = False
+    $ hu_chose_why_guard_forest = False
+    $ hu_chose_how_become_hunter = False
+    $ hu_chose_why_cant_let_us_pass = False
+    $ hu_chose_have_you_always_been_alone = False
+    $ hu_chose_how_long_been_here = False
+    $ hu_chose_why_didnt_chase_us_before = False
+    $ hu_chose_we_went_by_mistake = False
+
+
+    # fh.rpy
+    $ fh_chose_who_are_you = False
+    $ fh_chose_why_hold_grudge = False
+    $ fh_chose_things_have_changed = False
+    $ fh_chose_what_happened = False
+    $ fh_chose_why_kingdom_turn = False
+    $ fh_chose_really_believe_revenge = False
+    $ fh_chose_why_hunt_us = False
+    $ fh_chose_killing_us_satisfy = False
+    $ fh_chose_what_would_you_do = False
+    $ fh_chose_why_cant_pass = False
+    $ fh_chose_change_your_mind = False
+    $ fh_chose_not_like_those = False
+
+
+    # ff.rpy
+    $ ff_chose_who_are_you = False
+    $ ff_chose_why_doing_this = False
+    $ ff_chose_what_you_gain = False
+    $ ff_chose_why_enjoy_manipulating = False
+    $ ff_chose_isnt_there_more = False
+    $ ff_chose_do_you_not = False
+    $ ff_chose_how_did_you = False
+    $ ff_chose_was_there_ever = False
+    $ ff_chose_do_you_think = False
+    $ ff_chose_what_do_you = False
+    $ ff_chose_is_this_just = False
+    $ ff_chose_when_will_it = False
+
+
+    # dml.rpy
+    $ dml_chose_who_are_you = False
+    $ dml_chose_why_do_you = False
+    $ dml_chose_what_do_you = False
+    $ dml_chose_how_did_you = False
+    $ dml_chose_what_drives_your = False
+    $ dml_chose_do_you_not = False
+    $ dml_chose_what_is_your = False
+    $ dml_chose_do_you_really = False
+    $ dml_chose_how_do_you = False
+    $ dml_chose_why_cant_you = False
+    $ dml_chose_is_there_nothing = False
+    $ dml_chose_what_would_happen = False
+
+
+    # vs.rpy
+    $ vs_chose_who_are_you = False
+    $ vs_chose_why_do_you_seek = False
+    $ vs_chose_can_you_ever = False
+    $ vs_chose_what_do_you = False
+    $ vs_chose_why_do_you_blame = False
+    $ vs_chose_isnt_there_a = False
+    $ vs_chose_why_cant_you = False
+    $ vs_chose_do_you_not = False
+    $ vs_chose_cant_you_find = False
+    $ vs_chose_what_will_you = False
+    $ vs_chose_will_your_vengeance = False
+    $ vs_chose_what_then = False
+
+
+    # princess_monologues.rpy
+    $ got_happily_ever_after = False
+    $ got_saved_hero = False
+    $ got_sacrificed_hero = False
+    $ got_sacrificed_princess = False
+    $ got_unfulfilled_love = False
+    $ got_corrupted_hero = False
+    $ got_inherited_throne = False
+    $ got_forest_curse = False
+    $ got_forest_protectors = False
+    $ got_love_beyond_death = False
+
+
+    # aware_hero.rpy
+    $ aware_hero_number = 0
+
+    return
