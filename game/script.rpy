@@ -56,7 +56,7 @@ image main_menu_animated:
 
 # The game starts here.
 label start:
-    window hide # Don't hide dialogue box
+    window show # Don't hide dialogue box
 
     stop music fadeout 0.5
 
@@ -66,38 +66,38 @@ label start:
     while not game_done: # Main game loop
 
         if routes_completed + 1 in aware_hero_routes: # Aware hero route
-            call aware_hero_route
+            call aware_hero_route from _call_aware_hero_route
 
         else: # Not aware hero route
 
             # Tower
-            call tower_start
+            call tower_start from _call_tower_start
 
             # Forest (and first villain encounter)
-            call forest_start
+            call forest_start from _call_forest_start
             
             # Cryptic Stonehenge
-            call cryptic_start
+            call cryptic_start from _call_cryptic_start
 
             # Meadow
-            call meadow_start
+            call meadow_start from _call_meadow_start
 
             # Second Villain Encounter
-            call second_villain_start
+            call second_villain_start from _call_second_villain_start
 
         $ routes_completed += 1
 
 
     if ending == "bad":
-        call reset_default_vars
+        call reset_default_vars from _call_reset_default_vars
         jump start
 
     elif ending == "good":
-        call credits
+        call credits from _call_credits
 
     else: # ending == "true"
-        call credits
-        call true_ending_monologue
+        call credits from _call_credits_1
+        call true_ending_monologue from _call_true_ending_monologue
 
 
     return # This ends the game.
@@ -118,6 +118,7 @@ label splashscreen:
 
 # Credits courtesy of https://lemmasoft.renai.us/forums/viewtopic.php?t=22481
 label credits:
+    window hide
     $ credits_speed = 52 #scrolling speed in seconds
     scene bg blackscreen #replace this with a fancy background
 
@@ -137,7 +138,6 @@ label credits:
     with Pause(credits_speed - 6)
     pause 3
     scene bg blackscreen with dissolve
-    window hide
     pause 1.5
     return
 
