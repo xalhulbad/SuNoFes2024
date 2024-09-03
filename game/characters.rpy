@@ -4,16 +4,15 @@
 define n = Character("Narrator", what_color="#CCCCCC")
 
 # Princess
-define p = Character("The Princess", what_color="#CCCCCC")
-define pt = Character(None, who_color="#808080", what_color="#CCCCCC", what_italic=True) # Empty name, italicized text
+define p = Character("Princess", what_color="#CCCCCC")
+define ap = Character("The Princess", what_color="#CCCCCC")
+define pt = Character(None, what_color="#CCCCCC", what_italic=True) # Empty name, italicized text
 
 # Hero
-define h = Character("The Hero", what_color="#CCCCCC")
-define ah = Character("Aware Hero", what_color="#CCCCCC")
+define h = Character("Hero", what_color="#CCCCCC")
+define ah = Character("The Hero", what_color="#CCCCCC")
 
 # Villains
-define v_type = None # Variable used for revealing villain type
-
 define v = Character("Shadowy Figure", what_color="#CCCCCC") # Before villain type revealed
 define s = Character("Shadowy Figure", what_color="#CCCCCC") # Alias for previous
 
@@ -24,4 +23,4 @@ define dml = Character("Dark Magic Lord", what_color="#CCCCCC")
 define vs = Character("Vengeful Spirit", what_color="#CCCCCC")
 
 # Voice (for cryptic stonehenge)
-define voice = Character("Voice", what_color="#CCCCCC")
+define voice = Character("The Whisper", what_color="#CCCCCC")

@@ -18,9 +18,9 @@ default tower_chose_way_out = False
 # TODO: discuss if old options should be hidden after routes are completed, with too many options they go off the screen
 
 label tower_start:
-    
     play music "audio/0 Tower 2.mp3" loop volume 1.0 fadein 0.5
-    scene bg Tower with fade
+    scene bg Tower with dissolve
+    window show
     # Start narration of tower scene
     n "Once upon a time, in a forgotten corner of the kingdom, there stood a tower. It loomed high, shrouded in mystery. The moonlight filtered through its narrow, arched window, casting a pale glow on the cold, damp walls."
     n "There sat the princess, her delicate fingers tracing the rough stone sill. Her eyes, though tired, held a spark of hope. She knew that someone would come for her, as the stories always promised."
@@ -28,7 +28,7 @@ label tower_start:
     $ tower_choices1_chosen = 0
 
     label tower_choices1: # First tower choice
-        while tower_choices1_chosen < 4: # Stop after 4 choices have been chosen
+        while tower_choices1_chosen < 3: # Stop after 3 choices have been chosen
             $ tower_choices1_chosen += 1
 
             menu: 
@@ -75,12 +75,6 @@ label tower_start:
                 "(Thought) What secrets does this tower hold...":
                     call tower_what_secrets
                     jump tower_choices1
-
-                "(Act) Sleep.": # Progresses the game
-                    $ tower_choices1_seen.remove("(Act) Sleep.") 
-                    # renpy automatically adds this to seen set which we don't want here
-
-                    jump tower_go_to_sleep # No call because we don't want to return
 
 
                 # Choices available after first route completed:
@@ -147,6 +141,13 @@ label tower_start:
                 "(Thought) Why is this happening to us?" if aware_hero_met:
                     call tower_why_is_this_happening
                     jump tower_choices1
+
+                
+                "{b}(Act) Sleep.{/b}": # Progresses the game
+                    $ tower_choices1_seen.remove("{b}(Act) Sleep.{/b}") 
+                    # renpy automatically adds this to seen set which we don't want here
+
+                    jump tower_go_to_sleep # No call because we don't want to return
 
 
         # If we get here then the player did not choose "(Act) Sleep" within 4 choices

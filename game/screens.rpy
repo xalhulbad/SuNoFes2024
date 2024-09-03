@@ -27,6 +27,7 @@ style gui_text:
 
 style button:
     properties gui.button_properties("button")
+    activate_sound "audio/click.mp3"
 
 style button_text is gui_text:
     properties gui.text_properties("button")
@@ -98,7 +99,7 @@ style frame:
 screen say(who, what):
     style_prefix "say"
 
-    if not renpy.showing("bg blackscreen", "master") or who != "Narrator":
+    if (not renpy.showing("bg blackscreen", "master") or who != "Narrator") and not renpy.showing("bg actual_blackscreen", "master"):
 
         window:
             id "window"
@@ -114,7 +115,24 @@ screen say(who, what):
             
             else:
                 text what id "what":
-                    ypos 30
+                    ypos 48
+
+    elif renpy.showing("bg actual_blackscreen", "master"):
+        window:
+            id "window"
+            xalign 0.5
+            xfill True
+            yalign 0.5
+            yfill True
+
+            background None
+
+            text what id "what":
+                xalign 0.5
+                yalign 0.5
+                size 90
+                xsize 3700
+                text_align 0.5
     
     else:
         window:
@@ -286,6 +304,7 @@ style choice_button is default:
 
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
+    size 75
 
 
 ## Quick Menu screen ###########################################################
@@ -408,6 +427,7 @@ style navigation_button_text:
 style navigation_main_button_text:
     properties gui.button_text_properties("navigation_button")
     font "fonts/ReenieBeanie-Regular.ttf"
+    size 150
 
 
 ## Main Menu screen ############################################################

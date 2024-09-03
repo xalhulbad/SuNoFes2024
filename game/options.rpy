@@ -50,6 +50,8 @@ define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
 
+# define config.default_sfx_volume = 0.6
+
 
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
@@ -63,6 +65,7 @@ define config.has_voice = True
 ## game, until it is stopped or another file is played.
 
 define config.main_menu_music = "audio/Title - Title Screen 3.mp3"
+define config.main_menu_music_fadein = 5.0
 
 
 ## Transitions #################################################################
@@ -89,7 +92,7 @@ define config.after_load_transition = None
 
 ## Used when entering the main menu after the game has ended.
 
-define config.end_game_transition = None
+define config.end_game_transition = Fade(3, 0, 1.5)
 
 
 ## A variable to set the transition used when the game starts does not exist.
@@ -120,7 +123,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 30
+default preferences.text_cps = 46
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
