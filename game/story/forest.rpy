@@ -563,7 +563,7 @@ label villain_encounter:
                 ff "You, dear princess, are an open book. Your thoughts, your heart - so easy to read. And you, brave hero, so predictable in your gallant efforts. You think you can bargain with me? How quaint."
                 n "The princess and hero stood their ground, but the unease in their eyes betrayed their growing uncertainty. The figure's words cut deep, eroding their confidence."
                 ff "But fear not. I have no interest in trinkets or knowledge you might offer. No, I revel in the game, the dance of shadows and secrets. And for now, I am satisfied with what I have seen."
-                scene bg Forest2
+                scene bg Forest2 with dissolve
                 n "With a final, piercing gaze, the figure began to slink back into the darkness, their form dissolving into the inky blackness of the forest."
                 s "Until we meet again, my dear pawns. Remember, the game has only just begun."
                 n "As the figure vanished, the oppressive weight lifted, leaving the princess and hero standing in the eerie silence of the forest. The encounter had ended, but the unease lingered, a haunting reminder of the shadowy figure's words."
@@ -692,7 +692,7 @@ label villain_encounter:
                 p "We don't want to fight you. Just let us pass." 
                 n "The Hunter's lips curled into a cold smile as he lowered weapon." 
                 hu "I will let you go this time. But remember, the forest is my domain. Next time, you may not be so lucky." 
-                scene bg Forest2
+                scene bg Forest2 with dissolve
                 n "With a final, stern look, the Hunter disappeared into the shadows, his voice echoing through the forest." 
                 hu "Remember, I will be watching. Trespassers in my forest shall receive no consideration." 
                 n "As the princess and hero fled, the weight of the Hunter's presence hung over them. They had survived the encounter, but the knowledge of his silent, deadly techniques would haunt them every step of their journey." 
@@ -740,7 +740,7 @@ label villain_encounter:
                 scene bg forest2_close_dml with dissolve
                 n "The figure, unaware of their plan, advanced with a dark, menacing aura. The Dark Magic Lord reveled in his perceived superiority."
                 dml "Foolish children. Do you think your tricks can outmatch my power?"
-                scene bg Forest2
+                scene bg Forest2 with dissolve
                 n "The hero feigned a retreat, drawing the Dark Magic Lord closer to the trap they had set earlier. The princess remained hidden, ready to spring the snare."
                 p "Now!"
                 n "As the figure stepped into the snare, the trap sprang to life, binding his legs with enchanted ropes. The Dark Magic Lord's laughter echoed through the forest, unfazed by the trap."
@@ -897,7 +897,7 @@ label villain_encounter:
                 n "The Hunter's gaze was intense, his words carrying a weight that pressed upon their shoulders."
                 p "Thank you. We will respect your territory."
                 hu "See that you do. The next time we meet, I will not be so forgiving."
-                scene bg Forest2
+                scene bg Forest2 with dissolve
                 n "With a final, piercing look, the Hunter disappeared back into the shadows, his presence lingering like a dark omen."
                 h "Let's move, quickly."
                 n "The princess and hero continued their journey, the weight of the Hunter's gaze still heavy upon them. They knew they had been given a chance, but the forest held many more dangers, and the Hunter would always be watching."
@@ -1031,7 +1031,7 @@ label villain_encounter:
                 n "The tension in the air shifted as the Hunter lowered his bow, his expression still stern but less hostile."
                 hu "I will let you pass, but know this: the forest is my domain. Should you betray its balance, you will answer to me."
                 n "The princess and hero exchanged a glance, relief mingling with the weight of the Hunter's words."
-                scene bg Forest2
+                scene bg Forest2 with dissolve
                 n "With a final, piercing look, the Hunter disappeared back into the shadows, his presence lingering like a silent sentinel."
                 h "Let's move, quickly."
                 n "The princess and hero continued their journey, the weight of the Hunter's gaze still heavy upon them. They knew they had been given a chance, but the forest held many more dangers, and the Hunter would always be watching."
@@ -1059,7 +1059,7 @@ label villain_encounter:
                 fh "Very well. But know this, trust is not given lightly, and betrayal is never forgotten."
                 n "The tension in the air eased slightly as the princess and hero nodded, understanding the gravity of his words."
                 p "We will earn your trust. One step at a time."
-                scene bg Forest2
+                scene bg Forest2 with dissolve
                 n "With a final, wary glance, the Fallen Hero turned and disappeared into the forest, leaving the princess and hero to reflect on the encounter."
                 h "We need to be careful. He may give us a chance, but his trust is fragile."
                 p "Agreed. But it's a start. Let's move forward with caution and respect."
@@ -1086,7 +1086,7 @@ label villain_encounter:
                 dml "Perhaps there is some wisdom in your words. But know this: I will not be swayed easily. Prove your worth, and perhaps we can find common ground."
                 n "The tension eased slightly as the princess and hero nodded, understanding the challenge ahead."
                 p "We will prove ourselves. Together, we can create something truly remarkable."
-                scene bg Forest2
+                scene bg Forest2 with dissolve
                 n "With a final, wary glance, the Dark Magic Lord turned and disappeared into the shadows, leaving the princess and hero to reflect on the encounter."
                 h "We need to tread carefully. His power is immense, and his ego is fragile."
                 p "Agreed. But if we can earn his trust, we might just find a way to save this forest."
@@ -1138,7 +1138,7 @@ label villain_encounter:
                 n "The hero and princess exchanged a glance, their resolve tested but unbroken."
                 h "We're not afraid of you."
                 ff "Brave words, but we'll see how long they last."
-                scene bg Forest2
+                scene bg Forest2 with dissolve
                 n "With a final, chilling laugh, the Femme Fatale melted back into the shadows, her presence lingering like a dark cloud."
                 ff "Remember, I'll always be watching. And when you least expect it, I'll be there."
                 n "The princess and hero stood in the eerie silence, the weight of the encounter pressing heavily on their shoulders."
