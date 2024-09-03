@@ -227,7 +227,7 @@ label cryptic_start:
         p "Perhaps. It feels like it's alive, humming with power. We need to take a closer look."
         menu:
             "(Act) Examine the glowing gem":
-                scene bg Cryptic_Touching with dissolve
+                scene bg gem with dissolve
                 n "As the princess examined the glowing gem, its radiant light seemed to draw her in, pulsing with a mysterious energy that hinted at the power it contained."
                 n "The gem lay cradled atop the rubble, its glow casting intricate patterns on the stone circle around them."
                 p "This gem is filled with destructive magic, the kind that we could use in case of any danger. But if we take it, we risk banishment from the kingdom forever."
