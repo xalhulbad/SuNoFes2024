@@ -616,8 +616,8 @@ style game_menu_label:
     ysize 450
 
 style game_menu_label_text:
-    bold True
-    font gui.title_text_font
+    bold False
+    font "fonts/IndieFlower.ttf"
     size gui.title_text_size
     color gui.accent_color
     yalign 0.5
