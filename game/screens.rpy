@@ -428,6 +428,8 @@ style navigation_main_button_text:
     properties gui.button_text_properties("navigation_button")
     font "fonts/ReenieBeanie-Regular.ttf"
     size 150
+    hover_color '#0b1014'
+
 
 
 ## Main Menu screen ############################################################
