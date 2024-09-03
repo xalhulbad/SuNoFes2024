@@ -4,13 +4,12 @@ default aware_hero_number = 0
 default aware_hero_second_chosen = 0
 
 label aware_hero:
-    $ aware_hero_number += 1
+    $ aware_hero_number += 3
 
     scene bg blackscreen with Dissolve(1.0)
 
     ah "Hello...?"
 
-    show aware_hero Calm
     play music "audio/6 The Aware Hero 4.mp3"
 
     if aware_hero_number == 1:
@@ -25,6 +24,8 @@ label aware_hero_first:
     $ aware_hero_met = True
     
     # show aware_hero emotion
+    show aware_hero Calm with Dissolve(1.5)
+    window show
 
     menu:
         "What's happened before?":
@@ -43,7 +44,9 @@ label aware_hero_first:
             # Narration
             an "The hero turns away, subtly shifting the focus back to their immediate task. Yet, the princess can't shake the feeling that there's more beneath the surface—more than he's willing to reveal."
             
-            stop music fadeout 1.5
+            stop music
+            scene bg actual_blackscreen
+            pause(2)
             return
 
         "Why do you seem so distant right now?":
@@ -63,7 +66,9 @@ label aware_hero_first:
             show aware_hero Unamused
             an "The princess searches his face for any sign he might say more, but the hero remains closed off, a fortress of unspoken thoughts and hidden fears."
 
-            stop music fadeout 1.5
+            stop music
+            scene bg actual_blackscreen
+            pause(2)
             return
 
         "Where are you from?":
@@ -83,7 +88,9 @@ label aware_hero_first:
             show aware_hero Unamused
             an "The princess nods, sensing the invisible wall he's put up between them. She doesn't press further, though the unanswered questions linger in her mind, deepening the mystery that surrounds him."
             
-            stop music fadeout 1.5
+            stop music
+            scene bg actual_blackscreen
+            pause(2)
             return
     
 label aware_hero_second:
@@ -341,8 +348,9 @@ label aware_hero_second:
 
                 return
 
-    hide aware_hero with dissolve
-    stop music fadeout 1.5
+    stop music
+    scene bg actual_blackscreen
+    pause(2)
     return
 
 label aware_hero_third:
@@ -449,7 +457,9 @@ label aware_hero_third:
             jump third_encounter_second_choice
 
 
-    stop music fadeout 1.5
+    stop music
+    scene bg actual_blackscreen
+    pause(2)
     return
 
 label third_encounter_second_choice:
@@ -1123,6 +1133,10 @@ label final_endings:
             # Narration
             an "And so, the hero and the princess remain within the loop, content with the life laid out before them. The story repeats, as it always has, but now, it's a choice—a decision to embrace the roles they've been given and to find meaning in the tale they continue to live."
 
+            $ ending = "bad"
+            stop music
+            scene bg blackscreen with Dissolve(2.5)
+            pause(2.5)
             return
 
         "Leave the Trope":
@@ -1155,6 +1169,10 @@ label final_endings:
             # Narration
             an "With one last, lingering look, she turns away, walking toward the unknown, toward a future that is hers to shape. The hero watches her go, and with each step driving her forward, a piece of his heart goes along."
 
+            $ ending = "good"
+            stop music
+            scene bg blackscreen with Dissolve(2.5)
+            pause(2.5)
             return
 
         "But what if...":
@@ -1194,7 +1212,10 @@ label final_endings:
             # Narration
             an "And so, the hero and the princess leave the fairy tale behind, stepping into a world of endless possibilities. They no longer follow the script, no longer bound by the roles they were given. Instead, they write their own story, one filled with freedom, love, and the promise of a future they will create together."
 
-            hide aware_hero with dissolve
+            $ ending = "true"
+            stop music
+            scene bg blackscreen with Dissolve(2.5)
+            pause(2.5)
             return
 
 

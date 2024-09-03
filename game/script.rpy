@@ -63,6 +63,8 @@ label start:
     pause 1
     # Give time for title screen music to stop
 
+    $ v_type = Character("dml", what_color = "#CCCCCC")
+    call aware_hero
 
     while not game_done: # Main game loop
 
