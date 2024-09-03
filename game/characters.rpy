@@ -2,7 +2,7 @@
 
 # Narrator
 define n = Character("Narrator", what_color="#CCCCCC")
-# define an = Character("Narrator ", what_color="#CCCCCC") # aware hero narrator
+define an = Character("Narrator ", what_color="#CCCCCC") # aware hero narrator
 
 # Princess
 define p = Character("Princess", what_color="#CCCCCC")

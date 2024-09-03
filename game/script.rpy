@@ -63,7 +63,7 @@ label start:
     pause 1
     # Give time for title screen music to stop
 
-    # call aware_hero
+    call aware_hero
 
     while not game_done: # Main game loop
 
