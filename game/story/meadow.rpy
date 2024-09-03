@@ -46,7 +46,7 @@ label meadow_start:
     
     menu:
         set meadow_choices1_seen
-        "If you could make one wish on a star, what would it be?":
+        "(Ponder) If you could make one wish on a star, what would it be?":
             p "If you could make one wish on a star, what would it be?"
 
             n "The hero shifted slightly, a faint smile tugging at his lips as if the question amused him. He didn't answer right away, his eyes fixed on a particularly bright star hanging low on the horizon."
@@ -101,7 +101,7 @@ label meadow_start:
             
             jump meadow_end
 
-        "Do you believe in destiny, or do you think we make our own choices?":
+        "(Ponder) Do you believe in destiny, or do you think we make our own choices?":
 
             p "Do you believe in destiny, or do you think we make our own choices?"
 
@@ -195,7 +195,7 @@ label meadow_start:
 
             jump meadow_end
 
-        "Do you ever wonder what will happen to us after all of this?":
+        "(Ponder) Do you ever wonder what will happen to us after all of this?":
 
             p "Do you ever wonder what will happen to us after all of this?"
 
@@ -245,7 +245,7 @@ label meadow_start:
 
             jump meadow_end
 
-        "Do you have any regrets about the choices you've made?":
+        "(Ponder) Do you have any regrets about the choices you've made?":
 
             p "Do you have any regrets about the choices you've made?"
 
@@ -293,7 +293,7 @@ label meadow_start:
 
             jump meadow_end
 
-        "If everything ended tomorrow, would you have any regrets?":
+        "(Ponder) If everything ended tomorrow, would you have any regrets?":
             
             p "If everything ended tomorrow, would you have any regrets?"
 
@@ -387,7 +387,7 @@ label meadow_start:
 
             jump meadow_end
 
-        "How do you make sense of all the suffering in the world?":
+        "(Ponder) How do you make sense of all the suffering in the world?":
 
             p "How do you make sense of all the suffering in the world?"
 
@@ -433,7 +433,7 @@ label meadow_start:
 
             jump meadow_end
 
-        "What do you think it means to truly be alive?":
+        "(Ponder) What do you think it means to truly be alive?":
             p "What do you think it means to truly be alive?"
 
             n "The hero's gaze remained fixed on the stars above, his expression contemplative. He didn't answer right away, as if searching for the right words in the vast expanse of the sky."
@@ -478,7 +478,7 @@ label meadow_start:
 
             jump meadow_end
 
-        "Do you think we'll ever find true happiness?":
+        "(Ponder) Do you think we'll ever find true happiness?":
             p "Do you think we'll ever find true happiness?"
 
             n "The hero shifted slightly, his gaze fixed on a cluster of stars that seemed to be winking down at them. His face was thoughtful, his expression pensive as he considered her question."
