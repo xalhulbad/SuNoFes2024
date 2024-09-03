@@ -95,7 +95,7 @@ label splashscreen:
     scene black
     with Pause(1)
 
-    show text "{size=160}Play by Play Games" with dissolve
+    show text "{size=160}Play By Play Games" with dissolve
     with Pause(2)
 
     hide text with dissolve
@@ -146,7 +146,7 @@ init python:
     credits_s += "\n\n\n\n"
     credits_s += "\n{size=80}Engine\n{size=120}" + renpy.version()
     credits_s += "\n\n\n\n\n\n"
-    credits_s += "\n{size=210}Play by Play Games\n"
+    credits_s += "\n{size=210}Play By Play Games\n"
     credits_s += "\n\n\n\n\n\n"
     credits_s += "\n{size=160}With Love\n"
     
