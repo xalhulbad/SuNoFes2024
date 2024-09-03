@@ -413,5 +413,6 @@ label reset_default_vars:
 
     # aware_hero.rpy
     $ aware_hero_number = 0
+    $ aware_hero_second_chosen = 0
 
     return
