@@ -653,7 +653,7 @@ label dml_start:
                 dml "You dare—"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "But as the blade pierced through, the Dark Magic Lord, with his last ounce of strength, raised his hand, a dark spell forming at his fingertips, aimed directly at the hero."
                 n "Seeing the spell, the princess acted on pure instinct. She leaped in front of the hero, taking the full force of the dark magic meant for him."
                 n "The spell struck the princess, sending a searing pain through her body. She fell to the ground, her vision blurring as the last of her strength faded away."
@@ -670,7 +670,7 @@ label dml_start:
                 dml "Impossible! I am invincible!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "But the hero's attack did not relent. With one final, powerful strike, he knocked the Dark Magic Lord to the ground, the dark sorcerer's staff flying from his grasp."
                 n "The Dark Magic Lord fell, his dark magic sputtering out as his body hit the ground, lifeless. The chamber grew silent, the oppressive darkness lifting as the sorcerer's power faded."
                 n "With the Dark Magic Lord defeated, the princess and hero returned to the kingdom, triumphant. The people rejoiced, celebrating the end of a dark era and the dawn of a new beginning."
@@ -690,7 +690,7 @@ label dml_start:
                 h "You're getting sloppy, old man! Come and face me!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "The Dark Magic Lord, blinded by fury, took the bait, following the hero directly beneath the unstable ledge. With a swift motion, the princess sent a surge of magic toward the rocks, causing them to collapse."
                 n "The rocks fell with a thunderous crash, burying the Dark Magic Lord beneath their weight. His cries of anger were quickly silenced by the debris, his dark magic unable to save him."                
                 n "The chamber fell silent, the dust settling as the princess and hero stood victorious over the fallen foe. With the Dark Magic Lord's defeat, the oppressive darkness that had plagued the land lifted."
@@ -709,7 +709,7 @@ label dml_start:
                 p "No! I won't let you harm him!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "Without a second thought, the princess leapt in front of the hero, taking the full brunt of the dark spell. Pain seared through her, but she stood her ground."
                 n "The spell struck the princess, and she crumpled to the ground, her body shielding the hero from the fatal blow. Her breath came in ragged gasps, but a small smile crossed her lips as she looked at the hero one last time."
                 n "The Dark Magic Lord's life ebbed away, his final curse taking its toll on him as well. The hero, tears streaming down his face, held the princess close, her sacrifice a painful reminder of the cost of their victory."
@@ -728,7 +728,7 @@ label dml_start:
                 dml "You dare use my own magic against me? Foolish girl!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "But the princess was resolute. With a fierce shout, she unleashed a surge of dark energy, aiming it directly at the Dark Magic Lord. The force of the blast engulfed him, tearing through his defenses."
                 n "However, as the dark magic spread through the air, it began to corrupt everything it touched. The hero, too close to the blast, felt the dark energy seep into his veins, a shadow spreading across his skin."
                 n "The Dark Magic Lord's body crumbled under the onslaught, his final breath escaping in a whisper of disbelief. The princess and hero had won, but at a terrible cost."
@@ -746,7 +746,7 @@ label dml_start:
                 h "You'll pay for what you've done, sorcerer!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "As the Dark Magic Lord focused on the hero, the princess began to weave a complex spell, mimicking the dark sorcery that filled the air. She twisted the magic, reversing its flow, sending it back toward its master."
                 n "The Dark Magic Lord's eyes widened in shock as his own magic turned against him, the dark energy wrapping around him like a vice."
                 n "But in his final act, he lashed out with a desperate curse, sending a dark bolt hurtling towards the hero. The bolt struck true, a lethal wound seeping with dark magic."
@@ -769,7 +769,7 @@ label dml_start:
                 dml "You think you can defeat me with simple tricks?!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "But the princess was ready. She cast a spell, shrouding herself and the hero in shadows, making them nearly invisible in the dim chamber."
                 n "The Dark Magic Lord, disoriented and unable to see his enemies clearly, unleashed a wild blast of dark magic, hoping to catch them in the attack."
                 n "The princess nodded, her focus unwavering as she continued to weave shadows around them. But the Dark Magic Lord's magic was powerful and unpredictable."
@@ -793,7 +793,7 @@ label dml_start:
                 n "As the Dark Magic Lord's power waned, the forest responded with a gentle hum, its ancient magic recognizing the princess's intent to protect."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "With one final surge of power, the princess sealed the Dark Magic Lord's magic, rendering him powerless. The forest, sensing the threat had passed, began to heal, its trees straightening, its leaves regaining their vibrant color."
                 n "The princess and hero stood amidst the newfound calm, feeling the forest's gratitude in the gentle rustle of leaves around them."
                 n "They chose to remain in the forest, dedicating themselves to its protection. The Dark Magic Lord's dark influence would never again threaten the land."
@@ -812,7 +812,7 @@ label dml_start:
                 dml "You think you can contain me? I am the master of all magic!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "But no matter how much he struggled, the circle held firm, binding him within its confines. The forest around them seemed to tremble, its ancient magic resonating with the powerful spell."
                 n "The princess felt it too—a deep, rumbling energy building within the earth itself, responding to the intense concentration of magic in one place."
                 n "As the magic circle solidified around the Dark Magic Lord, the ground beneath them quaked, a powerful surge of energy rippling through the forest. The spell had unintended consequences, disturbing the natural balance of the ancient woods."
@@ -829,7 +829,7 @@ label dml_start:
                 dml "No... what is this light?! I will not be undone by such trickery!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "The light intensified, flooding the chamber with warmth and brilliance. The dark tendrils that surrounded him began to dissolve, fading into nothingness as the purifying magic took hold."
                 n "The princess's hands trembled with the effort, but she did not falter. The forest seemed to aid her, its energy flowing through her and amplifying the spell's power."
                 n "With one final surge of light, the Dark Magic Lord's power was purified, his dark magic washed away in the cleansing glow. The forest, once tainted by his corruption, began to heal, its vibrant life returning as the darkness was purged."
@@ -852,7 +852,7 @@ label dml_start:
                 h "Princess, no! Don't do this alone!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "But as he reached out to help her, the curse's malevolence seeped into him as well, drawn by the bond they shared. A dark transformation began, his features twisting in agony."
                 n "The hero's form began to change, corrupted by the darkness now binding him. He fought against it, his will strong, but he knew the curse would eventually consume him entirely."
                 n "In his final moments of clarity, the hero made a choice. He took the princess's hand, whispering his final words before plunging a dagger into his own heart to end the curse's hold."
@@ -868,7 +868,7 @@ label dml_start:
                 dml "You think you can escape the consequences of wielding such power?"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "The ground trembled, and a thick, unnatural fog began to rise from the earth, engulfing the princess and hero in a cold, clammy grip. The forest, now cursed, seemed to close in around them."
                 n "The forest's ancient magic, now twisted by the dark curse, bound them to it, condemning them to remain within its borders for eternity."
                 n "Bound by the curse, the princess and hero found themselves transformed, their forms shifting to match the dark magic that now tainted the forest. The once-vibrant woods turned dark and foreboding, a reflection of the curse that lay upon it."
@@ -888,7 +888,7 @@ label dml_start:
                 h "Princess, be careful!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "As the princess released the full force of her magic, the chamber erupted in a brilliant explosion of light. The Dark Magic Lord, caught in the epicenter, was obliterated, his dark form disintegrating into nothingness."
                 n "The power of the blast was so great that it left the princess drained and lifeless on the chamber floor. The hero rushed to her side, his heart breaking as he cradled her still form."
                 n "Desperate to save her, he resorted to forbidden magic, calling upon powers long deemed unnatural to bring her back. As her eyes fluttered open, the hero sighed in relief."
@@ -902,7 +902,7 @@ label dml_start:
                 p "Hero... I'm sorry, but this is the only way."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "The hero's eyes widened in horror as he realized what she intended to do."
                 n "But she had already made up her mind. Summoning every last bit of her power, she prepared a final, fatal spell that would obliterate the Dark Magic Lord—and herself along with him."
                 n "The princess unleashed the spell, a blinding beam of pure magic that engulfed the Dark Magic Lord. The chamber shook with the force of the spell as she poured all her energy into it."
@@ -927,7 +927,7 @@ label dml_start:
                 dml "Very well, princess. I will agree to your terms... for now."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "As he pretended to agree, The Dark Magic Lord struck a fatal blow, catching the princess off guard. The hero, outraged, immediately struck down the dark magic lord without a second thought."
                 n "He would proceed to call upon forbidden magic to bring the princess back to life, knowing that he would not want to continue living without her."
                 n "However, his actions would not go unnoticed. The kingdom, horrified by the use of dark arts, would exile the hero, condemning him for his unforgivable act."
@@ -944,7 +944,7 @@ label dml_start:
                 h "You made the right choice. Now, let's end this."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "With the vow in place, the Dark Magic Lord's power began to wane, his dark magic restrained by the binding spell. The forest seemed to breathe easier, its magic responding to the shift in power."
                 n "With the Dark Magic Lord's vow secured, the forest slowly began to heal from the years of corruption. The princess and hero decided to stay, dedicating their lives to protecting the land and ensuring no one would ever again threaten its delicate balance."
                 n "They would become the forest's guardians, their bond strengthened by their shared commitment to this new purpose."
@@ -969,7 +969,7 @@ label dml_start:
                 dml "You fight well... for a fool."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "But as the battle raged on, the Dark Magic Lord's strength and skill began to overwhelm the hero, driving him to the ground. The Dark Magic Lord raised his blade for a fatal strike, a cruel smile on his lips."
                 n "In a final act of love and bravery, the hero threw himself in front of the princess, taking the fatal blow meant for her. The Dark Magic Lord's sword pierced through his chest, ending his life in an instant."
                 n "The princess's scream echoed through the chamber as the hero fell, his sacrifice saving her from certain death."
@@ -989,7 +989,7 @@ label dml_start:
                 dml "Very well... I will try. But know this, princess—if I fail, the darkness will consume us all."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "With the Dark Magic Lord's agreement, the princess and hero returned to the kingdom, determined to restore what had been lost. The people, seeing the change in their once-great protector, welcomed him back cautiously, their hope rekindled."
                 n "The princess took her place on the throne, ruling with wisdom and compassion, with the hero by her side. Together, they guided the Dark Magic Lord on his path to redemption, ensuring that the darkness would never return."
                 n "Under their leadership, the kingdom flourished, its people united in their quest for a brighter future."
@@ -1011,7 +1011,7 @@ label dml_start:
                 dml "I... I cannot change what I've done. But I can atone, even if it means my end."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "Sensing a shift, the hero advanced with a resolute stance, ready to disarm the Dark Magic Lord. But as he stepped forward, the Dark Magic Lord suddenly lashed out, a final act of desperation."
                 n "The Dark Magic Lord's final strike was aimed at the princess, his dark magic surging toward her. The hero, seeing her life in peril, leapt into the path of the attack."
                 n "The hero's body absorbed the brunt of the spell, shielding the princess from the fatal blow. He fell to the ground, his life slipping away as the last of his strength left him."
@@ -1032,7 +1032,7 @@ label dml_start:
                 dml "No! You won't trap me in your lies!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "The dark magic shot out, striking the hero directly in the chest. The princess's eyes widened in horror as she saw the curse begin to take hold, shadows creeping across the hero's skin."
                 n "The hero staggered, the dark curse spreading rapidly through his body, his life slipping away with every breath. The princess, seeing there was no saving him, made a fateful decision."
                 n "Knowing the hero would die within moments from the curse, the princess chose to take her own life, deciding to follow him into the afterlife rather than live without him."
@@ -1055,7 +1055,7 @@ label dml_start:
                 n "The Dark Magic Lord's eyes were filled with anguish, but as he reached for redemption, a dark tendril of magic lashed out, striking the hero."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "The hero staggered, clutching his chest as the dark magic spread through him, his body beginning to wither. The princess, horrified, realized there was no saving him."
                 n "Knowing the hero would soon die from the curse, the princess made the heartbreaking decision to take her own life, choosing to follow him into the afterlife."
                 n "With a final breath, she whispered her love for him, their souls entwined as they slipped into eternal darkness together."
@@ -1073,7 +1073,7 @@ label dml_start:
                 dml "Very well... I will try. For the forest, and for those I've wronged."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "With the Dark Magic Lord's resolve to change, the forest began to heal. The princess, hero, and even the Dark Magic Lord himself decided to stay, dedicating their lives to protecting the forest and ensuring its survival."
                 n "The three of them became unlikely guardians, each finding redemption and peace in their shared commitment to protecting the land from further harm."
                 n "Together, they vowed to safeguard the forest, watching over it with newfound purpose and strength."
@@ -1095,7 +1095,7 @@ label dml_start:
                 dml "Very well... I will try. But know this, if I falter, I will return to my old ways."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "With the Dark Magic Lord's promise to change, the princess and hero led him back to the kingdom, where they began the long and difficult task of rebuilding. The people, wary but hopeful, watched as their new leader guided them with wisdom and compassion."
                 n "The princess took her place on the throne, her reign marked by strength and justice, with the hero always by her side as her trusted advisor and protector."
                 n "Together, they would work to heal the land and its people, forging a new era of peace and prosperity for all."
@@ -1114,7 +1114,7 @@ label dml_start:
                 dml "Never! I will not be swayed by your weak words!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "In a desperate attempt to protect the princess, the hero threw himself in front of the dark magic, taking the full force of the attack. He collapsed to the ground, his life slipping away as the curse consumed him."
                 n "The princess screamed, her heart shattering as she watched the hero's sacrifice. Fueled by her grief, she gathered all her strength and struck back with a powerful blow, ending the Dark Magic Lord's life in an instant."
                 n "The battle was won, but the victory was hollow. The princess would carry the memory of the hero's sacrifice with her for the rest of her life, his final act of love a constant reminder of what was lost."
@@ -1134,7 +1134,7 @@ label dml_start:
                 p "I'm ready. Let's do this."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "They joined hands, their magic intertwining, a surge of dark energy swirling around them as they began the ritual to unlock the forbidden power."
                 n "But as the power surged through them, it began to twist and corrupt. The hero cried out in agony, his body transforming, consumed by the darkness. Realizing what was happening, he used the last of his strength to push the princess away."
                 n "With a final, desperate look, the hero plunged his sword into his own heart, ending his life before the darkness could fully take over."
@@ -1149,7 +1149,7 @@ label dml_start:
                 dml "Very well, princess. Show me this power you speak of."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "But as their magic began to merge, the princess made her move. She summoned a burst of pure light, aiming it directly at the Dark Magic Lord's heart."
                 n "Caught off guard, the Dark Magic Lord was struck down, his life extinguished by the princess's betrayal. But as he fell, he released a final curse, striking the princess down as well."
                 n "The hero, desperate to save her, used forbidden magic to bring her back from the brink of death. The princess's eyes fluttered open, but their reunion was short-lived."
@@ -1168,7 +1168,7 @@ label dml_start:
                 dml "A tempting offer, princess. Let us see if your magic is worthy of mine."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "The princess extended her hand, her magic flowing toward him, intertwining with the dark tendrils of his own power. For a moment, their combined magic crackled with raw energy."
                 n "The hero screamed in agony as the corruption spread through his veins, his body beginning to transform into something monstrous. The princess, realizing what was happening, tried to pull back, but it was too late."
                 n "In his final moments of clarity, the hero made a desperate choice. Rather than let the darkness consume him completely, he plunged his sword into his own chest, ending his life to save the princess from a terrible fate."
@@ -1183,7 +1183,7 @@ label dml_start:
                 dml "Very well, princess. Let us see what such a bond can achieve."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "They began the ritual, their magic intertwining in a volatile dance of light and darkness. The air crackled with energy as their powers fused into a single, unstable force."
                 n "But the power they unleashed was too great for the forest to handle. The ground trembled, and the trees began to wither as the magic tore through the land."
                 n "The forest, sensing the danger of this new and unstable power, lashed out with a curse. Dark roots erupted from the ground, ensnaring both the princess and the hero. Their bond had triggered the forest's wrath, and now they were trapped in its eternal grasp."
@@ -1204,7 +1204,7 @@ label dml_start:
                 h "For the kingdom!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "But just as the hero's blade was about to strike, the Dark Magic Lord spun around, his eyes blazing with dark energy. He fired a bolt of magic directly at the princess, intent on taking her down with him."
                 n "Seeing the attack, the hero threw himself in front of the princess, taking the full force of the dark magic. The spell pierced his chest, and he crumpled to the ground, his life fading away."
                 n "The princess screamed in horror, her heart breaking as she watched the hero fall. She knew his sacrifice had saved her, but the cost was too great."
@@ -1220,7 +1220,7 @@ label dml_start:
                 dml "Fools! You think you can defeat me so easily?"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "As the hero closed in, the Dark Magic Lord summoned a blast of dark magic, aiming it directly at him. The princess, seeing the danger, didn't hesitate."
                 n "She threw herself in front of the hero, taking the full force of the attack. The dark magic struck her, searing through her body. She fell to the ground, her life slipping away with each passing second."
                 n "The hero caught her as she fell, his eyes wide with horror. The Dark Magic Lord, weakened and exposed, was swiftly defeated by the hero's next strike, but the victory was bitter."
@@ -1241,7 +1241,7 @@ label dml_start:
                 p "Let me demonstrate."
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "In an instant, she turned his own power against him, using a clever incantation to redirect his dark energy back at its source."
                 n "Caught in the backlash of his own magic, the Dark Magic Lord staggered, his strength failing him. In his desperation, he unleashed a wild, last-ditch spell toward the princess."
                 n "The spell struck her with brutal force, darkness enveloping her as she fell to the ground, lifeless. The hero, his heart shattering at the sight, knew there was only one way to save her."
@@ -1261,7 +1261,7 @@ label dml_start:
                 dml "If I am to fall, then you shall fall with me!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
-                scene bg blackscreen
+                scene bg blackscreen with fade
                 n "The dark energy coiled around the hero, the curse embedding itself deep into his very being. The hero staggered back, his face contorted in pain as the magic took hold."
                 n "The princess watched in horror as the hero collapsed, the dark curse slowly draining his life away. She knew in her heart that the curse was irreversible and that he had mere moments left to live."
                 n "Tears streamed down her face as she knelt beside him, cradling his head in her arms. The hero looked up at her, his breath shallow and weak, and managed a faint smile."
