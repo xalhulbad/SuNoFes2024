@@ -2,6 +2,7 @@
 
 default aware_hero_number = 0
 default aware_hero_second_chosen = 0
+default aware_hero_trigger_scene = None # Can be "forest", "cryptic", "meadow" or "second_villain"
 
 label aware_hero:
     $ aware_hero_number += 1
@@ -1242,35 +1243,39 @@ label final_endings:
 
 
 label aware_hero_route:
-    
+
+    # Determine what scene to trigger aware hero on
+    if renpy.random.randint(1, 10) <= 2: # 2/10 chance to after forest
+        $ aware_hero_trigger_scene = "forest"
+    elif renpy.random.randint(1, 10) <= 4: # 4/10 chance to trigger after cryptic
+        $ aware_hero_trigger_scene = "cryptic"
+    if renpy.random.randint(1, 10) <= 7: # 7/10 chance to trigger after meadow
+        $ aware_hero_trigger_scene = "meadow"
+    else:
+        $ aware_hero_trigger_scene = "second_villain" 
+
+
     # Tower
     call tower_start
 
-
     # Forest (and first villain encounter)
     call forest_start
-
-    if renpy.random.randint(1, 10) <= 2: # 2/10 chance to trigger aware hero
-        call aware_hero
-        return
+    if aware_hero_trigger_scene == "forest":
+        jump aware_hero
     
-
     # Cryptic Stonehenge
     call cryptic_start
-
-    if renpy.random.randint(1, 10) <= 4: # 4/10 chance to trigger aware hero
-        call aware_hero
-        return
-
+    if aware_hero_trigger_scene == "cryptic":
+        jump aware_hero
 
     # Meadow
     call meadow_start
-
-    if renpy.random.randint(1, 10) <= 7: # 7/10 chance to trigger aware hero
-        call aware_hero
-        return
-
+    if aware_hero_trigger_scene == "meadow":
+        jump aware_hero
 
     # Second Villain Encounter
     call second_villain_start
+    # second_villain will automatically jump to aware hero since this is 
+    # aware hero route and we did not previously jump
+    
     return
