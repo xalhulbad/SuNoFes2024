@@ -4,9 +4,11 @@ default aware_hero_number = 0
 default aware_hero_second_chosen = 0
 
 label aware_hero:
-    $ aware_hero_number += 1
+    $ aware_hero_number += 3
 
     scene bg blackscreen with Dissolve(1.0)
+
+    ah "Hello...?"
 
     show aware_hero Calm
     play music "audio/6 The Aware Hero 4.mp3"
