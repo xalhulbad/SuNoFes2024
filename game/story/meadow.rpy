@@ -99,8 +99,7 @@ label meadow_start:
             
             n "He was just... him. And maybe, that was who he was afraid to face all along."
             
-            stop music fadeout 0.5
-            return
+            jump meadow_end
 
         "Do you believe in destiny, or do you think we make our own choices?":
 
@@ -193,8 +192,8 @@ label meadow_start:
             n "In the stillness of the meadow, under the infinite night sky, they found a shared understanding-a quiet resolve to face whatever comes next, not as the roles they'd played, but as the people they truly were."
 
             n "And in that moment, the future felt just a little less daunting."
-            stop music fadeout 0.5
-            return
+
+            jump meadow_end
 
         "Do you ever wonder what will happen to us after all of this?":
 
@@ -244,9 +243,7 @@ label meadow_start:
 
             n "And in that moment, the future felt just a little less daunting."
 
-            stop music fadeout 0.5
-
-            return
+            jump meadow_end
 
         "Do you have any regrets about the choices you've made?":
 
@@ -294,8 +291,7 @@ label meadow_start:
 
             n "Under the vast, endless sky, they found a quiet understanding-a fragile, tentative peace with the choices they'd made and the people they were becoming."
 
-            stop music fadeout 0.5
-            return
+            jump meadow_end
 
         "If everything ended tomorrow, would you have any regrets?":
             
@@ -388,9 +384,8 @@ label meadow_start:
             h "I think so too, Princess. And as long as we're part of this... whatever it is... I'm glad I get to share it with you."
 
             n "They lay there in the meadow, side by side under the vast night sky, two small parts of something much bigger, finding meaning in each other's light."
-            stop music fadeout 0.5
 
-            return
+            jump meadow_end
 
         "How do you make sense of all the suffering in the world?":
 
@@ -435,9 +430,8 @@ label meadow_start:
             n "They lay there in silence, their hands intertwined, finding comfort in each other's presence. The stars above seemed to shine a little brighter, as if echoing their quiet resolve."
 
             n "In the vast expanse of the night, the princess and the hero found a shared strength, a reminder that even in a world full of suffering, there was still hope-and as long as they had that, they had everything they needed to keep going."
-            stop music fadeout 0.5
 
-            return
+            jump meadow_end
 
         "What do you think it means to truly be alive?":
             p "What do you think it means to truly be alive?"
@@ -482,9 +476,7 @@ label meadow_start:
 
             n "In that quiet moment, they both realized that being alive was not just about existing, but about truly living-embracing every moment, every feeling, and finding meaning in the journey they shared."
 
-            stop music fadeout 0.5
-
-            return
+            jump meadow_end
 
         "Do you think we'll ever find true happiness?":
             p "Do you think we'll ever find true happiness?"
@@ -509,7 +501,7 @@ label meadow_start:
 
             h "And you've always been good at that. Finding the light, even when things are dark. Making the world brighter just by being in it."
 
-            n "The princess felt a blush rise to her cheeks, her heart fluttering at his words. She looked away, her gaze returning to the stars, a bashful smile tugging at her lips."
+            n "The princess felt a blush rise to her cheeks, her heart fluttering at his words. She looked away, her gaze jump meadow_ending to the stars, a bashful smile tugging at her lips."
 
             p "I don't know about that. But I do know that being with you... it makes me feel like maybe, just maybe, true happiness is possible. That no matter what happens, as long as we have each other, we can find a way to make it through."
 
@@ -527,6 +519,18 @@ label meadow_start:
 
             n "And in that moment, they realized that perhaps, that's all they really needed."
            
-            stop music fadeout 0.5
+            
 
-            return
+            jump meadow_end
+
+label meadow_end:
+    pause 2
+
+    n "As night fell, so did the conversation between the two."
+    n "The reflective silence instilled a deep longing within their hearts, introspective thoughts which lead to newfound desires and perspectives."
+    n "The stars patiently watched them from above, but as the night grew long, so did the urgency to jump meadow_end to the kingdom."
+    n "The two set off once more, resolved to make it home before daybreak." 
+    
+    stop music fadeout 0.5
+
+    return
