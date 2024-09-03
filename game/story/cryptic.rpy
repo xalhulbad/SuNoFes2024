@@ -68,9 +68,9 @@ label cryptic_start:
                     call cryptic_can_we_find
                     jump cryptic_choices1
 
-                "(Act) Listen to the whispers of the stones" if (v_type == 'dml' and not dml_lore_shown) or (v_type == 'fh' and not fh_lore_shown) or (v_type == 'ff' and not ff_lore_shown) or (v_type == 'hu' and not hu_lore_shown) or (v_type == 'vs' and not vs_lore_shown):
+                "{b}(Inquire) Listen to the whispers of the stones{/b}" if (v_type == 'dml' and not dml_lore_shown) or (v_type == 'fh' and not fh_lore_shown) or (v_type == 'ff' and not ff_lore_shown) or (v_type == 'hu' and not hu_lore_shown) or (v_type == 'vs' and not vs_lore_shown):
                     call cryptic_listen_to_whispers
-                    $ cryptic_choices1_seen.remove("(Act) Listen to the whispers of the stones") # We want this to possibly appear for other villain types
+                    $ cryptic_choices1_seen.remove("{b}(Inquire) Listen to the whispers of the stones{/b}") # We want this to possibly appear for other villain types
                     jump cryptic_choices1
 
 
@@ -227,7 +227,7 @@ label cryptic_start:
         p "Perhaps. It feels like it's alive, humming with power. We need to take a closer look."
         menu:
             "(Act) Examine the glowing gem":
-                scene bg Cryptic_Touching with dissolve
+                scene bg gem with dissolve
                 n "As the princess examined the glowing gem, its radiant light seemed to draw her in, pulsing with a mysterious energy that hinted at the power it contained."
                 n "The gem lay cradled atop the rubble, its glow casting intricate patterns on the stone circle around them."
                 p "This gem is filled with destructive magic, the kind that we could use in case of any danger. But if we take it, we risk banishment from the kingdom forever."

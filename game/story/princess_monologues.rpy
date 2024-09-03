@@ -20,10 +20,8 @@ label happily_ever_after:
     $ got_happily_ever_after = True
 
     stop music
-    window hide
     scene bg actual_blackscreen
     pause 2.5
-    window show Dissolve(1.5)
     
     pt "The world beyond the tower and kingdom was more than I ever imagined. We chose a life together, free from the shadows of our past, a choice made not out of obligation, but out of a genuine desire to be with one another."
     pt "For so long, I believed that my story was one of waiting-to be rescued, to be saved. But I discovered something different. It was about finding my own strength, my courage to make decisions for myself."
@@ -42,10 +40,8 @@ label saved_hero:
     $ got_saved_hero = True
 
     stop music
-    window hide
     scene bg actual_blackscreen
     pause 2.5
-    window show Dissolve(1.5)
 
     pt "I never imagined I'd be the one to save him. The stories always cast me as the one needing rescue, but this time, I was the one who acted." 
     pt "Seeing him vulnerable, knowing that he depended on me... it changed something inside me."
@@ -67,10 +63,8 @@ label sacrificed_hero:
     $ got_sacrificed_hero = True
 
     stop music
-    window hide
     scene bg actual_blackscreen
     pause 2.5
-    window show Dissolve(1.5)
 
     pt "He gave everything for me. In that final, heartbreaking moment, he chose to protect me, even at the cost of his own life. It's a sacrifice I can hardly fathom, and the weight of it is something I will carry forever."
     pt "The stories always speak of heroes and their noble deeds, but seeing him make that ultimate choice is something else entirely." 
@@ -91,10 +85,8 @@ label sacrificed_princess:
     $ got_sacrificed_princess = True
 
     stop music
-    window hide
     scene bg actual_blackscreen
     pause 2.5
-    window show Dissolve(1.5)
 
     pt "I never thought I would be the one to make such a choice. But when the moment came, it felt right, even if it meant giving up everything."
     pt "To see him safe, to protect what we believed in... it was worth it, even if it meant sacrificing myself."
@@ -115,10 +107,8 @@ label unfulfilled_love:
     $ got_unfulfilled_love = True
 
     stop music
-    window hide
     scene bg actual_blackscreen
     pause 2.5
-    window show Dissolve(1.5)
 
     pt "It's hard to accept that our story ended this way. We defied the rules, followed our hearts, and yet, it led to his banishment."
     pt "It feels like a cruel twist of fate, but deep down, I know it was the only choice left to us."
@@ -140,10 +130,8 @@ label corrupted_hero:
     $ got_corrupted_hero = True
 
     stop music
-    window hide
     scene bg actual_blackscreen
     pause 2.5
-    window show Dissolve(1.5)
 
     pt "I watched him change, slowly, painfully, until the person I knew was gone. The magic that was meant to protect us became a curse, twisting him into something unrecognizable." 
     pt "His strength turned to darkness, and it broke my heart to see him struggle against it."
@@ -164,10 +152,8 @@ label inherited_throne:
     $ got_inherited_throne = True
 
     stop music
-    window hide
     scene bg actual_blackscreen
     pause 2.5
-    window show Dissolve(1.5)
 
     pt "I never thought I would find myself here, at the head of the kingdom, bearing the weight of the crown. The throne was never something I aspired to this soon, yet here I am, thrust into a role I never expected."
     pt "The loss of the queen was a tragedy, a shadow that looms over our kingdom. But in that moment of crisis, I realized that I couldn't just stand by and watch. The people needed a leader, someone to guide them through the darkness"
@@ -187,10 +173,8 @@ label forest_curse:
     $ got_forest_curse = True
 
     stop music
-    window hide
     scene bg actual_blackscreen
     pause 2.5
-    window show Dissolve(1.5)
 
     pt "Bound to the forest... it's a fate I never foresaw. The magic we sought to control became our prison, chaining us for eternity. The forest, once a sanctuary, became a reminder of our choices and the consequences that follow."
     pt "We thought we could harness the magic, bend it to our will, but it had its own designs. It whispered promises of power, of freedom from the kingdom's constraints, but taking advantage of those promises came at a steep price." 
@@ -210,10 +194,8 @@ label forest_protectors:
     $ got_forest_protectors = True
 
     stop music
-    window hide
     scene bg actual_blackscreen
     pause 2.5
-    window show Dissolve(1.5)
 
     pt "The forest is quiet now, a sanctuary of life and magic that we fought to preserve. Our journey wasn't just about overcoming the villain; it was about understanding what it means to protect and nurture something greater than ourselves."
     pt "I realized that stewardship is about being present, about being committed to caring for something. We became the forest's guardians, not because we had to, but because it was where our hearts led us."
@@ -233,10 +215,8 @@ label love_beyond_death:
     $ got_love_beyond_death = True
 
     stop music
-    window hide
     scene bg actual_blackscreen
     pause 2.5
-    window show Dissolve(1.5)
 
     pt "To love so deeply that death cannot separate us... it feels like a story from a legend, yet it became our reality. We chose to face the end together, to embrace a love that transcends life itself." 
     pt "Our choice was made out of a pure, unwavering devotion that is timeless."
@@ -341,6 +321,7 @@ label reset_default_vars:
 
 
     # meadow.rpy
+    $ meadow_choices1_seen = set()
 
 
     # hu.rpy
@@ -432,5 +413,6 @@ label reset_default_vars:
 
     # aware_hero.rpy
     $ aware_hero_number = 0
+    $ aware_hero_second_chosen = 0
 
     return

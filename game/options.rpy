@@ -65,7 +65,6 @@ define config.has_voice = True
 ## game, until it is stopped or another file is played.
 
 define config.main_menu_music = "audio/Title - Title Screen 3.mp3"
-define config.main_menu_music_fadein = 5.0
 
 
 ## Transitions #################################################################
@@ -93,6 +92,8 @@ define config.after_load_transition = None
 ## Used when entering the main menu after the game has ended.
 
 define config.end_game_transition = Fade(3, 0, 1.5)
+
+define config.end_splash_transition = Dissolve(0.5)
 
 
 ## A variable to set the transition used when the game starts does not exist.
