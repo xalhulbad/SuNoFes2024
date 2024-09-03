@@ -55,6 +55,7 @@ label fh_start:
         pt "No more running. Let's put an end to this cycle, one way or another."
     
     fh "So, we meet again. I've decided that you must pay for the kingdom's past sins. Did you think the forest would forget? Or perhaps you thought you could change what's already been broken?"
+    scene bg villain_hero_sword_facing_far_fh with dissolve
     n "The hero instinctively moved to shield the princess, his stance guarded but ready for battle."
     n "He knew that any misstep could lead to bloodshed, and the Fallen Hero's rage had only grown since their last encounter."
     h "We don't want to fight, but we'll defend ourselves if we have to. There's still a chance to end this without more pain."
@@ -72,8 +73,7 @@ label fh_start:
         # Initial branch
         menu:
             "(Act) Prepare for combat":
-                scene bg villain_hero_sword_facing_far_fh with dissolve
-                n "The princess signaled to the hero, who drew his sword with a fluid motion. The air grew tense as the Fallen Hero stepped forward, his eyes burning with an old bitterness."
+                n "The air grew tense as the Fallen Hero stepped forward, his eyes burning with an old bitterness."
                 p "We can't hold back against him. He's not just another opponent."
                 h "I know. He carries the weight of a past we don't fully understand. But I'll follow your lead."
 
@@ -172,8 +172,6 @@ label fh_start:
                 n "The princess signaled for the hero to hold his ground. The two stood firm, waiting for the Fallen Hero's move."
                 n "The tension between them crackled like a storm ready to break."
                 h "He's watching, waiting for us to slip. Stay ready."
-                n "The Fallen Hero's gaze was cold, calculating. In a flash, he lunged, sword sweeping in a deadly arc."
-                n "The hero raised his shield just in time, deflecting the blow and pushing back with all his strength."
                 fh "You think defense will save you? You've already lost if you're on the back foot."
                 n "Despite his harsh words, there was a hint of respect in the Fallen Hero's voice."
                 n "The princess could sense that he was testing them, probing their resolve."
@@ -367,9 +365,11 @@ label fh_start:
             "(Act) Use the hero's shield to block and counter":
                 n "The princess kept her eyes locked on the Fallen Hero's stance, noticing the subtle shifts in his posture."
                 p "Keep your shield up! Wait for the right moment to strike back!"
+                scene bg villain_hero_sword_facing_close_fh with dissolve
                 n "The hero braced himself, shield raised as the Fallen Hero lunged forward with a powerful swing."
                 n "The clash was deafening as metal met metal, the hero holding firm before pushing back with all his might."
                 n "The counterattack was swift, but the Fallen Hero sidestepped with almost inhuman grace."
+                scene bg villain_hero_sword_facing_far_fh with dissolve
                 fh "Your defense is strong, but it's only delaying the inevitable. How long do you think you can last before it crumbles?"
                 n "The princess could see the strain on the hero's face, but there was determination there too."
                 n "They needed to find a way to break the Fallen Hero's rhythm if they wanted to stand a chance."
@@ -450,7 +450,7 @@ label fh_start:
                 scene bg villain_hero_charging_far_fh with dissolve
                 n "The hero lunged forward, aiming for the injury, but the Fallen Hero's instincts flared to life. Despite the pain, he twisted away, evading the strike with a snarl."
                 scene bg villain_hero_sword_facing_far_fh with dissolve
-                v "You think I'm not used to fighting with pain? You're just another naïve fool."
+                fh "You think I'm not used to fighting with pain? You're just another naïve fool."
                 n "The counterattack was brutal-a backhanded slash that nearly knocked the hero off his feet. The princess could see the strain in the hero's movements. They were running out of chances."
 
                 jump fh_choices_5_1
@@ -458,9 +458,9 @@ label fh_start:
                 n "The princess's eyes glowed with determination as she channeled her energy into the hero's blade. The sword hummed with newfound power, crackling with magic."
                 p "This time, we'll end it! Strike with all your strength!"
                 scene bg villain_hero_charging_far_fh with dissolve
-                n "The hero surged forward, the blade cutting through the air with a trail of shimmering light. The Fallen Hero's eyes widened as he recognized the surge of magic, but it was too late-this strike was far more precise than before."
-                v "So you resort to magic... Fine, let's see how far it takes you!"
-                scene bg villain_far_fh with dissolve
+                n "The hero surged forward, his speed amplified by the magic. The Fallen Hero's eyes widened as he recognized the surge of magic, but it was too late-this strike was far more precise than before."
+                fh "So you resort to magic... Fine, let's see how far it takes you!"
+                scene bg villain_hero_sword_facing_far_fh with dissolve
                 n "The attack connected, forcing the Fallen Hero to stumble back. But his anger only deepened, and a dangerous light filled his eyes."
                 n "They had wounded him, but the fight was not over."
 
@@ -475,7 +475,7 @@ label fh_start:
                 scene bg villain_hero_charging_far_fh with dissolve
                 n "With a fierce battle cry, the hero rushed forward, swinging his sword with raw power. The Fallen Hero met the attack head-on, his expression shifting into one of grim determination."
                 n "Steel clashed against steel, the force of the impact sending shockwaves through the clearing."
-                v "Is this what you call strength? You're nothing but an echo of the warrior I once was."
+                fh "Is this what you call strength? You're nothing but an echo of the warrior I once was."
                 scene bg villain_hero_sword_facing_far_fh with dissolve
                 n "Though the hero's attack was mighty, the Fallen Hero's experience and hardened resolve allowed him to stand firm."
                 n "The clash pushed both combatants to their limits, leaving the princess with a crucial choice to make before their strength ran out."
@@ -487,7 +487,7 @@ label fh_start:
                 scene bg villain_hero_charging_far_fh with dissolve
                 n "As the hero charged forward, the air crackled with energy. The Fallen Hero's eyes narrowed, sensing the distortion in the space around him."
                 n "Suddenly, the princess unleashed a burst of light, disorienting him just long enough for the hero's blade to find its mark."
-                v "Magic tricks? So this is the extent of your courage."
+                fh "Magic tricks? So this is the extent of your courage."
                 scene bg villain_hero_sword_facing_far_fh with dissolve
                 n "The attack landed, but the Fallen Hero's resolve remained unbroken. Though visibly shaken, he quickly recovered, eyes blazing with renewed fury."
                 n "The princess could feel the tension rising-this battle was only growing more dangerous."
@@ -503,8 +503,9 @@ label fh_start:
                 scene bg villain_hero_sword_facing_close_fh with dissolve
                 n "With a grunt of effort, the hero deflected the blow, shoving the Fallen Hero off-balance before launching a swift counterattack."
                 n "For a split second, the Fallen Hero's guard dropped, and the hero's strike connected."
-                v "Not bad, but don't think that will be enough."
+                fh "Not bad, but don't think that will be enough."
                 scene bg villain_far_fh with dissolve
+                n "Both the hero and Fallen Hero backed up, preparing for their next move."
                 n "Despite the hit, the Fallen Hero's eyes gleamed with an unsettling calm. He barely flinched, as if the wound only fueled his rage."
                 n "The princess realized that while they were making progress, this battle would not end easily."
 
@@ -515,7 +516,7 @@ label fh_start:
                 scene bg villain_hero_charging_far_fh with dissolve
                 n "Magic swirled around the Fallen Hero, binding his movements for a brief moment. The hero seized the opportunity, driving his blade toward the Fallen Hero's exposed side."
                 scene bg villain_hero_sword_facing_far_fh with dissolve
-                v "You rely on tricks because you lack true strength!"
+                fh "You rely on tricks because you lack true strength!"
                 n "The spell worked, and the hero's attack hit its mark. But the Fallen Hero's endurance was unyielding, his eyes locked onto the princess with seething rage."
                 n "She could feel the tension mounting-he wouldn't fall for the same trick twice."
 
@@ -530,7 +531,7 @@ label fh_start:
                 scene bg villain_hero_charging_far_fh with dissolve
                 n "The hero moved swiftly, executing the feint as instructed. For a moment, the Fallen Hero shifted his attention, only to realize too late that the true attack was coming from the other side."
                 n "The hero's blade found its target, landing a solid hit."
-                v "Clever. But cleverness only gets you so far."
+                fh "Clever. But cleverness only gets you so far."
                 scene bg villain_far_fh with dissolve
                 n "The Fallen Hero grimaced as the blow connected, but his retaliation was swift. He adjusted instantly, turning the tables in the blink of an eye."
                 n "The princess could sense his growing frustration-this battle was quickly escalating into a dangerous dance of wit and skill."
@@ -542,7 +543,7 @@ label fh_start:
                 scene bg Villain with dissolve
                 n "The hero nodded, shifting his movements to draw the Fallen Hero towards him. It was working-bit by bit, the Fallen Hero was funneled into the confined area."
                 n "But just as they were about to run, he caught on, shifting his stance and using the trees to his advantage."
-                v "You think I haven't learned every inch of this forest? You underestimate me."
+                fh "You think I haven't learned every inch of this forest? You underestimate me."
                 scene bg villain_far_fh with dissolve
                 n "The strategy failed, and the Fallen Hero lashed out, using the terrain to his advantage."
                 n "The situation grew more perilous as he cornered the hero. The princess realized they were running out of time-the next move had to be decisive."
@@ -557,7 +558,7 @@ label fh_start:
                 p "Remember who you were-the victories you achieved, the lives you saved. That man is still inside you, buried beneath all this hatred."
                 h "You were a legend-people still talk about your deeds. You don't have to be this way."
                 n "The Fallen Hero's eyes flickered, a storm of conflicting emotions swirling within. For a moment, he seemed lost in memory, the bitterness in his expression giving way to something softer."
-                v "You speak of the past as if it matters now. Those victories are ashes-meaningless in a world that cast me aside."
+                fh "You speak of the past as if it matters now. Those victories are ashes-meaningless in a world that cast me aside."
                 n "Though he tried to harden his heart, the princess could see the conflict raging within him. The memories were still there, and they tugged at his resolve."
                 n "This might be their chance-if she could press just a bit more."
 
@@ -567,7 +568,7 @@ label fh_start:
                 p "They wronged you-they betrayed someone who only wanted to protect them. But there's still a way to find justice, to reclaim what you lost."
                 h "It wasn't right, what happened to you. But that doesn't mean you have to keep hurting others because of it."
                 n "The Fallen Hero's expression darkened, his grip tightening on his sword. Beneath the anger, there was something deeper-pain, loss, and a sense of betrayal that ran deeper than any wound."
-                v "Justice? Don't speak to me of justice. It's a lie-like everything else they promised me."
+                fh "Justice? Don't speak to me of justice. It's a lie-like everything else they promised me."
                 n "Though his voice was laced with bitterness, the princess could see that her words had struck a chord. He wasn't unmoved-there was still a spark of the man he once was, buried beneath the scars."
 
                 jump fh_choices_5_10
@@ -581,7 +582,7 @@ label fh_start:
                 h "He deserves to know that the kingdom isn't the place that betrayed him. It's different now-it's better."
                 n "The Fallen Hero's eyes narrowed in suspicion, though there was a flicker of curiosity beneath the mistrust."
                 n "The princess could sense his doubt, the walls he'd built around himself beginning to crack."
-                v "I've heard promises before, and they always turned to dust. What makes you think this time is any different?"
+                fh "I've heard promises before, and they always turned to dust. What makes you think this time is any different?"
                 n "Though his words were laced with skepticism, the princess knew that the idea had taken root. If she could show him that change was real, there might still be hope."
 
                 jump fh_choices_5_11
@@ -591,7 +592,7 @@ label fh_start:
                 h "You were a symbol of hope once. That can be true again."
                 n "The Fallen Hero's gaze wavered, the weight of her words pressing against the bitterness he clung to."
                 n "For a moment, something like hope sparked in his eyes, but it was quickly drowned by years of anger and distrust."
-                v "Return as a hero? To a kingdom that turned its back on me? You're asking for the impossible."
+                fh "Return as a hero? To a kingdom that turned its back on me? You're asking for the impossible."
                 n "Despite his refusal, the princess could see that her words had shaken him. There was a part of him that longed for that life again, even if he refused to admit it."
                 n "This moment could be the turning point, if she found the right way to guide him."
 
@@ -605,7 +606,7 @@ label fh_start:
                 p "I'll do more than just speak on your behalf. I'll gather proof-the evidence they ignored-and I'll make sure they hear it, no matter what it takes."
                 h "That's a dangerous promise, but if anyone can dig up the truth, it's her."
                 n "The Fallen Hero's expression darkened, suspicion still heavy in his eyes. But there was a flicker-an old hope, buried deep beneath years of bitterness."
-                v "Proof? Do you think they'll care about facts when their lies hold more power? You're offering an impossible fight."
+                fh "Proof? Do you think they'll care about facts when their lies hold more power? You're offering an impossible fight."
                 n "His words dripped with cynicism, but the princess sensed the crack in his resolve. The chance to reclaim the honor he lost still tugged at him, no matter how much he tried to deny it."
                 n "This was a battle against the doubt in his own heart, and she could see that a part of him wanted to believe her."
 
@@ -616,7 +617,7 @@ label fh_start:
                 h "This isn't like before. She's different from the ones who wronged you."
                 n "The Fallen Hero's gaze narrowed, weighing the offer against the scars of betrayal he still carried."
                 n "For a moment, his hardened expression softened, doubt creeping into his eyes."
-                v "A princess's word? You think your title can rewrite history? I've seen how easily royalty can turn against their own when it suits them."
+                fh "A princess's word? You think your title can rewrite history? I've seen how easily royalty can turn against their own when it suits them."
                 n "Though skepticism clung to his voice, the princess could tell that her authority held weight. The years had stripped him of his faith in the kingdom, but this was an opportunity to restore what he'd lost."
                 n "If she could earn his trust, it might be enough to sway him."
 
@@ -631,7 +632,7 @@ label fh_start:
                 h "Princess... that's a serious offer. Are you really ready to make such a vow?"
                 n "The Fallen Hero's eyes widened in surprise, the bitterness in his gaze momentarily giving way to something softer-curiosity, even disbelief."
                 n "He had expected more empty words, but this was something he hadn't anticipated."
-                v "A magical oath? You would make such a binding promise for someone like me? Do you even understand the weight of what you're offering?"
+                fh "A magical oath? You would make such a binding promise for someone like me? Do you even understand the weight of what you're offering?"
                 n "The princess held his gaze, unwavering. She could tell he was taken aback-years of isolation and betrayal had taught him that trust was a fool's game, and yet here she was, offering something that could change everything."
                 n "The moment hung heavy in the air, as if the world itself waited to see what he would say next."
 
