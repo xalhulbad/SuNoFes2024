@@ -306,9 +306,9 @@ label villain_encounter:
                 n "The figure sneered, seeming to enjoy the tension. But they remained silent, eyes filled with malice."
                 jump villain4_2
 
-            "(Act) Retreat to a safer distance":
-                n "The princess and hero retreated to a safer distance, slowly backing up, sword poised and prepared for any sudden movements."
-                n "Holding their new position, they assessed their situation, the distance somewhat calming their nerves."
+            "(Act) Hold position":
+                n "The princess and hero held their position to a safer distance, sword poised and prepared for any sudden movements."
+                n "They assessed their situation, the far distance to the shadowy figure somewhat calming their nerves."
                 jump villain2_3
 
     label villain3:
@@ -361,7 +361,7 @@ label villain_encounter:
                 s "How predictable."
                 n "In a fluid motion, the figure sidestepped the hero's strike, their movements almost too fast to follow. The hero stumbled, unbalanced by the sudden miss."
                 h "What...?"
-                scene bg forest2_hero_facing_close_ff with dissolve
+                scene bg forest2_hero_sword_facing_far_ff with dissolve
                 ff "Did you really think you could outmaneuver me? I've been watching you from the moment you entered the forest."
                 n "The hero and princess regrouped, but their confidence wavered, the realization of the Femme Fatale's superiority sinking in."
                 p "How...? We were so careful."
@@ -549,11 +549,11 @@ label villain_encounter:
                 jump villain4_1_1
 
             "(Act) Offer information":
-                scene bg forest2_far_ff with dissolve
                 n "The princess spoke earnestly, hoping to build trust."
                 p "We know things that could help you. Let us share what we know, and maybe we can assist each other."
                 h "It's valuable knowledge. Hear us out."
                 n "Unexpectedly, the figure's smirk widened, revealing a calculating gleam in their eyes. The posture relaxed, but it was a deceptive ease, like a predator toying with its prey."
+                scene bg forest2_far_ff with dissolve
                 n "The figure stepped into the light, shifting the hood of the cloak to reveal an elegant woman donning an array of corrupt accessories."
                 ff "Information, you say? How delightful. But you see, I already know more about you than you realize. Your fears, your desires, your weaknesses. They are all laid bare before me."
                 n "The figures's voice dripped with honeyed malice, each word a carefully crafted weapon aimed at their resolve. The air grew colder as shadows seemed to deepen around them."
@@ -632,6 +632,7 @@ label villain_encounter:
                 scene bg forest2_far_fh with dissolve
                 n "The figure's eyes narrowed further as he stepped into the light, revealing a scarred face filled with rage and sorrow. His hand moved to the hilt of his sword, his expression a mixture of bitterness and determination."
                 fh "Honor? From the likes of you? But very well, I accept your challenge."
+                scene bg forest2_hero_sword_facing_far_fh with dissolve
                 n "The hero stepped forward, drawing his sword and matching the figure's determined stance."
                 h "We'll fight, but I won't let you harm her. I've heard the stories about you."
                 fh "Then let the past be avenged with steel."
@@ -663,8 +664,8 @@ label villain_encounter:
                 scene bg forest2_hero_charging_far_dml with dissolve
                 n "The figure's eyes gleamed with malevolent delight as the hero closed the distance. With a flick of his wrist, a dark, crackling energy began to form around his hands." 
                 dml "Fools. You dare to challenge me?" 
-                scene bg forest2_far_dml with dissolve
                 n "The hero swung his sword, aiming for the figure's midsection, but the Dark Magic Lord moved with unnatural speed, deflecting the blow with a shield of dark magic." 
+                scene bg forest2_far_dml with dissolve
                 dml "You are nothing against my power. Witness the true ruler of this forest!" 
                 n "The Dark Magic Lord turned his gaze to the princess, his eyes glowing with an eerie light." 
                 dml "You cannot stop me. I am the hero this world needs, even if it cannot see it yet." 
@@ -765,14 +766,14 @@ label villain_encounter:
 
     label villain2_1_2:
         menu:
-            "(Act) Ambush from above":
-                n "The hero and princess silently climbed the trees, positioning themselves for an ambush. The figure, unaware, moved closer, searching for them."
-                p "We'll strike from above. Be ready."
-                n "The hero nodded, gripping his sword tightly. The Hunter, drawn by their tactical approach, watched with keen interest from a distance."
-                hu "Clever. But not clever enough."
-                n "The hero and princess launched their ambush, leaping down from the branches. The figure looked up just in time to see them descending upon him."
+            "(Act) Ambush them":
+                n "The hero and princess waited carefully, positioning themselves for an ambush. The figure, unaware, moved closer, searching for them."
+                p "We'll strike when they approach. Be ready."
+                n "The hero nodded, gripping his sword tightly. The figure, drawn by their tactical approach, watched with keen interest from a distance."
+                scene bg forest2_hero_charging_close_shadowy with dissolve
+                n "The hero and princess launched their ambush, leaping from behind the rock. The figure looked up just in time to see them descending upon him."
                 h "Now!"
-                n "Their attack was swift and coordinated, but the Hunter moved faster. In a blur, he intercepted their strike, parrying with his bow and knocking them off balance."
+                n "The attack was swift and coordinated, but the shadowy figure moved faster. In a blur, they intercepted the strike, knocking the princess and hero off balance."
                 hu "A worthy effort, but the forest is my domain."
                 scene bg forest2_far_hu with dissolve
                 n "The princess and hero scrambled to their feet, their eyes widening as the Hunter revealed himself, his presence commanding and lethal."
@@ -847,7 +848,7 @@ label villain_encounter:
                 stop music fadeout 0.5
                 return
 
-            "(Act) Find hidden path":
+            "(Act) Move cautiously":
                 n "The princess and hero cautiously moved towards the hidden path, hoping to escape the looming threat."
                 p "Stay low and follow me. I think there's a way through here."
                 n "They moved stealthily, trying to make as little noise as possible. The forest seemed to watch them, every rustle of leaves amplifying their fear."
@@ -1153,6 +1154,7 @@ label villain_encounter:
             "(Act) Exploit their hesitation":
                 n "The hero saw a moment of hesitation in the figure's eyes and took the chance to strike."
                 h "Now, while they're off balance!"
+                scene bg forest2_hero_charging_far_shadowy with dissolve
                 n "The hero lunged forward, aiming to exploit the figure's hesitation. But as his sword swung through the air, the figure's form wavered and flickered, revealing its true nature."
                 vs "You dare to attack the embodiment of vengeance?"
                 scene bg forest2_far_vs with dissolve
@@ -1197,6 +1199,7 @@ label villain_encounter:
                 scene bg forest2_hero_charging_close_dml with dissolve
                 n "The attack disrupted the flow of dark energy, causing the shadows to waver. The hero and princess pressed their advantage, driving the Dark Magic Lord back."
                 p "Keep pushing! We can do this!"
+                scene bg forest2_far_dml with dissolve
                 n "But the Dark Magic Lord quickly recovered, his eyes burning with fury. Dark energy erupted from the ground, forcing the hero and princess to retreat."
                 dml "You are formidable, but you will not defeat me. This forest bends to my will, and you are merely insects in my grand design."
                 n "The hero and princess regrouped, panting and worn, but their resolve unbroken."
