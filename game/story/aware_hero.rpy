@@ -87,6 +87,7 @@ label aware_hero_first:
 label aware_hero_second:
     while aware_hero_second_chosen < 3: # user gets to choose 3 choices
         $ aware_hero_second_chosen += 1
+        show aware_hero Calm # default expression is calm
 
         menu:
             "Everything here feels strangely familiar.":
@@ -344,6 +345,8 @@ label aware_hero_second:
 
 label aware_hero_third:
     $ game_done = True
+
+    show aware_hero Calm
 
     menu:
         # choice 14
