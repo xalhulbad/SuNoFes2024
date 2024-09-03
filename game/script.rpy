@@ -31,6 +31,18 @@ image bg Villain = "base_backgrounds/bg Villain.png"
 image bg Meadow = "base_backgrounds/bg Meadow.png"
 image bg Boulder = "base_backgrounds/bg Boulder.png"
 
+# Aware Hero Expression images
+# image aware_hero Calm = "aware_hero_Calm.png"
+# image aware_hero Afraid = "aware_hero_Calm.png"
+# image aware_hero Angry_Confused = "aware_hero_Calm.png"
+# image aware_hero In_Thought = "aware_hero_Calm.png"
+# image aware_hero Light_Laugh = "aware_hero_Calm.png"
+# image aware_hero Loving_Look = "aware_hero_Calm.png"
+# image aware_hero Sad = "aware_hero_Calm.png"
+# image aware_hero Smirk = "aware_hero_Calm.png"
+# image aware_hero Surprised = "aware_hero_Surprised.png"
+# image aware_hero Unamused = "aware_hero_Unamused.png"
+
 image main_menu_animated:
     "gui/main_menu_design1.png"
     pause 0.55
@@ -50,6 +62,8 @@ label start:
 
     pause 1
     # Give time for title screen music to stop
+
+    # call aware_hero
 
     while not game_done: # Main game loop
 
