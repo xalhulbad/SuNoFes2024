@@ -68,9 +68,9 @@ label cryptic_start:
                     call cryptic_can_we_find
                     jump cryptic_choices1
 
-                "(Act) Listen to the whispers of the stones" if (v_type == 'dml' and not dml_lore_shown) or (v_type == 'fh' and not fh_lore_shown) or (v_type == 'ff' and not ff_lore_shown) or (v_type == 'hu' and not hu_lore_shown) or (v_type == 'vs' and not vs_lore_shown):
+                "{b}(Inquire) Listen to the whispers of the stones{/b}" if (v_type == 'dml' and not dml_lore_shown) or (v_type == 'fh' and not fh_lore_shown) or (v_type == 'ff' and not ff_lore_shown) or (v_type == 'hu' and not hu_lore_shown) or (v_type == 'vs' and not vs_lore_shown):
                     call cryptic_listen_to_whispers
-                    $ cryptic_choices1_seen.remove("(Act) Listen to the whispers of the stones") # We want this to possibly appear for other villain types
+                    $ cryptic_choices1_seen.remove("{b}(Inquire) Listen to the whispers of the stones{/b}") # We want this to possibly appear for other villain types
                     jump cryptic_choices1
 
 
