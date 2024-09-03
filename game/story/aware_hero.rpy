@@ -15,10 +15,8 @@ label aware_hero:
         jump aware_hero_first
     elif aware_hero_number == 2:
         jump aware_hero_second
-    elif aware_hero_number == 3:
-        jump aware_hero_third
     else:
-        jump aware_hero_fourth
+        jump aware_hero_third
 
 
 label aware_hero_first:
