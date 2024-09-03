@@ -989,7 +989,7 @@ label ff_start:
                 n "The princess saw the opening and signaled to the hero to press the advantage. They had to overwhelm the Femme Fatale before she could regain her footing."
                 p "Keep pushing, don't let her recover!"
                 n "The hero charged forward with a series of powerful strikes, each one driving the Femme Fatale back. Her smirk faltered as she struggled to keep up, clearly unprepared for the hero's relentless assault."
-                scene villain_hero_charging_far_ff with dissolve
+                scene bg villain_hero_charging_far_ff with dissolve
                 ff "You... you think you can overpower me?!"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
@@ -1012,7 +1012,7 @@ label ff_start:
                 n "The princess watched as the Femme Fatale launched attack after attack, her movements growing increasingly frantic and sloppy with each swing. It was clear she was tiring, and soon she would leave herself wide open."
                 p "Hold on... just a little longer. She's wearing herself out."
                 n "The hero nodded, maintaining a defensive stance as the Femme Fatale's strikes grew weaker. Finally, seeing her stumble, the princess knew it was time."
-                scene villain_hero_sword_facing_far_ff with dissolve
+                scene bg villain_hero_sword_facing_far_ff with dissolve
                 p "Now! Use your magic!"
                 n "The hero nodded and summoned his remaining strength, channeling his magic into a powerful blast aimed directly at the Femme Fatale. The force of the spell caught her off guard, throwing her back."
                 ff "What... no!"
@@ -1191,7 +1191,7 @@ label ff_start:
                 n "The princess watched the Femme Fatale closely, noting the subtle way she wielded her poisoned daggers. With every movement, the princess could see a pattern—a chance to use the villain's own weapons against her."
                 p "Hero, distract her! We need to turn her own tools back on her."
                 n "The hero nodded, launching into a series of feints and strikes, drawing the Femme Fatale's attention entirely onto him."
-                scene villain_hero_charging_far_ff with dissolve
+                scene bg villain_hero_charging_far_ff with dissolve
                 ff "You're predictable! Do you think you can defeat me with such basic tactics?"
                 if routes_completed + 1 in aware_hero_routes:
                     jump aware_hero
