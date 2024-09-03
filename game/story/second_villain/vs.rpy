@@ -2,9 +2,7 @@
 
 # Default Variables
 
-
 # Flags for unlockable options
-
 default vs_chose_who_are_you = False
 default vs_chose_why_do_you_seek = False
 default vs_chose_can_you_ever = False

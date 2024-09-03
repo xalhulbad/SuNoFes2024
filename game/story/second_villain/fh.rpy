@@ -2,7 +2,6 @@
 
 # Default variables
 
-
 # Flags for unlockable options
 default fh_chose_who_are_you = False
 default fh_chose_why_hold_grudge = False

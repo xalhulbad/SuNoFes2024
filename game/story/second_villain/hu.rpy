@@ -2,7 +2,6 @@
 
 # Default variables
 
-
 # Flags for unlockable options
 default hu_chose_who_are_you = False
 default hu_chose_why_after_us = False

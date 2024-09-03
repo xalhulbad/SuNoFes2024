@@ -2,9 +2,7 @@
 
 # Default Variables
 
-
 # Flags for unlockable options
-
 default dml_chose_who_are_you = False
 default dml_chose_why_do_you = False
 default dml_chose_what_do_you = False
