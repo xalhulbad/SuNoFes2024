@@ -51,10 +51,6 @@ label start:
     pause 1
     # Give time for title screen music to stop
 
-    call credits
-    call true_ending_monologue
-    return
-
     while not game_done: # Main game loop
 
         if routes_completed + 1 in aware_hero_routes: # Aware hero route
