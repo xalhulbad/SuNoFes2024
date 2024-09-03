@@ -4,7 +4,7 @@ default aware_hero_number = 0
 default aware_hero_second_chosen = 0
 
 label aware_hero:
-    $ aware_hero_number += 3
+    $ aware_hero_number += 1
 
     scene bg blackscreen with Dissolve(1.0)
 
@@ -24,8 +24,8 @@ label aware_hero_first:
     $ aware_hero_met = True
     
     # show aware_hero emotion
-    show aware_hero Calm with Dissolve(1.5)
-    window show
+    show aware_hero Calm
+
 
     menu:
         "What's happened before?":
@@ -456,10 +456,6 @@ label aware_hero_third:
 
             jump third_encounter_second_choice
 
-
-    stop music
-    scene bg actual_blackscreen
-    pause(2)
     return
 
 label third_encounter_second_choice:
