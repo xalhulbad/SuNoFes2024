@@ -93,6 +93,19 @@ label start:
     return # This ends the game.
 
 
+label splashscreen:
+    scene black
+    with Pause(1)
+
+    show text "{size=160}Play by Play Games" with dissolve
+    with Pause(2)
+
+    hide text with dissolve
+    with Pause(1)
+
+    return
+
+
 # Credits courtesy of https://lemmasoft.renai.us/forums/viewtopic.php?t=22481
 label credits:
     $ credits_speed = 52 #scrolling speed in seconds

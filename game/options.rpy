@@ -94,6 +94,8 @@ define config.after_load_transition = None
 
 define config.end_game_transition = Fade(3, 0, 1.5)
 
+define config.end_splash_transition = Dissolve(0.5)
+
 
 ## A variable to set the transition used when the game starts does not exist.
 ## Instead, use a with statement after showing the initial scene.
