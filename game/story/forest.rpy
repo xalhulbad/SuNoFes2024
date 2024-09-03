@@ -26,7 +26,7 @@ label forest_start:
     scene bg Forest1 with fade
     window show
 
-    play music "audio/1 Forest 3.mp3" loop volume 1.0 fadein 0.5
+    play music "audio/1 Forest 3.mp3" loop volume 1.0
 
     n "As they emerged out of the tower, sunlight bathed them. The sky was a brilliant blue, and the forest ahead was lush and green. Birds sang from the treetops, and a gentle breeze rustled the leaves."
 
@@ -169,7 +169,7 @@ label forest_start:
         scene bg Forest2 with dissolve
         stop music fadeout 1.5
         n "The princess and the hero stepped forward in the forest, but something was off."
-        play music "audio/2 Forest 1.mp3" loop volume 1.0 fadein 0.5
+        play music "audio/2 Forest 1.mp3" loop volume 1.0
         n "A bad omen. An eerie silence enveloped them."
         n "A tree branch cracked under the foot of the Princess. A flock of birds scattered from the canopy above at the sudden noise."
         n "The hero narrowed his eyes and scanned his surroundings. His hand drifted towards the numerous weapons he had equipped."
