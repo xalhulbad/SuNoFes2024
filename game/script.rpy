@@ -48,10 +48,12 @@ label start:
 
     stop music fadeout 0.5
 
-    # scene bg blackscreen
-
     pause 1
     # Give time for title screen music to stop
+
+    call credits
+    call true_ending_monologue
+    return
 
     while not game_done: # Main game loop
 
@@ -110,6 +112,12 @@ label splashscreen:
 label credits:
     $ credits_speed = 52 #scrolling speed in seconds
     scene bg blackscreen #replace this with a fancy background
+
+    if ending == "true":
+        image theend = Text("{size=160}We found our happily ever after.", text_align=0.5)
+    else: # ending == "good"
+        image theend = Text("{size=160}I found my happily ever after.", text_align=0.5)
+
     show theend with dissolve:
         yanchor 0.5 ypos 0.5
         xanchor 0.5 xpos 0.5
@@ -119,11 +127,6 @@ label credits:
     pause 4.65
     play music "audio/Credits - Credits 2.mp3" noloop volume 1.0 fadein 0.5
     with Pause(credits_speed - 6)
-    # show thanks:
-    #     yanchor 0.5 ypos 0.5
-    #     xanchor 0.5 xpos 0.5
-    # with Pause(3)
-    # hide thanks with dissolve
     pause 3
     scene bg blackscreen with dissolve
     window hide
@@ -152,7 +155,5 @@ init python:
     credits_s += "\n{size=160}With Love\n"
     
 init:
-    # image cred = Text(credits_s, font="myfont.ttf", text_align=0.5) #use this if you want to use special fonts
     image cred = Text(credits_s, text_align=0.5)
-    image theend = Text("{size=160}We found our happily ever after.", text_align=0.5)
     image thanks = Text("{size=160}With Love", text_align=0.5)
