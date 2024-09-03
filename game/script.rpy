@@ -145,7 +145,7 @@ label credits:
 
 init python:
     preferences.set_mixer("sfx", 0.8)
-    credits = ('Lead Designer', 'William Liu'), ('Lead Programmer', 'Abdullah Safi'), ('Developer', 'Hamin Lee'), ('Character Artist', 'William Liu'), ('Environment Artist', 'Sion Jeong'), ('UI/UX Designers', 'William Liu'), ('UI/UX Designers', 'Hamin Lee'), ('Story Writers', 'Abdullah Safi'), ('Story Writers', 'Ben Ni'), ('Story Writers', 'William Liu'), ('Composer', 'Kyle Sung'), ('Special Thanks', 'Storytime')
+    credits = ('Lead Game Designer', 'William Liu'), ('Lead Programmer', 'Abdullah Safi'), ('Developer', 'Hamin Lee'), ('Character Artist', 'William Liu'), ('Background Artist', 'Sion Jeong'), ('UI/UX Designers', 'William Liu'), ('UI/UX Designers', 'Hamin Lee'), ('Story Writers', 'Abdullah Safi'), ('Story Writers', 'Ben Ni'), ('Story Writers', 'William Liu'), ('Original Sound Tracks', 'Kyle Sung'), ('Special Thanks', 'Storytime')
     credits_s = "{size=160}Credits"
     c1 = ''
     for c in credits:
