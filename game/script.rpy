@@ -66,6 +66,17 @@ label start:
     $ v_type = Character("dml", what_color = "#CCCCCC")
     call aware_hero
 
+    if ending == "bad":
+        call reset_default_vars
+        jump start
+
+    elif ending == "good":
+        call credits
+
+    else: # ending == "true"
+        call credits
+        call true_ending_monologue
+
     while not game_done: # Main game loop
 
         if routes_completed + 1 in aware_hero_routes: # Aware hero route

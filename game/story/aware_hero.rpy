@@ -553,7 +553,7 @@ label third_encounter_third_choice:
 
             # Aware Hero speaks
             ah "I know that fear."
-            show aware_hero_Afraid
+            show aware_hero Afraid
             ah "It's something I've struggled with since the beginning. This loop, this repetition... it can make you feel like you're caught in a web, each thread tightening the more you struggle against it."
             show aware_hero Sad
             ah "But what if it's not that bad? What if the world past the looping is worse?"
