@@ -144,7 +144,7 @@ label credits:
 
 init python:
     preferences.set_mixer("sfx", 0.8)
-    credits = ('Lead Designer', 'William Liu'), ('Lead Programmer', 'Abdullah Safi'), ('Developer', 'Hamin Lee'), ('Character Artist', 'William Liu'), ('Environment Artist', 'Sion Jeong'), ('UI/UX Designers', 'William Liu'), ('UI/UX Designers', 'Hamin Lee'), ('Story Writers', 'Abdullah Safi'), ('Story Writers', 'Ben Ni'), ('Story Writers', 'William Liu'), ('Composer', 'Kyle Sung'), ('Special Thanks', 'Storytime')
+    credits = ('Lead Game Designer', 'William Liu'), ('Lead Programmer', 'Abdullah Safi'), ('Developer', 'Hamin Lee'), ('Character Artist', 'William Liu'), ('Background Artist', 'Sion Jeong'), ('UI/UX Designers', 'William Liu'), ('UI/UX Designers', 'Hamin Lee'), ('Story Writers', 'Abdullah Safi'), ('Story Writers', 'Ben Ni'), ('Story Writers', 'William Liu'), ('Original Sound Tracks', 'Kyle Sung'), ('Special Thanks', 'Storytime')
     credits_s = "{size=160}Credits"
     c1 = ''
     for c in credits:
@@ -166,3 +166,19 @@ init python:
 init:
     image cred = Text(credits_s, text_align=0.5)
     image thanks = Text("{size=160}With Love", text_align=0.5)
+
+
+
+label title_credits:
+    $ credits_speed = 52 #scrolling speed in seconds
+    scene bg blackscreen #replace this with a fancy background
+
+    show cred at Move((0.5, 10.7), (0.5, 0.625), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
+    pause 4.65
+    play music "audio/Credits - Credits 2.mp3" noloop volume 1.0 fadein 0.5
+    with Pause(credits_speed - 6)
+    pause 3
+    scene bg blackscreen with dissolve
+    window hide
+    pause 1.5
+    show screen main_menu
