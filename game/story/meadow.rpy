@@ -501,7 +501,7 @@ label meadow_start:
 
             h "And you've always been good at that. Finding the light, even when things are dark. Making the world brighter just by being in it."
 
-            n "The princess felt a blush rise to her cheeks, her heart fluttering at his words. She looked away, her gaze jump meadow_ending to the stars, a bashful smile tugging at her lips."
+            n "The princess felt a blush rise to her cheeks, her heart fluttering at his words. She looked away, her gaze returning to the stars, a bashful smile tugging at her lips."
 
             p "I don't know about that. But I do know that being with you... it makes me feel like maybe, just maybe, true happiness is possible. That no matter what happens, as long as we have each other, we can find a way to make it through."
 
