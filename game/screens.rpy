@@ -271,7 +271,7 @@ screen choice(items):
     style_prefix "choice"
 
 
-    if len(items) <= 6:
+    if len(items) <= 5:
         vbox:
             for i in items:
                 textbutton i.caption action i.action activate_sound "audio/click.mp3"
@@ -281,7 +281,7 @@ screen choice(items):
             scrollbars "vertical"
             mousewheel True
             xsize 1150
-            ysize 1475
+            ysize 1650
             xalign 0.99
             yalign 0.1
             vbox:
