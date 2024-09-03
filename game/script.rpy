@@ -31,6 +31,18 @@ image bg Villain = "base_backgrounds/bg Villain.png"
 image bg Meadow = "base_backgrounds/bg Meadow.png"
 image bg Boulder = "base_backgrounds/bg Boulder.png"
 
+# Aware Hero Expression images
+image aware_hero Calm = "aware_hero_Calm.png"
+image aware_hero Afraid = "aware_hero_Afraid.png"
+image aware_hero Angry_Confused = "aware_hero_Angry_Confused.png"
+image aware_hero In_Thought = "aware_hero_In_Thought.png"
+image aware_hero Light_Laugh = "aware_hero_Light_Laugh.png"
+image aware_hero Loving_Look = "aware_hero_Loving_Look.png"
+image aware_hero Sad = "aware_hero_Sad.png"
+image aware_hero Smirk = "aware_hero_Smirk.png"
+image aware_hero Surprised = "aware_hero_Surprised.png"
+image aware_hero Unamused = "aware_hero_Unamused.png"
+
 image main_menu_animated:
     "gui/main_menu_design1.png"
     pause 0.55
@@ -50,6 +62,8 @@ label start:
 
     pause 1
     # Give time for title screen music to stop
+
+    # call aware_hero
 
     while not game_done: # Main game loop
 
@@ -131,7 +145,7 @@ label credits:
 
 init python:
     preferences.set_mixer("sfx", 0.8)
-    credits = ('Lead Game Designer', 'William Liu'), ('Lead Programmer', 'Abdullah Safi'), ('Developer', 'Hamin Lee'), ('Character Artist', 'William Liu'), ('Environment Artist', 'Sion Jeong'), ('UI/UX Designers', 'William Liu'), ('UI/UX Designers', 'Hamin Lee'), ('Story Writers', 'Abdullah Safi'), ('Story Writers', 'Ben Ni'), ('Story Writers', 'William Liu'), ('Composer', 'Kyle Sung'), ('Special Thanks', 'Storytime')
+    credits = ('Lead Designer', 'William Liu'), ('Lead Programmer', 'Abdullah Safi'), ('Developer', 'Hamin Lee'), ('Character Artist', 'William Liu'), ('Environment Artist', 'Sion Jeong'), ('UI/UX Designers', 'William Liu'), ('UI/UX Designers', 'Hamin Lee'), ('Story Writers', 'Abdullah Safi'), ('Story Writers', 'Ben Ni'), ('Story Writers', 'William Liu'), ('Composer', 'Kyle Sung'), ('Special Thanks', 'Storytime')
     credits_s = "{size=160}Credits"
     c1 = ''
     for c in credits:
