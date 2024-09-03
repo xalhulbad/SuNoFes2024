@@ -466,8 +466,21 @@ label third_encounter_second_choice:
             # Princess speaks
             ap "What do you think my life would be like if you hadn't chosen to stay in this loop?"
             show aware_hero In_Thought
-            ap "No one to protect me from [v_type.name]."
+            if v_type == "hu":
+                ap "No one to protect me from the Hunter."
 
+            elif v_type == "fh":
+                ap "No one to protect me from the Fallen Hero."
+
+            elif v_type == "ff":
+                ap "No one to protect me from the Femme Fatale."
+
+            elif v_type == "dml":
+                ap "No one to protect me from the Dark Magic Lord."
+
+            else:
+                ap "No one to protect me from the Vengeful Spirit."
+            
             # Narration
             an "Her voice is thoughtful, almost wistful, as she gazes at him, seeking an answer to a question that touches on the very foundation of their shared existence. It's a question that has lingered in the back of her mind, a quiet wonder about the path not taken, the life she might have led if he hadn't chosen to stay by her side."
 
@@ -577,7 +590,20 @@ label third_encounter_third_choice:
 
             # Aware Hero reassures
             show aware_hero In_Thought
-            ah "Fighting [v_type.name] is how we give meaning to our actions, to our relationships, to our struggles. So even if we're stuck, even if this loop never ends, we can still find purpose in it. We can still find meaning in life because we have each other."
+            if v_type == "hu":
+                ah "Fighting the Hunter is how we give meaning to our actions, to our relationships, to our struggles. So even if we're stuck, even if this loop never ends, we can still find purpose in it. We can still find meaning in life because we have each other."
+            
+            elif v_type == "fh":
+                ah "Fighting the Fallen Hero is how we give meaning to our actions, to our relationships, to our struggles. So even if we're stuck, even if this loop never ends, we can still find purpose in it. We can still find meaning in life because we have each other."
+
+            elif v_type == "ff":
+                ah "Fighting the Femme Fatale is how we give meaning to our actions, to our relationships, to our struggles. So even if we're stuck, even if this loop never ends, we can still find purpose in it. We can still find meaning in life because we have each other."
+
+            elif v_type == "dml":
+                ah "Fighting the Dark Magic Lord is how we give meaning to our actions, to our relationships, to our struggles. So even if we're stuck, even if this loop never ends, we can still find purpose in it. We can still find meaning in life because we have each other."
+
+            else:
+                ah "Fighting the Vengeful Spirit is how we give meaning to our actions, to our relationships, to our struggles. So even if we're stuck, even if this loop never ends, we can still find purpose in it. We can still find meaning in life because we have each other."
 
             # Narration
             show aware_hero Calm
