@@ -8,7 +8,7 @@ label aware_hero:
 
     scene bg blackscreen with Dissolve(1.0)
 
-    ah "Deja vu."
+    show aware_hero Calm
     play music "audio/6 The Aware Hero 4.mp3"
 
     if aware_hero_number == 1:
