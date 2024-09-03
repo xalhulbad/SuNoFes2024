@@ -274,7 +274,7 @@ screen choice(items):
     if len(items) <= 6:
         vbox:
             for i in items:
-                textbutton i.caption action i.action
+                textbutton i.caption action i.action activate_sound "audio/click.mp3"
     
     else:
         viewport:
@@ -286,7 +286,7 @@ screen choice(items):
             yalign 0.1
             vbox:
                 for i in items:
-                    textbutton i.caption action i.action
+                    textbutton i.caption action i.action activate_sound "audio/click.mp3"
 
 
 style choice_vbox is vbox
@@ -325,14 +325,14 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Back") action Rollback() activate_sound "audio/click.mp3"
+            textbutton _("History") action ShowMenu('history') activate_sound "audio/click.mp3"
+            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True) activate_sound "audio/click.mp3"
+            textbutton _("Auto") action Preference("auto-forward", "toggle") activate_sound "audio/click.mp3"
+            textbutton _("Save") action ShowMenu('save') activate_sound "audio/click.mp3"
+            textbutton _("Q.Save") action QuickSave() activate_sound "audio/click.mp3"
+            textbutton _("Q.Load") action QuickLoad() activate_sound "audio/click.mp3"
+            textbutton _("Prefs") action ShowMenu('preferences') activate_sound "audio/click.mp3"
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
