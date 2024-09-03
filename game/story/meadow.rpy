@@ -73,6 +73,7 @@ label meadow_start:
 
             n "She realizes now that even heroes carry doubts, fears that run deeper than any sword wound. In this moment, he's not the shining figure everyone looks up to. He's just… him. And maybe, that's who he's been afraid to face all along."
             
+            stop music fadeout 0.5
             return
 
         "Do you believe in destiny, or do you think we make our own choices?":
@@ -118,7 +119,7 @@ label meadow_start:
             p "Maybe that's all we need to do. Just believe, and keep moving forward, no matter what."
 
             n "The hero's words linger in the cool night air as the two lie in contemplative silence. Above them, the stars shimmer, quiet witnesses to the eternal questions of life, choice, and consequence."
-
+            stop music fadeout 0.5
             return
 
         "Do you ever wonder what will happen to us after all of this?":
@@ -166,6 +167,7 @@ label meadow_start:
             n "In the stillness of the meadow, under the infinite night sky, they find a shared understanding—a quiet resolve to face whatever comes next, not as the roles they've played, but as the people they truly are."
 
             n "And in that moment, the future feels just a little less daunting."
+            stop music fadeout 0.5
 
             return
 
@@ -217,6 +219,7 @@ label meadow_start:
 
             n "The princess squeezes his arm gently, offering him a small, encouraging smile. The hero smiles back, a genuine, grateful expression that reaches his eyes. In the quiet of the meadow, under the watchful gaze of the stars, they share a moment of understanding, a shared resolve to face whatever comes next with hope, and without the shadows of their past weighing them down."
 
+            stop music fadeout 0.5
             return
 
         "If everything ended tomorrow, would you have any regrets?":
@@ -310,6 +313,7 @@ label meadow_start:
             h "I think so too, Princess. And as long as we're part of this… whatever it is… I'm glad I get to share it with you."
 
             n "They lie there in the meadow, side by side under the vast night sky, two small parts of something much bigger, finding meaning in each other's light."
+            stop music fadeout 0.5
 
             return
 
@@ -356,6 +360,7 @@ label meadow_start:
             n "They lie there in silence, their hands intertwined, finding comfort in each other's presence. The stars above seem to shine a little brighter, as if echoing their quiet resolve."
 
             n "In the vast expanse of the night, the princess and the hero find a shared strength, a reminder that even in a world full of suffering, there is still hope—and as long as they have that, they have everything they need to keep going."
+            stop music fadeout 0.5
 
             return
 
@@ -402,6 +407,7 @@ label meadow_start:
             n "The princess squeezes his hand gently, her heart swelling with a mixture of gratitude and something deeper—something that feels like hope. They lie there in the meadow, side by side under the endless night sky, finding comfort in each other's presence."
 
             n "In that quiet moment, they both realize that being alive is not just about existing, but about truly living—embracing every moment, every feeling, and finding meaning in the journey they share."
+            stop music fadeout 0.5
 
             return
 
@@ -446,5 +452,6 @@ label meadow_start:
             n "In the silence of the meadow, under the watchful gaze of the stars, they find a shared sense of peace, a belief that true happiness isn't something that just happens, but something they can create together, no matter where their journey takes them."
 
             n "And in that moment, they realize that perhaps, that's all they really need."
+            stop music fadeout 0.5
 
             return
