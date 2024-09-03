@@ -341,6 +341,7 @@ label reset_default_vars:
 
 
     # meadow.rpy
+    $ meadow_choices1_seen = set()
 
 
     # hu.rpy
