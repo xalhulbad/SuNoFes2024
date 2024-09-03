@@ -1,3 +1,5 @@
+# Contains the code associated with portion of the game related to the "meadow" scene.
+
 label meadow_start:
 
     scene bg Meadow with fade
