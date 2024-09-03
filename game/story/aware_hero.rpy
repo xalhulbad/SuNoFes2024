@@ -1249,7 +1249,7 @@ label aware_hero_route:
         $ aware_hero_trigger_scene = "forest"
     elif renpy.random.randint(1, 10) <= 4: # 4/10 chance to trigger after cryptic
         $ aware_hero_trigger_scene = "cryptic"
-    if renpy.random.randint(1, 10) <= 7: # 7/10 chance to trigger after meadow
+    elif renpy.random.randint(1, 10) <= 7: # 7/10 chance to trigger after meadow
         $ aware_hero_trigger_scene = "meadow"
     else:
         $ aware_hero_trigger_scene = "second_villain" 
