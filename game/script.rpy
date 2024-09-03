@@ -63,20 +63,6 @@ label start:
     pause 1
     # Give time for title screen music to stop
 
-    $ v_type = Character("dml", what_color = "#CCCCCC")
-    call aware_hero
-
-    if ending == "bad":
-        call reset_default_vars
-        jump start
-
-    elif ending == "good":
-        call credits
-
-    else: # ending == "true"
-        call credits
-        call true_ending_monologue
-
     while not game_done: # Main game loop
 
         if routes_completed + 1 in aware_hero_routes: # Aware hero route
@@ -135,10 +121,10 @@ label credits:
     $ credits_speed = 52 #scrolling speed in seconds
     scene bg blackscreen #replace this with a fancy background
 
-    if ending == "true":
+    if ending == "good":
+        image theend = Text("{size=160}I found my happily ever after", text_align=0.5)
+    else: # ending == "true"
         image theend = Text("{size=160}We found our happily ever after.", text_align=0.5)
-    else: # ending == "good"
-        image theend = Text("{size=160}I found my happily ever after.", text_align=0.5)
 
     show theend with dissolve:
         yanchor 0.5 ypos 0.5
