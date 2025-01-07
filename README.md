@@ -1,12 +1,6 @@
 # Happily Ever After  
 
-**Happily Ever After** is a narrative-driven visual novel based on the player's decisions, featuring:
-- 📖 **Over 110k words of rich narrative**
-- 🎭 **Multiple endings based on player choices**  
-- 🎨 **Over 80 pieces of custom artwork**
-- 🎵 **An immersive original soundtrack**
-
-Every choice you make shapes the story's outcome.  
+Trapped in an endless cycle of damsels and heroes, a princess embarks on a journey of self-discovery. Happily Ever After is a hand-crafted game of confronting fate, uncovering hidden truths, and navigating unexpected relationships. Your choices will shape her character in this story-rich visual novel. Do you believe in happily ever after? 
 
 [**🎮 Play the game here**](https://play-by-play-games.itch.io/happily-ever-after)
 
